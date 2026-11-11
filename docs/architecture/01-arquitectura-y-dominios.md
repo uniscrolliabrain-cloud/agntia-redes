@@ -1,5 +1,7 @@
 # Arquitectura y autoridad por dominio
 
+**Decisión vigente del propietario (11-11-2026):** agentes canónicos en `/agente`, twins vinculados en los servicios y JWT de Supabase obligatorio en todos los modos. «Standalone» describe el acceso del cliente al portal, no una identidad agéntica independiente. Esta decisión sustituye las formulaciones anteriores sobre IdP/equipo propio. Aplicar nomenclatura nativa, membresías verificadas, aislamiento de datos/jobs y procedencia: [contrato transversal](04-twins-supabase-y-trazabilidad.md). Diseño pendiente de implementación y pruebas.
+
 Arquitectura propuesta, no desplegada. Node/TypeScript con Hono/pnpm reduce adaptación al repo padre; no se importa su servidor completo como librería ni se supone que todo middleware deba ser Python. Core puro de contratos/policy/FSM; persistencia transaccional; application services nominados; adaptadores de proveedor y de approval/budget/event bus; worker con leases/fencing; SDK servidor y vistas integrables. Runtimes de modelos quedan detrás de un puerto de propuesta sin credenciales sociales.
 
 ```mermaid
@@ -23,7 +25,7 @@ La tabla siguiente es una coordinación recomendada cuando los servicios están 
 
 | Dominio | Autoridad | Qué recibe redes |
 |---|---|---|
-| Identidad, membership, organización y SOPs | agente para sus clientes; IdP y runtime propios del SaaS para standalone/proveedor | Principales/bindings verificados por modo; nunca rol escrito por modelo |
+| Identidad, membership, organización y SOPs | Supabase verificado para todos los clientes; identidad canónica y organización agéntica en agente; twins y ejecución delegada en el SaaS | Principales/bindings verificados por modo; nunca rol escrito por modelo |
 | Marca y permisos editoriales | agntia-branding futuro | Snapshot de política/identidad de marca versionado, no prompt mutable |
 | Objetivo, audiencia declarada y experimento | agntia-marketing futuro | Brief aprobado, límites y enlaces de medición; no targeting sensible inferido |
 | Draft, variante, publicación y cuenta social | redes y proveedor según campo | Redes custodia intención/revisiones; proveedor confirma objeto/estado remoto |

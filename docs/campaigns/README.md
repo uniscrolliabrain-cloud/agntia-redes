@@ -1,5 +1,7 @@
 # Campaña maestra ·42 campañas de implementación
 
+**Decisión vigente del propietario (11-11-2026):** agentes canónicos en `/agente`, twins vinculados en los servicios y JWT de Supabase obligatorio en todos los modos. «Standalone» describe el acceso del cliente al portal, no una identidad agéntica independiente. Esta decisión sustituye las formulaciones anteriores sobre IdP/equipo propio. Aplicar nomenclatura nativa, membresías verificadas, aislamiento de datos/jobs y procedencia: [contrato transversal](../architecture/04-twins-supabase-y-trazabilidad.md). Diseño pendiente de implementación y pruebas.
+
 Estado: todas NOT_STARTED;294 tareas y84 escenarios NOT_EXECUTED. Solo diseño documental. El servicio es una empresa SaaS propia con portal/especialistas/visio Anam y clientes externos; agente es integración preferente, no requisito. Duplicar capacidades es válido con autoridad por encargo.
 
 ## Disciplina

@@ -11,8 +11,8 @@
   "papers_selected": 5,
   "source_records": 29,
   "research_repo_records": 15,
-  "markdown_words": 49154,
-  "campaign_manifest_sha256": "97b0c4af27e24f3c55807a294f735f59323fca5ccfcd7850c0a356d1fb205ae7",
+  "markdown_words": 50859,
+  "campaign_manifest_sha256": "88bcf43153d6db9c92a75acb2a6bee788caa3744c3664be72eebdc64816a247e",
   "external_links_live_check": "Selected research links accessed; not exhaustive revalidation of every link",
   "client_modes": [
     "agente_integrated",
@@ -20,5 +20,6 @@
   ],
   "presence": "Anam planned, not connected",
   "duplicate_services_allowed": true,
-  "files_verified": 69
+  "files_verified": 70,
+  "architecture_revision": "2026-11-11 canonical twins and mandatory Supabase; documentary checks only"
 }

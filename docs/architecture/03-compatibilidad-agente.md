@@ -1,5 +1,7 @@
 # Compatibilidad: observación de código y puente propuesto
 
+**Decisión vigente del propietario (11-11-2026):** agentes canónicos en `/agente`, twins vinculados en los servicios y JWT de Supabase obligatorio en todos los modos. «Standalone» describe el acceso del cliente al portal, no una identidad agéntica independiente. Esta decisión sustituye las formulaciones anteriores sobre IdP/equipo propio. Aplicar nomenclatura nativa, membresías verificadas, aislamiento de datos/jobs y procedencia: [contrato transversal](04-twins-supabase-y-trazabilidad.md). Diseño pendiente de implementación y pruebas.
+
 Snapshot padre: uniscrolliabrain-cloud/agente main **54b8d5407a8576459448c4d059a877297d18ca7a**. Lectura selectiva de12 archivos, no auditoría completa de sus3125 entradas ni ejecución de tests. El árbol consultado no se truncó. AGENTS.md raíz devolvió404: no se inventan sus instrucciones ni se extrapola ausencia a subdirectorios. Antes de implementar hay que repetir el cotejo y leer instrucciones aplicables del checkout real.
 
 | Archivo observado en ese SHA | Hecho acotado | Consecuencia de diseño |

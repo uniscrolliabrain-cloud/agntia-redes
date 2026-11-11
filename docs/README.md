@@ -1,5 +1,7 @@
 # Índice técnico y método
 
+**Decisión vigente del propietario (11-11-2026):** agentes canónicos en `/agente`, twins vinculados en los servicios y JWT de Supabase obligatorio en todos los modos. «Standalone» describe el acceso del cliente al portal, no una identidad agéntica independiente. Esta decisión sustituye las formulaciones anteriores sobre IdP/equipo propio. Aplicar nomenclatura nativa, membresías verificadas, aislamiento de datos/jobs y procedencia: [contrato transversal](architecture/04-twins-supabase-y-trazabilidad.md). Diseño pendiente de implementación y pruebas.
+
 Fecha de observación11-11-2026. Alcance confirmado: redes sociales y comunidad. Estado **DOCS_READY_RUNTIME_NOT_IMPLEMENTED**. Las fuentes distinguen observado en código, documentación primaria, afirmación de proveedor, hipótesis propia y no verificado. Las rutas src/ y tests/ dentro de campañas son archivos futuros: no existen por el hecho de estar nombrados.
 
 La propuesta central es TypeScript/Hono/pnpm para alinearse con agente, una empresa SaaS especialista con portal/Anam y un core de dominio independiente, Postgres para persistencia transaccional, SDK servidor con DTOs/validación y adaptadores nominados. SQLite de laboratorio solo si una ADR mantiene sus límites; Redis/BullMQ/Temporal no son requisitos simultáneos. Ningún backend OSS aporta automáticamente permisos de las plataformas.

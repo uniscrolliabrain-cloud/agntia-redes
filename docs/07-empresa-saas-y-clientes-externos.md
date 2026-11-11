@@ -1,5 +1,7 @@
 # Una empresa SaaS de servicios sociales, no solo un módulo
 
+**Decisión vigente del propietario (11-11-2026):** agentes canónicos en `/agente`, twins vinculados en los servicios y JWT de Supabase obligatorio en todos los modos. «Standalone» describe el acceso del cliente al portal, no una identidad agéntica independiente. Esta decisión sustituye las formulaciones anteriores sobre IdP/equipo propio. Aplicar nomenclatura nativa, membresías verificadas, aislamiento de datos/jobs y procedencia: [contrato transversal](architecture/04-twins-supabase-y-trazabilidad.md). Diseño pendiente de implementación y pruebas.
+
 Aclaración expresa del propietario: los empleados generalistas de agente pueden hacer muchas cosas, pero el cliente puede contratar un servicio especializado que aporta profundidad, capacidad, garantía operativa y una relación profesional mediante agentes en visio. Los nueve repos son empresas SaaS potencialmente independientes. La duplicación funcional es aceptable; no diseñar una taxonomía rígida que les impida prestar un servicio completo.
 
 ## Dos modos, un mismo core de control

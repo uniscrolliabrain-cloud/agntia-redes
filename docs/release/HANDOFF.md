@@ -1,5 +1,7 @@
 # Handoff para otra IA: construir sin inventar evidencia
 
+**Decisión vigente del propietario (11-11-2026):** agentes canónicos en `/agente`, twins vinculados en los servicios y JWT de Supabase obligatorio en todos los modos. «Standalone» describe el acceso del cliente al portal, no una identidad agéntica independiente. Esta decisión sustituye las formulaciones anteriores sobre IdP/equipo propio. Aplicar nomenclatura nativa, membresías verificadas, aislamiento de datos/jobs y procedencia: [contrato transversal](../architecture/04-twins-supabase-y-trazabilidad.md). Diseño pendiente de implementación y pruebas.
+
 Encargo actual concluible solo como documentación. Para empezar código hace falta una instrucción futura de implementación. Leer AGENTS.md y todos los contratos/campañas; el propietario ha pedido que otras IAs ejecuten esos diseños. No desplegar, publicar posts, enviar DMs, gastar dinero o modificar el host por interpretar un documento como autorización externa.
 
 ## Primeras acciones cuando se autorice implementar

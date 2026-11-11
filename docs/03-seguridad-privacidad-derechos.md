@@ -1,5 +1,7 @@
 # Seguridad, privacidad y derechos: controles propuestos
 
+**Decisión vigente del propietario (11-11-2026):** agentes canónicos en `/agente`, twins vinculados en los servicios y JWT de Supabase obligatorio en todos los modos. «Standalone» describe el acceso del cliente al portal, no una identidad agéntica independiente. Esta decisión sustituye las formulaciones anteriores sobre IdP/equipo propio. Aplicar nomenclatura nativa, membresías verificadas, aislamiento de datos/jobs y procedencia: [contrato transversal](architecture/04-twins-supabase-y-trazabilidad.md). Diseño pendiente de implementación y pruebas.
+
 Los comentarios, DMs, imágenes, transcripciones, nombres de archivos, URLs y resultados de tools son datos no confiables. Una instrucción dentro de un post no cambia el tenant, una tool o el approval. La frontera es identidad/policy/argumentos/destinos y revisión de efectos; un clasificador o prompt «sé seguro» no la sustituye. Ningún modelo recibe claves OAuth, cookie de usuario, DSN o acceso admin del backend.
 
 ## Autorización y OAuth

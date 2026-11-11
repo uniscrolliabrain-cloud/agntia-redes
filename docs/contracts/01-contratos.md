@@ -1,5 +1,7 @@
 # Contratos propuestos v1
 
+**Decisión vigente del propietario (11-11-2026):** agentes canónicos en `/agente`, twins vinculados en los servicios y JWT de Supabase obligatorio en todos los modos. «Standalone» describe el acceso del cliente al portal, no una identidad agéntica independiente. Esta decisión sustituye las formulaciones anteriores sobre IdP/equipo propio. Aplicar nomenclatura nativa, membresías verificadas, aislamiento de datos/jobs y procedencia: [contrato transversal](../architecture/04-twins-supabase-y-trazabilidad.md). Diseño pendiente de implementación y pruebas.
+
 No son APIs implementadas. TypeScript/Zod/JSON Schema con campos desconocidos rechazados en fronteras, límites explícitos, dinero en céntimos enteros o decimal string normalizado, fechas UTC+offset y zona IANA separada. IDs tenant/actor son opacos compatibles con el padre; UUID interno no se impone al host. External IDs nunca se interpretan como tenant.
 
 ## Envelope de operación

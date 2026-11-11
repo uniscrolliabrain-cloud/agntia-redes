@@ -1,5 +1,7 @@
 # agntia-redes · Diseño del middleware social de AgntiaPro
 
+**Decisión vigente del propietario (11-11-2026):** agentes canónicos en `/agente`, twins vinculados en los servicios y JWT de Supabase obligatorio en todos los modos. «Standalone» describe el acceso del cliente al portal, no una identidad agéntica independiente. Esta decisión sustituye las formulaciones anteriores sobre IdP/equipo propio. Aplicar nomenclatura nativa, membresías verificadas, aislamiento de datos/jobs y procedencia: [contrato transversal](docs/architecture/04-twins-supabase-y-trazabilidad.md). Diseño pendiente de implementación y pruebas.
+
 **Entrega1 de9 ·11 de noviembre de2026 · Solo documentación.** Redes sociales y comunidad, alcance confirmado por el propietario. No existe todavía runtime implementado, conectores instalados, cuentas conectadas ni publicaciones realizadas por este repo.
 
 El producto propuesto convierte objetivos y briefs aprobados en borradores, revisiones, calendario, publicaciones trazables, atención de comunidad y reportes con fuentes. El LLM propone; una máquina de estados, permisos, presupuesto y aprobaciones verificables deciden qué puede ejecutarse. El servicio tendrá portal, organización especialista y atención por agente en visio con Anam, además de una API middleware para AgntiaPro. Podrá trabajar para clientes de `/agente` o clientes externos con identidad propia. Duplicar capacidades generalistas es válido: se delimita autoridad por contrato/encargo y se coordinan efectos, sin prohibir funciones por existir en otro repo.

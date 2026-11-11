@@ -135,7 +135,8 @@
       ],
       "owner_role": "Release/arquitectura",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C02",
@@ -260,7 +261,8 @@
       ],
       "owner_role": "Producto/SaaS",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C03",
@@ -386,7 +388,8 @@
       ],
       "owner_role": "Seguridad/identidad",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C04",
@@ -511,7 +514,8 @@
       ],
       "owner_role": "Contratos/SDK",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C05",
@@ -636,7 +640,8 @@
       ],
       "owner_role": "Persistencia/auditoría",
       "checkpoint_after": true,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C06",
@@ -764,7 +769,8 @@
       ],
       "owner_role": "Plataforma/licencias",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C07",
@@ -890,7 +896,8 @@
       ],
       "owner_role": "Integraciones/OAuth",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C08",
@@ -1016,7 +1023,8 @@
       ],
       "owner_role": "Seguridad/transporte",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C09",
@@ -1141,7 +1149,8 @@
       ],
       "owner_role": "Integraciones/backend",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C10",
@@ -1266,7 +1275,8 @@
       ],
       "owner_role": "Integraciones/Mastodon",
       "checkpoint_after": true,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C11",
@@ -1391,7 +1401,8 @@
       ],
       "owner_role": "Integraciones/ATProto",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C12",
@@ -1516,7 +1527,8 @@
       ],
       "owner_role": "Integraciones/Meta",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C13",
@@ -1641,7 +1653,8 @@
       ],
       "owner_role": "Integraciones/LinkedIn",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C14",
@@ -1766,7 +1779,8 @@
       ],
       "owner_role": "Integraciones/YouTube",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C15",
@@ -1891,7 +1905,8 @@
       ],
       "owner_role": "Integraciones/TikTok",
       "checkpoint_after": true,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C16",
@@ -2017,7 +2032,8 @@
       ],
       "owner_role": "Integraciones/comercial",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C17",
@@ -2143,7 +2159,8 @@
       ],
       "owner_role": "Custodia/media",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C18",
@@ -2269,7 +2286,8 @@
       ],
       "owner_role": "Producto/editorial",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C19",
@@ -2395,7 +2413,8 @@
       ],
       "owner_role": "Policy/aprobaciones",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C20",
@@ -2520,7 +2539,8 @@
       ],
       "owner_role": "Operaciones/SOP",
       "checkpoint_after": true,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C21",
@@ -2646,7 +2666,8 @@
       ],
       "owner_role": "Workers/eventos",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C22",
@@ -2772,7 +2793,8 @@
       ],
       "owner_role": "Finanzas del servicio",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C23",
@@ -2899,7 +2921,8 @@
       ],
       "owner_role": "Publicación",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C24",
@@ -3025,7 +3048,8 @@
       ],
       "owner_role": "Reconciliación",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C25",
@@ -3151,7 +3175,8 @@
       ],
       "owner_role": "Ingestión/inbox",
       "checkpoint_after": true,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C26",
@@ -3277,7 +3302,8 @@
       ],
       "owner_role": "Atención/servicio",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C27",
@@ -3402,7 +3428,8 @@
       ],
       "owner_role": "Moderación/QA",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C28",
@@ -3528,7 +3555,8 @@
       ],
       "owner_role": "Listening/analista",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C29",
@@ -3654,7 +3682,8 @@
       ],
       "owner_role": "Datos/métricas",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C30",
@@ -3780,7 +3809,8 @@
       ],
       "owner_role": "Analítica/reportes",
       "checkpoint_after": true,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C31",
@@ -3907,7 +3937,8 @@
       ],
       "owner_role": "Especialistas/modelos",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C32",
@@ -4033,7 +4064,8 @@
       ],
       "owner_role": "Visión/QA",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C33",
@@ -4162,7 +4194,8 @@
       ],
       "owner_role": "Presencia/Anam",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C34",
@@ -4289,7 +4322,8 @@
       ],
       "owner_role": "SDK/API/MCP",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C35",
@@ -4415,7 +4449,8 @@
       ],
       "owner_role": "UX/portal SaaS",
       "checkpoint_after": true,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C36",
@@ -4540,7 +4575,8 @@
       ],
       "owner_role": "Integración/B2B",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C37",
@@ -4668,7 +4704,8 @@
       ],
       "owner_role": "Privacidad/seguridad/legal",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C38",
@@ -4794,7 +4831,8 @@
       ],
       "owner_role": "QA/fallos",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C39",
@@ -4920,7 +4958,8 @@
       ],
       "owner_role": "SRE/economía",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C40",
@@ -5047,7 +5086,8 @@
       ],
       "owner_role": "QA/E2E",
       "checkpoint_after": true,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C41",
@@ -5173,7 +5213,8 @@
       ],
       "owner_role": "Release/operaciones",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     },
     {
       "id": "RDS-C42",
@@ -5299,7 +5340,12 @@
       ],
       "owner_role": "Owner/revisor independiente",
       "checkpoint_after": true,
-      "implementation_test_status": "NOT_EXECUTED"
+      "implementation_test_status": "NOT_EXECUTED",
+      "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED"
     }
-  ]
+  ],
+  "mandatory_architecture_contract": "docs/architecture/04-twins-supabase-y-trazabilidad.md",
+  "mandatory_authentication": "Supabase verified JWT plus server-verified membership and scoped delegation; all client modes",
+  "agent_identity_authority": "agente canonical Actor/persona/role/runtime; service uses bound twin",
+  "standalone_semantics": "External customer portal; no independent canonical agent registry or alternative IdP"
 }
