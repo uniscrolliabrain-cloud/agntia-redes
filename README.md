@@ -6,6 +6,8 @@ El producto propuesto convierte objetivos y briefs aprobados en borradores, revi
 
 Se entrega investigación primaria actual, contraste selectivo del repo padre, arquitectura, contratos, matriz de proveedores y **42 campañas,294 tareas y84 escenarios de gate**, todas **NOT_STARTED**. No equivalen a42 días ni a un producto completo por calendario. Las otras IAs deben implementar y demostrar cada gate, con checkpoint tras cinco campañas.
 
+[Informe de entrega para el owner](docs/release/INFORME-AL-OWNER.md).
+
 ## Recorrido de lectura
 
 1. [Índice y alcance](docs/README.md) y [visión de producto](docs/01-producto-y-limites.md).

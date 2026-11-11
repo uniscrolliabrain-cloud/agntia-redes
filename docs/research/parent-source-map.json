@@ -1,0 +1,80 @@
+{
+  "repository": "uniscrolliabrain-cloud/agente",
+  "ref": "54b8d5407a8576459448c4d059a877297d18ca7a",
+  "scope": "Selective read of 12 files; tree 3125 entries not truncated; no test execution or modifications",
+  "root_AGENTS": "404 at inspection, not proof that subdirectory instructions do not exist",
+  "files": [
+    {
+      "path": "package.json",
+      "blob_sha": "c1af1a269f10c9e91ed7c2eecfd8397f96e1ff8d",
+      "url": "https://github.com/uniscrolliabrain-cloud/agente/blob/54b8d5407a8576459448c4d059a877297d18ca7a/package.json",
+      "read_scope": "selected fetched contents; no full-repository audit"
+    },
+    {
+      "path": "apps/server/src/tenant-principal.ts",
+      "blob_sha": "0c86ba327277d55b322fe384605af3ef42d6a3fa",
+      "url": "https://github.com/uniscrolliabrain-cloud/agente/blob/54b8d5407a8576459448c4d059a877297d18ca7a/apps/server/src/tenant-principal.ts",
+      "read_scope": "selected fetched contents; no full-repository audit"
+    },
+    {
+      "path": "apps/server/src/engine/assignments/adapters/approval-adapter.ts",
+      "blob_sha": "acd4306c19ca5793ac5f951951532a33af0e5178",
+      "url": "https://github.com/uniscrolliabrain-cloud/agente/blob/54b8d5407a8576459448c4d059a877297d18ca7a/apps/server/src/engine/assignments/adapters/approval-adapter.ts",
+      "read_scope": "selected fetched contents; no full-repository audit"
+    },
+    {
+      "path": "apps/server/src/engine/authz/with-write.ts",
+      "blob_sha": "bd569577069bc47fe7bea902d03098c28eec2106",
+      "url": "https://github.com/uniscrolliabrain-cloud/agente/blob/54b8d5407a8576459448c4d059a877297d18ca7a/apps/server/src/engine/authz/with-write.ts",
+      "read_scope": "selected fetched contents; no full-repository audit"
+    },
+    {
+      "path": "apps/server/src/engine/sop-triggers.ts",
+      "blob_sha": "cf4f7be470b4064571668026813aa1e2c76332e9",
+      "url": "https://github.com/uniscrolliabrain-cloud/agente/blob/54b8d5407a8576459448c4d059a877297d18ca7a/apps/server/src/engine/sop-triggers.ts",
+      "read_scope": "selected fetched contents; no full-repository audit"
+    },
+    {
+      "path": "packages/integrations/src/stubs/social.ts",
+      "blob_sha": "94c21b95ac95191fea1732fe0f636d942a640ec5",
+      "url": "https://github.com/uniscrolliabrain-cloud/agente/blob/54b8d5407a8576459448c4d059a877297d18ca7a/packages/integrations/src/stubs/social.ts",
+      "read_scope": "selected fetched contents; no full-repository audit"
+    },
+    {
+      "path": "packages/integrations/src/vault.ts",
+      "blob_sha": "8c3ac3c9df3040e69c4ea2945f56924e0b166447",
+      "url": "https://github.com/uniscrolliabrain-cloud/agente/blob/54b8d5407a8576459448c4d059a877297d18ca7a/packages/integrations/src/vault.ts",
+      "read_scope": "selected fetched contents; no full-repository audit"
+    },
+    {
+      "path": "packages/domain/src/policy-context.ts",
+      "blob_sha": "5538fb38731395ac227097a2998a5ab66b1d2f13",
+      "url": "https://github.com/uniscrolliabrain-cloud/agente/blob/54b8d5407a8576459448c4d059a877297d18ca7a/packages/domain/src/policy-context.ts",
+      "read_scope": "selected fetched contents; no full-repository audit"
+    },
+    {
+      "path": "packages/domain/src/actions.ts",
+      "blob_sha": "8494202e03a2a21fd77ebdba817991ef4adfbed2",
+      "url": "https://github.com/uniscrolliabrain-cloud/agente/blob/54b8d5407a8576459448c4d059a877297d18ca7a/packages/domain/src/actions.ts",
+      "read_scope": "selected fetched contents; no full-repository audit"
+    },
+    {
+      "path": "apps/server/src/engine/events/types.ts",
+      "blob_sha": "1e00fb0381281aa57999a98ee48b47fd453e3f71",
+      "url": "https://github.com/uniscrolliabrain-cloud/agente/blob/54b8d5407a8576459448c4d059a877297d18ca7a/apps/server/src/engine/events/types.ts",
+      "read_scope": "selected fetched contents; no full-repository audit"
+    },
+    {
+      "path": "apps/server/src/engine/events/bus.ts",
+      "blob_sha": "21fe61384c6f12002d2e41bea172819c607629c7",
+      "url": "https://github.com/uniscrolliabrain-cloud/agente/blob/54b8d5407a8576459448c4d059a877297d18ca7a/apps/server/src/engine/events/bus.ts",
+      "read_scope": "first180 lines"
+    },
+    {
+      "path": "apps/server/src/engine/authz/pdp.ts",
+      "blob_sha": "44e84885f5a12c5245bd526abe1a71ed5b6a20e8",
+      "url": "https://github.com/uniscrolliabrain-cloud/agente/blob/54b8d5407a8576459448c4d059a877297d18ca7a/apps/server/src/engine/authz/pdp.ts",
+      "read_scope": "first180 lines"
+    }
+  ]
+}

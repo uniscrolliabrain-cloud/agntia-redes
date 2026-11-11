@@ -1,0 +1,156 @@
+{
+  "observed_on": "2026-11-11",
+  "scope": "Metadata + selected README/license reads, no installs/code audit/benchmark reproduction. GitHub SPDX is not complete commercial licensing review.",
+  "repositories": [
+    {
+      "requested": "gitroomhq/postiz-app",
+      "repository": "gitroomhq/postiz-app",
+      "url": "https://github.com/gitroomhq/postiz-app",
+      "default_branch": "main",
+      "license_metadata": "AGPL-3.0",
+      "archived": false,
+      "pushed_at": "2026-11-11T19:57:08Z",
+      "description": "📨 The ultimate agentic social media scheduling tool 🤖",
+      "head_sha": "b31d29fa4132a08aa82f728227df2938ccab7972"
+    },
+    {
+      "requested": "inovector/mixpost",
+      "repository": "inovector/mixpost",
+      "url": "https://github.com/inovector/mixpost",
+      "default_branch": "main",
+      "license_metadata": "MIT",
+      "archived": false,
+      "pushed_at": "2026-03-16T10:06:38Z",
+      "description": "📅 Schedule, 📢 publish, and ⚡ manage your social media content on your server. No subscriptions, no limits. (Buffer alternative)",
+      "head_sha": "df57648b866310446703f5294350552b62735df5"
+    },
+    {
+      "requested": "chatwoot/chatwoot",
+      "repository": "chatwoot/chatwoot",
+      "url": "https://github.com/chatwoot/chatwoot",
+      "default_branch": "develop",
+      "license_metadata": "NOASSERTION",
+      "archived": false,
+      "pushed_at": "2026-11-11T14:40:44Z",
+      "description": "Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesforce Service Cloud etc. 🔥💬",
+      "head_sha": "309c63f359a1206caf9a36a271407f3bb4cc9419"
+    },
+    {
+      "requested": "activepieces/activepieces",
+      "repository": "activepieces/activepieces",
+      "url": "https://github.com/activepieces/activepieces",
+      "default_branch": "main",
+      "license_metadata": "NOASSERTION",
+      "archived": false,
+      "pushed_at": "2026-11-11T20:07:40Z",
+      "description": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
+      "head_sha": "03c15c9ce4e9cf626c9c47d7f55425556847cb19"
+    },
+    {
+      "requested": "n8n-io/n8n",
+      "repository": "n8n-io/n8n",
+      "url": "https://github.com/n8n-io/n8n",
+      "default_branch": "master",
+      "license_metadata": "NOASSERTION",
+      "archived": false,
+      "pushed_at": "2026-11-11T20:49:47Z",
+      "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+      "head_sha": "f932917665607b1e639ce222946293f3f80a2de8"
+    },
+    {
+      "requested": "taskforcesh/bullmq",
+      "repository": "taskforcesh/bullmq",
+      "url": "https://github.com/taskforcesh/bullmq",
+      "default_branch": "master",
+      "license_metadata": "MIT",
+      "archived": false,
+      "pushed_at": "2026-11-11T20:38:13Z",
+      "description": "BullMQ - Message Queue and Batch processing for NodeJS, Python, .NET, Elixir, Rust and PHP based on Redis or PostgreSQL",
+      "head_sha": "09b48329afc70adac2cf437adaf1c448ad5538ef"
+    },
+    {
+      "requested": "temporalio/sdk-typescript",
+      "repository": "temporalio/sdk-typescript",
+      "url": "https://github.com/temporalio/sdk-typescript",
+      "default_branch": "main",
+      "license_metadata": "MIT",
+      "archived": false,
+      "pushed_at": "2026-11-10T23:56:43Z",
+      "description": "Temporal TypeScript SDK",
+      "head_sha": "386515009d51a3f72b4dc89d94ecf0fb43345497"
+    },
+    {
+      "requested": "bluesky-social/atproto",
+      "repository": "bluesky-social/atproto",
+      "url": "https://github.com/bluesky-social/atproto",
+      "default_branch": "main",
+      "license_metadata": "NOASSERTION",
+      "archived": false,
+      "pushed_at": "2026-11-11T20:54:37Z",
+      "description": "Social networking technology created by Bluesky",
+      "head_sha": "3b93b6f2bcfde14c0e69a45a80d0967aa3032f93"
+    },
+    {
+      "requested": "mastodon/mastodon",
+      "repository": "mastodon/mastodon",
+      "url": "https://github.com/mastodon/mastodon",
+      "default_branch": "main",
+      "license_metadata": "AGPL-3.0",
+      "archived": false,
+      "pushed_at": "2026-11-11T18:03:22Z",
+      "description": "Your self-hosted, globally interconnected microblogging community",
+      "head_sha": "b31c484d97c9b7f109ecdcc3de140ac2e865fd4d"
+    },
+    {
+      "requested": "c2pa-org/c2pa-rs",
+      "status": "UNAVAILABLE"
+    },
+    {
+      "requested": "LivXue/SoMe",
+      "repository": "LivXue/SoMe",
+      "url": "https://github.com/LivXue/SoMe",
+      "default_branch": "main",
+      "license_metadata": "NOASSERTION",
+      "archived": false,
+      "pushed_at": "2026-04-29T06:24:51Z",
+      "description": "(AAAI 2026) SoMe: A Realistic Benchmark for LLM-based Social Media Agents",
+      "head_sha": "3dd57e24084743687783a45dcfb812c6687a0d0a"
+    },
+    {
+      "requested": "sequrity-ai/agentdojo",
+      "repository": "sequrity-ai/agentdojo",
+      "url": "https://github.com/sequrity-ai/agentdojo",
+      "default_branch": "main",
+      "license_metadata": "MIT",
+      "archived": false,
+      "pushed_at": "2026-04-08T15:27:09Z",
+      "description": "A Dynamic Environment to Evaluate Attacks and Defenses for LLM Agents.",
+      "head_sha": "357c80dea9af34323f709c3505d9e6d224654c7e"
+    },
+    {
+      "repository": "contentauth/c2pa-rs",
+      "url": "https://github.com/contentauth/c2pa-rs",
+      "default_branch": "main",
+      "license_metadata": "NOASSERTION",
+      "scope": "Metadata only; specification access failed; implementation license requires review"
+    },
+    {
+      "repository": "anam-org/javascript-sdk",
+      "url": "https://github.com/anam-org/javascript-sdk",
+      "default_branch": "main",
+      "license_metadata": "UNKNOWN",
+      "head_sha": "b0b5a15dc5ca95d8f3f1751cd7b1b41e2b6a6e58",
+      "pushed_at": "2026-11-11T13:23:04Z",
+      "scope": "metadata and selected README only, not installed"
+    },
+    {
+      "repository": "anam-org/anam-cookbook",
+      "url": "https://github.com/anam-org/anam-cookbook",
+      "default_branch": "main",
+      "license_metadata": "UNKNOWN",
+      "head_sha": "a463922e6d153f11f5cf6389bdde5a921587ce3d",
+      "pushed_at": "2026-11-11T13:07:35Z",
+      "scope": "metadata and selected README only, not installed"
+    }
+  ]
+}

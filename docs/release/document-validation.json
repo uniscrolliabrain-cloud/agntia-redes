@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-11-11",
+  "scope": "Documentation structure, JSON syntax, local links, unique IDs/dependencies DAG, planned-source IDs and docs-only file extensions",
+  "status": "PASS",
+  "campaigns": 42,
+  "tasks": 294,
+  "planned_gate_scenarios": 84,
+  "implementation_tests_executed": 0,
+  "runtime_implemented": false,
+  "provider_api_tests_executed": 0,
+  "papers_selected": 5,
+  "source_records": 29,
+  "research_repo_records": 15,
+  "markdown_words": 49154,
+  "campaign_manifest_sha256": "97b0c4af27e24f3c55807a294f735f59323fca5ccfcd7850c0a356d1fb205ae7",
+  "external_links_live_check": "Selected research links accessed; not exhaustive revalidation of every link",
+  "client_modes": [
+    "agente_integrated",
+    "external_standalone"
+  ],
+  "presence": "Anam planned, not connected",
+  "duplicate_services_allowed": true,
+  "files_verified": 69
+}
