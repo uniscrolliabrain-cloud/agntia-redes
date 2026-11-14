@@ -1,0 +1,3 @@
+# Baseline — Agntia Redes
+
+Lectura de main 2026-11-14: 77 entradas en árbol, exclusivamente documentación, contratos, investigación y manifiestos. README declara que no hay runtime, conectores, cuentas conectadas ni publicaciones reales. 42 campañas/294 tareas/84 gates documentales, no ejecutados. SHA padre referenciado histórico `54b8d5407a8576459448c4d059a877297d18ca7a`; cotejar HEAD al ejecutar. Congelar `git rev-parse HEAD`, `git status --porcelain`, `git ls-files`, dependencias y licencias. Las rutas de código de este programa son propuestas y deben contrastarse con el checkout real. No tocar padre.
