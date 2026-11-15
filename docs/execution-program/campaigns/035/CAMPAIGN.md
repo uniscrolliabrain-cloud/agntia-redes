@@ -1,6 +1,6 @@
 # RDS-C35 · Portal SaaS, dashboard y área de proyectos
 
-**DESIGN_ONLY · NOT_STARTED · 35/42.** Fuente [docs/campaigns/35-portal-saas-dashboard-y-area-de-proyectos.md](../../campaigns/35-portal-saas-dashboard-y-area-de-proyectos.md).
+**DESIGN_ONLY · NOT_STARTED · 35/42.** Fuente [docs/campaigns/35-portal-saas-dashboard-y-area-de-proyectos.md](../../../campaigns/35-portal-saas-dashboard-y-area-de-proyectos.md).
 
 ## Resultado y límites
 Ofrecer UX profesional propia e integrable para cliente y equipo especialista.

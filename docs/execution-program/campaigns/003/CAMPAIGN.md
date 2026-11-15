@@ -1,6 +1,6 @@
 # RDS-C03 · Identidad, tenancy y capacidades del servicio
 
-**DESIGN_ONLY · NOT_STARTED · 3/42.** Fuente [docs/campaigns/03-identidad-tenancy-y-capacidades-del-servicio.md](../../campaigns/03-identidad-tenancy-y-capacidades-del-servicio.md).
+**DESIGN_ONLY · NOT_STARTED · 3/42.** Fuente [docs/campaigns/03-identidad-tenancy-y-capacidades-del-servicio.md](../../../campaigns/03-identidad-tenancy-y-capacidades-del-servicio.md).
 
 ## Resultado y límites
 Denegar permisos por defecto para humanos, especialistas IA, clientes y partners.

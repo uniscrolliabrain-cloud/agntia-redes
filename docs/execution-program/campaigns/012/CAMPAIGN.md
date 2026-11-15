@@ -1,6 +1,6 @@
 # RDS-C12 · Meta: Instagram, Facebook y Threads por capacidad
 
-**DESIGN_ONLY · NOT_STARTED · 12/42.** Fuente [docs/campaigns/12-meta-instagram-facebook-y-threads-por-capacidad.md](../../campaigns/12-meta-instagram-facebook-y-threads-por-capacidad.md).
+**DESIGN_ONLY · NOT_STARTED · 12/42.** Fuente [docs/campaigns/12-meta-instagram-facebook-y-threads-por-capacidad.md](../../../campaigns/12-meta-instagram-facebook-y-threads-por-capacidad.md).
 
 ## Resultado y límites
 Evitar mezclar login paths, tipos de cuenta, scopes y límites de productos distintos.

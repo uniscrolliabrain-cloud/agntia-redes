@@ -1,6 +1,6 @@
 # RDS-C10 · Adaptador Mastodon de referencia
 
-**DESIGN_ONLY · NOT_STARTED · 10/42.** Fuente [docs/campaigns/10-adaptador-mastodon-de-referencia.md](../../campaigns/10-adaptador-mastodon-de-referencia.md).
+**DESIGN_ONLY · NOT_STARTED · 10/42.** Fuente [docs/campaigns/10-adaptador-mastodon-de-referencia.md](../../../campaigns/10-adaptador-mastodon-de-referencia.md).
 
 ## Resultado y límites
 Demostrar publicación controlada en instancia de laboratorio con semántica real.

@@ -1,6 +1,6 @@
 # RDS-C28 · Escucha y contexto de mercado autorizado
 
-**DESIGN_ONLY · NOT_STARTED · 28/42.** Fuente [docs/campaigns/28-escucha-y-contexto-de-mercado-autorizado.md](../../campaigns/28-escucha-y-contexto-de-mercado-autorizado.md).
+**DESIGN_ONLY · NOT_STARTED · 28/42.** Fuente [docs/campaigns/28-escucha-y-contexto-de-mercado-autorizado.md](../../../campaigns/28-escucha-y-contexto-de-mercado-autorizado.md).
 
 ## Resultado y límites
 Producir señales con cobertura/fuentes sin scraping o vigilancia universal.

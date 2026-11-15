@@ -1,6 +1,6 @@
 # RDS-C41 · Empaquetado, Linux/Windows y operación segura
 
-**DESIGN_ONLY · NOT_STARTED · 41/42.** Fuente [docs/campaigns/41-empaquetado-linux-windows-y-operacion-segura.md](../../campaigns/41-empaquetado-linux-windows-y-operacion-segura.md).
+**DESIGN_ONLY · NOT_STARTED · 41/42.** Fuente [docs/campaigns/41-empaquetado-linux-windows-y-operacion-segura.md](../../../campaigns/41-empaquetado-linux-windows-y-operacion-segura.md).
 
 ## Resultado y límites
 Hacer instalable el SaaS/middleware en un alcance demostrado, no solo editable.

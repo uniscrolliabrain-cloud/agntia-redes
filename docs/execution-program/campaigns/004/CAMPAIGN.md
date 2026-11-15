@@ -1,6 +1,6 @@
 # RDS-C04 · Contratos versionados de dominio y errores
 
-**DESIGN_ONLY · NOT_STARTED · 4/42.** Fuente [docs/campaigns/04-contratos-versionados-de-dominio-y-errores.md](../../campaigns/04-contratos-versionados-de-dominio-y-errores.md).
+**DESIGN_ONLY · NOT_STARTED · 4/42.** Fuente [docs/campaigns/04-contratos-versionados-de-dominio-y-errores.md](../../../campaigns/04-contratos-versionados-de-dominio-y-errores.md).
 
 ## Resultado y límites
 Fijar fronteras tipadas antes de escribir adaptadores o UI.

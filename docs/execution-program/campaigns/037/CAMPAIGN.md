@@ -1,6 +1,6 @@
 # RDS-C37 · Privacidad, seguridad, legal y derechos del servicio
 
-**DESIGN_ONLY · NOT_STARTED · 37/42.** Fuente [docs/campaigns/37-privacidad-seguridad-legal-y-derechos-del-servicio.md](../../campaigns/37-privacidad-seguridad-legal-y-derechos-del-servicio.md).
+**DESIGN_ONLY · NOT_STARTED · 37/42.** Fuente [docs/campaigns/37-privacidad-seguridad-legal-y-derechos-del-servicio.md](../../../campaigns/37-privacidad-seguridad-legal-y-derechos-del-servicio.md).
 
 ## Resultado y límites
 Tratar datos de clientes y conversación AV sin vender certificación automática.

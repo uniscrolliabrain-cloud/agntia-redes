@@ -1,6 +1,6 @@
 # RDS-C33 · Visio Anam como atención del especialista
 
-**DESIGN_ONLY · NOT_STARTED · 33/42.** Fuente [docs/campaigns/33-visio-anam-como-atencion-del-especialista.md](../../campaigns/33-visio-anam-como-atencion-del-especialista.md).
+**DESIGN_ONLY · NOT_STARTED · 33/42.** Fuente [docs/campaigns/33-visio-anam-como-atencion-del-especialista.md](../../../campaigns/33-visio-anam-como-atencion-del-especialista.md).
 
 ## Resultado y límites
 Dar presencia profesional al SaaS sin exponer secretos ni autoridad de aprobación.

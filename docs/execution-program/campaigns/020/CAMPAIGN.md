@@ -1,6 +1,6 @@
 # RDS-C20 · Calendario y SOPs del especialista
 
-**DESIGN_ONLY · NOT_STARTED · 20/42.** Fuente [docs/campaigns/20-calendario-y-sops-del-especialista.md](../../campaigns/20-calendario-y-sops-del-especialista.md).
+**DESIGN_ONLY · NOT_STARTED · 20/42.** Fuente [docs/campaigns/20-calendario-y-sops-del-especialista.md](../../../campaigns/20-calendario-y-sops-del-especialista.md).
 
 ## Resultado y límites
 Coordinar el trabajo de la empresa SaaS y entregas sin duplicar un mismo efecto.

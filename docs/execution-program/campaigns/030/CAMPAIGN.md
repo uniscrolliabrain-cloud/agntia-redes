@@ -1,6 +1,6 @@
 # RDS-C30 · Reportes, atribución e infográficos con evidencia
 
-**DESIGN_ONLY · NOT_STARTED · 30/42.** Fuente [docs/campaigns/30-reportes-atribucion-e-infograficos-con-evidencia.md](../../campaigns/30-reportes-atribucion-e-infograficos-con-evidencia.md).
+**DESIGN_ONLY · NOT_STARTED · 30/42.** Fuente [docs/campaigns/30-reportes-atribucion-e-infograficos-con-evidencia.md](../../../campaigns/30-reportes-atribucion-e-infograficos-con-evidencia.md).
 
 ## Resultado y límites
 Entregar un servicio profesional de análisis sin causalidad o ingresos ficticios.

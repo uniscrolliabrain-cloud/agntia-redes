@@ -1,6 +1,6 @@
 # RDS-C13 · LinkedIn y ciclo de versiones
 
-**DESIGN_ONLY · NOT_STARTED · 13/42.** Fuente [docs/campaigns/13-linkedin-y-ciclo-de-versiones.md](../../campaigns/13-linkedin-y-ciclo-de-versiones.md).
+**DESIGN_ONLY · NOT_STARTED · 13/42.** Fuente [docs/campaigns/13-linkedin-y-ciclo-de-versiones.md](../../../campaigns/13-linkedin-y-ciclo-de-versiones.md).
 
 ## Resultado y límites
 Publicar orgánico solo con contrato de acceso/versionado vigente y permisos comprobados.

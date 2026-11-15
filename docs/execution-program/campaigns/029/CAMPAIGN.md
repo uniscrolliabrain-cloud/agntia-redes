@@ -1,6 +1,6 @@
 # RDS-C29 · Modelo de métricas y snapshots semánticos
 
-**DESIGN_ONLY · NOT_STARTED · 29/42.** Fuente [docs/campaigns/29-modelo-de-metricas-y-snapshots-semanticos.md](../../campaigns/29-modelo-de-metricas-y-snapshots-semanticos.md).
+**DESIGN_ONLY · NOT_STARTED · 29/42.** Fuente [docs/campaigns/29-modelo-de-metricas-y-snapshots-semanticos.md](../../../campaigns/29-modelo-de-metricas-y-snapshots-semanticos.md).
 
 ## Resultado y límites
 Evitar ceros inventados y comparaciones entre magnitudes incompatibles.

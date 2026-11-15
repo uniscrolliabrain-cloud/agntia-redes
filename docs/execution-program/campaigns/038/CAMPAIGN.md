@@ -1,6 +1,6 @@
 # RDS-C38 · Concurrencia, fallos distribuidos y propiedades
 
-**DESIGN_ONLY · NOT_STARTED · 38/42.** Fuente [docs/campaigns/38-concurrencia-fallos-distribuidos-y-propiedades.md](../../campaigns/38-concurrencia-fallos-distribuidos-y-propiedades.md).
+**DESIGN_ONLY · NOT_STARTED · 38/42.** Fuente [docs/campaigns/38-concurrencia-fallos-distribuidos-y-propiedades.md](../../../campaigns/38-concurrencia-fallos-distribuidos-y-propiedades.md).
 
 ## Resultado y límites
 Demostrar que las fronteras sobreviven más allá del camino feliz.

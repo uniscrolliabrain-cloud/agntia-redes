@@ -1,6 +1,6 @@
 # RDS-C27 · Moderación contextual revisable
 
-**DESIGN_ONLY · NOT_STARTED · 27/42.** Fuente [docs/campaigns/27-moderacion-contextual-revisable.md](../../campaigns/27-moderacion-contextual-revisable.md).
+**DESIGN_ONLY · NOT_STARTED · 27/42.** Fuente [docs/campaigns/27-moderacion-contextual-revisable.md](../../../campaigns/27-moderacion-contextual-revisable.md).
 
 ## Resultado y límites
 Usar reglas específicas de comunidad, lengua y riesgo con abstención.

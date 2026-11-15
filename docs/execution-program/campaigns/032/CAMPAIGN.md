@@ -1,6 +1,6 @@
 # RDS-C32 · Visión multimodal y QA de piezas
 
-**DESIGN_ONLY · NOT_STARTED · 32/42.** Fuente [docs/campaigns/32-vision-multimodal-y-qa-de-piezas.md](../../campaigns/32-vision-multimodal-y-qa-de-piezas.md).
+**DESIGN_ONLY · NOT_STARTED · 32/42.** Fuente [docs/campaigns/32-vision-multimodal-y-qa-de-piezas.md](../../../campaigns/32-vision-multimodal-y-qa-de-piezas.md).
 
 ## Resultado y límites
 Revisar activos y coherencia de contenido sin convertir visión en oráculo legal.

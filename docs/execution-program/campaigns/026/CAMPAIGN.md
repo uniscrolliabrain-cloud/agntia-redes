@@ -1,6 +1,6 @@
 # RDS-C26 · Atención de comunidad y servicio al cliente
 
-**DESIGN_ONLY · NOT_STARTED · 26/42.** Fuente [docs/campaigns/26-atencion-de-comunidad-y-servicio-al-cliente.md](../../campaigns/26-atencion-de-comunidad-y-servicio-al-cliente.md).
+**DESIGN_ONLY · NOT_STARTED · 26/42.** Fuente [docs/campaigns/26-atencion-de-comunidad-y-servicio-al-cliente.md](../../../campaigns/26-atencion-de-comunidad-y-servicio-al-cliente.md).
 
 ## Resultado y límites
 Gestionar casos propios o derivados con aceptación y contexto apropiados.

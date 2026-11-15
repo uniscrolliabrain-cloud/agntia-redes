@@ -1,6 +1,6 @@
 # RDS-C17 · Assets, derechos y Content Passport
 
-**DESIGN_ONLY · NOT_STARTED · 17/42.** Fuente [docs/campaigns/17-assets-derechos-y-content-passport.md](../../campaigns/17-assets-derechos-y-content-passport.md).
+**DESIGN_ONLY · NOT_STARTED · 17/42.** Fuente [docs/campaigns/17-assets-derechos-y-content-passport.md](../../../campaigns/17-assets-derechos-y-content-passport.md).
 
 ## Resultado y límites
 Vincular medio y permiso de uso a la revisión que llegará al proveedor.

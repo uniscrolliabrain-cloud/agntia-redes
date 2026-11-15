@@ -1,6 +1,6 @@
 # RDS-C09 · Adaptador Postiz o backend social elegido
 
-**DESIGN_ONLY · NOT_STARTED · 9/42.** Fuente [docs/campaigns/09-adaptador-postiz-o-backend-social-elegido.md](../../campaigns/09-adaptador-postiz-o-backend-social-elegido.md).
+**DESIGN_ONLY · NOT_STARTED · 9/42.** Fuente [docs/campaigns/09-adaptador-postiz-o-backend-social-elegido.md](../../../campaigns/09-adaptador-postiz-o-backend-social-elegido.md).
 
 ## Resultado y límites
 Integrar un backend autohospedado como proveedor invisible y acotado.

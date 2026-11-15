@@ -1,6 +1,6 @@
 # RDS-C07 · Conexión OAuth y ciclo de credenciales
 
-**DESIGN_ONLY · NOT_STARTED · 7/42.** Fuente [docs/campaigns/07-conexion-oauth-y-ciclo-de-credenciales.md](../../campaigns/07-conexion-oauth-y-ciclo-de-credenciales.md).
+**DESIGN_ONLY · NOT_STARTED · 7/42.** Fuente [docs/campaigns/07-conexion-oauth-y-ciclo-de-credenciales.md](../../../campaigns/07-conexion-oauth-y-ciclo-de-credenciales.md).
 
 ## Resultado y límites
 Conectar cuentas con prueba de pertenencia y revocación sin exponer secretos.

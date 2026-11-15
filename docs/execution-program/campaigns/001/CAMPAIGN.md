@@ -1,6 +1,6 @@
 # RDS-C01 · Baseline, alcance y cotejo del padre
 
-**DESIGN_ONLY · NOT_STARTED · 1/42.** Fuente [docs/campaigns/01-baseline-alcance-y-cotejo-del-padre.md](../../campaigns/01-baseline-alcance-y-cotejo-del-padre.md).
+**DESIGN_ONLY · NOT_STARTED · 1/42.** Fuente [docs/campaigns/01-baseline-alcance-y-cotejo-del-padre.md](../../../campaigns/01-baseline-alcance-y-cotejo-del-padre.md).
 
 ## Resultado y límites
 Congelar lo observado antes de introducir implementación y diferencias de contrato.

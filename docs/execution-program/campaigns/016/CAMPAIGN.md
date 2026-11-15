@@ -1,6 +1,6 @@
 # RDS-C16 · Proveedores opcionales: X, Pinterest y Buffer
 
-**DESIGN_ONLY · NOT_STARTED · 16/42.** Fuente [docs/campaigns/16-proveedores-opcionales-x-pinterest-y-buffer.md](../../campaigns/16-proveedores-opcionales-x-pinterest-y-buffer.md).
+**DESIGN_ONLY · NOT_STARTED · 16/42.** Fuente [docs/campaigns/16-proveedores-opcionales-x-pinterest-y-buffer.md](../../../campaigns/16-proveedores-opcionales-x-pinterest-y-buffer.md).
 
 ## Resultado y límites
 Ampliar solo capacidades demostradas y con condiciones comerciales verificadas.

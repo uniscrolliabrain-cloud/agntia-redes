@@ -1,6 +1,6 @@
 # RDS-C18 · Work orders, briefs y variantes editoriales
 
-**DESIGN_ONLY · NOT_STARTED · 18/42.** Fuente [docs/campaigns/18-work-orders-briefs-y-variantes-editoriales.md](../../campaigns/18-work-orders-briefs-y-variantes-editoriales.md).
+**DESIGN_ONLY · NOT_STARTED · 18/42.** Fuente [docs/campaigns/18-work-orders-briefs-y-variantes-editoriales.md](../../../campaigns/18-work-orders-briefs-y-variantes-editoriales.md).
 
 ## Resultado y límites
 Convertir conversación en entregable trazable sin ejecutar lo que el modelo redacta.

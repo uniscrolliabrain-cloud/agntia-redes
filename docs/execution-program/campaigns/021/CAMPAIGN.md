@@ -1,6 +1,6 @@
 # RDS-C21 · Outbox, workers, leases e inbox durable
 
-**DESIGN_ONLY · NOT_STARTED · 21/42.** Fuente [docs/campaigns/21-outbox-workers-leases-e-inbox-durable.md](../../campaigns/21-outbox-workers-leases-e-inbox-durable.md).
+**DESIGN_ONLY · NOT_STARTED · 21/42.** Fuente [docs/campaigns/21-outbox-workers-leases-e-inbox-durable.md](../../../campaigns/21-outbox-workers-leases-e-inbox-durable.md).
 
 ## Resultado y límites
 Ejecutar intents de forma recuperable sin convertir HTTP en exactly-once.

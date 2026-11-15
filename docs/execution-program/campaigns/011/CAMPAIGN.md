@@ -1,6 +1,6 @@
 # RDS-C11 · Adaptador Bluesky y referencias de registro
 
-**DESIGN_ONLY · NOT_STARTED · 11/42.** Fuente [docs/campaigns/11-adaptador-bluesky-y-referencias-de-registro.md](../../campaigns/11-adaptador-bluesky-y-referencias-de-registro.md).
+**DESIGN_ONLY · NOT_STARTED · 11/42.** Fuente [docs/campaigns/11-adaptador-bluesky-y-referencias-de-registro.md](../../../campaigns/11-adaptador-bluesky-y-referencias-de-registro.md).
 
 ## Resultado y límites
 Fijar protocolo/cuenta y detectar conflictos sin recetas de auth obsoletas.

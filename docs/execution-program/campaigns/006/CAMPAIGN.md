@@ -1,6 +1,6 @@
 # RDS-C06 · Licencias, catálogo comercial y discovery de capacidades
 
-**DESIGN_ONLY · NOT_STARTED · 6/42.** Fuente [docs/campaigns/06-licencias-catalogo-comercial-y-discovery-de-capacidades.md](../../campaigns/06-licencias-catalogo-comercial-y-discovery-de-capacidades.md).
+**DESIGN_ONLY · NOT_STARTED · 6/42.** Fuente [docs/campaigns/06-licencias-catalogo-comercial-y-discovery-de-capacidades.md](../../../campaigns/06-licencias-catalogo-comercial-y-discovery-de-capacidades.md).
 
 ## Resultado y límites
 No habilitar una integración por existir README, SDK o un plan comercial atractivo.

@@ -1,6 +1,6 @@
 # RDS-C42 · Aceptación de servicio, informe founder y backlog90días
 
-**DESIGN_ONLY · NOT_STARTED · 42/42.** Fuente [docs/campaigns/42-aceptacion-de-servicio-informe-founder-y-backlog90dias.md](../../campaigns/42-aceptacion-de-servicio-informe-founder-y-backlog90dias.md).
+**DESIGN_ONLY · NOT_STARTED · 42/42.** Fuente [docs/campaigns/42-aceptacion-de-servicio-informe-founder-y-backlog90dias.md](../../../campaigns/42-aceptacion-de-servicio-informe-founder-y-backlog90dias.md).
 
 ## Resultado y límites
 Cerrar con capacidades, límites y aceptación reales, sin convertir42 campañas en paridad universal.

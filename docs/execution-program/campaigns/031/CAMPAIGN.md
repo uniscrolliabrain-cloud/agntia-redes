@@ -1,6 +1,6 @@
 # RDS-C31 · Equipo agéntico especialista y modelos económicos
 
-**DESIGN_ONLY · NOT_STARTED · 31/42.** Fuente [docs/campaigns/31-equipo-agentico-especialista-y-modelos-economicos.md](../../campaigns/31-equipo-agentico-especialista-y-modelos-economicos.md).
+**DESIGN_ONLY · NOT_STARTED · 31/42.** Fuente [docs/campaigns/31-equipo-agentico-especialista-y-modelos-economicos.md](../../../campaigns/31-equipo-agentico-especialista-y-modelos-economicos.md).
 
 ## Resultado y límites
 Organizar trabajo propio de la empresa SaaS con tools y memoria de confianza limitada.

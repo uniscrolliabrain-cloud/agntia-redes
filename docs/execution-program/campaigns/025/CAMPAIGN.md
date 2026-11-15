@@ -1,6 +1,6 @@
 # RDS-C25 · Ingestión de inbox y webhooks autorizados
 
-**DESIGN_ONLY · NOT_STARTED · 25/42.** Fuente [docs/campaigns/25-ingestion-de-inbox-y-webhooks-autorizados.md](../../campaigns/25-ingestion-de-inbox-y-webhooks-autorizados.md).
+**DESIGN_ONLY · NOT_STARTED · 25/42.** Fuente [docs/campaigns/25-ingestion-de-inbox-y-webhooks-autorizados.md](../../../campaigns/25-ingestion-de-inbox-y-webhooks-autorizados.md).
 
 ## Resultado y límites
 Recibir hechos sociales con firma, minimización y protección contra replay.

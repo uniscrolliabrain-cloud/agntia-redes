@@ -1,6 +1,6 @@
 # RDS-C24 · Reconciliación, edición, retirada y kill switch
 
-**DESIGN_ONLY · NOT_STARTED · 24/42.** Fuente [docs/campaigns/24-reconciliacion-edicion-retirada-y-kill-switch.md](../../campaigns/24-reconciliacion-edicion-retirada-y-kill-switch.md).
+**DESIGN_ONLY · NOT_STARTED · 24/42.** Fuente [docs/campaigns/24-reconciliacion-edicion-retirada-y-kill-switch.md](../../../campaigns/24-reconciliacion-edicion-retirada-y-kill-switch.md).
 
 ## Resultado y límites
 Resolver incertidumbre sin borrar historia ni inventar rollback remoto.

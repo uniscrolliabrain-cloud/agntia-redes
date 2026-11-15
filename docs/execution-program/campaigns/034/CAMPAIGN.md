@@ -1,6 +1,6 @@
 # RDS-C34 · SDK servidor, MCP y API Hono de negocio
 
-**DESIGN_ONLY · NOT_STARTED · 34/42.** Fuente [docs/campaigns/34-sdk-servidor-mcp-y-api-hono-de-negocio.md](../../campaigns/34-sdk-servidor-mcp-y-api-hono-de-negocio.md).
+**DESIGN_ONLY · NOT_STARTED · 34/42.** Fuente [docs/campaigns/34-sdk-servidor-mcp-y-api-hono-de-negocio.md](../../../campaigns/34-sdk-servidor-mcp-y-api-hono-de-negocio.md).
 
 ## Resultado y límites
 Exponer al host y a clientes externos capacidades nominadas con validación runtime.

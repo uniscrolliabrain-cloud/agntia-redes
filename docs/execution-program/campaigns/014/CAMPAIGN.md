@@ -1,6 +1,6 @@
 # RDS-C14 · YouTube y procesamiento de vídeo
 
-**DESIGN_ONLY · NOT_STARTED · 14/42.** Fuente [docs/campaigns/14-youtube-y-procesamiento-de-video.md](../../campaigns/14-youtube-y-procesamiento-de-video.md).
+**DESIGN_ONLY · NOT_STARTED · 14/42.** Fuente [docs/campaigns/14-youtube-y-procesamiento-de-video.md](../../../campaigns/14-youtube-y-procesamiento-de-video.md).
 
 ## Resultado y límites
 Separar upload, processing, visibilidad y confirmación con cuotas vigentes.

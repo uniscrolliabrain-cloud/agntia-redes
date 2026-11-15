@@ -1,6 +1,6 @@
 # RDS-C15 · TikTok y consentimiento específico de publicación
 
-**DESIGN_ONLY · NOT_STARTED · 15/42.** Fuente [docs/campaigns/15-tiktok-y-consentimiento-especifico-de-publicacion.md](../../campaigns/15-tiktok-y-consentimiento-especifico-de-publicacion.md).
+**DESIGN_ONLY · NOT_STARTED · 15/42.** Fuente [docs/campaigns/15-tiktok-y-consentimiento-especifico-de-publicacion.md](../../../campaigns/15-tiktok-y-consentimiento-especifico-de-publicacion.md).
 
 ## Resultado y límites
 Respetar creator settings, audit del cliente y elección real del usuario.

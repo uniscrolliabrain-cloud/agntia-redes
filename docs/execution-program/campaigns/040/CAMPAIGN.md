@@ -1,6 +1,6 @@
 # RDS-C40 · E2E: cliente integrado y cliente externo con especialista en visio
 
-**DESIGN_ONLY · NOT_STARTED · 40/42.** Fuente [docs/campaigns/40-e2e-cliente-integrado-y-cliente-externo-con-especialista-en-visio.md](../../campaigns/40-e2e-cliente-integrado-y-cliente-externo-con-especialista-en-visio.md).
+**DESIGN_ONLY · NOT_STARTED · 40/42.** Fuente [docs/campaigns/40-e2e-cliente-integrado-y-cliente-externo-con-especialista-en-visio.md](../../../campaigns/40-e2e-cliente-integrado-y-cliente-externo-con-especialista-en-visio.md).
 
 ## Resultado y límites
 Demostrar los dos modelos de servicio y distinguir fixture de proveedor real.

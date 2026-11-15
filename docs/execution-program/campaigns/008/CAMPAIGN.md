@@ -1,6 +1,6 @@
 # RDS-C08 · Transporte robusto y puertos de proveedor
 
-**DESIGN_ONLY · NOT_STARTED · 8/42.** Fuente [docs/campaigns/08-transporte-robusto-y-puertos-de-proveedor.md](../../campaigns/08-transporte-robusto-y-puertos-de-proveedor.md).
+**DESIGN_ONLY · NOT_STARTED · 8/42.** Fuente [docs/campaigns/08-transporte-robusto-y-puertos-de-proveedor.md](../../../campaigns/08-transporte-robusto-y-puertos-de-proveedor.md).
 
 ## Resultado y límites
 Hacer IO limitado, tipado y observable sin proxy libre ni retry peligroso.

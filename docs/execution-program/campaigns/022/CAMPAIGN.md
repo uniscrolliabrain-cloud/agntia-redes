@@ -1,6 +1,6 @@
 # RDS-C22 · Presupuesto, entitlements, minutos y facturación del servicio
 
-**DESIGN_ONLY · NOT_STARTED · 22/42.** Fuente [docs/campaigns/22-presupuesto-entitlements-minutos-y-facturacion-del-servicio.md](../../campaigns/22-presupuesto-entitlements-minutos-y-facturacion-del-servicio.md).
+**DESIGN_ONLY · NOT_STARTED · 22/42.** Fuente [docs/campaigns/22-presupuesto-entitlements-minutos-y-facturacion-del-servicio.md](../../../campaigns/22-presupuesto-entitlements-minutos-y-facturacion-del-servicio.md).
 
 ## Resultado y límites
 Separar coste upstream, límites contratados y precio del SaaS.

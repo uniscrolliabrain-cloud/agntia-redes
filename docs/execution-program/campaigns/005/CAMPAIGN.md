@@ -1,6 +1,6 @@
 # RDS-C05 · Persistencia, auditoría y migraciones
 
-**DESIGN_ONLY · NOT_STARTED · 5/42.** Fuente [docs/campaigns/05-persistencia-auditoria-y-migraciones.md](../../campaigns/05-persistencia-auditoria-y-migraciones.md).
+**DESIGN_ONLY · NOT_STARTED · 5/42.** Fuente [docs/campaigns/05-persistencia-auditoria-y-migraciones.md](../../../campaigns/05-persistencia-auditoria-y-migraciones.md).
 
 ## Resultado y límites
 Guardar hechos y estado por cliente con transacciones locales verificables.

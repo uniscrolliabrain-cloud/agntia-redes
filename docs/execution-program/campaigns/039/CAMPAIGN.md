@@ -1,6 +1,6 @@
 # RDS-C39 · Observabilidad, rendimiento y economía del servicio
 
-**DESIGN_ONLY · NOT_STARTED · 39/42.** Fuente [docs/campaigns/39-observabilidad-rendimiento-y-economia-del-servicio.md](../../campaigns/39-observabilidad-rendimiento-y-economia-del-servicio.md).
+**DESIGN_ONLY · NOT_STARTED · 39/42.** Fuente [docs/campaigns/39-observabilidad-rendimiento-y-economia-del-servicio.md](../../../campaigns/39-observabilidad-rendimiento-y-economia-del-servicio.md).
 
 ## Resultado y límites
 Medir capacidad real y compromisos sin inventar SLA o margen comercial.

@@ -1,6 +1,6 @@
 # RDS-C23 · Comandos de publicación y ejecución por canal
 
-**DESIGN_ONLY · NOT_STARTED · 23/42.** Fuente [docs/campaigns/23-comandos-de-publicacion-y-ejecucion-por-canal.md](../../campaigns/23-comandos-de-publicacion-y-ejecucion-por-canal.md).
+**DESIGN_ONLY · NOT_STARTED · 23/42.** Fuente [docs/campaigns/23-comandos-de-publicacion-y-ejecucion-por-canal.md](../../../campaigns/23-comandos-de-publicacion-y-ejecucion-por-canal.md).
 
 ## Resultado y límites
 Tramitar solo el payload aprobado y registrar el alcance real de cada resultado.

@@ -1,6 +1,6 @@
 # RDS-C02 · Arquitectura de empresa SaaS y acuerdos de servicio
 
-**DESIGN_ONLY · NOT_STARTED · 2/42.** Fuente [docs/campaigns/02-arquitectura-de-empresa-saas-y-acuerdos-de-servicio.md](../../campaigns/02-arquitectura-de-empresa-saas-y-acuerdos-de-servicio.md).
+**DESIGN_ONLY · NOT_STARTED · 2/42.** Fuente [docs/campaigns/02-arquitectura-de-empresa-saas-y-acuerdos-de-servicio.md](../../../campaigns/02-arquitectura-de-empresa-saas-y-acuerdos-de-servicio.md).
 
 ## Resultado y límites
 Hacer que el servicio funcione como especialista independiente, además de integrado.

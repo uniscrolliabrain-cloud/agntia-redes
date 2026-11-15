@@ -1,6 +1,6 @@
 # RDS-C36 · Integración preferente con agente y cooperación entre servicios
 
-**DESIGN_ONLY · NOT_STARTED · 36/42.** Fuente [docs/campaigns/36-integracion-preferente-con-agente-y-cooperacion-entre-servicios.md](../../campaigns/36-integracion-preferente-con-agente-y-cooperacion-entre-servicios.md).
+**DESIGN_ONLY · NOT_STARTED · 36/42.** Fuente [docs/campaigns/36-integracion-preferente-con-agente-y-cooperacion-entre-servicios.md](../../../campaigns/36-integracion-preferente-con-agente-y-cooperacion-entre-servicios.md).
 
 ## Resultado y límites
 Conectar la empresa SaaS manteniendo independencia y solapamiento funcional autorizado.

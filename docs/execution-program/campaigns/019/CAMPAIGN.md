@@ -1,6 +1,6 @@
 # RDS-C19 · Máquina de estados y aprobación vinculada
 
-**DESIGN_ONLY · NOT_STARTED · 19/42.** Fuente [docs/campaigns/19-maquina-de-estados-y-aprobacion-vinculada.md](../../campaigns/19-maquina-de-estados-y-aprobacion-vinculada.md).
+**DESIGN_ONLY · NOT_STARTED · 19/42.** Fuente [docs/campaigns/19-maquina-de-estados-y-aprobacion-vinculada.md](../../../campaigns/19-maquina-de-estados-y-aprobacion-vinculada.md).
 
 ## Resultado y límites
 Hacer que ningún efecto se ejecute con consentimiento antiguo o ambiguo.
