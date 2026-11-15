@@ -98,5 +98,19 @@ Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod D
 
 **Rollback:** Desactivar la capacidad nueva, detener admisión de efectos dependientes y conservar revisiones/auditoría/receipts/unknown y datos de usuario. No borrar recursos remotos o downgrade destructivo; conciliar antes de reanudar.
 
-## Reporte de ejecución de Freebuff (rellenar al terminar esta fase)
-**Estado:** PENDING. **SHA:** PENDING. **Archivos y diff:** PENDING. **Tests/comandos/fixtures:** PENDING. **Gates:** PENDING. **Incoherencias y decisiones:** PENDING. **Deuda y riesgos:** PENDING. **Aprendizajes para siguientes campañas:** PENDING. Reportar y continuar autónomamente; Codex audita solo al terminar las 42 fases.
+## Reporte de ejecución de Freebuff
+
+**Estado:** IMPLEMENTED_VERIFIED (reconciliación) sin edición ni retirada remota.
+**SHA:** d2a0447f6a4aaa729a24fd49d1c3808796696a87
+**Archivos y diff:** src/publication/reconcile.ts, tests/integration/reconcile.test.ts
+**Tests/comandos/fixtures:** npx vitest run tests/integration/reconcile.test.ts -> 4/4 PASS. Fixtures sintéticas propias; sin cuentas ni APIs reales.
+**Gates:**
+- El proveedor encuentra el efecto -> PUBLISHED_CONFIRMED (PASS).
+- Búsqueda no autoritativa sin resultado -> RECONCILIATION_REQUIRED, nunca no enviado (PASS).
+- Búsqueda autoritativa sin resultado -> FAILED_BEFORE_SEND (PASS).
+- No se reconcilia dos veces el mismo intento (PASS).
+**Incoherencias y decisiones:** Solo una búsqueda autoritativa permite declarar no enviado; lo demás queda en revisión humana.
+**Deuda y riesgos:** El kill switch existe como flag sin endpoint ni conciliación de tránsito; edición y retirada son efectos nuevos sin implementar.
+**Aprendizajes para siguientes campañas:** La ambigüedad es un estado de primera clase, no un error que se reintenta.
+
+Evidencia extendida: docs/evidence/c024/README.md

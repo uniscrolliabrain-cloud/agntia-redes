@@ -98,5 +98,18 @@ Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod D
 
 **Rollback:** Desactivar la capacidad nueva, detener admisión de efectos dependientes y conservar revisiones/auditoría/receipts/unknown y datos de usuario. No borrar recursos remotos o downgrade destructivo; conciliar antes de reanudar.
 
-## Reporte de ejecución de Freebuff (rellenar al terminar esta fase)
-**Estado:** PENDING. **SHA:** PENDING. **Archivos y diff:** PENDING. **Tests/comandos/fixtures:** PENDING. **Gates:** PENDING. **Incoherencias y decisiones:** PENDING. **Deuda y riesgos:** PENDING. **Aprendizajes para siguientes campañas:** PENDING. Reportar y continuar autónomamente; Codex audita solo al terminar las 42 fases.
+## Reporte de ejecución de Freebuff
+
+**Estado:** IMPLEMENTED_VERIFIED (outbox SQL con leases/fencing); sin worker de producción.
+**SHA:** d2a0447f6a4aaa729a24fd49d1c3808796696a87
+**Archivos y diff:** src/events/outbox.ts, src/jobs/lease.ts, tests/integration/replay.test.ts, tests/domain/lease.test.ts
+**Tests/comandos/fixtures:** npx vitest run tests/integration/replay.test.ts -> 3/3 PASS; npx vitest run tests/domain/lease.test.ts -> 3/3 PASS. Fixtures sintéticas propias; sin cuentas ni APIs reales.
+**Gates:**
+- Misma idempotency key no duplica evento y el replay devuelve el mismo eventId (PASS).
+- Un lease vigente impide que otro worker reclame el evento (PASS).
+- ACK con fence antiguo -> stale_fence y el trabajo sigue pendiente (PASS).
+**Incoherencias y decisiones:** El evento se persiste antes del IO y el ACK exige el fence vigente. Un lease vencido no se interpreta como prueba de que el proveedor no recibió la llamada.
+**Deuda y riesgos:** Sin inbox durable de webhooks, sin dead-letter visible ni métricas de lag; el worker real llega con C23/C38.
+**Aprendizajes para siguientes campañas:** El fence protege el ACK, no revierte el efecto remoto: por eso la reconciliación es obligatoria.
+
+Evidencia extendida: docs/evidence/c021/README.md

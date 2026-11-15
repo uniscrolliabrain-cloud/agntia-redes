@@ -98,5 +98,18 @@ Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod D
 
 **Rollback:** Desactivar la capacidad nueva, detener admisión de efectos dependientes y conservar revisiones/auditoría/receipts/unknown y datos de usuario. No borrar recursos remotos o downgrade destructivo; conciliar antes de reanudar.
 
-## Reporte de ejecución de Freebuff (rellenar al terminar esta fase)
-**Estado:** PENDING. **SHA:** PENDING. **Archivos y diff:** PENDING. **Tests/comandos/fixtures:** PENDING. **Gates:** PENDING. **Incoherencias y decisiones:** PENDING. **Deuda y riesgos:** PENDING. **Aprendizajes para siguientes campañas:** PENDING. Reportar y continuar autónomamente; Codex audita solo al terminar las 42 fases.
+## Reporte de ejecución de Freebuff
+
+**Estado:** IMPLEMENTED_VERIFIED contra proveedor falso; adaptadores reales BLOQUEADOS.
+**SHA:** d2a0447f6a4aaa729a24fd49d1c3808796696a87
+**Archivos y diff:** src/providers/port.ts, src/providers/transport.ts, src/adapters/fake/provider.ts, tests/contracts/transport.test.ts
+**Tests/comandos/fixtures:** npx vitest run tests/contracts/transport.test.ts -> 5/5 PASS. Fixtures sintéticas propias; sin cuentas ni APIs reales.
+**Gates:**
+- Reintentos solo en lecturas; un POST con 503 no se reintenta (PASS).
+- Hosts privados, metadata, http plano y fuera de allowlist bloqueados (PASS).
+- Respuesta gigante o no-JSON rechazada sin propagar el cuerpo (PASS).
+**Incoherencias y decisiones:** redirect: error, timeout por AbortController, tamaño máximo y backoff con Retry-After solo para lecturas idempotentes.
+**Deuda y riesgos:** SSRF por DNS rebinding solo mitigado por allowlist; sin circuit breaker ni cuotas por proveedor.
+**Aprendizajes para siguientes campañas:** El puerto tipado permite probar toda la cadena de efecto sin tocar APIs reales.
+
+Evidencia extendida: docs/evidence/c008/README.md

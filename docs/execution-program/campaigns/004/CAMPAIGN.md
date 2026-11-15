@@ -98,5 +98,18 @@ Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod D
 
 **Rollback:** Desactivar la capacidad nueva, detener admisión de efectos dependientes y conservar revisiones/auditoría/receipts/unknown y datos de usuario. No borrar recursos remotos o downgrade destructivo; conciliar antes de reanudar.
 
-## Reporte de ejecución de Freebuff (rellenar al terminar esta fase)
-**Estado:** PENDING. **SHA:** PENDING. **Archivos y diff:** PENDING. **Tests/comandos/fixtures:** PENDING. **Gates:** PENDING. **Incoherencias y decisiones:** PENDING. **Deuda y riesgos:** PENDING. **Aprendizajes para siguientes campañas:** PENDING. Reportar y continuar autónomamente; Codex audita solo al terminar las 42 fases.
+## Reporte de ejecución de Freebuff
+
+**Estado:** IMPLEMENTED_PARTIAL: contratos y errores verificados; falta JSON Schema exportado y envelope en rutas de escritura.
+**SHA:** d2a0447f6a4aaa729a24fd49d1c3808796696a87
+**Archivos y diff:** src/contracts/index.ts, tests/contracts/wire.test.ts
+**Tests/comandos/fixtures:** npx vitest run tests/contracts/wire.test.ts -> 5/5 PASS. Fixtures sintéticas propias; sin cuentas ni APIs reales.
+**Gates:**
+- Campos desconocidos y capabilities inventadas rechazados (PASS).
+- Envelope con tenant/actor distinto del principal -> PRINCIPAL_MISMATCH (PASS).
+- OUTCOME_UNKNOWN -> reconciliationRequired=true y retryable=false (PASS).
+**Incoherencias y decisiones:** IDs opacos con charset seguro (evita inyección en cabeceras), dinero entero en céntimos y 12 códigos de error con estado HTTP y semántica de retry únicos.
+**Deuda y riesgos:** docs/contracts/schemas/*.json no generados; el envelope aún no se valida en un endpoint de escritura con efecto.
+**Aprendizajes para siguientes campañas:** Separar retry de reconciliación en el modelo de error evita que un timeout se vuelva un reintento ciego.
+
+Evidencia extendida: docs/evidence/c004/README.md

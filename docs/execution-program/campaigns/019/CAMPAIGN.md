@@ -98,5 +98,20 @@ Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod D
 
 **Rollback:** Desactivar la capacidad nueva, detener admisión de efectos dependientes y conservar revisiones/auditoría/receipts/unknown y datos de usuario. No borrar recursos remotos o downgrade destructivo; conciliar antes de reanudar.
 
-## Reporte de ejecución de Freebuff (rellenar al terminar esta fase)
-**Estado:** PENDING. **SHA:** PENDING. **Archivos y diff:** PENDING. **Tests/comandos/fixtures:** PENDING. **Gates:** PENDING. **Incoherencias y decisiones:** PENDING. **Deuda y riesgos:** PENDING. **Aprendizajes para siguientes campañas:** PENDING. Reportar y continuar autónomamente; Codex audita solo al terminar las 42 fases.
+## Reporte de ejecución de Freebuff
+
+**Estado:** IMPLEMENTED_VERIFIED (FSM y aprobación vinculada).
+**SHA:** d2a0447f6a4aaa729a24fd49d1c3808796696a87
+**Archivos y diff:** src/runtime/fsm.ts, src/approvals/index.ts, tests/security/approval.test.ts
+**Tests/comandos/fixtures:** npx vitest run tests/security/approval.test.ts -> 8/8 PASS. Fixtures sintéticas propias; sin cuentas ni APIs reales.
+**Gates:**
+- Payload cambiado tras aprobar -> PAYLOAD_HASH_MISMATCH (PASS).
+- Aprobación caducada o revocada -> denegada (PASS).
+- Solo firmantes agente -> MISSING_HUMAN_SIGNER (PASS).
+- Proponente firmando su propio efecto -> SELF_APPROVAL (PASS).
+- Coste por encima del techo -> COST_EXCEEDED (PASS).
+**Incoherencias y decisiones:** El MVP invalida la aprobación ante cualquier cambio material; el espaciado es la única excepción explícita y está probada como regla, no como criterio del modelo.
+**Deuda y riesgos:** Sin persistencia de approvals ni UI de firma; el step-up por riesgo no existe.
+**Aprendizajes para siguientes campañas:** Un approval_id sin hashes es un permiso en blanco: el binding es lo que lo hace verificable.
+
+Evidencia extendida: docs/evidence/c019/README.md

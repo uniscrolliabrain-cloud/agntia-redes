@@ -98,5 +98,19 @@ Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod D
 
 **Rollback:** Desactivar la capacidad nueva, detener admisión de efectos dependientes y conservar revisiones/auditoría/receipts/unknown y datos de usuario. No borrar recursos remotos o downgrade destructivo; conciliar antes de reanudar.
 
-## Reporte de ejecución de Freebuff (rellenar al terminar esta fase)
-**Estado:** PENDING. **SHA:** PENDING. **Archivos y diff:** PENDING. **Tests/comandos/fixtures:** PENDING. **Gates:** PENDING. **Incoherencias y decisiones:** PENDING. **Deuda y riesgos:** PENDING. **Aprendizajes para siguientes campañas:** PENDING. Reportar y continuar autónomamente; Codex audita solo al terminar las 42 fases.
+## Reporte de ejecución de Freebuff
+
+**Estado:** IMPLEMENTED_VERIFIED con proveedor falso; proveedor real BLOQUEADO por capabilities.
+**SHA:** d2a0447f6a4aaa729a24fd49d1c3808796696a87
+**Archivos y diff:** src/publication/commands.ts, tests/integration/publish.test.ts
+**Tests/comandos/fixtures:** npx vitest run tests/integration/publish.test.ts -> 6/6 PASS. Fixtures sintéticas propias; sin cuentas ni APIs reales.
+**Gates:**
+- Aprobación válida -> un solo envío y recibo (PASS).
+- Replay del mismo operation key -> recibo durable sin nuevo IO (PASS).
+- Timeout tras aceptación -> OUTCOME_UNKNOWN sin retry y presupuesto incierto (PASS).
+- Sin aprobación, kill switch, capability deshabilitada o presupuesto insuficiente -> bloqueo sin IO (PASS).
+**Incoherencias y decisiones:** El intento se registra antes de llamar al proveedor; un replay consulta el estado durable en lugar de reenviar.
+**Deuda y riesgos:** Sin envío real, sin éxito parcial multi-canal y sin edición/borrado remoto.
+**Aprendizajes para siguientes campañas:** Separar intento de recibo es lo que permite distinguir enviado de publicado.
+
+Evidencia extendida: docs/evidence/c023/README.md

@@ -98,5 +98,19 @@ Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod D
 
 **Rollback:** Desactivar la capacidad nueva, detener admisión de efectos dependientes y conservar revisiones/auditoría/receipts/unknown y datos de usuario. No borrar recursos remotos o downgrade destructivo; conciliar antes de reanudar.
 
-## Reporte de ejecución de Freebuff (rellenar al terminar esta fase)
-**Estado:** PENDING. **SHA:** PENDING. **Archivos y diff:** PENDING. **Tests/comandos/fixtures:** PENDING. **Gates:** PENDING. **Incoherencias y decisiones:** PENDING. **Deuda y riesgos:** PENDING. **Aprendizajes para siguientes campañas:** PENDING. Reportar y continuar autónomamente; Codex audita solo al terminar las 42 fases.
+## Reporte de ejecución de Freebuff
+
+**Estado:** IMPLEMENTED_VERIFIED (migración + RLS + auditoría) sobre Postgres WASM local.
+**SHA:** d2a0447f6a4aaa729a24fd49d1c3808796696a87
+**Archivos y diff:** src/storage/migrations/0001_init.sql, src/storage/db.ts, src/storage/pglite.ts, src/storage/audit.ts, tests/integration/migrations.test.ts, tests/integration/audit.test.ts
+**Tests/comandos/fixtures:** npx vitest run tests/integration/migrations.test.ts -> 5/5 PASS; npx vitest run tests/integration/audit.test.ts -> 3/3 PASS. Fixtures sintéticas propias; sin cuentas ni APIs reales.
+**Gates:**
+- tenant-a no ve filas de tenant-b y el WITH CHECK rechaza escribir en otro tenant (PASS).
+- Sin app.tenant_id no se ve ninguna fila (fail closed) (PASS).
+- Unicidad de idempotency_key en outbox (PASS).
+- La cadena de auditoría detecta un evento manipulado tras restore (PASS).
+**Incoherencias y decisiones:** RLS forzada y pruebas con rol no superusuario app_runtime: sin ese rol la prueba no demostraría nada. El tenant se publica con set_config local dentro de la transacción.
+**Deuda y riesgos:** Sin runner de migraciones incremental ni backup/restore real; faltan políticas por rol de worker y pruebas de concurrencia en la base.
+**Aprendizajes para siguientes campañas:** PGlite permite probar RLS de verdad en CI sin infraestructura, pero no acredita un Postgres gestionado.
+
+Evidencia extendida: docs/evidence/c005/README.md

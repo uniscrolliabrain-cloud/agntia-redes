@@ -98,5 +98,19 @@ Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod D
 
 **Rollback:** Desactivar la capacidad nueva, detener admisión de efectos dependientes y conservar revisiones/auditoría/receipts/unknown y datos de usuario. No borrar recursos remotos o downgrade destructivo; conciliar antes de reanudar.
 
-## Reporte de ejecución de Freebuff (rellenar al terminar esta fase)
-**Estado:** PENDING. **SHA:** PENDING. **Archivos y diff:** PENDING. **Tests/comandos/fixtures:** PENDING. **Gates:** PENDING. **Incoherencias y decisiones:** PENDING. **Deuda y riesgos:** PENDING. **Aprendizajes para siguientes campañas:** PENDING. Reportar y continuar autónomamente; Codex audita solo al terminar las 42 fases.
+## Reporte de ejecución de Freebuff
+
+**Estado:** IMPLEMENTED_VERIFIED (ledger en memoria) con tabla SQL presupuestaria preparada.
+**SHA:** d2a0447f6a4aaa729a24fd49d1c3808796696a87
+**Archivos y diff:** src/budget/index.ts, tests/integration/cost-concurrency.test.ts
+**Tests/comandos/fixtures:** npx vitest run tests/integration/cost-concurrency.test.ts -> 6/6 PASS. Fixtures sintéticas propias; sin cuentas ni APIs reales.
+**Gates:**
+- Reserva por encima del techo -> BUDGET_EXCEEDED (PASS).
+- Resultado incierto conserva el pasivo y bloquea nuevas reservas (PASS).
+- Dos reservas concurrentes: solo una pasa (PASS).
+- Liquidar a cero libera capacidad (PASS).
+**Incoherencias y decisiones:** El importe se reserva antes del IO y un resultado incierto queda comprometido hasta conciliar; el mismo idempotency key no reserva dos veces.
+**Deuda y riesgos:** El ledger no está persistido todavía (la tabla budget_reservations existe); sin FX, entitlements mensuales ni facturación.
+**Aprendizajes para siguientes campañas:** Marcar incierto es lo que evita el doble gasto cuando el worker muere.
+
+Evidencia extendida: docs/evidence/c022/README.md

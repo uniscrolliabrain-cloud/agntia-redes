@@ -98,5 +98,18 @@ Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod D
 
 **Rollback:** Desactivar la capacidad nueva, detener admisión de efectos dependientes y conservar revisiones/auditoría/receipts/unknown y datos de usuario. No borrar recursos remotos o downgrade destructivo; conciliar antes de reanudar.
 
-## Reporte de ejecución de Freebuff (rellenar al terminar esta fase)
-**Estado:** PENDING. **SHA:** PENDING. **Archivos y diff:** PENDING. **Tests/comandos/fixtures:** PENDING. **Gates:** PENDING. **Incoherencias y decisiones:** PENDING. **Deuda y riesgos:** PENDING. **Aprendizajes para siguientes campañas:** PENDING. Reportar y continuar autónomamente; Codex audita solo al terminar las 42 fases.
+## Reporte de ejecución de Freebuff
+
+**Estado:** IMPLEMENTED_VERIFIED (identidad, tenancy y PEP). JWKS remoto no probado contra Supabase real.
+**SHA:** d2a0447f6a4aaa729a24fd49d1c3808796696a87
+**Archivos y diff:** src/auth/principal.ts, src/auth/policy.ts, apps/api/src/routes/03.ts, apps/api/src/app.ts, tests/security/tenancy.test.ts, tests/api/app.test.ts
+**Tests/comandos/fixtures:** npx vitest run tests/security/tenancy.test.ts -> 11/11 PASS; npx vitest run tests/api/app.test.ts -> 4/4 PASS. Fixtures sintéticas propias; sin cuentas ni APIs reales.
+**Gates:**
+- JWT expirado, issuer erróneo, user_metadata hostil, claims contradictorios o membresía suspendida -> rechazo (PASS).
+- Recurso y listado cross-tenant -> 403/404 sin fuga de existencia (PASS).
+- Agente con capability de aprobación o conexión -> HUMAN_ONLY (PASS).
+**Incoherencias y decisiones:** Las capabilities salen de la membresía verificada, nunca del token; sin fallback a owner/default. La ruta de cuentas toma el tenant del principal, no de query ni body.
+**Deuda y riesgos:** Revocación en vuelo de sesiones abiertas, step-up por riesgo, token de sesión Anam y rotación de JWKS sin implementar ni probar.
+**Aprendizajes para siguientes campañas:** Probar claims hostiles en la frontera evita repetir el fallback legacy observado en el padre.
+
+Evidencia extendida: docs/evidence/c003/README.md

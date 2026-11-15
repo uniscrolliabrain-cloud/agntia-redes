@@ -98,5 +98,17 @@ Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod D
 
 **Rollback:** Desactivar la capacidad nueva, detener admisión de efectos dependientes y conservar revisiones/auditoría/receipts/unknown y datos de usuario. No borrar recursos remotos o downgrade destructivo; conciliar antes de reanudar.
 
-## Reporte de ejecución de Freebuff (rellenar al terminar esta fase)
-**Estado:** PENDING. **SHA:** PENDING. **Archivos y diff:** PENDING. **Tests/comandos/fixtures:** PENDING. **Gates:** PENDING. **Incoherencias y decisiones:** PENDING. **Deuda y riesgos:** PENDING. **Aprendizajes para siguientes campañas:** PENDING. Reportar y continuar autónomamente; Codex audita solo al terminar las 42 fases.
+## Reporte de ejecución de Freebuff
+
+**Estado:** IMPLEMENTED_VERIFIED (baseline). RDS-C01-G01 PARTIAL; RDS-C01-G02 PASS.
+**SHA:** d2a0447f6a4aaa729a24fd49d1c3808796696a87
+**Archivos y diff:** docs/baseline.md, docs/parent-diff.md, docs/versions.json, tests/campaigns/001.test.ts
+**Tests/comandos/fixtures:** npm run typecheck -> PASS; npx vitest run tests/campaigns/001.test.ts -> 3/3 PASS. Fixtures sintéticas propias; sin cuentas ni APIs reales.
+**Gates:**
+- RDS-C01-G01 PARTIAL: el padre no está en el workspace; se identifican las interfaces afectadas y no se hereda compatibilidad.
+- RDS-C01-G02 PASS: checkout 112 commits por detrás con árbol limpio; fast-forward sin reset ni pérdida de trabajo.
+**Incoherencias y decisiones:** SHA propio congelado 09d6b8887d80d3b93c03ac9cea4cf7fdce7f6266. Se usa npm porque pnpm no está instalado en el entorno, manteniendo el Node >=22.6.0 que declara el padre.
+**Deuda y riesgos:** Cotejo real contra 54b8d5407a8576459448c4d059a877297d18ca7a pendiente de autorización para hacer checkout del padre.
+**Aprendizajes para siguientes campañas:** El manifiesto se valida por test (42/294/84) y sirve como gate de consistencia para el resto de fases.
+
+Evidencia extendida: docs/evidence/c001/README.md

@@ -98,5 +98,18 @@ Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod D
 
 **Rollback:** Desactivar la capacidad nueva, detener admisión de efectos dependientes y conservar revisiones/auditoría/receipts/unknown y datos de usuario. No borrar recursos remotos o downgrade destructivo; conciliar antes de reanudar.
 
-## Reporte de ejecución de Freebuff (rellenar al terminar esta fase)
-**Estado:** PENDING. **SHA:** PENDING. **Archivos y diff:** PENDING. **Tests/comandos/fixtures:** PENDING. **Gates:** PENDING. **Incoherencias y decisiones:** PENDING. **Deuda y riesgos:** PENDING. **Aprendizajes para siguientes campañas:** PENDING. Reportar y continuar autónomamente; Codex audita solo al terminar las 42 fases.
+## Reporte de ejecución de Freebuff
+
+**Estado:** IMPLEMENTED_PARTIAL: state/PKCE y registro de cuentas; sin intercambio de código ni custodia de credenciales.
+**SHA:** d2a0447f6a4aaa729a24fd49d1c3808796696a87
+**Archivos y diff:** src/connections/oauth.ts, src/connections/registry.ts, tests/security/oauth.test.ts
+**Tests/comandos/fixtures:** npx vitest run tests/security/oauth.test.ts -> 4/4 PASS. Fixtures sintéticas propias; sin cuentas ni APIs reales.
+**Gates:**
+- PKCE S256 correcto y state de un solo uso; replay rechazado (PASS).
+- Redirect fuera de allowlist rechazado (PASS).
+- Cuenta revocada falla cerrado, el cross-tenant no la ve y la proyección pública no incluye credentialRef (PASS).
+**Incoherencias y decisiones:** La credencial se guarda como referencia opaca y nunca viaja a la proyección pública; desconectar bloquea nuevos efectos.
+**Deuda y riesgos:** BLOQUEADO: intercambio de token, refresh/rotación y cifrado en reposo dependen de proveedor y de un vault que no existe todavía.
+**Aprendizajes para siguientes campañas:** Separar la referencia de credencial de la proyección pública permite auditar sin filtrar secretos.
+
+Evidencia extendida: docs/evidence/c007/README.md

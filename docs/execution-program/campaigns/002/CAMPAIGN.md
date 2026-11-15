@@ -98,5 +98,17 @@ Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod D
 
 **Rollback:** Desactivar la capacidad nueva, detener admisión de efectos dependientes y conservar revisiones/auditoría/receipts/unknown y datos de usuario. No borrar recursos remotos o downgrade destructivo; conciliar antes de reanudar.
 
-## Reporte de ejecución de Freebuff (rellenar al terminar esta fase)
-**Estado:** PENDING. **SHA:** PENDING. **Archivos y diff:** PENDING. **Tests/comandos/fixtures:** PENDING. **Gates:** PENDING. **Incoherencias y decisiones:** PENDING. **Deuda y riesgos:** PENDING. **Aprendizajes para siguientes campañas:** PENDING. Reportar y continuar autónomamente; Codex audita solo al terminar las 42 fases.
+## Reporte de ejecución de Freebuff
+
+**Estado:** IMPLEMENTED_VERIFIED (modelo de dominio + ADR). Persistencia y rutas de negocio pendientes.
+**SHA:** d2a0447f6a4aaa729a24fd49d1c3808796696a87
+**Archivos y diff:** docs/adr/0001-saas.md, src/domain/service-agreement.ts, src/domain/work-order.ts, tests/domain/agreement.test.ts
+**Tests/comandos/fixtures:** npm run typecheck -> PASS; npx vitest run tests/domain/agreement.test.ts -> 4/4 PASS. Fixtures sintéticas propias; sin cuentas ni APIs reales.
+**Gates:**
+- Acuerdo con requireHumanApprovalForEffects=false rechazado por schema (PASS).
+- Orden de trabajo con gasto por encima del mandato o fuera del acuerdo -> DomainError (PASS).
+**Incoherencias y decisiones:** Las tres aceptaciones (comercial, editorial, entrega) son tipos branded incompatibles; un acuerdo que permita efectos sin aprobación humana es inválido, no un flag.
+**Deuda y riesgos:** Sin persistencia ni endpoints /service-agreements y /work-orders; la firma de la aceptación comercial no se verifica.
+**Aprendizajes para siguientes campañas:** Separar los hechos por tipo impide que una campaña posterior los fusione por comodidad.
+
+Evidencia extendida: docs/evidence/c002/README.md
