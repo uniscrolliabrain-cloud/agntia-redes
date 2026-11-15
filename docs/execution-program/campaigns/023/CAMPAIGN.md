@@ -101,7 +101,7 @@ Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod D
 ## Reporte de ejecución de Freebuff
 
 **Estado:** IMPLEMENTED_VERIFIED con proveedor falso; proveedor real BLOQUEADO por capabilities.
-**SHA:** d2a0447f6a4aaa729a24fd49d1c3808796696a87
+**SHA:** bc293688d95b0ef99bf5b4e91c686d3d1d259b7d
 **Archivos y diff:** src/publication/commands.ts, tests/integration/publish.test.ts
 **Tests/comandos/fixtures:** npx vitest run tests/integration/publish.test.ts -> 6/6 PASS. Fixtures sintéticas propias; sin cuentas ni APIs reales.
 **Gates:**

@@ -1,6 +1,6 @@
 # Evidencia · RDS-C023 — Comandos de publicación y ejecución por canal
 
-**Commit:** `d2a0447f6a4aaa729a24fd49d1c3808796696a87` · **Ejecutado:** 2026-11-15 · **Entorno:** Node 26.13.0, npm 11.20.0, Linux cloud, PGlite (Postgres 16 WASM)
+**Commit:** `bc293688d95b0ef99bf5b4e91c686d3d1d259b7d` · **Ejecutado:** 2026-11-15 · **Entorno:** Node 26.13.0, npm 11.20.0, Linux cloud, PGlite (Postgres 16 WASM)
 **Estado:** IMPLEMENTED_VERIFIED con proveedor falso; proveedor real BLOQUEADO por capabilities.
 
 ## Archivos de la fase

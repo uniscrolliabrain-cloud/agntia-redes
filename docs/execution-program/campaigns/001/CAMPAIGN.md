@@ -101,7 +101,7 @@ Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod D
 ## Reporte de ejecución de Freebuff
 
 **Estado:** IMPLEMENTED_VERIFIED (baseline). RDS-C01-G01 PARTIAL; RDS-C01-G02 PASS.
-**SHA:** d2a0447f6a4aaa729a24fd49d1c3808796696a87
+**SHA:** bc293688d95b0ef99bf5b4e91c686d3d1d259b7d
 **Archivos y diff:** docs/baseline.md, docs/parent-diff.md, docs/versions.json, tests/campaigns/001.test.ts
 **Tests/comandos/fixtures:** npm run typecheck -> PASS; npx vitest run tests/campaigns/001.test.ts -> 3/3 PASS. Fixtures sintéticas propias; sin cuentas ni APIs reales.
 **Gates:**

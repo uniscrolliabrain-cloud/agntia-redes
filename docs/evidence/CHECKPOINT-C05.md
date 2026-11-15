@@ -1,6 +1,6 @@
 # Checkpoint C05 — Redes (tras C01–C05)
 
-**Fecha:** 2026-11-15 · **Commit:** `d2a0447f6a4aaa729a24fd49d1c3808796696a87` · **Rama:** `freebuff/8c2f53324d9548cdf6139c22`
+**Fecha:** 2026-11-15 · **Commit:** `bc293688d95b0ef99bf5b4e91c686d3d1d259b7d` · **Rama:** `freebuff/8c2f53324d9548cdf6139c22`
 
 ## Objetivo del bloque
 

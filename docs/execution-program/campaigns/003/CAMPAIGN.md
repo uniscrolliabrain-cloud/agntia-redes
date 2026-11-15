@@ -101,7 +101,7 @@ Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod D
 ## Reporte de ejecución de Freebuff
 
 **Estado:** IMPLEMENTED_VERIFIED (identidad, tenancy y PEP). JWKS remoto no probado contra Supabase real.
-**SHA:** d2a0447f6a4aaa729a24fd49d1c3808796696a87
+**SHA:** bc293688d95b0ef99bf5b4e91c686d3d1d259b7d
 **Archivos y diff:** src/auth/principal.ts, src/auth/policy.ts, apps/api/src/routes/03.ts, apps/api/src/app.ts, tests/security/tenancy.test.ts, tests/api/app.test.ts
 **Tests/comandos/fixtures:** npx vitest run tests/security/tenancy.test.ts -> 11/11 PASS; npx vitest run tests/api/app.test.ts -> 4/4 PASS. Fixtures sintéticas propias; sin cuentas ni APIs reales.
 **Gates:**

@@ -101,7 +101,7 @@ Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod D
 ## Reporte de ejecución de Freebuff
 
 **Estado:** IMPLEMENTED_PARTIAL: state/PKCE y registro de cuentas; sin intercambio de código ni custodia de credenciales.
-**SHA:** d2a0447f6a4aaa729a24fd49d1c3808796696a87
+**SHA:** bc293688d95b0ef99bf5b4e91c686d3d1d259b7d
 **Archivos y diff:** src/connections/oauth.ts, src/connections/registry.ts, tests/security/oauth.test.ts
 **Tests/comandos/fixtures:** npx vitest run tests/security/oauth.test.ts -> 4/4 PASS. Fixtures sintéticas propias; sin cuentas ni APIs reales.
 **Gates:**

@@ -101,7 +101,7 @@ Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod D
 ## Reporte de ejecución de Freebuff
 
 **Estado:** IMPLEMENTED_PARTIAL: discovery de capacidades por operación; faltan entitlements mensuales y catálogo comercial.
-**SHA:** d2a0447f6a4aaa729a24fd49d1c3808796696a87
+**SHA:** bc293688d95b0ef99bf5b4e91c686d3d1d259b7d
 **Archivos y diff:** src/providers/catalog.ts, tests/contracts/catalog.test.ts
 **Tests/comandos/fixtures:** npx vitest run tests/contracts/catalog.test.ts -> 4/4 PASS. Fixtures sintéticas propias; sin cuentas ni APIs reales.
 **Gates:**

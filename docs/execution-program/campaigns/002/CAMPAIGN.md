@@ -101,7 +101,7 @@ Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod D
 ## Reporte de ejecución de Freebuff
 
 **Estado:** IMPLEMENTED_VERIFIED (modelo de dominio + ADR). Persistencia y rutas de negocio pendientes.
-**SHA:** d2a0447f6a4aaa729a24fd49d1c3808796696a87
+**SHA:** bc293688d95b0ef99bf5b4e91c686d3d1d259b7d
 **Archivos y diff:** docs/adr/0001-saas.md, src/domain/service-agreement.ts, src/domain/work-order.ts, tests/domain/agreement.test.ts
 **Tests/comandos/fixtures:** npm run typecheck -> PASS; npx vitest run tests/domain/agreement.test.ts -> 4/4 PASS. Fixtures sintéticas propias; sin cuentas ni APIs reales.
 **Gates:**
