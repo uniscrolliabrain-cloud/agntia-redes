@@ -1,0 +1,22 @@
+{
+  "gate_id": "RDS-C19-G02",
+  "campaign": "RDS-C19",
+  "suite": "tests/security/approval.test.ts",
+  "case": "RDS-C19-G02",
+  "command": "npx vitest run tests/security/approval.test.ts -t \"RDS-C19-G02\"",
+  "environment": {
+    "node": "v26.13.0",
+    "runner": "vitest",
+    "cwd": "<repo>"
+  },
+  "result": "PASS",
+  "sha_at_execution": "5eaf96967d507b43582b2ebf443d033519e998e4",
+  "suite_sha256": "21d59ab321ac5324ff3eb195cb00ce11b2879761c3d8a39f8ad820463dd73a08",
+  "executed_at": "2026-11-20T14:56:56Z",
+  "assertion": "Un cliente modifica hora/cuenta después de aprobar y el commit recibe409.",
+  "scope_note": "El test afirma PAYLOAD_HASH_MISMATCH tras cambiar el payload; el 409 del commit se afirma en la suite de publicación, no aquí.",
+  "artifacts": [
+    "tests/security/approval.test.ts",
+    "docs/evidence/c019/g02.json"
+  ]
+}

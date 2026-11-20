@@ -92,8 +92,8 @@ Hacer IO limitado, tipado y observable sin proxy libre ni retry peligroso.
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C08-G01 / NOT_EXECUTED:** Destino metadata o redirect a host no permitido queda bloqueado antes de transferencia. **Caso:** `RDS-C08-G01` en `tests/contracts/transport.test.ts`. **Evidencia:** `docs/evidence/c008/g01.json`.
-- **RDS-C08-G02 / NOT_EXECUTED:** Timeout después de enviar create produce outcome_unknown y cero reintentos automáticos. **Caso:** `RDS-C08-G02` en `tests/contracts/transport.test.ts`. **Evidencia:** `docs/evidence/c008/g02.json`.
+- **RDS-C08-G01 / PASS:** Destino metadata o redirect a host no permitido queda bloqueado antes de transferencia. **Caso:** `RDS-C08-G01` en `tests/contracts/transport.test.ts`. **Evidencia:** `docs/evidence/c008/g01.json`.
+- **RDS-C08-G02 / PASS:** Timeout después de enviar create produce outcome_unknown y cero reintentos automáticos. **Caso:** `RDS-C08-G02` en `tests/contracts/transport.test.ts`. **Evidencia:** `docs/evidence/c008/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

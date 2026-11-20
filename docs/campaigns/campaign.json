@@ -296,12 +296,12 @@
         {
           "id": "RDS-C02-G01",
           "scenario": "Cliente externo completo prepara un encargo sin llamadas obligatorias al padre.",
-          "status": "NOT_EXECUTED",
+          "status": "PASS",
           "evidence_refs": [
             "docs/evidence/c002/g01.json"
           ],
           "verification": {
-            "suite": "tests/domain/service-agreement.test.ts",
+            "suite": "tests/domain/agreement.test.ts",
             "case": "RDS-C02-G01",
             "artifact": "docs/evidence/c002/g01.json",
             "assertion": "Cliente externo completo prepara un encargo sin llamadas obligatorias al padre."
@@ -315,7 +315,7 @@
             "docs/evidence/c002/g02.json"
           ],
           "verification": {
-            "suite": "tests/domain/service-agreement.test.ts",
+            "suite": "tests/domain/agreement.test.ts",
             "case": "RDS-C02-G02",
             "artifact": "docs/evidence/c002/g02.json",
             "assertion": "Dos servicios proponen la misma pieza: solo la autoridad acordada de entrega puede ejecutarla."
@@ -341,14 +341,14 @@
       ],
       "owner_role": "Producto/SaaS",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED",
+      "implementation_test_status": "PARTIAL",
       "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED",
       "primary_surfaces": [
         "src/domain/service-agreement.ts",
         "src/domain/work-order.ts",
         "docs/adr/0001-saas.md"
       ],
-      "verification_suite": "tests/domain/service-agreement.test.ts"
+      "verification_suite": "tests/domain/agreement.test.ts"
     },
     {
       "id": "RDS-C03",
@@ -466,7 +466,7 @@
         {
           "id": "RDS-C03-G01",
           "scenario": "ClienteA intenta accountBinding deB y recibe404 sin metadatos del otro cliente.",
-          "status": "NOT_EXECUTED",
+          "status": "PASS",
           "evidence_refs": [
             "docs/evidence/c003/g01.json"
           ],
@@ -480,7 +480,7 @@
         {
           "id": "RDS-C03-G02",
           "scenario": "Fallo al resolver membresía devuelve indisponible/denegado, nunca owner/default.",
-          "status": "NOT_EXECUTED",
+          "status": "PASS",
           "evidence_refs": [
             "docs/evidence/c003/g02.json"
           ],
@@ -511,7 +511,7 @@
       ],
       "owner_role": "Seguridad/identidad",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED",
+      "implementation_test_status": "PARTIAL",
       "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED",
       "primary_surfaces": [
         "src/auth/principal.ts",
@@ -635,7 +635,7 @@
         {
           "id": "RDS-C04-G01",
           "scenario": "Payload con tenant/role/URL arbitrarios fuera del DTO es rechazado antes de IO.",
-          "status": "NOT_EXECUTED",
+          "status": "PASS",
           "evidence_refs": [
             "docs/evidence/c004/g01.json"
           ],
@@ -680,7 +680,7 @@
       ],
       "owner_role": "Contratos/SDK",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED",
+      "implementation_test_status": "PARTIAL",
       "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED",
       "primary_surfaces": [
         "src/contracts/index.ts",
@@ -976,7 +976,7 @@
         {
           "id": "RDS-C06-G01",
           "scenario": "La edición instalada carece del endpoint documentado en Cloud: capability queda unsupported.",
-          "status": "NOT_EXECUTED",
+          "status": "PASS",
           "evidence_refs": [
             "docs/evidence/c006/g01.json"
           ],
@@ -990,7 +990,7 @@
         {
           "id": "RDS-C06-G02",
           "scenario": "Un scope revocado o report caducado bloquea escritura aunque el último probe tuviera200.",
-          "status": "NOT_EXECUTED",
+          "status": "PASS",
           "evidence_refs": [
             "docs/evidence/c006/g02.json"
           ],
@@ -1021,7 +1021,7 @@
       ],
       "owner_role": "Plataforma/licencias",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED",
+      "implementation_test_status": "PARTIAL",
       "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED",
       "primary_surfaces": [
         "docs/upstreams/",
@@ -1316,7 +1316,7 @@
         {
           "id": "RDS-C08-G01",
           "scenario": "Destino metadata o redirect a host no permitido queda bloqueado antes de transferencia.",
-          "status": "NOT_EXECUTED",
+          "status": "PASS",
           "evidence_refs": [
             "docs/evidence/c008/g01.json"
           ],
@@ -1330,7 +1330,7 @@
         {
           "id": "RDS-C08-G02",
           "scenario": "Timeout después de enviar create produce outcome_unknown y cero reintentos automáticos.",
-          "status": "NOT_EXECUTED",
+          "status": "PASS",
           "evidence_refs": [
             "docs/evidence/c008/g02.json"
           ],
@@ -1361,7 +1361,7 @@
       ],
       "owner_role": "Seguridad/transporte",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED",
+      "implementation_test_status": "PARTIAL",
       "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED",
       "primary_surfaces": [
         "src/providers/transport.ts",
@@ -3179,7 +3179,7 @@
         {
           "id": "RDS-C19-G01",
           "scenario": "Agente propone y presenta approval ficticia: denegado sin ejecutar IO.",
-          "status": "NOT_EXECUTED",
+          "status": "PASS",
           "evidence_refs": [
             "docs/evidence/c019/g01.json"
           ],
@@ -3193,7 +3193,7 @@
         {
           "id": "RDS-C19-G02",
           "scenario": "Un cliente modifica hora/cuenta después de aprobar y el commit recibe409.",
-          "status": "NOT_EXECUTED",
+          "status": "PASS",
           "evidence_refs": [
             "docs/evidence/c019/g02.json"
           ],
@@ -3224,7 +3224,7 @@
       ],
       "owner_role": "Policy/aprobaciones",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED",
+      "implementation_test_status": "PARTIAL",
       "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED",
       "primary_surfaces": [
         "src/runtime/fsm.ts",
@@ -3532,7 +3532,7 @@
         {
           "id": "RDS-C21-G02",
           "scenario": "ACK de worker con fence antiguo no cambia un intent ya reclamado por otro.",
-          "status": "NOT_EXECUTED",
+          "status": "PASS",
           "evidence_refs": [
             "docs/evidence/c021/g02.json"
           ],
@@ -3563,7 +3563,7 @@
       ],
       "owner_role": "Workers/eventos",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED",
+      "implementation_test_status": "PARTIAL",
       "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED",
       "primary_surfaces": [
         "src/jobs/",
@@ -3688,7 +3688,7 @@
         {
           "id": "RDS-C22-G01",
           "scenario": "Dos agentes no reservan el mismo saldo, ni se cargan proveedor y cliente por duplicado.",
-          "status": "NOT_EXECUTED",
+          "status": "PASS",
           "evidence_refs": [
             "docs/evidence/c022/g01.json"
           ],
@@ -3702,7 +3702,7 @@
         {
           "id": "RDS-C22-G02",
           "scenario": "Timeout de sesión conserva coste incierto hasta reconciliación, sin minutos ilimitados ficticios.",
-          "status": "NOT_EXECUTED",
+          "status": "PASS",
           "evidence_refs": [
             "docs/evidence/c022/g02.json"
           ],
@@ -3733,7 +3733,7 @@
       ],
       "owner_role": "Finanzas del servicio",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED",
+      "implementation_test_status": "PARTIAL",
       "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED",
       "primary_surfaces": [
         "src/billing/",
@@ -4029,7 +4029,7 @@
         {
           "id": "RDS-C24-G01",
           "scenario": "Sin lookup fiable el intent permanece unknown y no se reenvía para cerrar un dashboard.",
-          "status": "NOT_EXECUTED",
+          "status": "PASS",
           "evidence_refs": [
             "docs/evidence/c024/g01.json"
           ],
@@ -4074,7 +4074,7 @@
       ],
       "owner_role": "Reconciliación",
       "checkpoint_after": false,
-      "implementation_test_status": "NOT_EXECUTED",
+      "implementation_test_status": "PARTIAL",
       "mandatory_cross_cutting_gate": "Apply mandatory_architecture_contract: canonical/twin binding, Supabase JWT, tenant isolation, revocation, native naming and provenance; NOT_EXECUTED",
       "primary_surfaces": [
         "src/publication/reconcile.ts",
@@ -7167,9 +7167,9 @@
       "BLOCKED",
       "NOT_VERIFIED"
     ],
-    "state": "Las 84 vinculaciones existen como diseno; ninguna se ha ejecutado (NOT_EXECUTED).",
+    "state": "14 de 84 gates tienen caso ejecutado y evidencia propia; 70 siguen NOT_EXECUTED con motivo registrado en gate_case_coverage.",
     "runner": "vitest via `npm test`; un caso por gate: `npx vitest run <suite> -t \"RDS-CNN-G0k\"`.",
-    "gap_observed": "A 2026-11-15 ningun test usa el identificador de gate como nombre de caso (0 de 84): los PASS de los reportes son de suite, no de gate nombrado."
+    "gap_observed": "2026-11-20: 14 gates usan su identificador como nombre de caso y npx vitest run <suite> -t \"<gate>\" los selecciona; el resto no tiene caso escrito."
   },
   "surface_policy": {
     "canonical": "docs/campaigns/campaign.json",
@@ -7208,5 +7208,17 @@
     "real_provider_adapters": 0,
     "father_crosscheck": "NOT_VERIFIED (sin checkout de agente en el workspace)",
     "discrepancy": "Los 14 reportes declaran gates PASS con comandos; el manifiesto mantiene las 84 en NOT_EXECUTED porque ningun caso de test esta nombrado por identificador de gate. Resoluble nombrando los casos, no editando estados."
+  },
+  "gate_case_coverage": {
+    "observed_on": "2026-11-20",
+    "gates_total": 84,
+    "gates_with_named_case": 14,
+    "gates_executed_pass": 14,
+    "gates_unexecuted": 70,
+    "unexecuted_reasons": {
+      "docs_or_infra_check_not_written": 6,
+      "case_not_written_suite_present": 12,
+      "suite_not_implemented": 52
+    }
   }
 }

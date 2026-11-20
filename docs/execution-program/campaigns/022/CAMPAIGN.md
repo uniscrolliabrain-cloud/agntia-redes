@@ -92,8 +92,8 @@ Separar coste upstream, límites contratados y precio del SaaS.
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C22-G01 / NOT_EXECUTED:** Dos agentes no reservan el mismo saldo, ni se cargan proveedor y cliente por duplicado. **Caso:** `RDS-C22-G01` en `tests/integration/cost-concurrency.test.ts`. **Evidencia:** `docs/evidence/c022/g01.json`.
-- **RDS-C22-G02 / NOT_EXECUTED:** Timeout de sesión conserva coste incierto hasta reconciliación, sin minutos ilimitados ficticios. **Caso:** `RDS-C22-G02` en `tests/integration/cost-concurrency.test.ts`. **Evidencia:** `docs/evidence/c022/g02.json`.
+- **RDS-C22-G01 / PASS:** Dos agentes no reservan el mismo saldo, ni se cargan proveedor y cliente por duplicado. **Caso:** `RDS-C22-G01` en `tests/integration/cost-concurrency.test.ts`. **Evidencia:** `docs/evidence/c022/g01.json`.
+- **RDS-C22-G02 / PASS:** Timeout de sesión conserva coste incierto hasta reconciliación, sin minutos ilimitados ficticios. **Caso:** `RDS-C22-G02` en `tests/integration/cost-concurrency.test.ts`. **Evidencia:** `docs/evidence/c022/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

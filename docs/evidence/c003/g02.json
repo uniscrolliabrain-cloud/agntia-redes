@@ -1,0 +1,22 @@
+{
+  "gate_id": "RDS-C03-G02",
+  "campaign": "RDS-C03",
+  "suite": "tests/security/tenancy.test.ts",
+  "case": "RDS-C03-G02",
+  "command": "npx vitest run tests/security/tenancy.test.ts -t \"RDS-C03-G02\"",
+  "environment": {
+    "node": "v26.13.0",
+    "runner": "vitest",
+    "cwd": "<repo>"
+  },
+  "result": "PASS",
+  "sha_at_execution": "5eaf96967d507b43582b2ebf443d033519e998e4",
+  "suite_sha256": "ba579ec10fcfb9421bd4b2dc3dccd80e716ded8a0114ea87d3d0ea35f7f00909",
+  "executed_at": "2026-11-20T14:56:56Z",
+  "assertion": "Fallo al resolver membresía devuelve indisponible/denegado, nunca owner/default.",
+  "scope_note": "El test afirma MEMBERSHIP_MISSING / MEMBERSHIP_INACTIVE; no simula indisponibilidad del store de membresías.",
+  "artifacts": [
+    "tests/security/tenancy.test.ts",
+    "docs/evidence/c003/g02.json"
+  ]
+}

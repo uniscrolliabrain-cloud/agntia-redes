@@ -1,0 +1,22 @@
+{
+  "gate_id": "RDS-C22-G01",
+  "campaign": "RDS-C22",
+  "suite": "tests/integration/cost-concurrency.test.ts",
+  "case": "RDS-C22-G01",
+  "command": "npx vitest run tests/integration/cost-concurrency.test.ts -t \"RDS-C22-G01\"",
+  "environment": {
+    "node": "v26.13.0",
+    "runner": "vitest",
+    "cwd": "<repo>"
+  },
+  "result": "PASS",
+  "sha_at_execution": "5eaf96967d507b43582b2ebf443d033519e998e4",
+  "suite_sha256": "d476bfb5e64e214c4897ea48485d8ca249f46dfd0dcd28f814bdee04cd3a04d4",
+  "executed_at": "2026-11-20T14:56:56Z",
+  "assertion": "Dos agentes no reservan el mismo saldo, ni se cargan proveedor y cliente por duplicado.",
+  "scope_note": "El test afirma que reservas concurrentes no duplican gasto; el cargo al cliente final no se modela.",
+  "artifacts": [
+    "tests/integration/cost-concurrency.test.ts",
+    "docs/evidence/c022/g01.json"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "gate_id": "RDS-C06-G01",
+  "campaign": "RDS-C06",
+  "suite": "tests/contracts/catalog.test.ts",
+  "case": "RDS-C06-G01",
+  "command": "npx vitest run tests/contracts/catalog.test.ts -t \"RDS-C06-G01\"",
+  "environment": {
+    "node": "v26.13.0",
+    "runner": "vitest",
+    "cwd": "<repo>"
+  },
+  "result": "PASS",
+  "sha_at_execution": "5eaf96967d507b43582b2ebf443d033519e998e4",
+  "suite_sha256": "4408cea3e6688bd2566a8e0fcadaa514d51be94c8321e70b7333572337862a75",
+  "executed_at": "2026-11-20T14:56:56Z",
+  "assertion": "La edición instalada carece del endpoint documentado en Cloud: capability queda unsupported.",
+  "scope_note": "El test afirma que DOCUMENTED no habilita runtime en el catálogo; no reproduce una edición instalada real del proveedor.",
+  "artifacts": [
+    "tests/contracts/catalog.test.ts",
+    "docs/evidence/c006/g01.json"
+  ]
+}

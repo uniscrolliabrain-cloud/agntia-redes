@@ -92,8 +92,8 @@ Denegar permisos por defecto para humanos, especialistas IA, clientes y partners
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C03-G01 / NOT_EXECUTED:** ClienteA intenta accountBinding deB y recibe404 sin metadatos del otro cliente. **Caso:** `RDS-C03-G01` en `tests/security/tenancy.test.ts`. **Evidencia:** `docs/evidence/c003/g01.json`.
-- **RDS-C03-G02 / NOT_EXECUTED:** Fallo al resolver membresía devuelve indisponible/denegado, nunca owner/default. **Caso:** `RDS-C03-G02` en `tests/security/tenancy.test.ts`. **Evidencia:** `docs/evidence/c003/g02.json`.
+- **RDS-C03-G01 / PASS:** ClienteA intenta accountBinding deB y recibe404 sin metadatos del otro cliente. **Caso:** `RDS-C03-G01` en `tests/security/tenancy.test.ts`. **Evidencia:** `docs/evidence/c003/g01.json`.
+- **RDS-C03-G02 / PASS:** Fallo al resolver membresía devuelve indisponible/denegado, nunca owner/default. **Caso:** `RDS-C03-G02` en `tests/security/tenancy.test.ts`. **Evidencia:** `docs/evidence/c003/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

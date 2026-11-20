@@ -1,0 +1,22 @@
+{
+  "gate_id": "RDS-C02-G01",
+  "campaign": "RDS-C02",
+  "suite": "tests/domain/agreement.test.ts",
+  "case": "RDS-C02-G01",
+  "command": "npx vitest run tests/domain/agreement.test.ts -t \"RDS-C02-G01\"",
+  "environment": {
+    "node": "v26.13.0",
+    "runner": "vitest",
+    "cwd": "<repo>"
+  },
+  "result": "PASS",
+  "sha_at_execution": "5eaf96967d507b43582b2ebf443d033519e998e4",
+  "suite_sha256": "6ad472187ef66cfe37814fbe022705bf50badff0e0603e570a36cbaf032e6571",
+  "executed_at": "2026-11-20T14:56:56Z",
+  "assertion": "Cliente externo completo prepara un encargo sin llamadas obligatorias al padre.",
+  "scope_note": "El test afirma que el encargo standalone se ejecuta con su propio acuerdo y mandato presupuestario, sin llamada al padre. No levanta el HTTP de /work-orders.",
+  "artifacts": [
+    "tests/domain/agreement.test.ts",
+    "docs/evidence/c002/g01.json"
+  ]
+}

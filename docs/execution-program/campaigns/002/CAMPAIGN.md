@@ -92,8 +92,8 @@ Hacer que el servicio funcione como especialista independiente, además de integ
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C02-G01 / NOT_EXECUTED:** Cliente externo completo prepara un encargo sin llamadas obligatorias al padre. **Caso:** `RDS-C02-G01` en `tests/domain/service-agreement.test.ts`. **Evidencia:** `docs/evidence/c002/g01.json`.
-- **RDS-C02-G02 / NOT_EXECUTED:** Dos servicios proponen la misma pieza: solo la autoridad acordada de entrega puede ejecutarla. **Caso:** `RDS-C02-G02` en `tests/domain/service-agreement.test.ts`. **Evidencia:** `docs/evidence/c002/g02.json`.
+- **RDS-C02-G01 / PASS:** Cliente externo completo prepara un encargo sin llamadas obligatorias al padre. **Caso:** `RDS-C02-G01` en `tests/domain/agreement.test.ts`. **Evidencia:** `docs/evidence/c002/g01.json`.
+- **RDS-C02-G02 / NOT_EXECUTED:** Dos servicios proponen la misma pieza: solo la autoridad acordada de entrega puede ejecutarla. **Caso:** `RDS-C02-G02` en `tests/domain/agreement.test.ts`. **Evidencia:** `docs/evidence/c002/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

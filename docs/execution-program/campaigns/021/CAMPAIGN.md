@@ -93,7 +93,7 @@ Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod D
 
 ## Gates de fallo y aceptación
 - **RDS-C21-G01 / NOT_EXECUTED:** Crash tras envío conserva unknown, saldo y evidencia sin crear un segundo post. **Caso:** `RDS-C21-G01` en `tests/integration/replay.test.ts`. **Evidencia:** `docs/evidence/c021/g01.json`.
-- **RDS-C21-G02 / NOT_EXECUTED:** ACK de worker con fence antiguo no cambia un intent ya reclamado por otro. **Caso:** `RDS-C21-G02` en `tests/integration/replay.test.ts`. **Evidencia:** `docs/evidence/c021/g02.json`.
+- **RDS-C21-G02 / PASS:** ACK de worker con fence antiguo no cambia un intent ya reclamado por otro. **Caso:** `RDS-C21-G02` en `tests/integration/replay.test.ts`. **Evidencia:** `docs/evidence/c021/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

@@ -1,0 +1,22 @@
+{
+  "gate_id": "RDS-C24-G01",
+  "campaign": "RDS-C24",
+  "suite": "tests/integration/reconcile.test.ts",
+  "case": "RDS-C24-G01",
+  "command": "npx vitest run tests/integration/reconcile.test.ts -t \"RDS-C24-G01\"",
+  "environment": {
+    "node": "v26.13.0",
+    "runner": "vitest",
+    "cwd": "<repo>"
+  },
+  "result": "PASS",
+  "sha_at_execution": "5eaf96967d507b43582b2ebf443d033519e998e4",
+  "suite_sha256": "0736ff0f1f725e6bfb36927b4d093727c67fd5dd1d967a6a613ed2199260db26",
+  "executed_at": "2026-11-20T14:56:56Z",
+  "assertion": "Sin lookup fiable el intent permanece unknown y no se reenvía para cerrar un dashboard.",
+  "scope_note": "El test afirma que sin lookup autoritativo el intent no se declara no enviado; el reenvío real no se ejecuta.",
+  "artifacts": [
+    "tests/integration/reconcile.test.ts",
+    "docs/evidence/c024/g01.json"
+  ]
+}

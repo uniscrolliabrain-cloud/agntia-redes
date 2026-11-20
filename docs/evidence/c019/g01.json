@@ -1,0 +1,22 @@
+{
+  "gate_id": "RDS-C19-G01",
+  "campaign": "RDS-C19",
+  "suite": "tests/security/approval.test.ts",
+  "case": "RDS-C19-G01",
+  "command": "npx vitest run tests/security/approval.test.ts -t \"RDS-C19-G01\"",
+  "environment": {
+    "node": "v26.13.0",
+    "runner": "vitest",
+    "cwd": "<repo>"
+  },
+  "result": "PASS",
+  "sha_at_execution": "5eaf96967d507b43582b2ebf443d033519e998e4",
+  "suite_sha256": "21d59ab321ac5324ff3eb195cb00ce11b2879761c3d8a39f8ad820463dd73a08",
+  "executed_at": "2026-11-20T14:56:56Z",
+  "assertion": "Agente propone y presenta approval ficticia: denegado sin ejecutar IO.",
+  "scope_note": "El test afirma MISSING_HUMAN_SIGNER para una firma de agente; no ejecuta IO de publicación.",
+  "artifacts": [
+    "tests/security/approval.test.ts",
+    "docs/evidence/c019/g01.json"
+  ]
+}

@@ -92,7 +92,7 @@ Fijar fronteras tipadas antes de escribir adaptadores o UI.
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C04-G01 / NOT_EXECUTED:** Payload con tenant/role/URL arbitrarios fuera del DTO es rechazado antes de IO. **Caso:** `RDS-C04-G01` en `tests/contracts/wire.test.ts`. **Evidencia:** `docs/evidence/c004/g01.json`.
+- **RDS-C04-G01 / PASS:** Payload con tenant/role/URL arbitrarios fuera del DTO es rechazado antes de IO. **Caso:** `RDS-C04-G01` en `tests/contracts/wire.test.ts`. **Evidencia:** `docs/evidence/c004/g01.json`.
 - **RDS-C04-G02 / NOT_EXECUTED:** Contrato viejo no compatible devuelve error explícito; no elimina campos silenciosamente. **Caso:** `RDS-C04-G02` en `tests/contracts/wire.test.ts`. **Evidencia:** `docs/evidence/c004/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.

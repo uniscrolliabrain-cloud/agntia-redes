@@ -1,0 +1,56 @@
+{
+  "checked_at": "2026-11-20",
+  "scope": "Enlaces locales, recuentos e IDs del manifiesto, tuplas de evidencia, caso nombrado por gate con artefacto propio, consistencia manifiesto/CAMPAIGN.md, sello del hash del manifiesto y conjunto completo de tests del runtime",
+  "status": "PASS",
+  "supersedes": "docs/release/document-validation-2026-11-15.json (gates_con_caso_nombrado_ejecutado=0)",
+  "campaigns": 42,
+  "tasks": 294,
+  "planned_gate_scenarios": 84,
+  "gates_with_named_case_executed": 14,
+  "gates_not_executed": 70,
+  "implementation_tests_executed": 94,
+  "runtime_implemented": true,
+  "provider_api_tests_executed": 0,
+  "campaign_manifest_sha256": "67e518be05eff283d41125d08c32591d511f103615ee2b02b75746653fff2369",
+  "bindings": {
+    "gates_with_named_case": 84,
+    "gates_with_own_evidence_artifact": 84,
+    "gates_named_in_tests": 14,
+    "gates_evidence_files_present": 14,
+    "tasks_with_own_evidence_path": 294,
+    "campaigns_with_declared_surfaces": 42
+  },
+  "gate_case_coverage": {
+    "gates_total": 84,
+    "gates_executed_pass": 14,
+    "gates_unexecuted": 70,
+    "unexecuted_reasons": {
+      "case_not_written_suite_present": 12,
+      "suite_not_implemented": 52,
+      "docs_or_infra_check_not_written": 6
+    }
+  },
+  "local_links_checked": 570,
+  "local_links_broken": 0,
+  "secret_scan_hits": 0,
+  "documents_only": [
+    ".md",
+    ".json"
+  ],
+  "known_open": [
+    "A6 grafo lineal vs tracks del README (decision founder)",
+    "A8 uniones palabra-digito sin corregir",
+    "A9 CI ejecuta typecheck y tests, incluido el contrato gate-caso; la revision de enlaces sigue siendo manual",
+    "A10 padre /agente no cotejado en este workspace",
+    "A11 parcialmente cerrado: 14 de 84 gates ejecutados con caso nombrado y evidencia; 70 siguen NOT_EXECUTED, 52 de ellos porque la suite de la campana no existe",
+    "A12 cerrado: las referencias a docs/evidence/c01/ apuntan al directorio real c001"
+  ],
+  "runtime_verified": {
+    "command": "npm run typecheck && npm test",
+    "result": "PASS",
+    "test_files": 18,
+    "tests": 94,
+    "at_sha": "5eaf96967d507b43582b2ebf443d033519e998e4",
+    "executed_by": "esta sesion de auditoria, 2026-11-20"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "gate_id": "RDS-C04-G01",
+  "campaign": "RDS-C04",
+  "suite": "tests/contracts/wire.test.ts",
+  "case": "RDS-C04-G01",
+  "command": "npx vitest run tests/contracts/wire.test.ts -t \"RDS-C04-G01\"",
+  "environment": {
+    "node": "v26.13.0",
+    "runner": "vitest",
+    "cwd": "<repo>"
+  },
+  "result": "PASS",
+  "sha_at_execution": "5eaf96967d507b43582b2ebf443d033519e998e4",
+  "suite_sha256": "c99373f2567b3d545a90e6cb67e706ab233b1387b418b11322356788564ac841",
+  "executed_at": "2026-11-20T14:56:56Z",
+  "assertion": "Payload con tenant/role/URL arbitrarios fuera del DTO es rechazado antes de IO.",
+  "scope_note": "El test afirma rechazo estricto de campos desconocidos y capabilities fuera de catálogo; el parseo ocurre antes de cualquier IO.",
+  "artifacts": [
+    "tests/contracts/wire.test.ts",
+    "docs/evidence/c004/g01.json"
+  ]
+}

@@ -10,7 +10,7 @@ Convertir un repositorio exclusivamente documental en un runtime tipado con los 
 
 | Campaña | Resultado | Evidencia |
 |---|---|---|
-| C01 Baseline | SHA congelado, manifiesto validado por test; cotejo del padre **PARTIAL** (sin checkout) | `docs/baseline.md`, `docs/evidence/c01/` |
+| C01 Baseline | SHA congelado, manifiesto validado por test; cotejo del padre **PARTIAL** (sin checkout) | `docs/baseline.md`, `docs/evidence/c001/` |
 | C02 Acuerdos | Modelo de acuerdo/orden + ADR 0001; tres aceptaciones branded incompatibles | `src/domain/*`, `docs/adr/0001-saas.md` |
 | C03 Identidad | JWT Supabase verificado + membresía + PEP + ruta de cuentas | `src/auth/*`, `apps/api/*` |
 | C04 Contratos | Zod estricto, envelope y modelo de error con retry/reconciliación | `src/contracts/index.ts` |

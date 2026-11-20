@@ -1,0 +1,22 @@
+{
+  "gate_id": "RDS-C08-G02",
+  "campaign": "RDS-C08",
+  "suite": "tests/contracts/transport.test.ts",
+  "case": "RDS-C08-G02",
+  "command": "npx vitest run tests/contracts/transport.test.ts -t \"RDS-C08-G02\"",
+  "environment": {
+    "node": "v26.13.0",
+    "runner": "vitest",
+    "cwd": "<repo>"
+  },
+  "result": "PASS",
+  "sha_at_execution": "5eaf96967d507b43582b2ebf443d033519e998e4",
+  "suite_sha256": "44be51911e33db6b85120117b832dbbf0e7f5dfa466090c81333515a6fcd7d74",
+  "executed_at": "2026-11-20T14:56:56Z",
+  "assertion": "Timeout después de enviar create produce outcome_unknown y cero reintentos automáticos.",
+  "scope_note": "El test afirma cero reintentos en escrituras ambiguas con fetch falso; no hay proveedor real ni timeout de red.",
+  "artifacts": [
+    "tests/contracts/transport.test.ts",
+    "docs/evidence/c008/g02.json"
+  ]
+}
