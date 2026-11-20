@@ -9,10 +9,11 @@ Conectar cuentas con prueba de pertenencia y revocación sin exponer secretos.
 
 ## Archivos y ownership (rutas propuestas; verificar antes de crear)
 - Superficies de la campaña: `src/connections/oauth.ts`, `src/connections/registry.ts`, `tests/security/oauth.test.ts`.
+- Presente en el repositorio hoy: `src/connections/oauth.ts`, `src/connections/registry.ts`, `tests/security/oauth.test.ts` (3/3 superficies).
 - Contrato y esquema: `packages/contracts/src/` (compartido; no hay archivo de contrato por campaña).
 - API nominada: `apps/api/src/routes/oauth.ts` (solo con operación externa autorizada).
 - Tests: `tests/security/oauth.test.ts` y `tests/fixtures/c07/`.
-- Evidencia: `docs/evidence/c07/` y **reporte dentro de este mismo documento**.
+- Evidencia: `docs/evidence/c007/` y **reporte dentro de este mismo documento**.
 - Artefactos originales: `src/connections/oauth.ts`, `src/connections/registry.ts`, `tests/security/oauth.test.ts`. No confundir artefactos documentales con código.
 
 ## Patchsets secuenciales
@@ -24,7 +25,7 @@ Conectar cuentas con prueba de pertenencia y revocación sin exponer secretos.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Conectar una cuenta autoriza una capacidad concreta, no cualquier publicación o lectura privada.
 
-**Verificación:** caso `RDS-C07-T01` sobre `tests/security/oauth.test.ts`; evidencia `docs/evidence/c07/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C06-T07.
+**Verificación:** caso `RDS-C07-T01` sobre `tests/security/oauth.test.ts`; evidencia `docs/evidence/c007/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C06-T07.
 
 ### 007.02 — RDS-C07-T02
 
@@ -34,7 +35,7 @@ Conectar cuentas con prueba de pertenencia y revocación sin exponer secretos.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Conectar una cuenta autoriza una capacidad concreta, no cualquier publicación o lectura privada.
 
-**Verificación:** caso `RDS-C07-T02` sobre `tests/security/oauth.test.ts`; evidencia `docs/evidence/c07/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C07-T01.
+**Verificación:** caso `RDS-C07-T02` sobre `tests/security/oauth.test.ts`; evidencia `docs/evidence/c007/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C07-T01.
 
 ### 007.03 — RDS-C07-T03
 
@@ -44,7 +45,7 @@ Conectar cuentas con prueba de pertenencia y revocación sin exponer secretos.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Conectar una cuenta autoriza una capacidad concreta, no cualquier publicación o lectura privada.
 
-**Verificación:** caso `RDS-C07-T03` sobre `tests/security/oauth.test.ts`; evidencia `docs/evidence/c07/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C07-T02.
+**Verificación:** caso `RDS-C07-T03` sobre `tests/security/oauth.test.ts`; evidencia `docs/evidence/c007/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C07-T02.
 
 ### 007.04 — RDS-C07-T04
 
@@ -54,7 +55,7 @@ Conectar cuentas con prueba de pertenencia y revocación sin exponer secretos.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Conectar una cuenta autoriza una capacidad concreta, no cualquier publicación o lectura privada.
 
-**Verificación:** caso `RDS-C07-T04` sobre `tests/security/oauth.test.ts`; evidencia `docs/evidence/c07/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C07-T03.
+**Verificación:** caso `RDS-C07-T04` sobre `tests/security/oauth.test.ts`; evidencia `docs/evidence/c007/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C07-T03.
 
 ### 007.05 — RDS-C07-T05
 
@@ -64,7 +65,7 @@ Conectar cuentas con prueba de pertenencia y revocación sin exponer secretos.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Conectar una cuenta autoriza una capacidad concreta, no cualquier publicación o lectura privada.
 
-**Verificación:** caso `RDS-C07-T05` sobre `tests/security/oauth.test.ts`; evidencia `docs/evidence/c07/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C07-T04.
+**Verificación:** caso `RDS-C07-T05` sobre `tests/security/oauth.test.ts`; evidencia `docs/evidence/c007/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C07-T04.
 
 ### 007.06 — RDS-C07-T06
 
@@ -74,7 +75,7 @@ Conectar cuentas con prueba de pertenencia y revocación sin exponer secretos.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Conectar una cuenta autoriza una capacidad concreta, no cualquier publicación o lectura privada.
 
-**Verificación:** caso `RDS-C07-T06` sobre `tests/security/oauth.test.ts`; evidencia `docs/evidence/c07/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C07-T05.
+**Verificación:** caso `RDS-C07-T06` sobre `tests/security/oauth.test.ts`; evidencia `docs/evidence/c007/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C07-T05.
 
 ### 007.07 — RDS-C07-T07
 
@@ -84,15 +85,15 @@ Conectar cuentas con prueba de pertenencia y revocación sin exponer secretos.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Conectar una cuenta autoriza una capacidad concreta, no cualquier publicación o lectura privada.
 
-**Verificación:** caso `RDS-C07-T07` sobre `tests/security/oauth.test.ts`; evidencia `docs/evidence/c07/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C07-T06.
+**Verificación:** caso `RDS-C07-T07` sobre `tests/security/oauth.test.ts`; evidencia `docs/evidence/c007/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C07-T06.
 
 
 ## Wiring y fronteras
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C07-G01 / NOT_EXECUTED:** Callback emitido paraA llega desde sesiónB y no crea binding ni revela cuenta. **Caso:** `RDS-C07-G01` en `tests/security/oauth.test.ts`. **Evidencia:** `docs/evidence/c07/g01.json`.
-- **RDS-C07-G02 / NOT_EXECUTED:** Refresh falla durante claim: job bloqueado y credential/error no aparecen en logs. **Caso:** `RDS-C07-G02` en `tests/security/oauth.test.ts`. **Evidencia:** `docs/evidence/c07/g02.json`.
+- **RDS-C07-G01 / NOT_EXECUTED:** Callback emitido paraA llega desde sesiónB y no crea binding ni revela cuenta. **Caso:** `RDS-C07-G01` en `tests/security/oauth.test.ts`. **Evidencia:** `docs/evidence/c007/g01.json`.
+- **RDS-C07-G02 / NOT_EXECUTED:** Refresh falla durante claim: job bloqueado y credential/error no aparecen en logs. **Caso:** `RDS-C07-G02` en `tests/security/oauth.test.ts`. **Evidencia:** `docs/evidence/c007/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

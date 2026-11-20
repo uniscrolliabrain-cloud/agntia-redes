@@ -9,10 +9,11 @@ Exponer al host y a clientes externos capacidades nominadas con validación runt
 
 ## Archivos y ownership (rutas propuestas; verificar antes de crear)
 - Superficies de la campaña: `packages/sdk/`, `src/http/`, `src/tools/`, `tests/contracts/sdk/`.
+- Presente en el repositorio hoy: ninguna; la campaña no está implementada.
 - Contrato y esquema: `packages/contracts/src/` (compartido; no hay archivo de contrato por campaña).
 - API nominada: `apps/api/src/routes/sdk.ts` (solo con operación externa autorizada).
 - Tests: `tests/contracts/sdk/` y `tests/fixtures/c34/`.
-- Evidencia: `docs/evidence/c34/` y **reporte dentro de este mismo documento**.
+- Evidencia: `docs/evidence/c034/` y **reporte dentro de este mismo documento**.
 - Artefactos originales: `packages/sdk/`, `src/http/`, `src/tools/`, `tests/contracts/sdk/`. No confundir artefactos documentales con código.
 
 ## Patchsets secuenciales
@@ -24,7 +25,7 @@ Exponer al host y a clientes externos capacidades nominadas con validación runt
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El resolver autenticado selecciona el workspace; un header o input de modelo no lo demuestra.
 
-**Verificación:** caso `RDS-C34-T01` sobre `tests/contracts/sdk/`; evidencia `docs/evidence/c34/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C33-T07.
+**Verificación:** caso `RDS-C34-T01` sobre `tests/contracts/sdk/`; evidencia `docs/evidence/c034/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C33-T07.
 
 ### 034.02 — RDS-C34-T02
 
@@ -34,7 +35,7 @@ Exponer al host y a clientes externos capacidades nominadas con validación runt
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El resolver autenticado selecciona el workspace; un header o input de modelo no lo demuestra.
 
-**Verificación:** caso `RDS-C34-T02` sobre `tests/contracts/sdk/`; evidencia `docs/evidence/c34/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C34-T01.
+**Verificación:** caso `RDS-C34-T02` sobre `tests/contracts/sdk/`; evidencia `docs/evidence/c034/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C34-T01.
 
 ### 034.03 — RDS-C34-T03
 
@@ -44,7 +45,7 @@ Exponer al host y a clientes externos capacidades nominadas con validación runt
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El resolver autenticado selecciona el workspace; un header o input de modelo no lo demuestra.
 
-**Verificación:** caso `RDS-C34-T03` sobre `tests/contracts/sdk/`; evidencia `docs/evidence/c34/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C34-T02.
+**Verificación:** caso `RDS-C34-T03` sobre `tests/contracts/sdk/`; evidencia `docs/evidence/c034/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C34-T02.
 
 ### 034.04 — RDS-C34-T04
 
@@ -54,7 +55,7 @@ Exponer al host y a clientes externos capacidades nominadas con validación runt
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El resolver autenticado selecciona el workspace; un header o input de modelo no lo demuestra.
 
-**Verificación:** caso `RDS-C34-T04` sobre `tests/contracts/sdk/`; evidencia `docs/evidence/c34/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C34-T03.
+**Verificación:** caso `RDS-C34-T04` sobre `tests/contracts/sdk/`; evidencia `docs/evidence/c034/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C34-T03.
 
 ### 034.05 — RDS-C34-T05
 
@@ -64,7 +65,7 @@ Exponer al host y a clientes externos capacidades nominadas con validación runt
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El resolver autenticado selecciona el workspace; un header o input de modelo no lo demuestra.
 
-**Verificación:** caso `RDS-C34-T05` sobre `tests/contracts/sdk/`; evidencia `docs/evidence/c34/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C34-T04.
+**Verificación:** caso `RDS-C34-T05` sobre `tests/contracts/sdk/`; evidencia `docs/evidence/c034/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C34-T04.
 
 ### 034.06 — RDS-C34-T06
 
@@ -74,7 +75,7 @@ Exponer al host y a clientes externos capacidades nominadas con validación runt
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El resolver autenticado selecciona el workspace; un header o input de modelo no lo demuestra.
 
-**Verificación:** caso `RDS-C34-T06` sobre `tests/contracts/sdk/`; evidencia `docs/evidence/c34/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C34-T05.
+**Verificación:** caso `RDS-C34-T06` sobre `tests/contracts/sdk/`; evidencia `docs/evidence/c034/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C34-T05.
 
 ### 034.07 — RDS-C34-T07
 
@@ -84,15 +85,15 @@ Exponer al host y a clientes externos capacidades nominadas con validación runt
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El resolver autenticado selecciona el workspace; un header o input de modelo no lo demuestra.
 
-**Verificación:** caso `RDS-C34-T07` sobre `tests/contracts/sdk/`; evidencia `docs/evidence/c34/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C34-T06.
+**Verificación:** caso `RDS-C34-T07` sobre `tests/contracts/sdk/`; evidencia `docs/evidence/c034/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C34-T06.
 
 
 ## Wiring y fronteras
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C34-G01 / NOT_EXECUTED:** Tool de Anam y MCP equivalente reciben la misma denegación de policy. **Caso:** `RDS-C34-G01` en `tests/contracts/sdk/`. **Evidencia:** `docs/evidence/c34/g01.json`.
-- **RDS-C34-G02 / NOT_EXECUTED:** Cliente externo opera con su sesión sin necesitar una credencial del repo padre. **Caso:** `RDS-C34-G02` en `tests/contracts/sdk/`. **Evidencia:** `docs/evidence/c34/g02.json`.
+- **RDS-C34-G01 / NOT_EXECUTED:** Tool de Anam y MCP equivalente reciben la misma denegación de policy. **Caso:** `RDS-C34-G01` en `tests/contracts/sdk/`. **Evidencia:** `docs/evidence/c034/g01.json`.
+- **RDS-C34-G02 / NOT_EXECUTED:** Cliente externo opera con su sesión sin necesitar una credencial del repo padre. **Caso:** `RDS-C34-G02` en `tests/contracts/sdk/`. **Evidencia:** `docs/evidence/c034/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

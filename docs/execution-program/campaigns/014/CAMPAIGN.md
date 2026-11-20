@@ -9,10 +9,11 @@ Separar upload, processing, visibilidad y confirmación con cuotas vigentes.
 
 ## Archivos y ownership (rutas propuestas; verificar antes de crear)
 - Superficies de la campaña: `src/adapters/youtube/`, `tests/contracts/youtube/`, `docs/providers/youtube.md`.
+- Presente en el repositorio hoy: ninguna; la campaña no está implementada.
 - Contrato y esquema: `packages/contracts/src/` (compartido; no hay archivo de contrato por campaña).
 - API nominada: ninguna; esta campaña no añade ruta HTTP propia y no se crean endpoints ficticios para tareas de investigación o documentales.
 - Tests: `tests/contracts/youtube/` y `tests/fixtures/c14/`.
-- Evidencia: `docs/evidence/c14/` y **reporte dentro de este mismo documento**.
+- Evidencia: `docs/evidence/c014/` y **reporte dentro de este mismo documento**.
 - Artefactos originales: `src/adapters/youtube/`, `tests/contracts/youtube/`, `docs/providers/youtube.md`. No confundir artefactos documentales con código.
 
 ## Patchsets secuenciales
@@ -24,7 +25,7 @@ Separar upload, processing, visibilidad y confirmación con cuotas vigentes.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Subir un vídeo no demuestra que sea público o esté disponible; no transferir reglas de TikTok.
 
-**Verificación:** caso `RDS-C14-T01` sobre `tests/contracts/youtube/`; evidencia `docs/evidence/c14/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C13-T07.
+**Verificación:** caso `RDS-C14-T01` sobre `tests/contracts/youtube/`; evidencia `docs/evidence/c014/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C13-T07.
 
 ### 014.02 — RDS-C14-T02
 
@@ -34,7 +35,7 @@ Separar upload, processing, visibilidad y confirmación con cuotas vigentes.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Subir un vídeo no demuestra que sea público o esté disponible; no transferir reglas de TikTok.
 
-**Verificación:** caso `RDS-C14-T02` sobre `tests/contracts/youtube/`; evidencia `docs/evidence/c14/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C14-T01.
+**Verificación:** caso `RDS-C14-T02` sobre `tests/contracts/youtube/`; evidencia `docs/evidence/c014/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C14-T01.
 
 ### 014.03 — RDS-C14-T03
 
@@ -44,7 +45,7 @@ Separar upload, processing, visibilidad y confirmación con cuotas vigentes.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Subir un vídeo no demuestra que sea público o esté disponible; no transferir reglas de TikTok.
 
-**Verificación:** caso `RDS-C14-T03` sobre `tests/contracts/youtube/`; evidencia `docs/evidence/c14/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C14-T02.
+**Verificación:** caso `RDS-C14-T03` sobre `tests/contracts/youtube/`; evidencia `docs/evidence/c014/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C14-T02.
 
 ### 014.04 — RDS-C14-T04
 
@@ -54,7 +55,7 @@ Separar upload, processing, visibilidad y confirmación con cuotas vigentes.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Subir un vídeo no demuestra que sea público o esté disponible; no transferir reglas de TikTok.
 
-**Verificación:** caso `RDS-C14-T04` sobre `tests/contracts/youtube/`; evidencia `docs/evidence/c14/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C14-T03.
+**Verificación:** caso `RDS-C14-T04` sobre `tests/contracts/youtube/`; evidencia `docs/evidence/c014/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C14-T03.
 
 ### 014.05 — RDS-C14-T05
 
@@ -64,7 +65,7 @@ Separar upload, processing, visibilidad y confirmación con cuotas vigentes.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Subir un vídeo no demuestra que sea público o esté disponible; no transferir reglas de TikTok.
 
-**Verificación:** caso `RDS-C14-T05` sobre `tests/contracts/youtube/`; evidencia `docs/evidence/c14/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C14-T04.
+**Verificación:** caso `RDS-C14-T05` sobre `tests/contracts/youtube/`; evidencia `docs/evidence/c014/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C14-T04.
 
 ### 014.06 — RDS-C14-T06
 
@@ -74,7 +75,7 @@ Separar upload, processing, visibilidad y confirmación con cuotas vigentes.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Subir un vídeo no demuestra que sea público o esté disponible; no transferir reglas de TikTok.
 
-**Verificación:** caso `RDS-C14-T06` sobre `tests/contracts/youtube/`; evidencia `docs/evidence/c14/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C14-T05.
+**Verificación:** caso `RDS-C14-T06` sobre `tests/contracts/youtube/`; evidencia `docs/evidence/c014/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C14-T05.
 
 ### 014.07 — RDS-C14-T07
 
@@ -84,15 +85,15 @@ Separar upload, processing, visibilidad y confirmación con cuotas vigentes.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Subir un vídeo no demuestra que sea público o esté disponible; no transferir reglas de TikTok.
 
-**Verificación:** caso `RDS-C14-T07` sobre `tests/contracts/youtube/`; evidencia `docs/evidence/c14/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C14-T06.
+**Verificación:** caso `RDS-C14-T07` sobre `tests/contracts/youtube/`; evidencia `docs/evidence/c014/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C14-T06.
 
 
 ## Wiring y fronteras
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C14-G01 / NOT_EXECUTED:** Upload termina pero processing falla: el intent no figura publicado y conserva receipt de fallo. **Caso:** `RDS-C14-G01` en `tests/contracts/youtube/`. **Evidencia:** `docs/evidence/c14/g01.json`.
-- **RDS-C14-G02 / NOT_EXECUTED:** Payload sin visibilidad explícita se rechaza en preview aunque el proveedor tenga default. **Caso:** `RDS-C14-G02` en `tests/contracts/youtube/`. **Evidencia:** `docs/evidence/c14/g02.json`.
+- **RDS-C14-G01 / NOT_EXECUTED:** Upload termina pero processing falla: el intent no figura publicado y conserva receipt de fallo. **Caso:** `RDS-C14-G01` en `tests/contracts/youtube/`. **Evidencia:** `docs/evidence/c014/g01.json`.
+- **RDS-C14-G02 / NOT_EXECUTED:** Payload sin visibilidad explícita se rechaza en preview aunque el proveedor tenga default. **Caso:** `RDS-C14-G02` en `tests/contracts/youtube/`. **Evidencia:** `docs/evidence/c014/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

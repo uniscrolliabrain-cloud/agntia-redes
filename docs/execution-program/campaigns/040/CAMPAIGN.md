@@ -9,10 +9,11 @@ Demostrar los dos modelos de servicio y distinguir fixture de proveedor real.
 
 ## Archivos y ownership (rutas propuestas; verificar antes de crear)
 - Superficies de la campaña: `tests/e2e/`, `docs/verification/journeys.md`, `docs/demo/`.
+- Presente en el repositorio hoy: ninguna; la campaña no está implementada.
 - Contrato y esquema: `packages/contracts/src/` (compartido; no hay archivo de contrato por campaña).
 - API nominada: ninguna; esta campaña no añade ruta HTTP propia y no se crean endpoints ficticios para tareas de investigación o documentales.
 - Tests: `tests/e2e/` y `tests/fixtures/c40/`.
-- Evidencia: `docs/evidence/c40/` y **reporte dentro de este mismo documento**.
+- Evidencia: `docs/evidence/c040/` y **reporte dentro de este mismo documento**.
 - Artefactos originales: `tests/e2e/`, `docs/verification/journeys.md`, `docs/demo/`. No confundir artefactos documentales con código.
 
 ## Patchsets secuenciales
@@ -24,7 +25,7 @@ Demostrar los dos modelos de servicio y distinguir fixture de proveedor real.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un avatar en vídeo no demuestra que un post se publicó; cada efecto necesita evidencia de backend/proveedor.
 
-**Verificación:** caso `RDS-C40-T01` sobre `tests/e2e/`; evidencia `docs/evidence/c40/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C39-T07.
+**Verificación:** caso `RDS-C40-T01` sobre `tests/e2e/`; evidencia `docs/evidence/c040/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C39-T07.
 
 ### 040.02 — RDS-C40-T02
 
@@ -34,7 +35,7 @@ Demostrar los dos modelos de servicio y distinguir fixture de proveedor real.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un avatar en vídeo no demuestra que un post se publicó; cada efecto necesita evidencia de backend/proveedor.
 
-**Verificación:** caso `RDS-C40-T02` sobre `tests/e2e/`; evidencia `docs/evidence/c40/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C40-T01.
+**Verificación:** caso `RDS-C40-T02` sobre `tests/e2e/`; evidencia `docs/evidence/c040/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C40-T01.
 
 ### 040.03 — RDS-C40-T03
 
@@ -44,7 +45,7 @@ Demostrar los dos modelos de servicio y distinguir fixture de proveedor real.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un avatar en vídeo no demuestra que un post se publicó; cada efecto necesita evidencia de backend/proveedor.
 
-**Verificación:** caso `RDS-C40-T03` sobre `tests/e2e/`; evidencia `docs/evidence/c40/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C40-T02.
+**Verificación:** caso `RDS-C40-T03` sobre `tests/e2e/`; evidencia `docs/evidence/c040/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C40-T02.
 
 ### 040.04 — RDS-C40-T04
 
@@ -54,7 +55,7 @@ Demostrar los dos modelos de servicio y distinguir fixture de proveedor real.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un avatar en vídeo no demuestra que un post se publicó; cada efecto necesita evidencia de backend/proveedor.
 
-**Verificación:** caso `RDS-C40-T04` sobre `tests/e2e/`; evidencia `docs/evidence/c40/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C40-T03.
+**Verificación:** caso `RDS-C40-T04` sobre `tests/e2e/`; evidencia `docs/evidence/c040/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C40-T03.
 
 ### 040.05 — RDS-C40-T05
 
@@ -64,7 +65,7 @@ Demostrar los dos modelos de servicio y distinguir fixture de proveedor real.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un avatar en vídeo no demuestra que un post se publicó; cada efecto necesita evidencia de backend/proveedor.
 
-**Verificación:** caso `RDS-C40-T05` sobre `tests/e2e/`; evidencia `docs/evidence/c40/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C40-T04.
+**Verificación:** caso `RDS-C40-T05` sobre `tests/e2e/`; evidencia `docs/evidence/c040/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C40-T04.
 
 ### 040.06 — RDS-C40-T06
 
@@ -74,7 +75,7 @@ Demostrar los dos modelos de servicio y distinguir fixture de proveedor real.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un avatar en vídeo no demuestra que un post se publicó; cada efecto necesita evidencia de backend/proveedor.
 
-**Verificación:** caso `RDS-C40-T06` sobre `tests/e2e/`; evidencia `docs/evidence/c40/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C40-T05.
+**Verificación:** caso `RDS-C40-T06` sobre `tests/e2e/`; evidencia `docs/evidence/c040/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C40-T05.
 
 ### 040.07 — RDS-C40-T07
 
@@ -84,15 +85,15 @@ Demostrar los dos modelos de servicio y distinguir fixture de proveedor real.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un avatar en vídeo no demuestra que un post se publicó; cada efecto necesita evidencia de backend/proveedor.
 
-**Verificación:** caso `RDS-C40-T07` sobre `tests/e2e/`; evidencia `docs/evidence/c40/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C40-T06.
+**Verificación:** caso `RDS-C40-T07` sobre `tests/e2e/`; evidencia `docs/evidence/c040/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C40-T06.
 
 
 ## Wiring y fronteras
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C40-G01 / NOT_EXECUTED:** Cliente standalone termina el recorrido sin llamar agente ni otro repo hermano obligatorio. **Caso:** `RDS-C40-G01` en `tests/e2e/`. **Evidencia:** `docs/evidence/c40/g01.json`.
-- **RDS-C40-G02 / NOT_EXECUTED:** Una llamada social termina unknown y el informe/visio explican pendiente, sin fake success. **Caso:** `RDS-C40-G02` en `tests/e2e/`. **Evidencia:** `docs/evidence/c40/g02.json`.
+- **RDS-C40-G01 / NOT_EXECUTED:** Cliente standalone termina el recorrido sin llamar agente ni otro repo hermano obligatorio. **Caso:** `RDS-C40-G01` en `tests/e2e/`. **Evidencia:** `docs/evidence/c040/g01.json`.
+- **RDS-C40-G02 / NOT_EXECUTED:** Una llamada social termina unknown y el informe/visio explican pendiente, sin fake success. **Caso:** `RDS-C40-G02` en `tests/e2e/`. **Evidencia:** `docs/evidence/c040/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

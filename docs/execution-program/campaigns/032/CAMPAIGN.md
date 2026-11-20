@@ -9,10 +9,11 @@ Revisar activos y coherencia de contenido sin convertir visión en oráculo lega
 
 ## Archivos y ownership (rutas propuestas; verificar antes de crear)
 - Superficies de la campaña: `src/models/vision.ts`, `src/editorial/qa.ts`, `tests/evaluations/media-qa/`.
+- Presente en el repositorio hoy: ninguna; la campaña no está implementada.
 - Contrato y esquema: `packages/contracts/src/` (compartido; no hay archivo de contrato por campaña).
 - API nominada: ninguna; esta campaña no añade ruta HTTP propia y no se crean endpoints ficticios para tareas de investigación o documentales.
 - Tests: `tests/evaluations/media-qa/` y `tests/fixtures/c32/`.
-- Evidencia: `docs/evidence/c32/` y **reporte dentro de este mismo documento**.
+- Evidencia: `docs/evidence/c032/` y **reporte dentro de este mismo documento**.
 - Artefactos originales: `src/models/vision.ts`, `src/editorial/qa.ts`, `tests/evaluations/media-qa/`. No confundir artefactos documentales con código.
 
 ## Patchsets secuenciales
@@ -24,7 +25,7 @@ Revisar activos y coherencia de contenido sin convertir visión en oráculo lega
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un score de visión no acredita derechos, ausencia de engaño o identidad legal de alguien.
 
-**Verificación:** caso `RDS-C32-T01` sobre `tests/evaluations/media-qa/`; evidencia `docs/evidence/c32/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C31-T07.
+**Verificación:** caso `RDS-C32-T01` sobre `tests/evaluations/media-qa/`; evidencia `docs/evidence/c032/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C31-T07.
 
 ### 032.02 — RDS-C32-T02
 
@@ -34,7 +35,7 @@ Revisar activos y coherencia de contenido sin convertir visión en oráculo lega
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un score de visión no acredita derechos, ausencia de engaño o identidad legal de alguien.
 
-**Verificación:** caso `RDS-C32-T02` sobre `tests/evaluations/media-qa/`; evidencia `docs/evidence/c32/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C32-T01.
+**Verificación:** caso `RDS-C32-T02` sobre `tests/evaluations/media-qa/`; evidencia `docs/evidence/c032/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C32-T01.
 
 ### 032.03 — RDS-C32-T03
 
@@ -44,7 +45,7 @@ Revisar activos y coherencia de contenido sin convertir visión en oráculo lega
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un score de visión no acredita derechos, ausencia de engaño o identidad legal de alguien.
 
-**Verificación:** caso `RDS-C32-T03` sobre `tests/evaluations/media-qa/`; evidencia `docs/evidence/c32/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C32-T02.
+**Verificación:** caso `RDS-C32-T03` sobre `tests/evaluations/media-qa/`; evidencia `docs/evidence/c032/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C32-T02.
 
 ### 032.04 — RDS-C32-T04
 
@@ -54,7 +55,7 @@ Revisar activos y coherencia de contenido sin convertir visión en oráculo lega
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un score de visión no acredita derechos, ausencia de engaño o identidad legal de alguien.
 
-**Verificación:** caso `RDS-C32-T04` sobre `tests/evaluations/media-qa/`; evidencia `docs/evidence/c32/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C32-T03.
+**Verificación:** caso `RDS-C32-T04` sobre `tests/evaluations/media-qa/`; evidencia `docs/evidence/c032/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C32-T03.
 
 ### 032.05 — RDS-C32-T05
 
@@ -64,7 +65,7 @@ Revisar activos y coherencia de contenido sin convertir visión en oráculo lega
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un score de visión no acredita derechos, ausencia de engaño o identidad legal de alguien.
 
-**Verificación:** caso `RDS-C32-T05` sobre `tests/evaluations/media-qa/`; evidencia `docs/evidence/c32/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C32-T04.
+**Verificación:** caso `RDS-C32-T05` sobre `tests/evaluations/media-qa/`; evidencia `docs/evidence/c032/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C32-T04.
 
 ### 032.06 — RDS-C32-T06
 
@@ -74,7 +75,7 @@ Revisar activos y coherencia de contenido sin convertir visión en oráculo lega
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un score de visión no acredita derechos, ausencia de engaño o identidad legal de alguien.
 
-**Verificación:** caso `RDS-C32-T06` sobre `tests/evaluations/media-qa/`; evidencia `docs/evidence/c32/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C32-T05.
+**Verificación:** caso `RDS-C32-T06` sobre `tests/evaluations/media-qa/`; evidencia `docs/evidence/c032/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C32-T05.
 
 ### 032.07 — RDS-C32-T07
 
@@ -84,15 +85,15 @@ Revisar activos y coherencia de contenido sin convertir visión en oráculo lega
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un score de visión no acredita derechos, ausencia de engaño o identidad legal de alguien.
 
-**Verificación:** caso `RDS-C32-T07` sobre `tests/evaluations/media-qa/`; evidencia `docs/evidence/c32/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C32-T06.
+**Verificación:** caso `RDS-C32-T07` sobre `tests/evaluations/media-qa/`; evidencia `docs/evidence/c032/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C32-T06.
 
 
 ## Wiring y fronteras
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C32-G01 / NOT_EXECUTED:** Media contiene instrucciones: el modelo no cambia cuenta, scope o política del servicio. **Caso:** `RDS-C32-G01` en `tests/evaluations/media-qa/`. **Evidencia:** `docs/evidence/c32/g01.json`.
-- **RDS-C32-G02 / NOT_EXECUTED:** No hay base para enviar un DM/imagen al modelo y se ofrece revisión local sin transferencia. **Caso:** `RDS-C32-G02` en `tests/evaluations/media-qa/`. **Evidencia:** `docs/evidence/c32/g02.json`.
+- **RDS-C32-G01 / NOT_EXECUTED:** Media contiene instrucciones: el modelo no cambia cuenta, scope o política del servicio. **Caso:** `RDS-C32-G01` en `tests/evaluations/media-qa/`. **Evidencia:** `docs/evidence/c032/g01.json`.
+- **RDS-C32-G02 / NOT_EXECUTED:** No hay base para enviar un DM/imagen al modelo y se ofrece revisión local sin transferencia. **Caso:** `RDS-C32-G02` en `tests/evaluations/media-qa/`. **Evidencia:** `docs/evidence/c032/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

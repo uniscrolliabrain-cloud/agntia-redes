@@ -9,10 +9,11 @@ Demostrar que las fronteras sobreviven más allá del camino feliz.
 
 ## Archivos y ownership (rutas propuestas; verificar antes de crear)
 - Superficies de la campaña: `tests/faults/`, `tests/property/`, `docs/verification/faults.md`.
+- Presente en el repositorio hoy: ninguna; la campaña no está implementada.
 - Contrato y esquema: `packages/contracts/src/` (compartido; no hay archivo de contrato por campaña).
 - API nominada: ninguna; esta campaña no añade ruta HTTP propia y no se crean endpoints ficticios para tareas de investigación o documentales.
 - Tests: `tests/faults/` y `tests/fixtures/c38/`.
-- Evidencia: `docs/evidence/c38/` y **reporte dentro de este mismo documento**.
+- Evidencia: `docs/evidence/c038/` y **reporte dentro de este mismo documento**.
 - Artefactos originales: `tests/faults/`, `tests/property/`, `docs/verification/faults.md`. No confundir artefactos documentales con código.
 
 ## Patchsets secuenciales
@@ -24,7 +25,7 @@ Demostrar que las fronteras sobreviven más allá del camino feliz.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un test mock de fallo no acredita recuperación real de todas las dependencias; registrar cada capa ejecutada.
 
-**Verificación:** caso `RDS-C38-T01` sobre `tests/faults/`; evidencia `docs/evidence/c38/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C37-T07.
+**Verificación:** caso `RDS-C38-T01` sobre `tests/faults/`; evidencia `docs/evidence/c038/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C37-T07.
 
 ### 038.02 — RDS-C38-T02
 
@@ -34,7 +35,7 @@ Demostrar que las fronteras sobreviven más allá del camino feliz.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un test mock de fallo no acredita recuperación real de todas las dependencias; registrar cada capa ejecutada.
 
-**Verificación:** caso `RDS-C38-T02` sobre `tests/faults/`; evidencia `docs/evidence/c38/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C38-T01.
+**Verificación:** caso `RDS-C38-T02` sobre `tests/faults/`; evidencia `docs/evidence/c038/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C38-T01.
 
 ### 038.03 — RDS-C38-T03
 
@@ -44,7 +45,7 @@ Demostrar que las fronteras sobreviven más allá del camino feliz.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un test mock de fallo no acredita recuperación real de todas las dependencias; registrar cada capa ejecutada.
 
-**Verificación:** caso `RDS-C38-T03` sobre `tests/faults/`; evidencia `docs/evidence/c38/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C38-T02.
+**Verificación:** caso `RDS-C38-T03` sobre `tests/faults/`; evidencia `docs/evidence/c038/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C38-T02.
 
 ### 038.04 — RDS-C38-T04
 
@@ -54,7 +55,7 @@ Demostrar que las fronteras sobreviven más allá del camino feliz.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un test mock de fallo no acredita recuperación real de todas las dependencias; registrar cada capa ejecutada.
 
-**Verificación:** caso `RDS-C38-T04` sobre `tests/faults/`; evidencia `docs/evidence/c38/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C38-T03.
+**Verificación:** caso `RDS-C38-T04` sobre `tests/faults/`; evidencia `docs/evidence/c038/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C38-T03.
 
 ### 038.05 — RDS-C38-T05
 
@@ -64,7 +65,7 @@ Demostrar que las fronteras sobreviven más allá del camino feliz.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un test mock de fallo no acredita recuperación real de todas las dependencias; registrar cada capa ejecutada.
 
-**Verificación:** caso `RDS-C38-T05` sobre `tests/faults/`; evidencia `docs/evidence/c38/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C38-T04.
+**Verificación:** caso `RDS-C38-T05` sobre `tests/faults/`; evidencia `docs/evidence/c038/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C38-T04.
 
 ### 038.06 — RDS-C38-T06
 
@@ -74,7 +75,7 @@ Demostrar que las fronteras sobreviven más allá del camino feliz.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un test mock de fallo no acredita recuperación real de todas las dependencias; registrar cada capa ejecutada.
 
-**Verificación:** caso `RDS-C38-T06` sobre `tests/faults/`; evidencia `docs/evidence/c38/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C38-T05.
+**Verificación:** caso `RDS-C38-T06` sobre `tests/faults/`; evidencia `docs/evidence/c038/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C38-T05.
 
 ### 038.07 — RDS-C38-T07
 
@@ -84,15 +85,15 @@ Demostrar que las fronteras sobreviven más allá del camino feliz.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un test mock de fallo no acredita recuperación real de todas las dependencias; registrar cada capa ejecutada.
 
-**Verificación:** caso `RDS-C38-T07` sobre `tests/faults/`; evidencia `docs/evidence/c38/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C38-T06.
+**Verificación:** caso `RDS-C38-T07` sobre `tests/faults/`; evidencia `docs/evidence/c038/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C38-T06.
 
 
 ## Wiring y fronteras
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C38-G01 / NOT_EXECUTED:** Worker antiguo despierta y no puede ACKear ni gastar/publicar con lease/fence vencidos. **Caso:** `RDS-C38-G01` en `tests/faults/`. **Evidencia:** `docs/evidence/c38/g01.json`.
-- **RDS-C38-G02 / NOT_EXECUTED:** Caída tras efecto conserva unknown; no se cuentan dos éxitos por un único receipt. **Caso:** `RDS-C38-G02` en `tests/faults/`. **Evidencia:** `docs/evidence/c38/g02.json`.
+- **RDS-C38-G01 / NOT_EXECUTED:** Worker antiguo despierta y no puede ACKear ni gastar/publicar con lease/fence vencidos. **Caso:** `RDS-C38-G01` en `tests/faults/`. **Evidencia:** `docs/evidence/c038/g01.json`.
+- **RDS-C38-G02 / NOT_EXECUTED:** Caída tras efecto conserva unknown; no se cuentan dos éxitos por un único receipt. **Caso:** `RDS-C38-G02` en `tests/faults/`. **Evidencia:** `docs/evidence/c038/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

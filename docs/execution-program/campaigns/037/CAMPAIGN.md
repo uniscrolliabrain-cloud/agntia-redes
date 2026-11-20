@@ -9,10 +9,11 @@ Tratar datos de clientes y conversación AV sin vender certificación automátic
 
 ## Archivos y ownership (rutas propuestas; verificar antes de crear)
 - Superficies de la campaña: `src/privacy/`, `docs/threat-model.md`, `tests/security/privacy/`.
+- Presente en el repositorio hoy: ninguna; la campaña no está implementada.
 - Contrato y esquema: `packages/contracts/src/` (compartido; no hay archivo de contrato por campaña).
 - API nominada: ninguna; esta campaña no añade ruta HTTP propia y no se crean endpoints ficticios para tareas de investigación o documentales.
 - Tests: `tests/security/privacy/` y `tests/fixtures/c37/`.
-- Evidencia: `docs/evidence/c37/` y **reporte dentro de este mismo documento**.
+- Evidencia: `docs/evidence/c037/` y **reporte dentro de este mismo documento**.
 - Artefactos originales: `src/privacy/`, `docs/threat-model.md`, `tests/security/privacy/`. No confundir artefactos documentales con código.
 
 ## Patchsets secuenciales
@@ -24,7 +25,7 @@ Tratar datos de clientes y conversación AV sin vender certificación automátic
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Contrato comercial, consentimiento AV, tratamiento de datos y permiso editorial son controles diferentes.
 
-**Verificación:** caso `RDS-C37-T01` sobre `tests/security/privacy/`; evidencia `docs/evidence/c37/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C36-T07.
+**Verificación:** caso `RDS-C37-T01` sobre `tests/security/privacy/`; evidencia `docs/evidence/c037/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C36-T07.
 
 ### 037.02 — RDS-C37-T02
 
@@ -34,7 +35,7 @@ Tratar datos de clientes y conversación AV sin vender certificación automátic
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Contrato comercial, consentimiento AV, tratamiento de datos y permiso editorial son controles diferentes.
 
-**Verificación:** caso `RDS-C37-T02` sobre `tests/security/privacy/`; evidencia `docs/evidence/c37/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C37-T01.
+**Verificación:** caso `RDS-C37-T02` sobre `tests/security/privacy/`; evidencia `docs/evidence/c037/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C37-T01.
 
 ### 037.03 — RDS-C37-T03
 
@@ -44,7 +45,7 @@ Tratar datos de clientes y conversación AV sin vender certificación automátic
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Contrato comercial, consentimiento AV, tratamiento de datos y permiso editorial son controles diferentes.
 
-**Verificación:** caso `RDS-C37-T03` sobre `tests/security/privacy/`; evidencia `docs/evidence/c37/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C37-T02.
+**Verificación:** caso `RDS-C37-T03` sobre `tests/security/privacy/`; evidencia `docs/evidence/c037/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C37-T02.
 
 ### 037.04 — RDS-C37-T04
 
@@ -54,7 +55,7 @@ Tratar datos de clientes y conversación AV sin vender certificación automátic
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Contrato comercial, consentimiento AV, tratamiento de datos y permiso editorial son controles diferentes.
 
-**Verificación:** caso `RDS-C37-T04` sobre `tests/security/privacy/`; evidencia `docs/evidence/c37/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C37-T03.
+**Verificación:** caso `RDS-C37-T04` sobre `tests/security/privacy/`; evidencia `docs/evidence/c037/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C37-T03.
 
 ### 037.05 — RDS-C37-T05
 
@@ -64,7 +65,7 @@ Tratar datos de clientes y conversación AV sin vender certificación automátic
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Contrato comercial, consentimiento AV, tratamiento de datos y permiso editorial son controles diferentes.
 
-**Verificación:** caso `RDS-C37-T05` sobre `tests/security/privacy/`; evidencia `docs/evidence/c37/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C37-T04.
+**Verificación:** caso `RDS-C37-T05` sobre `tests/security/privacy/`; evidencia `docs/evidence/c037/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C37-T04.
 
 ### 037.06 — RDS-C37-T06
 
@@ -74,7 +75,7 @@ Tratar datos de clientes y conversación AV sin vender certificación automátic
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Contrato comercial, consentimiento AV, tratamiento de datos y permiso editorial son controles diferentes.
 
-**Verificación:** caso `RDS-C37-T06` sobre `tests/security/privacy/`; evidencia `docs/evidence/c37/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C37-T05.
+**Verificación:** caso `RDS-C37-T06` sobre `tests/security/privacy/`; evidencia `docs/evidence/c037/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C37-T05.
 
 ### 037.07 — RDS-C37-T07
 
@@ -84,15 +85,15 @@ Tratar datos de clientes y conversación AV sin vender certificación automátic
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Contrato comercial, consentimiento AV, tratamiento de datos y permiso editorial son controles diferentes.
 
-**Verificación:** caso `RDS-C37-T07` sobre `tests/security/privacy/`; evidencia `docs/evidence/c37/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C37-T06.
+**Verificación:** caso `RDS-C37-T07` sobre `tests/security/privacy/`; evidencia `docs/evidence/c037/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C37-T06.
 
 
 ## Wiring y fronteras
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C37-G01 / NOT_EXECUTED:** Solicitud de restricción impide leer fuente y reportes/transcripts derivados autorizables. **Caso:** `RDS-C37-G01` en `tests/security/privacy/`. **Evidencia:** `docs/evidence/c37/g01.json`.
-- **RDS-C37-G02 / NOT_EXECUTED:** Restore viejo no rehabilita permisos/restricciones obsoletos ni abre nuevas publicaciones. **Caso:** `RDS-C37-G02` en `tests/security/privacy/`. **Evidencia:** `docs/evidence/c37/g02.json`.
+- **RDS-C37-G01 / NOT_EXECUTED:** Solicitud de restricción impide leer fuente y reportes/transcripts derivados autorizables. **Caso:** `RDS-C37-G01` en `tests/security/privacy/`. **Evidencia:** `docs/evidence/c037/g01.json`.
+- **RDS-C37-G02 / NOT_EXECUTED:** Restore viejo no rehabilita permisos/restricciones obsoletos ni abre nuevas publicaciones. **Caso:** `RDS-C37-G02` en `tests/security/privacy/`. **Evidencia:** `docs/evidence/c037/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

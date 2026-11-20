@@ -3,7 +3,7 @@
   "name": "agntia-redes: empresa SaaS especialista con middleware, presencia Anam y dos modos de cliente",
   "observed_on": "2026-11-11",
   "delivery_scope": "DOCUMENTATION_ONLY",
-  "implementation_state": "NOT_STARTED",
+  "implementation_state": "PARTIAL_RUNTIME",
   "client_modes": [
     "agente_integrated",
     "external_standalone"
@@ -40,7 +40,7 @@
           "depends_on": [],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El padre no cambia durante el baseline; cualquier diferencia altera el mapa, no la evidencia anterior.",
           "evidence_refs": [
-            "docs/evidence/c01/t01.json"
+            "docs/evidence/c001/t01.json"
           ],
           "surface": "docs/baseline.md"
         },
@@ -53,7 +53,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El padre no cambia durante el baseline; cualquier diferencia altera el mapa, no la evidencia anterior.",
           "evidence_refs": [
-            "docs/evidence/c01/t02.json"
+            "docs/evidence/c001/t02.json"
           ],
           "surface": "docs/parent-diff.md"
         },
@@ -66,7 +66,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El padre no cambia durante el baseline; cualquier diferencia altera el mapa, no la evidencia anterior.",
           "evidence_refs": [
-            "docs/evidence/c01/t03.json"
+            "docs/evidence/c001/t03.json"
           ],
           "surface": "docs/versions.json"
         },
@@ -79,7 +79,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El padre no cambia durante el baseline; cualquier diferencia altera el mapa, no la evidencia anterior.",
           "evidence_refs": [
-            "docs/evidence/c01/t04.json"
+            "docs/evidence/c001/t04.json"
           ],
           "surface": "docs/baseline.md"
         },
@@ -92,7 +92,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El padre no cambia durante el baseline; cualquier diferencia altera el mapa, no la evidencia anterior.",
           "evidence_refs": [
-            "docs/evidence/c01/t05.json"
+            "docs/evidence/c001/t05.json"
           ],
           "surface": "docs/parent-diff.md"
         },
@@ -105,7 +105,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El padre no cambia durante el baseline; cualquier diferencia altera el mapa, no la evidencia anterior.",
           "evidence_refs": [
-            "docs/evidence/c01/t06.json"
+            "docs/evidence/c001/t06.json"
           ],
           "surface": "docs/versions.json"
         },
@@ -118,7 +118,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El padre no cambia durante el baseline; cualquier diferencia altera el mapa, no la evidencia anterior.",
           "evidence_refs": [
-            "docs/evidence/c01/t07.json"
+            "docs/evidence/c001/t07.json"
           ],
           "surface": "docs/baseline.md"
         }
@@ -129,12 +129,12 @@
           "scenario": "El SHA padre ha cambiado: el informe identifica interfaces afectadas y no hereda compatibilidad.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c01/g01.json"
+            "docs/evidence/c001/g01.json"
           ],
           "verification": {
             "suite": "docs-check:c01",
             "case": "RDS-C01-G01",
-            "artifact": "docs/evidence/c01/g01.json",
+            "artifact": "docs/evidence/c001/g01.json",
             "assertion": "El SHA padre ha cambiado: el informe identifica interfaces afectadas y no hereda compatibilidad."
           }
         },
@@ -143,12 +143,12 @@
           "scenario": "Checkout con cambios ajenos: se conservan y el baseline los separa sin reset.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c01/g02.json"
+            "docs/evidence/c001/g02.json"
           ],
           "verification": {
             "suite": "docs-check:c01",
             "case": "RDS-C01-G02",
-            "artifact": "docs/evidence/c01/g02.json",
+            "artifact": "docs/evidence/c001/g02.json",
             "assertion": "Checkout con cambios ajenos: se conservan y el baseline los separa sin reset."
           }
         }
@@ -209,7 +209,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El aislamiento y los controles mínimos son iguales para clientes del padre y clientes externos.",
           "evidence_refs": [
-            "docs/evidence/c02/t01.json"
+            "docs/evidence/c002/t01.json"
           ],
           "surface": "src/domain/service-agreement.ts"
         },
@@ -222,7 +222,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El aislamiento y los controles mínimos son iguales para clientes del padre y clientes externos.",
           "evidence_refs": [
-            "docs/evidence/c02/t02.json"
+            "docs/evidence/c002/t02.json"
           ],
           "surface": "src/domain/work-order.ts"
         },
@@ -235,7 +235,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El aislamiento y los controles mínimos son iguales para clientes del padre y clientes externos.",
           "evidence_refs": [
-            "docs/evidence/c02/t03.json"
+            "docs/evidence/c002/t03.json"
           ],
           "surface": "docs/adr/0001-saas.md"
         },
@@ -248,7 +248,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El aislamiento y los controles mínimos son iguales para clientes del padre y clientes externos.",
           "evidence_refs": [
-            "docs/evidence/c02/t04.json"
+            "docs/evidence/c002/t04.json"
           ],
           "surface": "src/domain/service-agreement.ts"
         },
@@ -261,7 +261,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El aislamiento y los controles mínimos son iguales para clientes del padre y clientes externos.",
           "evidence_refs": [
-            "docs/evidence/c02/t05.json"
+            "docs/evidence/c002/t05.json"
           ],
           "surface": "src/domain/work-order.ts"
         },
@@ -274,7 +274,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El aislamiento y los controles mínimos son iguales para clientes del padre y clientes externos.",
           "evidence_refs": [
-            "docs/evidence/c02/t06.json"
+            "docs/evidence/c002/t06.json"
           ],
           "surface": "docs/adr/0001-saas.md"
         },
@@ -287,7 +287,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El aislamiento y los controles mínimos son iguales para clientes del padre y clientes externos.",
           "evidence_refs": [
-            "docs/evidence/c02/t07.json"
+            "docs/evidence/c002/t07.json"
           ],
           "surface": "src/domain/service-agreement.ts"
         }
@@ -298,12 +298,12 @@
           "scenario": "Cliente externo completo prepara un encargo sin llamadas obligatorias al padre.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c02/g01.json"
+            "docs/evidence/c002/g01.json"
           ],
           "verification": {
             "suite": "tests/domain/service-agreement.test.ts",
             "case": "RDS-C02-G01",
-            "artifact": "docs/evidence/c02/g01.json",
+            "artifact": "docs/evidence/c002/g01.json",
             "assertion": "Cliente externo completo prepara un encargo sin llamadas obligatorias al padre."
           }
         },
@@ -312,12 +312,12 @@
           "scenario": "Dos servicios proponen la misma pieza: solo la autoridad acordada de entrega puede ejecutarla.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c02/g02.json"
+            "docs/evidence/c002/g02.json"
           ],
           "verification": {
             "suite": "tests/domain/service-agreement.test.ts",
             "case": "RDS-C02-G02",
-            "artifact": "docs/evidence/c02/g02.json",
+            "artifact": "docs/evidence/c002/g02.json",
             "assertion": "Dos servicios proponen la misma pieza: solo la autoridad acordada de entrega puede ejecutarla."
           }
         }
@@ -379,7 +379,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Ninguna personalidad o credencial de admin prestada convierte un agente en humano autorizado.",
           "evidence_refs": [
-            "docs/evidence/c03/t01.json"
+            "docs/evidence/c003/t01.json"
           ],
           "surface": "src/auth/principal.ts"
         },
@@ -392,7 +392,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Ninguna personalidad o credencial de admin prestada convierte un agente en humano autorizado.",
           "evidence_refs": [
-            "docs/evidence/c03/t02.json"
+            "docs/evidence/c003/t02.json"
           ],
           "surface": "src/auth/policy.ts"
         },
@@ -405,7 +405,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Ninguna personalidad o credencial de admin prestada convierte un agente en humano autorizado.",
           "evidence_refs": [
-            "docs/evidence/c03/t03.json"
+            "docs/evidence/c003/t03.json"
           ],
           "surface": "tests/security/tenancy.test.ts"
         },
@@ -418,7 +418,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Ninguna personalidad o credencial de admin prestada convierte un agente en humano autorizado.",
           "evidence_refs": [
-            "docs/evidence/c03/t04.json"
+            "docs/evidence/c003/t04.json"
           ],
           "surface": "src/auth/principal.ts"
         },
@@ -431,7 +431,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Ninguna personalidad o credencial de admin prestada convierte un agente en humano autorizado.",
           "evidence_refs": [
-            "docs/evidence/c03/t05.json"
+            "docs/evidence/c003/t05.json"
           ],
           "surface": "src/auth/policy.ts"
         },
@@ -444,7 +444,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Ninguna personalidad o credencial de admin prestada convierte un agente en humano autorizado.",
           "evidence_refs": [
-            "docs/evidence/c03/t06.json"
+            "docs/evidence/c003/t06.json"
           ],
           "surface": "tests/security/tenancy.test.ts"
         },
@@ -457,7 +457,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Ninguna personalidad o credencial de admin prestada convierte un agente en humano autorizado.",
           "evidence_refs": [
-            "docs/evidence/c03/t07.json"
+            "docs/evidence/c003/t07.json"
           ],
           "surface": "src/auth/principal.ts"
         }
@@ -468,12 +468,12 @@
           "scenario": "ClienteA intenta accountBinding deB y recibe404 sin metadatos del otro cliente.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c03/g01.json"
+            "docs/evidence/c003/g01.json"
           ],
           "verification": {
             "suite": "tests/security/tenancy.test.ts",
             "case": "RDS-C03-G01",
-            "artifact": "docs/evidence/c03/g01.json",
+            "artifact": "docs/evidence/c003/g01.json",
             "assertion": "ClienteA intenta accountBinding deB y recibe404 sin metadatos del otro cliente."
           }
         },
@@ -482,12 +482,12 @@
           "scenario": "Fallo al resolver membresía devuelve indisponible/denegado, nunca owner/default.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c03/g02.json"
+            "docs/evidence/c003/g02.json"
           ],
           "verification": {
             "suite": "tests/security/tenancy.test.ts",
             "case": "RDS-C03-G02",
-            "artifact": "docs/evidence/c03/g02.json",
+            "artifact": "docs/evidence/c003/g02.json",
             "assertion": "Fallo al resolver membresía devuelve indisponible/denegado, nunca owner/default."
           }
         }
@@ -548,7 +548,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Validar un schema no constituye autorización ni verifica que un proveedor tenga esa capacidad.",
           "evidence_refs": [
-            "docs/evidence/c04/t01.json"
+            "docs/evidence/c004/t01.json"
           ],
           "surface": "src/contracts/index.ts"
         },
@@ -561,7 +561,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Validar un schema no constituye autorización ni verifica que un proveedor tenga esa capacidad.",
           "evidence_refs": [
-            "docs/evidence/c04/t02.json"
+            "docs/evidence/c004/t02.json"
           ],
           "surface": "docs/contracts/schemas/"
         },
@@ -574,7 +574,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Validar un schema no constituye autorización ni verifica que un proveedor tenga esa capacidad.",
           "evidence_refs": [
-            "docs/evidence/c04/t03.json"
+            "docs/evidence/c004/t03.json"
           ],
           "surface": "tests/contracts/wire.test.ts"
         },
@@ -587,7 +587,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Validar un schema no constituye autorización ni verifica que un proveedor tenga esa capacidad.",
           "evidence_refs": [
-            "docs/evidence/c04/t04.json"
+            "docs/evidence/c004/t04.json"
           ],
           "surface": "src/contracts/index.ts"
         },
@@ -600,7 +600,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Validar un schema no constituye autorización ni verifica que un proveedor tenga esa capacidad.",
           "evidence_refs": [
-            "docs/evidence/c04/t05.json"
+            "docs/evidence/c004/t05.json"
           ],
           "surface": "docs/contracts/schemas/"
         },
@@ -613,7 +613,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Validar un schema no constituye autorización ni verifica que un proveedor tenga esa capacidad.",
           "evidence_refs": [
-            "docs/evidence/c04/t06.json"
+            "docs/evidence/c004/t06.json"
           ],
           "surface": "tests/contracts/wire.test.ts"
         },
@@ -626,7 +626,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Validar un schema no constituye autorización ni verifica que un proveedor tenga esa capacidad.",
           "evidence_refs": [
-            "docs/evidence/c04/t07.json"
+            "docs/evidence/c004/t07.json"
           ],
           "surface": "src/contracts/index.ts"
         }
@@ -637,12 +637,12 @@
           "scenario": "Payload con tenant/role/URL arbitrarios fuera del DTO es rechazado antes de IO.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c04/g01.json"
+            "docs/evidence/c004/g01.json"
           ],
           "verification": {
             "suite": "tests/contracts/wire.test.ts",
             "case": "RDS-C04-G01",
-            "artifact": "docs/evidence/c04/g01.json",
+            "artifact": "docs/evidence/c004/g01.json",
             "assertion": "Payload con tenant/role/URL arbitrarios fuera del DTO es rechazado antes de IO."
           }
         },
@@ -651,12 +651,12 @@
           "scenario": "Contrato viejo no compatible devuelve error explícito; no elimina campos silenciosamente.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c04/g02.json"
+            "docs/evidence/c004/g02.json"
           ],
           "verification": {
             "suite": "tests/contracts/wire.test.ts",
             "case": "RDS-C04-G02",
-            "artifact": "docs/evidence/c04/g02.json",
+            "artifact": "docs/evidence/c004/g02.json",
             "assertion": "Contrato viejo no compatible devuelve error explícito; no elimina campos silenciosamente."
           }
         }
@@ -717,7 +717,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: SQLite o Postgres no comparten transacción con el HTTP social; la cola no prueba el efecto remoto.",
           "evidence_refs": [
-            "docs/evidence/c05/t01.json"
+            "docs/evidence/c005/t01.json"
           ],
           "surface": "src/storage/migrations/"
         },
@@ -730,7 +730,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: SQLite o Postgres no comparten transacción con el HTTP social; la cola no prueba el efecto remoto.",
           "evidence_refs": [
-            "docs/evidence/c05/t02.json"
+            "docs/evidence/c005/t02.json"
           ],
           "surface": "src/storage/audit.ts"
         },
@@ -743,7 +743,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: SQLite o Postgres no comparten transacción con el HTTP social; la cola no prueba el efecto remoto.",
           "evidence_refs": [
-            "docs/evidence/c05/t03.json"
+            "docs/evidence/c005/t03.json"
           ],
           "surface": "tests/integration/migrations.test.ts"
         },
@@ -756,7 +756,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: SQLite o Postgres no comparten transacción con el HTTP social; la cola no prueba el efecto remoto.",
           "evidence_refs": [
-            "docs/evidence/c05/t04.json"
+            "docs/evidence/c005/t04.json"
           ],
           "surface": "src/storage/migrations/"
         },
@@ -769,7 +769,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: SQLite o Postgres no comparten transacción con el HTTP social; la cola no prueba el efecto remoto.",
           "evidence_refs": [
-            "docs/evidence/c05/t05.json"
+            "docs/evidence/c005/t05.json"
           ],
           "surface": "src/storage/audit.ts"
         },
@@ -782,7 +782,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: SQLite o Postgres no comparten transacción con el HTTP social; la cola no prueba el efecto remoto.",
           "evidence_refs": [
-            "docs/evidence/c05/t06.json"
+            "docs/evidence/c005/t06.json"
           ],
           "surface": "tests/integration/migrations.test.ts"
         },
@@ -795,7 +795,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: SQLite o Postgres no comparten transacción con el HTTP social; la cola no prueba el efecto remoto.",
           "evidence_refs": [
-            "docs/evidence/c05/t07.json"
+            "docs/evidence/c005/t07.json"
           ],
           "surface": "src/storage/migrations/"
         }
@@ -806,12 +806,12 @@
           "scenario": "Falla el append de auditoría y no quedan mutación, saldo ni outbox de éxito.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c05/g01.json"
+            "docs/evidence/c005/g01.json"
           ],
           "verification": {
             "suite": "tests/integration/migrations.test.ts",
             "case": "RDS-C05-G01",
-            "artifact": "docs/evidence/c05/g01.json",
+            "artifact": "docs/evidence/c005/g01.json",
             "assertion": "Falla el append de auditoría y no quedan mutación, saldo ni outbox de éxito."
           }
         },
@@ -820,12 +820,12 @@
           "scenario": "Una migración falla y conserva datos previos, versión y cadena auditables.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c05/g02.json"
+            "docs/evidence/c005/g02.json"
           ],
           "verification": {
             "suite": "tests/integration/migrations.test.ts",
             "case": "RDS-C05-G02",
-            "artifact": "docs/evidence/c05/g02.json",
+            "artifact": "docs/evidence/c005/g02.json",
             "assertion": "Una migración falla y conserva datos previos, versión y cadena auditables."
           }
         }
@@ -889,7 +889,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un plan o licencia de código no otorga permisos de plataforma, uso de datos o minutos ilimitados.",
           "evidence_refs": [
-            "docs/evidence/c06/t01.json"
+            "docs/evidence/c006/t01.json"
           ],
           "surface": "docs/upstreams/"
         },
@@ -902,7 +902,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un plan o licencia de código no otorga permisos de plataforma, uso de datos o minutos ilimitados.",
           "evidence_refs": [
-            "docs/evidence/c06/t02.json"
+            "docs/evidence/c006/t02.json"
           ],
           "surface": "src/providers/catalog.ts"
         },
@@ -915,7 +915,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un plan o licencia de código no otorga permisos de plataforma, uso de datos o minutos ilimitados.",
           "evidence_refs": [
-            "docs/evidence/c06/t03.json"
+            "docs/evidence/c006/t03.json"
           ],
           "surface": "src/domain/entitlements.ts"
         },
@@ -928,7 +928,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un plan o licencia de código no otorga permisos de plataforma, uso de datos o minutos ilimitados.",
           "evidence_refs": [
-            "docs/evidence/c06/t04.json"
+            "docs/evidence/c006/t04.json"
           ],
           "surface": "docs/upstreams/"
         },
@@ -941,7 +941,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un plan o licencia de código no otorga permisos de plataforma, uso de datos o minutos ilimitados.",
           "evidence_refs": [
-            "docs/evidence/c06/t05.json"
+            "docs/evidence/c006/t05.json"
           ],
           "surface": "src/providers/catalog.ts"
         },
@@ -954,7 +954,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un plan o licencia de código no otorga permisos de plataforma, uso de datos o minutos ilimitados.",
           "evidence_refs": [
-            "docs/evidence/c06/t06.json"
+            "docs/evidence/c006/t06.json"
           ],
           "surface": "src/domain/entitlements.ts"
         },
@@ -967,7 +967,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un plan o licencia de código no otorga permisos de plataforma, uso de datos o minutos ilimitados.",
           "evidence_refs": [
-            "docs/evidence/c06/t07.json"
+            "docs/evidence/c006/t07.json"
           ],
           "surface": "docs/upstreams/"
         }
@@ -978,12 +978,12 @@
           "scenario": "La edición instalada carece del endpoint documentado en Cloud: capability queda unsupported.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c06/g01.json"
+            "docs/evidence/c006/g01.json"
           ],
           "verification": {
             "suite": "tests/contracts/catalog.test.ts",
             "case": "RDS-C06-G01",
-            "artifact": "docs/evidence/c06/g01.json",
+            "artifact": "docs/evidence/c006/g01.json",
             "assertion": "La edición instalada carece del endpoint documentado en Cloud: capability queda unsupported."
           }
         },
@@ -992,12 +992,12 @@
           "scenario": "Un scope revocado o report caducado bloquea escritura aunque el último probe tuviera200.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c06/g02.json"
+            "docs/evidence/c006/g02.json"
           ],
           "verification": {
             "suite": "tests/contracts/catalog.test.ts",
             "case": "RDS-C06-G02",
-            "artifact": "docs/evidence/c06/g02.json",
+            "artifact": "docs/evidence/c006/g02.json",
             "assertion": "Un scope revocado o report caducado bloquea escritura aunque el último probe tuviera200."
           }
         }
@@ -1059,7 +1059,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Conectar una cuenta autoriza una capacidad concreta, no cualquier publicación o lectura privada.",
           "evidence_refs": [
-            "docs/evidence/c07/t01.json"
+            "docs/evidence/c007/t01.json"
           ],
           "surface": "src/connections/oauth.ts"
         },
@@ -1072,7 +1072,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Conectar una cuenta autoriza una capacidad concreta, no cualquier publicación o lectura privada.",
           "evidence_refs": [
-            "docs/evidence/c07/t02.json"
+            "docs/evidence/c007/t02.json"
           ],
           "surface": "src/connections/registry.ts"
         },
@@ -1085,7 +1085,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Conectar una cuenta autoriza una capacidad concreta, no cualquier publicación o lectura privada.",
           "evidence_refs": [
-            "docs/evidence/c07/t03.json"
+            "docs/evidence/c007/t03.json"
           ],
           "surface": "tests/security/oauth.test.ts"
         },
@@ -1098,7 +1098,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Conectar una cuenta autoriza una capacidad concreta, no cualquier publicación o lectura privada.",
           "evidence_refs": [
-            "docs/evidence/c07/t04.json"
+            "docs/evidence/c007/t04.json"
           ],
           "surface": "src/connections/oauth.ts"
         },
@@ -1111,7 +1111,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Conectar una cuenta autoriza una capacidad concreta, no cualquier publicación o lectura privada.",
           "evidence_refs": [
-            "docs/evidence/c07/t05.json"
+            "docs/evidence/c007/t05.json"
           ],
           "surface": "src/connections/registry.ts"
         },
@@ -1124,7 +1124,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Conectar una cuenta autoriza una capacidad concreta, no cualquier publicación o lectura privada.",
           "evidence_refs": [
-            "docs/evidence/c07/t06.json"
+            "docs/evidence/c007/t06.json"
           ],
           "surface": "tests/security/oauth.test.ts"
         },
@@ -1137,7 +1137,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Conectar una cuenta autoriza una capacidad concreta, no cualquier publicación o lectura privada.",
           "evidence_refs": [
-            "docs/evidence/c07/t07.json"
+            "docs/evidence/c007/t07.json"
           ],
           "surface": "src/connections/oauth.ts"
         }
@@ -1148,12 +1148,12 @@
           "scenario": "Callback emitido paraA llega desde sesiónB y no crea binding ni revela cuenta.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c07/g01.json"
+            "docs/evidence/c007/g01.json"
           ],
           "verification": {
             "suite": "tests/security/oauth.test.ts",
             "case": "RDS-C07-G01",
-            "artifact": "docs/evidence/c07/g01.json",
+            "artifact": "docs/evidence/c007/g01.json",
             "assertion": "Callback emitido paraA llega desde sesiónB y no crea binding ni revela cuenta."
           }
         },
@@ -1162,12 +1162,12 @@
           "scenario": "Refresh falla durante claim: job bloqueado y credential/error no aparecen en logs.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c07/g02.json"
+            "docs/evidence/c007/g02.json"
           ],
           "verification": {
             "suite": "tests/security/oauth.test.ts",
             "case": "RDS-C07-G02",
-            "artifact": "docs/evidence/c07/g02.json",
+            "artifact": "docs/evidence/c007/g02.json",
             "assertion": "Refresh falla durante claim: job bloqueado y credential/error no aparecen en logs."
           }
         }
@@ -1229,7 +1229,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El código del modelo no determina método, dominio, credencial o retry de escritura.",
           "evidence_refs": [
-            "docs/evidence/c08/t01.json"
+            "docs/evidence/c008/t01.json"
           ],
           "surface": "src/providers/transport.ts"
         },
@@ -1242,7 +1242,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El código del modelo no determina método, dominio, credencial o retry de escritura.",
           "evidence_refs": [
-            "docs/evidence/c08/t02.json"
+            "docs/evidence/c008/t02.json"
           ],
           "surface": "src/providers/port.ts"
         },
@@ -1255,7 +1255,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El código del modelo no determina método, dominio, credencial o retry de escritura.",
           "evidence_refs": [
-            "docs/evidence/c08/t03.json"
+            "docs/evidence/c008/t03.json"
           ],
           "surface": "tests/contracts/transport.test.ts"
         },
@@ -1268,7 +1268,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El código del modelo no determina método, dominio, credencial o retry de escritura.",
           "evidence_refs": [
-            "docs/evidence/c08/t04.json"
+            "docs/evidence/c008/t04.json"
           ],
           "surface": "src/providers/transport.ts"
         },
@@ -1281,7 +1281,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El código del modelo no determina método, dominio, credencial o retry de escritura.",
           "evidence_refs": [
-            "docs/evidence/c08/t05.json"
+            "docs/evidence/c008/t05.json"
           ],
           "surface": "src/providers/port.ts"
         },
@@ -1294,7 +1294,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El código del modelo no determina método, dominio, credencial o retry de escritura.",
           "evidence_refs": [
-            "docs/evidence/c08/t06.json"
+            "docs/evidence/c008/t06.json"
           ],
           "surface": "tests/contracts/transport.test.ts"
         },
@@ -1307,7 +1307,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El código del modelo no determina método, dominio, credencial o retry de escritura.",
           "evidence_refs": [
-            "docs/evidence/c08/t07.json"
+            "docs/evidence/c008/t07.json"
           ],
           "surface": "src/providers/transport.ts"
         }
@@ -1318,12 +1318,12 @@
           "scenario": "Destino metadata o redirect a host no permitido queda bloqueado antes de transferencia.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c08/g01.json"
+            "docs/evidence/c008/g01.json"
           ],
           "verification": {
             "suite": "tests/contracts/transport.test.ts",
             "case": "RDS-C08-G01",
-            "artifact": "docs/evidence/c08/g01.json",
+            "artifact": "docs/evidence/c008/g01.json",
             "assertion": "Destino metadata o redirect a host no permitido queda bloqueado antes de transferencia."
           }
         },
@@ -1332,12 +1332,12 @@
           "scenario": "Timeout después de enviar create produce outcome_unknown y cero reintentos automáticos.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c08/g02.json"
+            "docs/evidence/c008/g02.json"
           ],
           "verification": {
             "suite": "tests/contracts/transport.test.ts",
             "case": "RDS-C08-G02",
-            "artifact": "docs/evidence/c08/g02.json",
+            "artifact": "docs/evidence/c008/g02.json",
             "assertion": "Timeout después de enviar create produce outcome_unknown y cero reintentos automáticos."
           }
         }
@@ -1398,7 +1398,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El backend no custodia ni inventa la aprobación empresarial y un jobID no es postID.",
           "evidence_refs": [
-            "docs/evidence/c09/t01.json"
+            "docs/evidence/c009/t01.json"
           ],
           "surface": "src/adapters/postiz/"
         },
@@ -1411,7 +1411,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El backend no custodia ni inventa la aprobación empresarial y un jobID no es postID.",
           "evidence_refs": [
-            "docs/evidence/c09/t02.json"
+            "docs/evidence/c009/t02.json"
           ],
           "surface": "tests/contracts/postiz/"
         },
@@ -1424,7 +1424,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El backend no custodia ni inventa la aprobación empresarial y un jobID no es postID.",
           "evidence_refs": [
-            "docs/evidence/c09/t03.json"
+            "docs/evidence/c009/t03.json"
           ],
           "surface": "docs/adr/backend-social.md"
         },
@@ -1437,7 +1437,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El backend no custodia ni inventa la aprobación empresarial y un jobID no es postID.",
           "evidence_refs": [
-            "docs/evidence/c09/t04.json"
+            "docs/evidence/c009/t04.json"
           ],
           "surface": "src/adapters/postiz/"
         },
@@ -1450,7 +1450,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El backend no custodia ni inventa la aprobación empresarial y un jobID no es postID.",
           "evidence_refs": [
-            "docs/evidence/c09/t05.json"
+            "docs/evidence/c009/t05.json"
           ],
           "surface": "tests/contracts/postiz/"
         },
@@ -1463,7 +1463,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El backend no custodia ni inventa la aprobación empresarial y un jobID no es postID.",
           "evidence_refs": [
-            "docs/evidence/c09/t06.json"
+            "docs/evidence/c009/t06.json"
           ],
           "surface": "docs/adr/backend-social.md"
         },
@@ -1476,7 +1476,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El backend no custodia ni inventa la aprobación empresarial y un jobID no es postID.",
           "evidence_refs": [
-            "docs/evidence/c09/t07.json"
+            "docs/evidence/c009/t07.json"
           ],
           "surface": "src/adapters/postiz/"
         }
@@ -1487,12 +1487,12 @@
           "scenario": "Postiz devuelve job aceptado; UI permanece pendiente de confirmación remota, sin post fake.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c09/g01.json"
+            "docs/evidence/c009/g01.json"
           ],
           "verification": {
             "suite": "tests/contracts/postiz/",
             "case": "RDS-C09-G01",
-            "artifact": "docs/evidence/c09/g01.json",
+            "artifact": "docs/evidence/c009/g01.json",
             "assertion": "Postiz devuelve job aceptado; UI permanece pendiente de confirmación remota, sin post fake."
           }
         },
@@ -1501,12 +1501,12 @@
           "scenario": "Worker reinicia y reconoce schedule remoto existente sin programar una segunda copia.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c09/g02.json"
+            "docs/evidence/c009/g02.json"
           ],
           "verification": {
             "suite": "tests/contracts/postiz/",
             "case": "RDS-C09-G02",
-            "artifact": "docs/evidence/c09/g02.json",
+            "artifact": "docs/evidence/c009/g02.json",
             "assertion": "Worker reinicia y reconoce schedule remoto existente sin programar una segunda copia."
           }
         }
@@ -1567,7 +1567,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La idempotency temporal de una API no equivale a exactly-once indefinido del negocio.",
           "evidence_refs": [
-            "docs/evidence/c10/t01.json"
+            "docs/evidence/c010/t01.json"
           ],
           "surface": "src/adapters/mastodon/"
         },
@@ -1580,7 +1580,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La idempotency temporal de una API no equivale a exactly-once indefinido del negocio.",
           "evidence_refs": [
-            "docs/evidence/c10/t02.json"
+            "docs/evidence/c010/t02.json"
           ],
           "surface": "tests/integration/mastodon/"
         },
@@ -1593,7 +1593,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La idempotency temporal de una API no equivale a exactly-once indefinido del negocio.",
           "evidence_refs": [
-            "docs/evidence/c10/t03.json"
+            "docs/evidence/c010/t03.json"
           ],
           "surface": "docs/providers/mastodon.md"
         },
@@ -1606,7 +1606,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La idempotency temporal de una API no equivale a exactly-once indefinido del negocio.",
           "evidence_refs": [
-            "docs/evidence/c10/t04.json"
+            "docs/evidence/c010/t04.json"
           ],
           "surface": "src/adapters/mastodon/"
         },
@@ -1619,7 +1619,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La idempotency temporal de una API no equivale a exactly-once indefinido del negocio.",
           "evidence_refs": [
-            "docs/evidence/c10/t05.json"
+            "docs/evidence/c010/t05.json"
           ],
           "surface": "tests/integration/mastodon/"
         },
@@ -1632,7 +1632,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La idempotency temporal de una API no equivale a exactly-once indefinido del negocio.",
           "evidence_refs": [
-            "docs/evidence/c10/t06.json"
+            "docs/evidence/c010/t06.json"
           ],
           "surface": "docs/providers/mastodon.md"
         },
@@ -1645,7 +1645,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La idempotency temporal de una API no equivale a exactly-once indefinido del negocio.",
           "evidence_refs": [
-            "docs/evidence/c10/t07.json"
+            "docs/evidence/c010/t07.json"
           ],
           "surface": "src/adapters/mastodon/"
         }
@@ -1656,12 +1656,12 @@
           "scenario": "Replay días después devuelve el intent previo y no crea otro post porque expiró key remota.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c10/g01.json"
+            "docs/evidence/c010/g01.json"
           ],
           "verification": {
             "suite": "tests/integration/mastodon/",
             "case": "RDS-C10-G01",
-            "artifact": "docs/evidence/c10/g01.json",
+            "artifact": "docs/evidence/c010/g01.json",
             "assertion": "Replay días después devuelve el intent previo y no crea otro post porque expiró key remota."
           }
         },
@@ -1670,12 +1670,12 @@
           "scenario": "Respuesta de scheduled status no se interpreta como publicación pública ya confirmada.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c10/g02.json"
+            "docs/evidence/c010/g02.json"
           ],
           "verification": {
             "suite": "tests/integration/mastodon/",
             "case": "RDS-C10-G02",
-            "artifact": "docs/evidence/c10/g02.json",
+            "artifact": "docs/evidence/c010/g02.json",
             "assertion": "Respuesta de scheduled status no se interpreta como publicación pública ya confirmada."
           }
         }
@@ -1736,7 +1736,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Una referencia remota no prueba identidad, permiso ni equivalencia del contenido.",
           "evidence_refs": [
-            "docs/evidence/c11/t01.json"
+            "docs/evidence/c011/t01.json"
           ],
           "surface": "src/adapters/bluesky/"
         },
@@ -1749,7 +1749,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Una referencia remota no prueba identidad, permiso ni equivalencia del contenido.",
           "evidence_refs": [
-            "docs/evidence/c11/t02.json"
+            "docs/evidence/c011/t02.json"
           ],
           "surface": "tests/contracts/bluesky/"
         },
@@ -1762,7 +1762,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Una referencia remota no prueba identidad, permiso ni equivalencia del contenido.",
           "evidence_refs": [
-            "docs/evidence/c11/t03.json"
+            "docs/evidence/c011/t03.json"
           ],
           "surface": "docs/providers/bluesky.md"
         },
@@ -1775,7 +1775,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Una referencia remota no prueba identidad, permiso ni equivalencia del contenido.",
           "evidence_refs": [
-            "docs/evidence/c11/t04.json"
+            "docs/evidence/c011/t04.json"
           ],
           "surface": "src/adapters/bluesky/"
         },
@@ -1788,7 +1788,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Una referencia remota no prueba identidad, permiso ni equivalencia del contenido.",
           "evidence_refs": [
-            "docs/evidence/c11/t05.json"
+            "docs/evidence/c011/t05.json"
           ],
           "surface": "tests/contracts/bluesky/"
         },
@@ -1801,7 +1801,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Una referencia remota no prueba identidad, permiso ni equivalencia del contenido.",
           "evidence_refs": [
-            "docs/evidence/c11/t06.json"
+            "docs/evidence/c011/t06.json"
           ],
           "surface": "docs/providers/bluesky.md"
         },
@@ -1814,7 +1814,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Una referencia remota no prueba identidad, permiso ni equivalencia del contenido.",
           "evidence_refs": [
-            "docs/evidence/c11/t07.json"
+            "docs/evidence/c011/t07.json"
           ],
           "surface": "src/adapters/bluesky/"
         }
@@ -1825,12 +1825,12 @@
           "scenario": "El rkey/ref apunta a contenido distinto y se bloquea en conflicto, sin overwrite.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c11/g01.json"
+            "docs/evidence/c011/g01.json"
           ],
           "verification": {
             "suite": "tests/contracts/bluesky/",
             "case": "RDS-C11-G01",
-            "artifact": "docs/evidence/c11/g01.json",
+            "artifact": "docs/evidence/c011/g01.json",
             "assertion": "El rkey/ref apunta a contenido distinto y se bloquea en conflicto, sin overwrite."
           }
         },
@@ -1839,12 +1839,12 @@
           "scenario": "Cambiar PDS o cuenta requiere revalidación de binding y no cambia el tenant por texto del modelo.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c11/g02.json"
+            "docs/evidence/c011/g02.json"
           ],
           "verification": {
             "suite": "tests/contracts/bluesky/",
             "case": "RDS-C11-G02",
-            "artifact": "docs/evidence/c11/g02.json",
+            "artifact": "docs/evidence/c011/g02.json",
             "assertion": "Cambiar PDS o cuenta requiere revalidación de binding y no cambia el tenant por texto del modelo."
           }
         }
@@ -1905,7 +1905,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Meta documentado es unknown de runtime hasta verificar cada producto y cuenta; no número universal de posts/día.",
           "evidence_refs": [
-            "docs/evidence/c12/t01.json"
+            "docs/evidence/c012/t01.json"
           ],
           "surface": "src/adapters/meta/"
         },
@@ -1918,7 +1918,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Meta documentado es unknown de runtime hasta verificar cada producto y cuenta; no número universal de posts/día.",
           "evidence_refs": [
-            "docs/evidence/c12/t02.json"
+            "docs/evidence/c012/t02.json"
           ],
           "surface": "docs/providers/meta-matrix.md"
         },
@@ -1931,7 +1931,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Meta documentado es unknown de runtime hasta verificar cada producto y cuenta; no número universal de posts/día.",
           "evidence_refs": [
-            "docs/evidence/c12/t03.json"
+            "docs/evidence/c012/t03.json"
           ],
           "surface": "tests/contracts/meta/"
         },
@@ -1944,7 +1944,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Meta documentado es unknown de runtime hasta verificar cada producto y cuenta; no número universal de posts/día.",
           "evidence_refs": [
-            "docs/evidence/c12/t04.json"
+            "docs/evidence/c012/t04.json"
           ],
           "surface": "src/adapters/meta/"
         },
@@ -1957,7 +1957,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Meta documentado es unknown de runtime hasta verificar cada producto y cuenta; no número universal de posts/día.",
           "evidence_refs": [
-            "docs/evidence/c12/t05.json"
+            "docs/evidence/c012/t05.json"
           ],
           "surface": "docs/providers/meta-matrix.md"
         },
@@ -1970,7 +1970,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Meta documentado es unknown de runtime hasta verificar cada producto y cuenta; no número universal de posts/día.",
           "evidence_refs": [
-            "docs/evidence/c12/t06.json"
+            "docs/evidence/c012/t06.json"
           ],
           "surface": "tests/contracts/meta/"
         },
@@ -1983,7 +1983,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Meta documentado es unknown de runtime hasta verificar cada producto y cuenta; no número universal de posts/día.",
           "evidence_refs": [
-            "docs/evidence/c12/t07.json"
+            "docs/evidence/c012/t07.json"
           ],
           "surface": "src/adapters/meta/"
         }
@@ -1994,12 +1994,12 @@
           "scenario": "Cuenta o producto no elegible queda unsupported sin fallback a scraping/browser.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c12/g01.json"
+            "docs/evidence/c012/g01.json"
           ],
           "verification": {
             "suite": "tests/contracts/meta/",
             "case": "RDS-C12-G01",
-            "artifact": "docs/evidence/c12/g01.json",
+            "artifact": "docs/evidence/c012/g01.json",
             "assertion": "Cuenta o producto no elegible queda unsupported sin fallback a scraping/browser."
           }
         },
@@ -2008,12 +2008,12 @@
           "scenario": "Container creado para cuentaA no puede publicarse con binding deB.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c12/g02.json"
+            "docs/evidence/c012/g02.json"
           ],
           "verification": {
             "suite": "tests/contracts/meta/",
             "case": "RDS-C12-G02",
-            "artifact": "docs/evidence/c12/g02.json",
+            "artifact": "docs/evidence/c012/g02.json",
             "assertion": "Container creado para cuentaA no puede publicarse con binding deB."
           }
         }
@@ -2074,7 +2074,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El permiso de publicar como miembro no concede publicación ni lectura de una empresa.",
           "evidence_refs": [
-            "docs/evidence/c13/t01.json"
+            "docs/evidence/c013/t01.json"
           ],
           "surface": "src/adapters/linkedin/"
         },
@@ -2087,7 +2087,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El permiso de publicar como miembro no concede publicación ni lectura de una empresa.",
           "evidence_refs": [
-            "docs/evidence/c13/t02.json"
+            "docs/evidence/c013/t02.json"
           ],
           "surface": "docs/providers/linkedin.md"
         },
@@ -2100,7 +2100,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El permiso de publicar como miembro no concede publicación ni lectura de una empresa.",
           "evidence_refs": [
-            "docs/evidence/c13/t03.json"
+            "docs/evidence/c013/t03.json"
           ],
           "surface": "tests/contracts/linkedin/"
         },
@@ -2113,7 +2113,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El permiso de publicar como miembro no concede publicación ni lectura de una empresa.",
           "evidence_refs": [
-            "docs/evidence/c13/t04.json"
+            "docs/evidence/c013/t04.json"
           ],
           "surface": "src/adapters/linkedin/"
         },
@@ -2126,7 +2126,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El permiso de publicar como miembro no concede publicación ni lectura de una empresa.",
           "evidence_refs": [
-            "docs/evidence/c13/t05.json"
+            "docs/evidence/c013/t05.json"
           ],
           "surface": "docs/providers/linkedin.md"
         },
@@ -2139,7 +2139,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El permiso de publicar como miembro no concede publicación ni lectura de una empresa.",
           "evidence_refs": [
-            "docs/evidence/c13/t06.json"
+            "docs/evidence/c013/t06.json"
           ],
           "surface": "tests/contracts/linkedin/"
         },
@@ -2152,7 +2152,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El permiso de publicar como miembro no concede publicación ni lectura de una empresa.",
           "evidence_refs": [
-            "docs/evidence/c13/t07.json"
+            "docs/evidence/c013/t07.json"
           ],
           "surface": "src/adapters/linkedin/"
         }
@@ -2163,12 +2163,12 @@
           "scenario": "El header/API version ya retirado bloquea la capability y muestra actualización pendiente.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c13/g01.json"
+            "docs/evidence/c013/g01.json"
           ],
           "verification": {
             "suite": "tests/contracts/linkedin/",
             "case": "RDS-C13-G01",
-            "artifact": "docs/evidence/c13/g01.json",
+            "artifact": "docs/evidence/c013/g01.json",
             "assertion": "El header/API version ya retirado bloquea la capability y muestra actualización pendiente."
           }
         },
@@ -2177,12 +2177,12 @@
           "scenario": "Rol de página revocado tras aprobación impide envío en claim.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c13/g02.json"
+            "docs/evidence/c013/g02.json"
           ],
           "verification": {
             "suite": "tests/contracts/linkedin/",
             "case": "RDS-C13-G02",
-            "artifact": "docs/evidence/c13/g02.json",
+            "artifact": "docs/evidence/c013/g02.json",
             "assertion": "Rol de página revocado tras aprobación impide envío en claim."
           }
         }
@@ -2243,7 +2243,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Subir un vídeo no demuestra que sea público o esté disponible; no transferir reglas de TikTok.",
           "evidence_refs": [
-            "docs/evidence/c14/t01.json"
+            "docs/evidence/c014/t01.json"
           ],
           "surface": "src/adapters/youtube/"
         },
@@ -2256,7 +2256,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Subir un vídeo no demuestra que sea público o esté disponible; no transferir reglas de TikTok.",
           "evidence_refs": [
-            "docs/evidence/c14/t02.json"
+            "docs/evidence/c014/t02.json"
           ],
           "surface": "tests/contracts/youtube/"
         },
@@ -2269,7 +2269,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Subir un vídeo no demuestra que sea público o esté disponible; no transferir reglas de TikTok.",
           "evidence_refs": [
-            "docs/evidence/c14/t03.json"
+            "docs/evidence/c014/t03.json"
           ],
           "surface": "docs/providers/youtube.md"
         },
@@ -2282,7 +2282,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Subir un vídeo no demuestra que sea público o esté disponible; no transferir reglas de TikTok.",
           "evidence_refs": [
-            "docs/evidence/c14/t04.json"
+            "docs/evidence/c014/t04.json"
           ],
           "surface": "src/adapters/youtube/"
         },
@@ -2295,7 +2295,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Subir un vídeo no demuestra que sea público o esté disponible; no transferir reglas de TikTok.",
           "evidence_refs": [
-            "docs/evidence/c14/t05.json"
+            "docs/evidence/c014/t05.json"
           ],
           "surface": "tests/contracts/youtube/"
         },
@@ -2308,7 +2308,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Subir un vídeo no demuestra que sea público o esté disponible; no transferir reglas de TikTok.",
           "evidence_refs": [
-            "docs/evidence/c14/t06.json"
+            "docs/evidence/c014/t06.json"
           ],
           "surface": "docs/providers/youtube.md"
         },
@@ -2321,7 +2321,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Subir un vídeo no demuestra que sea público o esté disponible; no transferir reglas de TikTok.",
           "evidence_refs": [
-            "docs/evidence/c14/t07.json"
+            "docs/evidence/c014/t07.json"
           ],
           "surface": "src/adapters/youtube/"
         }
@@ -2332,12 +2332,12 @@
           "scenario": "Upload termina pero processing falla: el intent no figura publicado y conserva receipt de fallo.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c14/g01.json"
+            "docs/evidence/c014/g01.json"
           ],
           "verification": {
             "suite": "tests/contracts/youtube/",
             "case": "RDS-C14-G01",
-            "artifact": "docs/evidence/c14/g01.json",
+            "artifact": "docs/evidence/c014/g01.json",
             "assertion": "Upload termina pero processing falla: el intent no figura publicado y conserva receipt de fallo."
           }
         },
@@ -2346,12 +2346,12 @@
           "scenario": "Payload sin visibilidad explícita se rechaza en preview aunque el proveedor tenga default.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c14/g02.json"
+            "docs/evidence/c014/g02.json"
           ],
           "verification": {
             "suite": "tests/contracts/youtube/",
             "case": "RDS-C14-G02",
-            "artifact": "docs/evidence/c14/g02.json",
+            "artifact": "docs/evidence/c014/g02.json",
             "assertion": "Payload sin visibilidad explícita se rechaza en preview aunque el proveedor tenga default."
           }
         }
@@ -2412,7 +2412,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un checkbox comercial del SaaS no sustituye la elección/consentimiento exigidos por TikTok.",
           "evidence_refs": [
-            "docs/evidence/c15/t01.json"
+            "docs/evidence/c015/t01.json"
           ],
           "surface": "src/adapters/tiktok/"
         },
@@ -2425,7 +2425,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un checkbox comercial del SaaS no sustituye la elección/consentimiento exigidos por TikTok.",
           "evidence_refs": [
-            "docs/evidence/c15/t02.json"
+            "docs/evidence/c015/t02.json"
           ],
           "surface": "docs/providers/tiktok.md"
         },
@@ -2438,7 +2438,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un checkbox comercial del SaaS no sustituye la elección/consentimiento exigidos por TikTok.",
           "evidence_refs": [
-            "docs/evidence/c15/t03.json"
+            "docs/evidence/c015/t03.json"
           ],
           "surface": "tests/contracts/tiktok/"
         },
@@ -2451,7 +2451,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un checkbox comercial del SaaS no sustituye la elección/consentimiento exigidos por TikTok.",
           "evidence_refs": [
-            "docs/evidence/c15/t04.json"
+            "docs/evidence/c015/t04.json"
           ],
           "surface": "src/adapters/tiktok/"
         },
@@ -2464,7 +2464,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un checkbox comercial del SaaS no sustituye la elección/consentimiento exigidos por TikTok.",
           "evidence_refs": [
-            "docs/evidence/c15/t05.json"
+            "docs/evidence/c015/t05.json"
           ],
           "surface": "docs/providers/tiktok.md"
         },
@@ -2477,7 +2477,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un checkbox comercial del SaaS no sustituye la elección/consentimiento exigidos por TikTok.",
           "evidence_refs": [
-            "docs/evidence/c15/t06.json"
+            "docs/evidence/c015/t06.json"
           ],
           "surface": "tests/contracts/tiktok/"
         },
@@ -2490,7 +2490,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un checkbox comercial del SaaS no sustituye la elección/consentimiento exigidos por TikTok.",
           "evidence_refs": [
-            "docs/evidence/c15/t07.json"
+            "docs/evidence/c015/t07.json"
           ],
           "surface": "src/adapters/tiktok/"
         }
@@ -2501,12 +2501,12 @@
           "scenario": "App sin audit no publica público ni evade la restricción mediante browser.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c15/g01.json"
+            "docs/evidence/c015/g01.json"
           ],
           "verification": {
             "suite": "tests/contracts/tiktok/",
             "case": "RDS-C15-G01",
-            "artifact": "docs/evidence/c15/g01.json",
+            "artifact": "docs/evidence/c015/g01.json",
             "assertion": "App sin audit no publica público ni evade la restricción mediante browser."
           }
         },
@@ -2515,12 +2515,12 @@
           "scenario": "Creator cambia opciones tras preview: aprobación/payload se invalida antes de upload.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c15/g02.json"
+            "docs/evidence/c015/g02.json"
           ],
           "verification": {
             "suite": "tests/contracts/tiktok/",
             "case": "RDS-C15-G02",
-            "artifact": "docs/evidence/c15/g02.json",
+            "artifact": "docs/evidence/c015/g02.json",
             "assertion": "Creator cambia opciones tras preview: aprobación/payload se invalida antes de upload."
           }
         }
@@ -2582,7 +2582,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La lista de canales no es una matriz de capacidades habilitadas; uso comercial requiere revisión propia.",
           "evidence_refs": [
-            "docs/evidence/c16/t01.json"
+            "docs/evidence/c016/t01.json"
           ],
           "surface": "src/adapters/optional/"
         },
@@ -2595,7 +2595,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La lista de canales no es una matriz de capacidades habilitadas; uso comercial requiere revisión propia.",
           "evidence_refs": [
-            "docs/evidence/c16/t02.json"
+            "docs/evidence/c016/t02.json"
           ],
           "surface": "docs/providers/optional.md"
         },
@@ -2608,7 +2608,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La lista de canales no es una matriz de capacidades habilitadas; uso comercial requiere revisión propia.",
           "evidence_refs": [
-            "docs/evidence/c16/t03.json"
+            "docs/evidence/c016/t03.json"
           ],
           "surface": "tests/contracts/optional/"
         },
@@ -2621,7 +2621,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La lista de canales no es una matriz de capacidades habilitadas; uso comercial requiere revisión propia.",
           "evidence_refs": [
-            "docs/evidence/c16/t04.json"
+            "docs/evidence/c016/t04.json"
           ],
           "surface": "src/adapters/optional/"
         },
@@ -2634,7 +2634,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La lista de canales no es una matriz de capacidades habilitadas; uso comercial requiere revisión propia.",
           "evidence_refs": [
-            "docs/evidence/c16/t05.json"
+            "docs/evidence/c016/t05.json"
           ],
           "surface": "docs/providers/optional.md"
         },
@@ -2647,7 +2647,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La lista de canales no es una matriz de capacidades habilitadas; uso comercial requiere revisión propia.",
           "evidence_refs": [
-            "docs/evidence/c16/t06.json"
+            "docs/evidence/c016/t06.json"
           ],
           "surface": "tests/contracts/optional/"
         },
@@ -2660,7 +2660,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La lista de canales no es una matriz de capacidades habilitadas; uso comercial requiere revisión propia.",
           "evidence_refs": [
-            "docs/evidence/c16/t07.json"
+            "docs/evidence/c016/t07.json"
           ],
           "surface": "src/adapters/optional/"
         }
@@ -2671,12 +2671,12 @@
           "scenario": "Un plan sin acceso a analytics devuelve unsupported sin fabricar ceros.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c16/g01.json"
+            "docs/evidence/c016/g01.json"
           ],
           "verification": {
             "suite": "tests/contracts/optional/",
             "case": "RDS-C16-G01",
-            "artifact": "docs/evidence/c16/g01.json",
+            "artifact": "docs/evidence/c016/g01.json",
             "assertion": "Un plan sin acceso a analytics devuelve unsupported sin fabricar ceros."
           }
         },
@@ -2685,12 +2685,12 @@
           "scenario": "Operación pagada sin reserva o tarifa revisada se deniega antes de HTTP.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c16/g02.json"
+            "docs/evidence/c016/g02.json"
           ],
           "verification": {
             "suite": "tests/contracts/optional/",
             "case": "RDS-C16-G02",
-            "artifact": "docs/evidence/c16/g02.json",
+            "artifact": "docs/evidence/c016/g02.json",
             "assertion": "Operación pagada sin reserva o tarifa revisada se deniega antes de HTTP."
           }
         }
@@ -2752,7 +2752,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un asset con hash íntegro puede carecer de derechos; la evidencia de ambas cosas es distinta.",
           "evidence_refs": [
-            "docs/evidence/c17/t01.json"
+            "docs/evidence/c017/t01.json"
           ],
           "surface": "src/media/"
         },
@@ -2765,7 +2765,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un asset con hash íntegro puede carecer de derechos; la evidencia de ambas cosas es distinta.",
           "evidence_refs": [
-            "docs/evidence/c17/t02.json"
+            "docs/evidence/c017/t02.json"
           ],
           "surface": "src/domain/rights.ts"
         },
@@ -2778,7 +2778,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un asset con hash íntegro puede carecer de derechos; la evidencia de ambas cosas es distinta.",
           "evidence_refs": [
-            "docs/evidence/c17/t03.json"
+            "docs/evidence/c017/t03.json"
           ],
           "surface": "tests/security/media.test.ts"
         },
@@ -2791,7 +2791,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un asset con hash íntegro puede carecer de derechos; la evidencia de ambas cosas es distinta.",
           "evidence_refs": [
-            "docs/evidence/c17/t04.json"
+            "docs/evidence/c017/t04.json"
           ],
           "surface": "src/media/"
         },
@@ -2804,7 +2804,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un asset con hash íntegro puede carecer de derechos; la evidencia de ambas cosas es distinta.",
           "evidence_refs": [
-            "docs/evidence/c17/t05.json"
+            "docs/evidence/c017/t05.json"
           ],
           "surface": "src/domain/rights.ts"
         },
@@ -2817,7 +2817,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un asset con hash íntegro puede carecer de derechos; la evidencia de ambas cosas es distinta.",
           "evidence_refs": [
-            "docs/evidence/c17/t06.json"
+            "docs/evidence/c017/t06.json"
           ],
           "surface": "tests/security/media.test.ts"
         },
@@ -2830,7 +2830,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un asset con hash íntegro puede carecer de derechos; la evidencia de ambas cosas es distinta.",
           "evidence_refs": [
-            "docs/evidence/c17/t07.json"
+            "docs/evidence/c017/t07.json"
           ],
           "surface": "src/media/"
         }
@@ -2841,12 +2841,12 @@
           "scenario": "Cambiar un frame/archivo después de aprobar bloquea ejecución por asset hash diferente.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c17/g01.json"
+            "docs/evidence/c017/g01.json"
           ],
           "verification": {
             "suite": "tests/security/media.test.ts",
             "case": "RDS-C17-G01",
-            "artifact": "docs/evidence/c17/g01.json",
+            "artifact": "docs/evidence/c017/g01.json",
             "assertion": "Cambiar un frame/archivo después de aprobar bloquea ejecución por asset hash diferente."
           }
         },
@@ -2855,12 +2855,12 @@
           "scenario": "Derecho temporal vence antes del slot y el calendario exige nueva revisión.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c17/g02.json"
+            "docs/evidence/c017/g02.json"
           ],
           "verification": {
             "suite": "tests/security/media.test.ts",
             "case": "RDS-C17-G02",
-            "artifact": "docs/evidence/c17/g02.json",
+            "artifact": "docs/evidence/c017/g02.json",
             "assertion": "Derecho temporal vence antes del slot y el calendario exige nueva revisión."
           }
         }
@@ -2922,7 +2922,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La conversación crea propuesta estructurada; no sustituye firma, budget ni aprobación editorial.",
           "evidence_refs": [
-            "docs/evidence/c18/t01.json"
+            "docs/evidence/c018/t01.json"
           ],
           "surface": "src/editorial/brief.ts"
         },
@@ -2935,7 +2935,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La conversación crea propuesta estructurada; no sustituye firma, budget ni aprobación editorial.",
           "evidence_refs": [
-            "docs/evidence/c18/t02.json"
+            "docs/evidence/c018/t02.json"
           ],
           "surface": "src/editorial/variants.ts"
         },
@@ -2948,7 +2948,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La conversación crea propuesta estructurada; no sustituye firma, budget ni aprobación editorial.",
           "evidence_refs": [
-            "docs/evidence/c18/t03.json"
+            "docs/evidence/c018/t03.json"
           ],
           "surface": "tests/domain/brief.test.ts"
         },
@@ -2961,7 +2961,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La conversación crea propuesta estructurada; no sustituye firma, budget ni aprobación editorial.",
           "evidence_refs": [
-            "docs/evidence/c18/t04.json"
+            "docs/evidence/c018/t04.json"
           ],
           "surface": "src/editorial/brief.ts"
         },
@@ -2974,7 +2974,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La conversación crea propuesta estructurada; no sustituye firma, budget ni aprobación editorial.",
           "evidence_refs": [
-            "docs/evidence/c18/t05.json"
+            "docs/evidence/c018/t05.json"
           ],
           "surface": "src/editorial/variants.ts"
         },
@@ -2987,7 +2987,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La conversación crea propuesta estructurada; no sustituye firma, budget ni aprobación editorial.",
           "evidence_refs": [
-            "docs/evidence/c18/t06.json"
+            "docs/evidence/c018/t06.json"
           ],
           "surface": "tests/domain/brief.test.ts"
         },
@@ -3000,7 +3000,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La conversación crea propuesta estructurada; no sustituye firma, budget ni aprobación editorial.",
           "evidence_refs": [
-            "docs/evidence/c18/t07.json"
+            "docs/evidence/c018/t07.json"
           ],
           "surface": "src/editorial/brief.ts"
         }
@@ -3011,12 +3011,12 @@
           "scenario": "Cliente dice que cambie el alcance y se abre ChangeRequest, sin elevar cuota/cargo automáticamente.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c18/g01.json"
+            "docs/evidence/c018/g01.json"
           ],
           "verification": {
             "suite": "tests/domain/brief.test.ts",
             "case": "RDS-C18-G01",
-            "artifact": "docs/evidence/c18/g01.json",
+            "artifact": "docs/evidence/c018/g01.json",
             "assertion": "Cliente dice que cambie el alcance y se abre ChangeRequest, sin elevar cuota/cargo automáticamente."
           }
         },
@@ -3025,12 +3025,12 @@
           "scenario": "Traducción cambia una afirmación comercial y requiere revisión nueva con fuente.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c18/g02.json"
+            "docs/evidence/c018/g02.json"
           ],
           "verification": {
             "suite": "tests/domain/brief.test.ts",
             "case": "RDS-C18-G02",
-            "artifact": "docs/evidence/c18/g02.json",
+            "artifact": "docs/evidence/c018/g02.json",
             "assertion": "Traducción cambia una afirmación comercial y requiere revisión nueva con fuente."
           }
         }
@@ -3092,7 +3092,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un approval_id o un sí hablado no prueba identidad, firma humana ni payload aprobado.",
           "evidence_refs": [
-            "docs/evidence/c19/t01.json"
+            "docs/evidence/c019/t01.json"
           ],
           "surface": "src/runtime/fsm.ts"
         },
@@ -3105,7 +3105,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un approval_id o un sí hablado no prueba identidad, firma humana ni payload aprobado.",
           "evidence_refs": [
-            "docs/evidence/c19/t02.json"
+            "docs/evidence/c019/t02.json"
           ],
           "surface": "src/approvals/"
         },
@@ -3118,7 +3118,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un approval_id o un sí hablado no prueba identidad, firma humana ni payload aprobado.",
           "evidence_refs": [
-            "docs/evidence/c19/t03.json"
+            "docs/evidence/c019/t03.json"
           ],
           "surface": "tests/security/approval.test.ts"
         },
@@ -3131,7 +3131,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un approval_id o un sí hablado no prueba identidad, firma humana ni payload aprobado.",
           "evidence_refs": [
-            "docs/evidence/c19/t04.json"
+            "docs/evidence/c019/t04.json"
           ],
           "surface": "src/runtime/fsm.ts"
         },
@@ -3144,7 +3144,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un approval_id o un sí hablado no prueba identidad, firma humana ni payload aprobado.",
           "evidence_refs": [
-            "docs/evidence/c19/t05.json"
+            "docs/evidence/c019/t05.json"
           ],
           "surface": "src/approvals/"
         },
@@ -3157,7 +3157,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un approval_id o un sí hablado no prueba identidad, firma humana ni payload aprobado.",
           "evidence_refs": [
-            "docs/evidence/c19/t06.json"
+            "docs/evidence/c019/t06.json"
           ],
           "surface": "tests/security/approval.test.ts"
         },
@@ -3170,7 +3170,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un approval_id o un sí hablado no prueba identidad, firma humana ni payload aprobado.",
           "evidence_refs": [
-            "docs/evidence/c19/t07.json"
+            "docs/evidence/c019/t07.json"
           ],
           "surface": "src/runtime/fsm.ts"
         }
@@ -3181,12 +3181,12 @@
           "scenario": "Agente propone y presenta approval ficticia: denegado sin ejecutar IO.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c19/g01.json"
+            "docs/evidence/c019/g01.json"
           ],
           "verification": {
             "suite": "tests/security/approval.test.ts",
             "case": "RDS-C19-G01",
-            "artifact": "docs/evidence/c19/g01.json",
+            "artifact": "docs/evidence/c019/g01.json",
             "assertion": "Agente propone y presenta approval ficticia: denegado sin ejecutar IO."
           }
         },
@@ -3195,12 +3195,12 @@
           "scenario": "Un cliente modifica hora/cuenta después de aprobar y el commit recibe409.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c19/g02.json"
+            "docs/evidence/c019/g02.json"
           ],
           "verification": {
             "suite": "tests/security/approval.test.ts",
             "case": "RDS-C19-G02",
-            "artifact": "docs/evidence/c19/g02.json",
+            "artifact": "docs/evidence/c019/g02.json",
             "assertion": "Un cliente modifica hora/cuenta después de aprobar y el commit recibe409."
           }
         }
@@ -3261,7 +3261,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Permitir organizaciones de servicio propias no significa controlar la empresa completa del cliente.",
           "evidence_refs": [
-            "docs/evidence/c20/t01.json"
+            "docs/evidence/c020/t01.json"
           ],
           "surface": "src/scheduling/"
         },
@@ -3274,7 +3274,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Permitir organizaciones de servicio propias no significa controlar la empresa completa del cliente.",
           "evidence_refs": [
-            "docs/evidence/c20/t02.json"
+            "docs/evidence/c020/t02.json"
           ],
           "surface": "src/service-ops/sops.ts"
         },
@@ -3287,7 +3287,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Permitir organizaciones de servicio propias no significa controlar la empresa completa del cliente.",
           "evidence_refs": [
-            "docs/evidence/c20/t03.json"
+            "docs/evidence/c020/t03.json"
           ],
           "surface": "tests/domain/calendar.test.ts"
         },
@@ -3300,7 +3300,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Permitir organizaciones de servicio propias no significa controlar la empresa completa del cliente.",
           "evidence_refs": [
-            "docs/evidence/c20/t04.json"
+            "docs/evidence/c020/t04.json"
           ],
           "surface": "src/scheduling/"
         },
@@ -3313,7 +3313,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Permitir organizaciones de servicio propias no significa controlar la empresa completa del cliente.",
           "evidence_refs": [
-            "docs/evidence/c20/t05.json"
+            "docs/evidence/c020/t05.json"
           ],
           "surface": "src/service-ops/sops.ts"
         },
@@ -3326,7 +3326,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Permitir organizaciones de servicio propias no significa controlar la empresa completa del cliente.",
           "evidence_refs": [
-            "docs/evidence/c20/t06.json"
+            "docs/evidence/c020/t06.json"
           ],
           "surface": "tests/domain/calendar.test.ts"
         },
@@ -3339,7 +3339,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Permitir organizaciones de servicio propias no significa controlar la empresa completa del cliente.",
           "evidence_refs": [
-            "docs/evidence/c20/t07.json"
+            "docs/evidence/c020/t07.json"
           ],
           "surface": "src/scheduling/"
         }
@@ -3350,12 +3350,12 @@
           "scenario": "Una hora DST repetida no produce dos publicaciones ni selecciona un instante silenciosamente.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c20/g01.json"
+            "docs/evidence/c020/g01.json"
           ],
           "verification": {
             "suite": "tests/domain/calendar.test.ts",
             "case": "RDS-C20-G01",
-            "artifact": "docs/evidence/c20/g01.json",
+            "artifact": "docs/evidence/c020/g01.json",
             "assertion": "Una hora DST repetida no produce dos publicaciones ni selecciona un instante silenciosamente."
           }
         },
@@ -3364,12 +3364,12 @@
           "scenario": "La programación remota existe y el worker local solo supervisa, no vuelve a crearla.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c20/g02.json"
+            "docs/evidence/c020/g02.json"
           ],
           "verification": {
             "suite": "tests/domain/calendar.test.ts",
             "case": "RDS-C20-G02",
-            "artifact": "docs/evidence/c20/g02.json",
+            "artifact": "docs/evidence/c020/g02.json",
             "assertion": "La programación remota existe y el worker local solo supervisa, no vuelve a crearla."
           }
         }
@@ -3431,7 +3431,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Exactly-once no se promete cuando el proveedor carece de idempotency/lookup inequívoco.",
           "evidence_refs": [
-            "docs/evidence/c21/t01.json"
+            "docs/evidence/c021/t01.json"
           ],
           "surface": "src/jobs/"
         },
@@ -3444,7 +3444,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Exactly-once no se promete cuando el proveedor carece de idempotency/lookup inequívoco.",
           "evidence_refs": [
-            "docs/evidence/c21/t02.json"
+            "docs/evidence/c021/t02.json"
           ],
           "surface": "src/events/outbox.ts"
         },
@@ -3457,7 +3457,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Exactly-once no se promete cuando el proveedor carece de idempotency/lookup inequívoco.",
           "evidence_refs": [
-            "docs/evidence/c21/t03.json"
+            "docs/evidence/c021/t03.json"
           ],
           "surface": "tests/integration/replay.test.ts"
         },
@@ -3470,7 +3470,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Exactly-once no se promete cuando el proveedor carece de idempotency/lookup inequívoco.",
           "evidence_refs": [
-            "docs/evidence/c21/t04.json"
+            "docs/evidence/c021/t04.json"
           ],
           "surface": "src/jobs/"
         },
@@ -3483,7 +3483,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Exactly-once no se promete cuando el proveedor carece de idempotency/lookup inequívoco.",
           "evidence_refs": [
-            "docs/evidence/c21/t05.json"
+            "docs/evidence/c021/t05.json"
           ],
           "surface": "src/events/outbox.ts"
         },
@@ -3496,7 +3496,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Exactly-once no se promete cuando el proveedor carece de idempotency/lookup inequívoco.",
           "evidence_refs": [
-            "docs/evidence/c21/t06.json"
+            "docs/evidence/c021/t06.json"
           ],
           "surface": "tests/integration/replay.test.ts"
         },
@@ -3509,7 +3509,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Exactly-once no se promete cuando el proveedor carece de idempotency/lookup inequívoco.",
           "evidence_refs": [
-            "docs/evidence/c21/t07.json"
+            "docs/evidence/c021/t07.json"
           ],
           "surface": "src/jobs/"
         }
@@ -3520,12 +3520,12 @@
           "scenario": "Crash tras envío conserva unknown, saldo y evidencia sin crear un segundo post.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c21/g01.json"
+            "docs/evidence/c021/g01.json"
           ],
           "verification": {
             "suite": "tests/integration/replay.test.ts",
             "case": "RDS-C21-G01",
-            "artifact": "docs/evidence/c21/g01.json",
+            "artifact": "docs/evidence/c021/g01.json",
             "assertion": "Crash tras envío conserva unknown, saldo y evidencia sin crear un segundo post."
           }
         },
@@ -3534,12 +3534,12 @@
           "scenario": "ACK de worker con fence antiguo no cambia un intent ya reclamado por otro.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c21/g02.json"
+            "docs/evidence/c021/g02.json"
           ],
           "verification": {
             "suite": "tests/integration/replay.test.ts",
             "case": "RDS-C21-G02",
-            "artifact": "docs/evidence/c21/g02.json",
+            "artifact": "docs/evidence/c021/g02.json",
             "assertion": "ACK de worker con fence antiguo no cambia un intent ya reclamado por otro."
           }
         }
@@ -3601,7 +3601,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El presupuesto técnico no es precio retail; permisos y aislamiento no se venden por un tier superior.",
           "evidence_refs": [
-            "docs/evidence/c22/t01.json"
+            "docs/evidence/c022/t01.json"
           ],
           "surface": "src/billing/"
         },
@@ -3614,7 +3614,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El presupuesto técnico no es precio retail; permisos y aislamiento no se venden por un tier superior.",
           "evidence_refs": [
-            "docs/evidence/c22/t02.json"
+            "docs/evidence/c022/t02.json"
           ],
           "surface": "src/budget/"
         },
@@ -3627,7 +3627,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El presupuesto técnico no es precio retail; permisos y aislamiento no se venden por un tier superior.",
           "evidence_refs": [
-            "docs/evidence/c22/t03.json"
+            "docs/evidence/c022/t03.json"
           ],
           "surface": "tests/integration/cost-concurrency.test.ts"
         },
@@ -3640,7 +3640,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El presupuesto técnico no es precio retail; permisos y aislamiento no se venden por un tier superior.",
           "evidence_refs": [
-            "docs/evidence/c22/t04.json"
+            "docs/evidence/c022/t04.json"
           ],
           "surface": "src/billing/"
         },
@@ -3653,7 +3653,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El presupuesto técnico no es precio retail; permisos y aislamiento no se venden por un tier superior.",
           "evidence_refs": [
-            "docs/evidence/c22/t05.json"
+            "docs/evidence/c022/t05.json"
           ],
           "surface": "src/budget/"
         },
@@ -3666,7 +3666,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El presupuesto técnico no es precio retail; permisos y aislamiento no se venden por un tier superior.",
           "evidence_refs": [
-            "docs/evidence/c22/t06.json"
+            "docs/evidence/c022/t06.json"
           ],
           "surface": "tests/integration/cost-concurrency.test.ts"
         },
@@ -3679,7 +3679,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El presupuesto técnico no es precio retail; permisos y aislamiento no se venden por un tier superior.",
           "evidence_refs": [
-            "docs/evidence/c22/t07.json"
+            "docs/evidence/c022/t07.json"
           ],
           "surface": "src/billing/"
         }
@@ -3690,12 +3690,12 @@
           "scenario": "Dos agentes no reservan el mismo saldo, ni se cargan proveedor y cliente por duplicado.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c22/g01.json"
+            "docs/evidence/c022/g01.json"
           ],
           "verification": {
             "suite": "tests/integration/cost-concurrency.test.ts",
             "case": "RDS-C22-G01",
-            "artifact": "docs/evidence/c22/g01.json",
+            "artifact": "docs/evidence/c022/g01.json",
             "assertion": "Dos agentes no reservan el mismo saldo, ni se cargan proveedor y cliente por duplicado."
           }
         },
@@ -3704,12 +3704,12 @@
           "scenario": "Timeout de sesión conserva coste incierto hasta reconciliación, sin minutos ilimitados ficticios.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c22/g02.json"
+            "docs/evidence/c022/g02.json"
           ],
           "verification": {
             "suite": "tests/integration/cost-concurrency.test.ts",
             "case": "RDS-C22-G02",
-            "artifact": "docs/evidence/c22/g02.json",
+            "artifact": "docs/evidence/c022/g02.json",
             "assertion": "Timeout de sesión conserva coste incierto hasta reconciliación, sin minutos ilimitados ficticios."
           }
         }
@@ -3772,7 +3772,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Aprobar una variante no autoriza las demás cuentas, fechas o contenidos de una campaña.",
           "evidence_refs": [
-            "docs/evidence/c23/t01.json"
+            "docs/evidence/c023/t01.json"
           ],
           "surface": "src/publication/commands.ts"
         },
@@ -3785,7 +3785,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Aprobar una variante no autoriza las demás cuentas, fechas o contenidos de una campaña.",
           "evidence_refs": [
-            "docs/evidence/c23/t02.json"
+            "docs/evidence/c023/t02.json"
           ],
           "surface": "tests/integration/publish.test.ts"
         },
@@ -3798,7 +3798,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Aprobar una variante no autoriza las demás cuentas, fechas o contenidos de una campaña.",
           "evidence_refs": [
-            "docs/evidence/c23/t03.json"
+            "docs/evidence/c023/t03.json"
           ],
           "surface": "docs/receipt-map.md"
         },
@@ -3811,7 +3811,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Aprobar una variante no autoriza las demás cuentas, fechas o contenidos de una campaña.",
           "evidence_refs": [
-            "docs/evidence/c23/t04.json"
+            "docs/evidence/c023/t04.json"
           ],
           "surface": "src/publication/commands.ts"
         },
@@ -3824,7 +3824,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Aprobar una variante no autoriza las demás cuentas, fechas o contenidos de una campaña.",
           "evidence_refs": [
-            "docs/evidence/c23/t05.json"
+            "docs/evidence/c023/t05.json"
           ],
           "surface": "tests/integration/publish.test.ts"
         },
@@ -3837,7 +3837,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Aprobar una variante no autoriza las demás cuentas, fechas o contenidos de una campaña.",
           "evidence_refs": [
-            "docs/evidence/c23/t06.json"
+            "docs/evidence/c023/t06.json"
           ],
           "surface": "docs/receipt-map.md"
         },
@@ -3850,7 +3850,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Aprobar una variante no autoriza las demás cuentas, fechas o contenidos de una campaña.",
           "evidence_refs": [
-            "docs/evidence/c23/t07.json"
+            "docs/evidence/c023/t07.json"
           ],
           "surface": "src/publication/commands.ts"
         }
@@ -3861,12 +3861,12 @@
           "scenario": "Tres canales: dos confirmados y uno unknown; no se repiten los confirmados.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c23/g01.json"
+            "docs/evidence/c023/g01.json"
           ],
           "verification": {
             "suite": "tests/integration/publish.test.ts",
             "case": "RDS-C23-G01",
-            "artifact": "docs/evidence/c23/g01.json",
+            "artifact": "docs/evidence/c023/g01.json",
             "assertion": "Tres canales: dos confirmados y uno unknown; no se repiten los confirmados."
           }
         },
@@ -3875,12 +3875,12 @@
           "scenario": "El avatar consulta estado y solo dice publicado para receipts confirmed.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c23/g02.json"
+            "docs/evidence/c023/g02.json"
           ],
           "verification": {
             "suite": "tests/integration/publish.test.ts",
             "case": "RDS-C23-G02",
-            "artifact": "docs/evidence/c23/g02.json",
+            "artifact": "docs/evidence/c023/g02.json",
             "assertion": "El avatar consulta estado y solo dice publicado para receipts confirmed."
           }
         }
@@ -3942,7 +3942,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Retirar un post no significa que nadie lo vio ni que copias/backups desaparecieron.",
           "evidence_refs": [
-            "docs/evidence/c24/t01.json"
+            "docs/evidence/c024/t01.json"
           ],
           "surface": "src/publication/reconcile.ts"
         },
@@ -3955,7 +3955,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Retirar un post no significa que nadie lo vio ni que copias/backups desaparecieron.",
           "evidence_refs": [
-            "docs/evidence/c24/t02.json"
+            "docs/evidence/c024/t02.json"
           ],
           "surface": "src/publication/changes.ts"
         },
@@ -3968,7 +3968,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Retirar un post no significa que nadie lo vio ni que copias/backups desaparecieron.",
           "evidence_refs": [
-            "docs/evidence/c24/t03.json"
+            "docs/evidence/c024/t03.json"
           ],
           "surface": "tests/integration/reconcile.test.ts"
         },
@@ -3981,7 +3981,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Retirar un post no significa que nadie lo vio ni que copias/backups desaparecieron.",
           "evidence_refs": [
-            "docs/evidence/c24/t04.json"
+            "docs/evidence/c024/t04.json"
           ],
           "surface": "src/publication/reconcile.ts"
         },
@@ -3994,7 +3994,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Retirar un post no significa que nadie lo vio ni que copias/backups desaparecieron.",
           "evidence_refs": [
-            "docs/evidence/c24/t05.json"
+            "docs/evidence/c024/t05.json"
           ],
           "surface": "src/publication/changes.ts"
         },
@@ -4007,7 +4007,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Retirar un post no significa que nadie lo vio ni que copias/backups desaparecieron.",
           "evidence_refs": [
-            "docs/evidence/c24/t06.json"
+            "docs/evidence/c024/t06.json"
           ],
           "surface": "tests/integration/reconcile.test.ts"
         },
@@ -4020,7 +4020,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Retirar un post no significa que nadie lo vio ni que copias/backups desaparecieron.",
           "evidence_refs": [
-            "docs/evidence/c24/t07.json"
+            "docs/evidence/c024/t07.json"
           ],
           "surface": "src/publication/reconcile.ts"
         }
@@ -4031,12 +4031,12 @@
           "scenario": "Sin lookup fiable el intent permanece unknown y no se reenvía para cerrar un dashboard.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c24/g01.json"
+            "docs/evidence/c024/g01.json"
           ],
           "verification": {
             "suite": "tests/integration/reconcile.test.ts",
             "case": "RDS-C24-G01",
-            "artifact": "docs/evidence/c24/g01.json",
+            "artifact": "docs/evidence/c024/g01.json",
             "assertion": "Sin lookup fiable el intent permanece unknown y no se reenvía para cerrar un dashboard."
           }
         },
@@ -4045,12 +4045,12 @@
           "scenario": "Otro usuario modifica el post remoto y una actualización local se bloquea en conflicto.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c24/g02.json"
+            "docs/evidence/c024/g02.json"
           ],
           "verification": {
             "suite": "tests/integration/reconcile.test.ts",
             "case": "RDS-C24-G02",
-            "artifact": "docs/evidence/c24/g02.json",
+            "artifact": "docs/evidence/c024/g02.json",
             "assertion": "Otro usuario modifica el post remoto y una actualización local se bloquea en conflicto."
           }
         }
@@ -4112,7 +4112,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un webhook con eventId conocido y contenido distinto es conflicto, no duplicado inocuo.",
           "evidence_refs": [
-            "docs/evidence/c25/t01.json"
+            "docs/evidence/c025/t01.json"
           ],
           "surface": "src/inbox/ingest.ts"
         },
@@ -4125,7 +4125,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un webhook con eventId conocido y contenido distinto es conflicto, no duplicado inocuo.",
           "evidence_refs": [
-            "docs/evidence/c25/t02.json"
+            "docs/evidence/c025/t02.json"
           ],
           "surface": "src/inbox/sources.ts"
         },
@@ -4138,7 +4138,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un webhook con eventId conocido y contenido distinto es conflicto, no duplicado inocuo.",
           "evidence_refs": [
-            "docs/evidence/c25/t03.json"
+            "docs/evidence/c025/t03.json"
           ],
           "surface": "tests/security/webhooks.test.ts"
         },
@@ -4151,7 +4151,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un webhook con eventId conocido y contenido distinto es conflicto, no duplicado inocuo.",
           "evidence_refs": [
-            "docs/evidence/c25/t04.json"
+            "docs/evidence/c025/t04.json"
           ],
           "surface": "src/inbox/ingest.ts"
         },
@@ -4164,7 +4164,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un webhook con eventId conocido y contenido distinto es conflicto, no duplicado inocuo.",
           "evidence_refs": [
-            "docs/evidence/c25/t05.json"
+            "docs/evidence/c025/t05.json"
           ],
           "surface": "src/inbox/sources.ts"
         },
@@ -4177,7 +4177,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un webhook con eventId conocido y contenido distinto es conflicto, no duplicado inocuo.",
           "evidence_refs": [
-            "docs/evidence/c25/t06.json"
+            "docs/evidence/c025/t06.json"
           ],
           "surface": "tests/security/webhooks.test.ts"
         },
@@ -4190,7 +4190,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un webhook con eventId conocido y contenido distinto es conflicto, no duplicado inocuo.",
           "evidence_refs": [
-            "docs/evidence/c25/t07.json"
+            "docs/evidence/c025/t07.json"
           ],
           "surface": "src/inbox/ingest.ts"
         }
@@ -4201,12 +4201,12 @@
           "scenario": "Payload firmado de cuentaB no puede entrar al inbox del clienteA.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c25/g01.json"
+            "docs/evidence/c025/g01.json"
           ],
           "verification": {
             "suite": "tests/security/webhooks.test.ts",
             "case": "RDS-C25-G01",
-            "artifact": "docs/evidence/c25/g01.json",
+            "artifact": "docs/evidence/c025/g01.json",
             "assertion": "Payload firmado de cuentaB no puede entrar al inbox del clienteA."
           }
         },
@@ -4215,12 +4215,12 @@
           "scenario": "Caída de store no ACKea un evento no persistido y el replay no duplica el efecto.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c25/g02.json"
+            "docs/evidence/c025/g02.json"
           ],
           "verification": {
             "suite": "tests/security/webhooks.test.ts",
             "case": "RDS-C25-G02",
-            "artifact": "docs/evidence/c25/g02.json",
+            "artifact": "docs/evidence/c025/g02.json",
             "assertion": "Caída de store no ACKea un evento no persistido y el replay no duplica el efecto."
           }
         }
@@ -4282,7 +4282,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Solaparse con clientes es válido; una derivación o merge requiere autoridad explícita y datos mínimos.",
           "evidence_refs": [
-            "docs/evidence/c26/t01.json"
+            "docs/evidence/c026/t01.json"
           ],
           "surface": "src/community/cases.ts"
         },
@@ -4295,7 +4295,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Solaparse con clientes es válido; una derivación o merge requiere autoridad explícita y datos mínimos.",
           "evidence_refs": [
-            "docs/evidence/c26/t02.json"
+            "docs/evidence/c026/t02.json"
           ],
           "surface": "src/community/handoffs.ts"
         },
@@ -4308,7 +4308,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Solaparse con clientes es válido; una derivación o merge requiere autoridad explícita y datos mínimos.",
           "evidence_refs": [
-            "docs/evidence/c26/t03.json"
+            "docs/evidence/c026/t03.json"
           ],
           "surface": "tests/integration/community.test.ts"
         },
@@ -4321,7 +4321,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Solaparse con clientes es válido; una derivación o merge requiere autoridad explícita y datos mínimos.",
           "evidence_refs": [
-            "docs/evidence/c26/t04.json"
+            "docs/evidence/c026/t04.json"
           ],
           "surface": "src/community/cases.ts"
         },
@@ -4334,7 +4334,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Solaparse con clientes es válido; una derivación o merge requiere autoridad explícita y datos mínimos.",
           "evidence_refs": [
-            "docs/evidence/c26/t05.json"
+            "docs/evidence/c026/t05.json"
           ],
           "surface": "src/community/handoffs.ts"
         },
@@ -4347,7 +4347,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Solaparse con clientes es válido; una derivación o merge requiere autoridad explícita y datos mínimos.",
           "evidence_refs": [
-            "docs/evidence/c26/t06.json"
+            "docs/evidence/c026/t06.json"
           ],
           "surface": "tests/integration/community.test.ts"
         },
@@ -4360,7 +4360,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Solaparse con clientes es válido; una derivación o merge requiere autoridad explícita y datos mínimos.",
           "evidence_refs": [
-            "docs/evidence/c26/t07.json"
+            "docs/evidence/c026/t07.json"
           ],
           "surface": "src/community/cases.ts"
         }
@@ -4371,12 +4371,12 @@
           "scenario": "Comentario público no se convierte en contacto de ventas ni consentimiento de marketing.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c26/g01.json"
+            "docs/evidence/c026/g01.json"
           ],
           "verification": {
             "suite": "tests/integration/community.test.ts",
             "case": "RDS-C26-G01",
-            "artifact": "docs/evidence/c26/g01.json",
+            "artifact": "docs/evidence/c026/g01.json",
             "assertion": "Comentario público no se convierte en contacto de ventas ni consentimiento de marketing."
           }
         },
@@ -4385,12 +4385,12 @@
           "scenario": "Nuevo mensaje cambia el contexto y una respuesta sensible aprobada queda pendiente de revisión.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c26/g02.json"
+            "docs/evidence/c026/g02.json"
           ],
           "verification": {
             "suite": "tests/integration/community.test.ts",
             "case": "RDS-C26-G02",
-            "artifact": "docs/evidence/c26/g02.json",
+            "artifact": "docs/evidence/c026/g02.json",
             "assertion": "Nuevo mensaje cambia el contexto y una respuesta sensible aprobada queda pendiente de revisión."
           }
         }
@@ -4451,7 +4451,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Una etiqueta LLM de toxicidad no acredita incumplimiento de una regla ni autoriza sanción.",
           "evidence_refs": [
-            "docs/evidence/c27/t01.json"
+            "docs/evidence/c027/t01.json"
           ],
           "surface": "src/community/moderation.ts"
         },
@@ -4464,7 +4464,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Una etiqueta LLM de toxicidad no acredita incumplimiento de una regla ni autoriza sanción.",
           "evidence_refs": [
-            "docs/evidence/c27/t02.json"
+            "docs/evidence/c027/t02.json"
           ],
           "surface": "tests/evaluations/moderation/"
         },
@@ -4477,7 +4477,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Una etiqueta LLM de toxicidad no acredita incumplimiento de una regla ni autoriza sanción.",
           "evidence_refs": [
-            "docs/evidence/c27/t03.json"
+            "docs/evidence/c027/t03.json"
           ],
           "surface": "docs/moderation-policy.md"
         },
@@ -4490,7 +4490,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Una etiqueta LLM de toxicidad no acredita incumplimiento de una regla ni autoriza sanción.",
           "evidence_refs": [
-            "docs/evidence/c27/t04.json"
+            "docs/evidence/c027/t04.json"
           ],
           "surface": "src/community/moderation.ts"
         },
@@ -4503,7 +4503,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Una etiqueta LLM de toxicidad no acredita incumplimiento de una regla ni autoriza sanción.",
           "evidence_refs": [
-            "docs/evidence/c27/t05.json"
+            "docs/evidence/c027/t05.json"
           ],
           "surface": "tests/evaluations/moderation/"
         },
@@ -4516,7 +4516,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Una etiqueta LLM de toxicidad no acredita incumplimiento de una regla ni autoriza sanción.",
           "evidence_refs": [
-            "docs/evidence/c27/t06.json"
+            "docs/evidence/c027/t06.json"
           ],
           "surface": "docs/moderation-policy.md"
         },
@@ -4529,7 +4529,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Una etiqueta LLM de toxicidad no acredita incumplimiento de una regla ni autoriza sanción.",
           "evidence_refs": [
-            "docs/evidence/c27/t07.json"
+            "docs/evidence/c027/t07.json"
           ],
           "surface": "src/community/moderation.ts"
         }
@@ -4540,12 +4540,12 @@
           "scenario": "Sarcasmo o contexto incompleto produce needs_review, no eliminación silenciosa.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c27/g01.json"
+            "docs/evidence/c027/g01.json"
           ],
           "verification": {
             "suite": "tests/evaluations/moderation/",
             "case": "RDS-C27-G01",
-            "artifact": "docs/evidence/c27/g01.json",
+            "artifact": "docs/evidence/c027/g01.json",
             "assertion": "Sarcasmo o contexto incompleto produce needs_review, no eliminación silenciosa."
           }
         },
@@ -4554,12 +4554,12 @@
           "scenario": "Dos comunidades con reglas diferentes no comparten automáticamente la misma decisión.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c27/g02.json"
+            "docs/evidence/c027/g02.json"
           ],
           "verification": {
             "suite": "tests/evaluations/moderation/",
             "case": "RDS-C27-G02",
-            "artifact": "docs/evidence/c27/g02.json",
+            "artifact": "docs/evidence/c027/g02.json",
             "assertion": "Dos comunidades con reglas diferentes no comparten automáticamente la misma decisión."
           }
         }
@@ -4621,7 +4621,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Listening parcial no equivale a escuchar toda Internet ni a saber la intención de una persona.",
           "evidence_refs": [
-            "docs/evidence/c28/t01.json"
+            "docs/evidence/c028/t01.json"
           ],
           "surface": "src/listening/"
         },
@@ -4634,7 +4634,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Listening parcial no equivale a escuchar toda Internet ni a saber la intención de una persona.",
           "evidence_refs": [
-            "docs/evidence/c28/t02.json"
+            "docs/evidence/c028/t02.json"
           ],
           "surface": "tests/contracts/listening/"
         },
@@ -4647,7 +4647,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Listening parcial no equivale a escuchar toda Internet ni a saber la intención de una persona.",
           "evidence_refs": [
-            "docs/evidence/c28/t03.json"
+            "docs/evidence/c028/t03.json"
           ],
           "surface": "docs/listening-scope.md"
         },
@@ -4660,7 +4660,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Listening parcial no equivale a escuchar toda Internet ni a saber la intención de una persona.",
           "evidence_refs": [
-            "docs/evidence/c28/t04.json"
+            "docs/evidence/c028/t04.json"
           ],
           "surface": "src/listening/"
         },
@@ -4673,7 +4673,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Listening parcial no equivale a escuchar toda Internet ni a saber la intención de una persona.",
           "evidence_refs": [
-            "docs/evidence/c28/t05.json"
+            "docs/evidence/c028/t05.json"
           ],
           "surface": "tests/contracts/listening/"
         },
@@ -4686,7 +4686,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Listening parcial no equivale a escuchar toda Internet ni a saber la intención de una persona.",
           "evidence_refs": [
-            "docs/evidence/c28/t06.json"
+            "docs/evidence/c028/t06.json"
           ],
           "surface": "docs/listening-scope.md"
         },
@@ -4699,7 +4699,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Listening parcial no equivale a escuchar toda Internet ni a saber la intención de una persona.",
           "evidence_refs": [
-            "docs/evidence/c28/t07.json"
+            "docs/evidence/c028/t07.json"
           ],
           "surface": "src/listening/"
         }
@@ -4710,12 +4710,12 @@
           "scenario": "Sin fuente o cobertura suficiente el reporte marca insufficient_information, no tendencia cierta.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c28/g01.json"
+            "docs/evidence/c028/g01.json"
           ],
           "verification": {
             "suite": "tests/contracts/listening/",
             "case": "RDS-C28-G01",
-            "artifact": "docs/evidence/c28/g01.json",
+            "artifact": "docs/evidence/c028/g01.json",
             "assertion": "Sin fuente o cobertura suficiente el reporte marca insufficient_information, no tendencia cierta."
           }
         },
@@ -4724,12 +4724,12 @@
           "scenario": "Un resultado externo pide cambiar policy y solo se conserva como dato no confiable.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c28/g02.json"
+            "docs/evidence/c028/g02.json"
           ],
           "verification": {
             "suite": "tests/contracts/listening/",
             "case": "RDS-C28-G02",
-            "artifact": "docs/evidence/c28/g02.json",
+            "artifact": "docs/evidence/c028/g02.json",
             "assertion": "Un resultado externo pide cambiar policy y solo se conserva como dato no confiable."
           }
         }
@@ -4791,7 +4791,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Métrica ausente no es0 y views de distintas redes no son personas deduplicadas.",
           "evidence_refs": [
-            "docs/evidence/c29/t01.json"
+            "docs/evidence/c029/t01.json"
           ],
           "surface": "src/analytics/metrics.ts"
         },
@@ -4804,7 +4804,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Métrica ausente no es0 y views de distintas redes no son personas deduplicadas.",
           "evidence_refs": [
-            "docs/evidence/c29/t02.json"
+            "docs/evidence/c029/t02.json"
           ],
           "surface": "src/analytics/snapshots.ts"
         },
@@ -4817,7 +4817,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Métrica ausente no es0 y views de distintas redes no son personas deduplicadas.",
           "evidence_refs": [
-            "docs/evidence/c29/t03.json"
+            "docs/evidence/c029/t03.json"
           ],
           "surface": "tests/domain/metrics.test.ts"
         },
@@ -4830,7 +4830,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Métrica ausente no es0 y views de distintas redes no son personas deduplicadas.",
           "evidence_refs": [
-            "docs/evidence/c29/t04.json"
+            "docs/evidence/c029/t04.json"
           ],
           "surface": "src/analytics/metrics.ts"
         },
@@ -4843,7 +4843,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Métrica ausente no es0 y views de distintas redes no son personas deduplicadas.",
           "evidence_refs": [
-            "docs/evidence/c29/t05.json"
+            "docs/evidence/c029/t05.json"
           ],
           "surface": "src/analytics/snapshots.ts"
         },
@@ -4856,7 +4856,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Métrica ausente no es0 y views de distintas redes no son personas deduplicadas.",
           "evidence_refs": [
-            "docs/evidence/c29/t06.json"
+            "docs/evidence/c029/t06.json"
           ],
           "surface": "tests/domain/metrics.test.ts"
         },
@@ -4869,7 +4869,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Métrica ausente no es0 y views de distintas redes no son personas deduplicadas.",
           "evidence_refs": [
-            "docs/evidence/c29/t07.json"
+            "docs/evidence/c029/t07.json"
           ],
           "surface": "src/analytics/metrics.ts"
         }
@@ -4880,12 +4880,12 @@
           "scenario": "Cambio de definición rompe comparabilidad y queda anotado o bloqueado.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c29/g01.json"
+            "docs/evidence/c029/g01.json"
           ],
           "verification": {
             "suite": "tests/domain/metrics.test.ts",
             "case": "RDS-C29-G01",
-            "artifact": "docs/evidence/c29/g01.json",
+            "artifact": "docs/evidence/c029/g01.json",
             "assertion": "Cambio de definición rompe comparabilidad y queda anotado o bloqueado."
           }
         },
@@ -4894,12 +4894,12 @@
           "scenario": "Proveedor revoca scope de analytics y el dashboard no convierte el error en rendimiento0.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c29/g02.json"
+            "docs/evidence/c029/g02.json"
           ],
           "verification": {
             "suite": "tests/domain/metrics.test.ts",
             "case": "RDS-C29-G02",
-            "artifact": "docs/evidence/c29/g02.json",
+            "artifact": "docs/evidence/c029/g02.json",
             "assertion": "Proveedor revoca scope de analytics y el dashboard no convierte el error en rendimiento0."
           }
         }
@@ -4961,7 +4961,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El informe bonito no convierte una correlación de clicks en retorno financiero demostrado.",
           "evidence_refs": [
-            "docs/evidence/c30/t01.json"
+            "docs/evidence/c030/t01.json"
           ],
           "surface": "src/reports/"
         },
@@ -4974,7 +4974,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El informe bonito no convierte una correlación de clicks en retorno financiero demostrado.",
           "evidence_refs": [
-            "docs/evidence/c30/t02.json"
+            "docs/evidence/c030/t02.json"
           ],
           "surface": "src/analytics/attribution.ts"
         },
@@ -4987,7 +4987,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El informe bonito no convierte una correlación de clicks en retorno financiero demostrado.",
           "evidence_refs": [
-            "docs/evidence/c30/t03.json"
+            "docs/evidence/c030/t03.json"
           ],
           "surface": "tests/integration/reports.test.ts"
         },
@@ -5000,7 +5000,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El informe bonito no convierte una correlación de clicks en retorno financiero demostrado.",
           "evidence_refs": [
-            "docs/evidence/c30/t04.json"
+            "docs/evidence/c030/t04.json"
           ],
           "surface": "src/reports/"
         },
@@ -5013,7 +5013,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El informe bonito no convierte una correlación de clicks en retorno financiero demostrado.",
           "evidence_refs": [
-            "docs/evidence/c30/t05.json"
+            "docs/evidence/c030/t05.json"
           ],
           "surface": "src/analytics/attribution.ts"
         },
@@ -5026,7 +5026,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El informe bonito no convierte una correlación de clicks en retorno financiero demostrado.",
           "evidence_refs": [
-            "docs/evidence/c30/t06.json"
+            "docs/evidence/c030/t06.json"
           ],
           "surface": "tests/integration/reports.test.ts"
         },
@@ -5039,7 +5039,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El informe bonito no convierte una correlación de clicks en retorno financiero demostrado.",
           "evidence_refs": [
-            "docs/evidence/c30/t07.json"
+            "docs/evidence/c030/t07.json"
           ],
           "surface": "src/reports/"
         }
@@ -5050,12 +5050,12 @@
           "scenario": "No hay datos suficientes: infografía muestra límites y no inventa mejor horario/forecast.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c30/g01.json"
+            "docs/evidence/c030/g01.json"
           ],
           "verification": {
             "suite": "tests/integration/reports.test.ts",
             "case": "RDS-C30-G01",
-            "artifact": "docs/evidence/c30/g01.json",
+            "artifact": "docs/evidence/c030/g01.json",
             "assertion": "No hay datos suficientes: infografía muestra límites y no inventa mejor horario/forecast."
           }
         },
@@ -5064,12 +5064,12 @@
           "scenario": "Cambian derechos/retención de una fuente y su export derivado queda restringido.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c30/g02.json"
+            "docs/evidence/c030/g02.json"
           ],
           "verification": {
             "suite": "tests/integration/reports.test.ts",
             "case": "RDS-C30-G02",
-            "artifact": "docs/evidence/c30/g02.json",
+            "artifact": "docs/evidence/c030/g02.json",
             "assertion": "Cambian derechos/retención de una fuente y su export derivado queda restringido."
           }
         }
@@ -5132,7 +5132,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Mayor modelo o más agentes no significan más permiso ni una revisión humana real.",
           "evidence_refs": [
-            "docs/evidence/c31/t01.json"
+            "docs/evidence/c031/t01.json"
           ],
           "surface": "src/specialists/"
         },
@@ -5145,7 +5145,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Mayor modelo o más agentes no significan más permiso ni una revisión humana real.",
           "evidence_refs": [
-            "docs/evidence/c31/t02.json"
+            "docs/evidence/c031/t02.json"
           ],
           "surface": "src/models/router.ts"
         },
@@ -5158,7 +5158,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Mayor modelo o más agentes no significan más permiso ni una revisión humana real.",
           "evidence_refs": [
-            "docs/evidence/c31/t03.json"
+            "docs/evidence/c031/t03.json"
           ],
           "surface": "tests/evaluations/team/"
         },
@@ -5171,7 +5171,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Mayor modelo o más agentes no significan más permiso ni una revisión humana real.",
           "evidence_refs": [
-            "docs/evidence/c31/t04.json"
+            "docs/evidence/c031/t04.json"
           ],
           "surface": "src/specialists/"
         },
@@ -5184,7 +5184,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Mayor modelo o más agentes no significan más permiso ni una revisión humana real.",
           "evidence_refs": [
-            "docs/evidence/c31/t05.json"
+            "docs/evidence/c031/t05.json"
           ],
           "surface": "src/models/router.ts"
         },
@@ -5197,7 +5197,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Mayor modelo o más agentes no significan más permiso ni una revisión humana real.",
           "evidence_refs": [
-            "docs/evidence/c31/t06.json"
+            "docs/evidence/c031/t06.json"
           ],
           "surface": "tests/evaluations/team/"
         },
@@ -5210,7 +5210,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Mayor modelo o más agentes no significan más permiso ni una revisión humana real.",
           "evidence_refs": [
-            "docs/evidence/c31/t07.json"
+            "docs/evidence/c031/t07.json"
           ],
           "surface": "src/specialists/"
         }
@@ -5221,12 +5221,12 @@
           "scenario": "Agente barato produce tool inválida: falla schema sin obtener shell/HTTP alternativo.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c31/g01.json"
+            "docs/evidence/c031/g01.json"
           ],
           "verification": {
             "suite": "tests/evaluations/team/",
             "case": "RDS-C31-G01",
-            "artifact": "docs/evidence/c31/g01.json",
+            "artifact": "docs/evidence/c031/g01.json",
             "assertion": "Agente barato produce tool inválida: falla schema sin obtener shell/HTTP alternativo."
           }
         },
@@ -5235,12 +5235,12 @@
           "scenario": "El sistema bloquea un ataque y aun así completa el resumen legítimo con fuentes permitidas.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c31/g02.json"
+            "docs/evidence/c031/g02.json"
           ],
           "verification": {
             "suite": "tests/evaluations/team/",
             "case": "RDS-C31-G02",
-            "artifact": "docs/evidence/c31/g02.json",
+            "artifact": "docs/evidence/c031/g02.json",
             "assertion": "El sistema bloquea un ataque y aun así completa el resumen legítimo con fuentes permitidas."
           }
         }
@@ -5302,7 +5302,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un score de visión no acredita derechos, ausencia de engaño o identidad legal de alguien.",
           "evidence_refs": [
-            "docs/evidence/c32/t01.json"
+            "docs/evidence/c032/t01.json"
           ],
           "surface": "src/models/vision.ts"
         },
@@ -5315,7 +5315,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un score de visión no acredita derechos, ausencia de engaño o identidad legal de alguien.",
           "evidence_refs": [
-            "docs/evidence/c32/t02.json"
+            "docs/evidence/c032/t02.json"
           ],
           "surface": "src/editorial/qa.ts"
         },
@@ -5328,7 +5328,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un score de visión no acredita derechos, ausencia de engaño o identidad legal de alguien.",
           "evidence_refs": [
-            "docs/evidence/c32/t03.json"
+            "docs/evidence/c032/t03.json"
           ],
           "surface": "tests/evaluations/media-qa/"
         },
@@ -5341,7 +5341,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un score de visión no acredita derechos, ausencia de engaño o identidad legal de alguien.",
           "evidence_refs": [
-            "docs/evidence/c32/t04.json"
+            "docs/evidence/c032/t04.json"
           ],
           "surface": "src/models/vision.ts"
         },
@@ -5354,7 +5354,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un score de visión no acredita derechos, ausencia de engaño o identidad legal de alguien.",
           "evidence_refs": [
-            "docs/evidence/c32/t05.json"
+            "docs/evidence/c032/t05.json"
           ],
           "surface": "src/editorial/qa.ts"
         },
@@ -5367,7 +5367,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un score de visión no acredita derechos, ausencia de engaño o identidad legal de alguien.",
           "evidence_refs": [
-            "docs/evidence/c32/t06.json"
+            "docs/evidence/c032/t06.json"
           ],
           "surface": "tests/evaluations/media-qa/"
         },
@@ -5380,7 +5380,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un score de visión no acredita derechos, ausencia de engaño o identidad legal de alguien.",
           "evidence_refs": [
-            "docs/evidence/c32/t07.json"
+            "docs/evidence/c032/t07.json"
           ],
           "surface": "src/models/vision.ts"
         }
@@ -5391,12 +5391,12 @@
           "scenario": "Media contiene instrucciones: el modelo no cambia cuenta, scope o política del servicio.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c32/g01.json"
+            "docs/evidence/c032/g01.json"
           ],
           "verification": {
             "suite": "tests/evaluations/media-qa/",
             "case": "RDS-C32-G01",
-            "artifact": "docs/evidence/c32/g01.json",
+            "artifact": "docs/evidence/c032/g01.json",
             "assertion": "Media contiene instrucciones: el modelo no cambia cuenta, scope o política del servicio."
           }
         },
@@ -5405,12 +5405,12 @@
           "scenario": "No hay base para enviar un DM/imagen al modelo y se ofrece revisión local sin transferencia.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c32/g02.json"
+            "docs/evidence/c032/g02.json"
           ],
           "verification": {
             "suite": "tests/evaluations/media-qa/",
             "case": "RDS-C32-G02",
-            "artifact": "docs/evidence/c32/g02.json",
+            "artifact": "docs/evidence/c032/g02.json",
             "assertion": "No hay base para enviar un DM/imagen al modelo y se ofrece revisión local sin transferencia."
           }
         }
@@ -5475,7 +5475,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Anam es presencia de un agente IA identificado; ni voz realista ni tool call sustituyen identidad humana o permiso.",
           "evidence_refs": [
-            "docs/evidence/c33/t01.json"
+            "docs/evidence/c033/t01.json"
           ],
           "surface": "src/presence/anam.ts"
         },
@@ -5488,7 +5488,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Anam es presencia de un agente IA identificado; ni voz realista ni tool call sustituyen identidad humana o permiso.",
           "evidence_refs": [
-            "docs/evidence/c33/t02.json"
+            "docs/evidence/c033/t02.json"
           ],
           "surface": "src/sessions/"
         },
@@ -5501,7 +5501,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Anam es presencia de un agente IA identificado; ni voz realista ni tool call sustituyen identidad humana o permiso.",
           "evidence_refs": [
-            "docs/evidence/c33/t03.json"
+            "docs/evidence/c033/t03.json"
           ],
           "surface": "tests/contracts/anam/"
         },
@@ -5514,7 +5514,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Anam es presencia de un agente IA identificado; ni voz realista ni tool call sustituyen identidad humana o permiso.",
           "evidence_refs": [
-            "docs/evidence/c33/t04.json"
+            "docs/evidence/c033/t04.json"
           ],
           "surface": "src/presence/anam.ts"
         },
@@ -5527,7 +5527,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Anam es presencia de un agente IA identificado; ni voz realista ni tool call sustituyen identidad humana o permiso.",
           "evidence_refs": [
-            "docs/evidence/c33/t05.json"
+            "docs/evidence/c033/t05.json"
           ],
           "surface": "src/sessions/"
         },
@@ -5540,7 +5540,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Anam es presencia de un agente IA identificado; ni voz realista ni tool call sustituyen identidad humana o permiso.",
           "evidence_refs": [
-            "docs/evidence/c33/t06.json"
+            "docs/evidence/c033/t06.json"
           ],
           "surface": "tests/contracts/anam/"
         },
@@ -5553,7 +5553,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Anam es presencia de un agente IA identificado; ni voz realista ni tool call sustituyen identidad humana o permiso.",
           "evidence_refs": [
-            "docs/evidence/c33/t07.json"
+            "docs/evidence/c033/t07.json"
           ],
           "surface": "src/presence/anam.ts"
         }
@@ -5564,12 +5564,12 @@
           "scenario": "SesiónA pide contexto del clienteB y ningún frame/transcript/tool recibe esos datos.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c33/g01.json"
+            "docs/evidence/c033/g01.json"
           ],
           "verification": {
             "suite": "tests/contracts/anam/",
             "case": "RDS-C33-G01",
-            "artifact": "docs/evidence/c33/g01.json",
+            "artifact": "docs/evidence/c033/g01.json",
             "assertion": "SesiónA pide contexto del clienteB y ningún frame/transcript/tool recibe esos datos."
           }
         },
@@ -5578,12 +5578,12 @@
           "scenario": "La llamada se corta tras crear propuesta: no se publica/repite efecto al reconectar y minutos se concilian.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c33/g02.json"
+            "docs/evidence/c033/g02.json"
           ],
           "verification": {
             "suite": "tests/contracts/anam/",
             "case": "RDS-C33-G02",
-            "artifact": "docs/evidence/c33/g02.json",
+            "artifact": "docs/evidence/c033/g02.json",
             "assertion": "La llamada se corta tras crear propuesta: no se publica/repite efecto al reconectar y minutos se concilian."
           }
         }
@@ -5646,7 +5646,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El resolver autenticado selecciona el workspace; un header o input de modelo no lo demuestra.",
           "evidence_refs": [
-            "docs/evidence/c34/t01.json"
+            "docs/evidence/c034/t01.json"
           ],
           "surface": "packages/sdk/"
         },
@@ -5659,7 +5659,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El resolver autenticado selecciona el workspace; un header o input de modelo no lo demuestra.",
           "evidence_refs": [
-            "docs/evidence/c34/t02.json"
+            "docs/evidence/c034/t02.json"
           ],
           "surface": "src/http/"
         },
@@ -5672,7 +5672,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El resolver autenticado selecciona el workspace; un header o input de modelo no lo demuestra.",
           "evidence_refs": [
-            "docs/evidence/c34/t03.json"
+            "docs/evidence/c034/t03.json"
           ],
           "surface": "src/tools/"
         },
@@ -5685,7 +5685,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El resolver autenticado selecciona el workspace; un header o input de modelo no lo demuestra.",
           "evidence_refs": [
-            "docs/evidence/c34/t04.json"
+            "docs/evidence/c034/t04.json"
           ],
           "surface": "tests/contracts/sdk/"
         },
@@ -5698,7 +5698,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El resolver autenticado selecciona el workspace; un header o input de modelo no lo demuestra.",
           "evidence_refs": [
-            "docs/evidence/c34/t05.json"
+            "docs/evidence/c034/t05.json"
           ],
           "surface": "packages/sdk/"
         },
@@ -5711,7 +5711,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El resolver autenticado selecciona el workspace; un header o input de modelo no lo demuestra.",
           "evidence_refs": [
-            "docs/evidence/c34/t06.json"
+            "docs/evidence/c034/t06.json"
           ],
           "surface": "src/http/"
         },
@@ -5724,7 +5724,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El resolver autenticado selecciona el workspace; un header o input de modelo no lo demuestra.",
           "evidence_refs": [
-            "docs/evidence/c34/t07.json"
+            "docs/evidence/c034/t07.json"
           ],
           "surface": "src/tools/"
         }
@@ -5735,12 +5735,12 @@
           "scenario": "Tool de Anam y MCP equivalente reciben la misma denegación de policy.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c34/g01.json"
+            "docs/evidence/c034/g01.json"
           ],
           "verification": {
             "suite": "tests/contracts/sdk/",
             "case": "RDS-C34-G01",
-            "artifact": "docs/evidence/c34/g01.json",
+            "artifact": "docs/evidence/c034/g01.json",
             "assertion": "Tool de Anam y MCP equivalente reciben la misma denegación de policy."
           }
         },
@@ -5749,12 +5749,12 @@
           "scenario": "Cliente externo opera con su sesión sin necesitar una credencial del repo padre.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c34/g02.json"
+            "docs/evidence/c034/g02.json"
           ],
           "verification": {
             "suite": "tests/contracts/sdk/",
             "case": "RDS-C34-G02",
-            "artifact": "docs/evidence/c34/g02.json",
+            "artifact": "docs/evidence/c034/g02.json",
             "assertion": "Cliente externo opera con su sesión sin necesitar una credencial del repo padre."
           }
         }
@@ -5817,7 +5817,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Interfaz humana no significa fingir empleados reales ni mostrar como hecho una propuesta generada.",
           "evidence_refs": [
-            "docs/evidence/c35/t01.json"
+            "docs/evidence/c035/t01.json"
           ],
           "surface": "web/"
         },
@@ -5830,7 +5830,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Interfaz humana no significa fingir empleados reales ni mostrar como hecho una propuesta generada.",
           "evidence_refs": [
-            "docs/evidence/c35/t02.json"
+            "docs/evidence/c035/t02.json"
           ],
           "surface": "docs/ux/"
         },
@@ -5843,7 +5843,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Interfaz humana no significa fingir empleados reales ni mostrar como hecho una propuesta generada.",
           "evidence_refs": [
-            "docs/evidence/c35/t03.json"
+            "docs/evidence/c035/t03.json"
           ],
           "surface": "tests/browser/"
         },
@@ -5856,7 +5856,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Interfaz humana no significa fingir empleados reales ni mostrar como hecho una propuesta generada.",
           "evidence_refs": [
-            "docs/evidence/c35/t04.json"
+            "docs/evidence/c035/t04.json"
           ],
           "surface": "web/"
         },
@@ -5869,7 +5869,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Interfaz humana no significa fingir empleados reales ni mostrar como hecho una propuesta generada.",
           "evidence_refs": [
-            "docs/evidence/c35/t05.json"
+            "docs/evidence/c035/t05.json"
           ],
           "surface": "docs/ux/"
         },
@@ -5882,7 +5882,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Interfaz humana no significa fingir empleados reales ni mostrar como hecho una propuesta generada.",
           "evidence_refs": [
-            "docs/evidence/c35/t06.json"
+            "docs/evidence/c035/t06.json"
           ],
           "surface": "tests/browser/"
         },
@@ -5895,7 +5895,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Interfaz humana no significa fingir empleados reales ni mostrar como hecho una propuesta generada.",
           "evidence_refs": [
-            "docs/evidence/c35/t07.json"
+            "docs/evidence/c035/t07.json"
           ],
           "surface": "web/"
         }
@@ -5906,12 +5906,12 @@
           "scenario": "Cliente cambia workspace durante respuesta tardía y no reaparecen datos del anterior.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c35/g01.json"
+            "docs/evidence/c035/g01.json"
           ],
           "verification": {
             "suite": "tests/browser/",
             "case": "RDS-C35-G01",
-            "artifact": "docs/evidence/c35/g01.json",
+            "artifact": "docs/evidence/c035/g01.json",
             "assertion": "Cliente cambia workspace durante respuesta tardía y no reaparecen datos del anterior."
           }
         },
@@ -5920,12 +5920,12 @@
           "scenario": "Un viewer conversa con el avatar pero sigue sin aprobar ni acceder a originales restringidos.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c35/g02.json"
+            "docs/evidence/c035/g02.json"
           ],
           "verification": {
             "suite": "tests/browser/",
             "case": "RDS-C35-G02",
-            "artifact": "docs/evidence/c35/g02.json",
+            "artifact": "docs/evidence/c035/g02.json",
             "assertion": "Un viewer conversa con el avatar pero sigue sin aprobar ni acceder a originales restringidos."
           }
         }
@@ -5986,7 +5986,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La compatibilidad del contrato se demuestra con pruebas; enums/eventos presentes no significan conector instalado.",
           "evidence_refs": [
-            "docs/evidence/c36/t01.json"
+            "docs/evidence/c036/t01.json"
           ],
           "surface": "src/bridges/agente/"
         },
@@ -5999,7 +5999,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La compatibilidad del contrato se demuestra con pruebas; enums/eventos presentes no significan conector instalado.",
           "evidence_refs": [
-            "docs/evidence/c36/t02.json"
+            "docs/evidence/c036/t02.json"
           ],
           "surface": "docs/integration/PATCHSET-AGENTE.md"
         },
@@ -6012,7 +6012,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La compatibilidad del contrato se demuestra con pruebas; enums/eventos presentes no significan conector instalado.",
           "evidence_refs": [
-            "docs/evidence/c36/t03.json"
+            "docs/evidence/c036/t03.json"
           ],
           "surface": "tests/contracts/parent/"
         },
@@ -6025,7 +6025,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La compatibilidad del contrato se demuestra con pruebas; enums/eventos presentes no significan conector instalado.",
           "evidence_refs": [
-            "docs/evidence/c36/t04.json"
+            "docs/evidence/c036/t04.json"
           ],
           "surface": "src/bridges/agente/"
         },
@@ -6038,7 +6038,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La compatibilidad del contrato se demuestra con pruebas; enums/eventos presentes no significan conector instalado.",
           "evidence_refs": [
-            "docs/evidence/c36/t05.json"
+            "docs/evidence/c036/t05.json"
           ],
           "surface": "docs/integration/PATCHSET-AGENTE.md"
         },
@@ -6051,7 +6051,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La compatibilidad del contrato se demuestra con pruebas; enums/eventos presentes no significan conector instalado.",
           "evidence_refs": [
-            "docs/evidence/c36/t06.json"
+            "docs/evidence/c036/t06.json"
           ],
           "surface": "tests/contracts/parent/"
         },
@@ -6064,7 +6064,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La compatibilidad del contrato se demuestra con pruebas; enums/eventos presentes no significan conector instalado.",
           "evidence_refs": [
-            "docs/evidence/c36/t07.json"
+            "docs/evidence/c036/t07.json"
           ],
           "surface": "src/bridges/agente/"
         }
@@ -6075,12 +6075,12 @@
           "scenario": "EventBus devuelve persisted=false y el bridge conserva outbox sin ACK falso.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c36/g01.json"
+            "docs/evidence/c036/g01.json"
           ],
           "verification": {
             "suite": "tests/contracts/parent/",
             "case": "RDS-C36-G01",
-            "artifact": "docs/evidence/c36/g01.json",
+            "artifact": "docs/evidence/c036/g01.json",
             "assertion": "EventBus devuelve persisted=false y el bridge conserva outbox sin ACK falso."
           }
         },
@@ -6089,12 +6089,12 @@
           "scenario": "Dos especialistas proponen lo mismo y la entrega final conserva una autoridad e intent idempotente.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c36/g02.json"
+            "docs/evidence/c036/g02.json"
           ],
           "verification": {
             "suite": "tests/contracts/parent/",
             "case": "RDS-C36-G02",
-            "artifact": "docs/evidence/c36/g02.json",
+            "artifact": "docs/evidence/c036/g02.json",
             "assertion": "Dos especialistas proponen lo mismo y la entrega final conserva una autoridad e intent idempotente."
           }
         }
@@ -6158,7 +6158,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Contrato comercial, consentimiento AV, tratamiento de datos y permiso editorial son controles diferentes.",
           "evidence_refs": [
-            "docs/evidence/c37/t01.json"
+            "docs/evidence/c037/t01.json"
           ],
           "surface": "src/privacy/"
         },
@@ -6171,7 +6171,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Contrato comercial, consentimiento AV, tratamiento de datos y permiso editorial son controles diferentes.",
           "evidence_refs": [
-            "docs/evidence/c37/t02.json"
+            "docs/evidence/c037/t02.json"
           ],
           "surface": "docs/threat-model.md"
         },
@@ -6184,7 +6184,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Contrato comercial, consentimiento AV, tratamiento de datos y permiso editorial son controles diferentes.",
           "evidence_refs": [
-            "docs/evidence/c37/t03.json"
+            "docs/evidence/c037/t03.json"
           ],
           "surface": "tests/security/privacy/"
         },
@@ -6197,7 +6197,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Contrato comercial, consentimiento AV, tratamiento de datos y permiso editorial son controles diferentes.",
           "evidence_refs": [
-            "docs/evidence/c37/t04.json"
+            "docs/evidence/c037/t04.json"
           ],
           "surface": "src/privacy/"
         },
@@ -6210,7 +6210,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Contrato comercial, consentimiento AV, tratamiento de datos y permiso editorial son controles diferentes.",
           "evidence_refs": [
-            "docs/evidence/c37/t05.json"
+            "docs/evidence/c037/t05.json"
           ],
           "surface": "docs/threat-model.md"
         },
@@ -6223,7 +6223,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Contrato comercial, consentimiento AV, tratamiento de datos y permiso editorial son controles diferentes.",
           "evidence_refs": [
-            "docs/evidence/c37/t06.json"
+            "docs/evidence/c037/t06.json"
           ],
           "surface": "tests/security/privacy/"
         },
@@ -6236,7 +6236,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Contrato comercial, consentimiento AV, tratamiento de datos y permiso editorial son controles diferentes.",
           "evidence_refs": [
-            "docs/evidence/c37/t07.json"
+            "docs/evidence/c037/t07.json"
           ],
           "surface": "src/privacy/"
         }
@@ -6247,12 +6247,12 @@
           "scenario": "Solicitud de restricción impide leer fuente y reportes/transcripts derivados autorizables.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c37/g01.json"
+            "docs/evidence/c037/g01.json"
           ],
           "verification": {
             "suite": "tests/security/privacy/",
             "case": "RDS-C37-G01",
-            "artifact": "docs/evidence/c37/g01.json",
+            "artifact": "docs/evidence/c037/g01.json",
             "assertion": "Solicitud de restricción impide leer fuente y reportes/transcripts derivados autorizables."
           }
         },
@@ -6261,12 +6261,12 @@
           "scenario": "Restore viejo no rehabilita permisos/restricciones obsoletos ni abre nuevas publicaciones.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c37/g02.json"
+            "docs/evidence/c037/g02.json"
           ],
           "verification": {
             "suite": "tests/security/privacy/",
             "case": "RDS-C37-G02",
-            "artifact": "docs/evidence/c37/g02.json",
+            "artifact": "docs/evidence/c037/g02.json",
             "assertion": "Restore viejo no rehabilita permisos/restricciones obsoletos ni abre nuevas publicaciones."
           }
         }
@@ -6328,7 +6328,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un test mock de fallo no acredita recuperación real de todas las dependencias; registrar cada capa ejecutada.",
           "evidence_refs": [
-            "docs/evidence/c38/t01.json"
+            "docs/evidence/c038/t01.json"
           ],
           "surface": "tests/faults/"
         },
@@ -6341,7 +6341,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un test mock de fallo no acredita recuperación real de todas las dependencias; registrar cada capa ejecutada.",
           "evidence_refs": [
-            "docs/evidence/c38/t02.json"
+            "docs/evidence/c038/t02.json"
           ],
           "surface": "tests/property/"
         },
@@ -6354,7 +6354,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un test mock de fallo no acredita recuperación real de todas las dependencias; registrar cada capa ejecutada.",
           "evidence_refs": [
-            "docs/evidence/c38/t03.json"
+            "docs/evidence/c038/t03.json"
           ],
           "surface": "docs/verification/faults.md"
         },
@@ -6367,7 +6367,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un test mock de fallo no acredita recuperación real de todas las dependencias; registrar cada capa ejecutada.",
           "evidence_refs": [
-            "docs/evidence/c38/t04.json"
+            "docs/evidence/c038/t04.json"
           ],
           "surface": "tests/faults/"
         },
@@ -6380,7 +6380,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un test mock de fallo no acredita recuperación real de todas las dependencias; registrar cada capa ejecutada.",
           "evidence_refs": [
-            "docs/evidence/c38/t05.json"
+            "docs/evidence/c038/t05.json"
           ],
           "surface": "tests/property/"
         },
@@ -6393,7 +6393,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un test mock de fallo no acredita recuperación real de todas las dependencias; registrar cada capa ejecutada.",
           "evidence_refs": [
-            "docs/evidence/c38/t06.json"
+            "docs/evidence/c038/t06.json"
           ],
           "surface": "docs/verification/faults.md"
         },
@@ -6406,7 +6406,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un test mock de fallo no acredita recuperación real de todas las dependencias; registrar cada capa ejecutada.",
           "evidence_refs": [
-            "docs/evidence/c38/t07.json"
+            "docs/evidence/c038/t07.json"
           ],
           "surface": "tests/faults/"
         }
@@ -6417,12 +6417,12 @@
           "scenario": "Worker antiguo despierta y no puede ACKear ni gastar/publicar con lease/fence vencidos.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c38/g01.json"
+            "docs/evidence/c038/g01.json"
           ],
           "verification": {
             "suite": "tests/faults/",
             "case": "RDS-C38-G01",
-            "artifact": "docs/evidence/c38/g01.json",
+            "artifact": "docs/evidence/c038/g01.json",
             "assertion": "Worker antiguo despierta y no puede ACKear ni gastar/publicar con lease/fence vencidos."
           }
         },
@@ -6431,12 +6431,12 @@
           "scenario": "Caída tras efecto conserva unknown; no se cuentan dos éxitos por un único receipt.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c38/g02.json"
+            "docs/evidence/c038/g02.json"
           ],
           "verification": {
             "suite": "tests/faults/",
             "case": "RDS-C38-G02",
-            "artifact": "docs/evidence/c38/g02.json",
+            "artifact": "docs/evidence/c038/g02.json",
             "assertion": "Caída tras efecto conserva unknown; no se cuentan dos éxitos por un único receipt."
           }
         }
@@ -6498,7 +6498,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Las garantías contractuales y el soporte humano no nacen de un dashboard o un avatar disponible.",
           "evidence_refs": [
-            "docs/evidence/c39/t01.json"
+            "docs/evidence/c039/t01.json"
           ],
           "surface": "src/telemetry/"
         },
@@ -6511,7 +6511,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Las garantías contractuales y el soporte humano no nacen de un dashboard o un avatar disponible.",
           "evidence_refs": [
-            "docs/evidence/c39/t02.json"
+            "docs/evidence/c039/t02.json"
           ],
           "surface": "tests/performance/"
         },
@@ -6524,7 +6524,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Las garantías contractuales y el soporte humano no nacen de un dashboard o un avatar disponible.",
           "evidence_refs": [
-            "docs/evidence/c39/t03.json"
+            "docs/evidence/c039/t03.json"
           ],
           "surface": "docs/operations/capacity.md"
         },
@@ -6537,7 +6537,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Las garantías contractuales y el soporte humano no nacen de un dashboard o un avatar disponible.",
           "evidence_refs": [
-            "docs/evidence/c39/t04.json"
+            "docs/evidence/c039/t04.json"
           ],
           "surface": "src/telemetry/"
         },
@@ -6550,7 +6550,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Las garantías contractuales y el soporte humano no nacen de un dashboard o un avatar disponible.",
           "evidence_refs": [
-            "docs/evidence/c39/t05.json"
+            "docs/evidence/c039/t05.json"
           ],
           "surface": "tests/performance/"
         },
@@ -6563,7 +6563,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Las garantías contractuales y el soporte humano no nacen de un dashboard o un avatar disponible.",
           "evidence_refs": [
-            "docs/evidence/c39/t06.json"
+            "docs/evidence/c039/t06.json"
           ],
           "surface": "docs/operations/capacity.md"
         },
@@ -6576,7 +6576,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Las garantías contractuales y el soporte humano no nacen de un dashboard o un avatar disponible.",
           "evidence_refs": [
-            "docs/evidence/c39/t07.json"
+            "docs/evidence/c039/t07.json"
           ],
           "surface": "src/telemetry/"
         }
@@ -6587,12 +6587,12 @@
           "scenario": "Proveedor/collector cae y la vista marca stale/unknown sin un estado global seguro.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c39/g01.json"
+            "docs/evidence/c039/g01.json"
           ],
           "verification": {
             "suite": "tests/performance/",
             "case": "RDS-C39-G01",
-            "artifact": "docs/evidence/c39/g01.json",
+            "artifact": "docs/evidence/c039/g01.json",
             "assertion": "Proveedor/collector cae y la vista marca stale/unknown sin un estado global seguro."
           }
         },
@@ -6601,12 +6601,12 @@
           "scenario": "Plan agotado reduce análisis opcional o admisión, no audit/aislamiento/revisión requerida.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c39/g02.json"
+            "docs/evidence/c039/g02.json"
           ],
           "verification": {
             "suite": "tests/performance/",
             "case": "RDS-C39-G02",
-            "artifact": "docs/evidence/c39/g02.json",
+            "artifact": "docs/evidence/c039/g02.json",
             "assertion": "Plan agotado reduce análisis opcional o admisión, no audit/aislamiento/revisión requerida."
           }
         }
@@ -6669,7 +6669,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un avatar en vídeo no demuestra que un post se publicó; cada efecto necesita evidencia de backend/proveedor.",
           "evidence_refs": [
-            "docs/evidence/c40/t01.json"
+            "docs/evidence/c040/t01.json"
           ],
           "surface": "tests/e2e/"
         },
@@ -6682,7 +6682,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un avatar en vídeo no demuestra que un post se publicó; cada efecto necesita evidencia de backend/proveedor.",
           "evidence_refs": [
-            "docs/evidence/c40/t02.json"
+            "docs/evidence/c040/t02.json"
           ],
           "surface": "docs/verification/journeys.md"
         },
@@ -6695,7 +6695,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un avatar en vídeo no demuestra que un post se publicó; cada efecto necesita evidencia de backend/proveedor.",
           "evidence_refs": [
-            "docs/evidence/c40/t03.json"
+            "docs/evidence/c040/t03.json"
           ],
           "surface": "docs/demo/"
         },
@@ -6708,7 +6708,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un avatar en vídeo no demuestra que un post se publicó; cada efecto necesita evidencia de backend/proveedor.",
           "evidence_refs": [
-            "docs/evidence/c40/t04.json"
+            "docs/evidence/c040/t04.json"
           ],
           "surface": "tests/e2e/"
         },
@@ -6721,7 +6721,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un avatar en vídeo no demuestra que un post se publicó; cada efecto necesita evidencia de backend/proveedor.",
           "evidence_refs": [
-            "docs/evidence/c40/t05.json"
+            "docs/evidence/c040/t05.json"
           ],
           "surface": "docs/verification/journeys.md"
         },
@@ -6734,7 +6734,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un avatar en vídeo no demuestra que un post se publicó; cada efecto necesita evidencia de backend/proveedor.",
           "evidence_refs": [
-            "docs/evidence/c40/t06.json"
+            "docs/evidence/c040/t06.json"
           ],
           "surface": "docs/demo/"
         },
@@ -6747,7 +6747,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un avatar en vídeo no demuestra que un post se publicó; cada efecto necesita evidencia de backend/proveedor.",
           "evidence_refs": [
-            "docs/evidence/c40/t07.json"
+            "docs/evidence/c040/t07.json"
           ],
           "surface": "tests/e2e/"
         }
@@ -6758,12 +6758,12 @@
           "scenario": "Cliente standalone termina el recorrido sin llamar agente ni otro repo hermano obligatorio.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c40/g01.json"
+            "docs/evidence/c040/g01.json"
           ],
           "verification": {
             "suite": "tests/e2e/",
             "case": "RDS-C40-G01",
-            "artifact": "docs/evidence/c40/g01.json",
+            "artifact": "docs/evidence/c040/g01.json",
             "assertion": "Cliente standalone termina el recorrido sin llamar agente ni otro repo hermano obligatorio."
           }
         },
@@ -6772,12 +6772,12 @@
           "scenario": "Una llamada social termina unknown y el informe/visio explican pendiente, sin fake success.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c40/g02.json"
+            "docs/evidence/c040/g02.json"
           ],
           "verification": {
             "suite": "tests/e2e/",
             "case": "RDS-C40-G02",
-            "artifact": "docs/evidence/c40/g02.json",
+            "artifact": "docs/evidence/c040/g02.json",
             "assertion": "Una llamada social termina unknown y el informe/visio explican pendiente, sin fake success."
           }
         }
@@ -6839,7 +6839,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un paquete o Compose correcto no acredita SaaS productivo, soporte24x7 o licencia comercial revisada.",
           "evidence_refs": [
-            "docs/evidence/c41/t01.json"
+            "docs/evidence/c041/t01.json"
           ],
           "surface": "infra/"
         },
@@ -6852,7 +6852,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un paquete o Compose correcto no acredita SaaS productivo, soporte24x7 o licencia comercial revisada.",
           "evidence_refs": [
-            "docs/evidence/c41/t02.json"
+            "docs/evidence/c041/t02.json"
           ],
           "surface": "docs/operations/"
         },
@@ -6865,7 +6865,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un paquete o Compose correcto no acredita SaaS productivo, soporte24x7 o licencia comercial revisada.",
           "evidence_refs": [
-            "docs/evidence/c41/t03.json"
+            "docs/evidence/c041/t03.json"
           ],
           "surface": "docs/release/artifacts.md"
         },
@@ -6878,7 +6878,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un paquete o Compose correcto no acredita SaaS productivo, soporte24x7 o licencia comercial revisada.",
           "evidence_refs": [
-            "docs/evidence/c41/t04.json"
+            "docs/evidence/c041/t04.json"
           ],
           "surface": "infra/"
         },
@@ -6891,7 +6891,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un paquete o Compose correcto no acredita SaaS productivo, soporte24x7 o licencia comercial revisada.",
           "evidence_refs": [
-            "docs/evidence/c41/t05.json"
+            "docs/evidence/c041/t05.json"
           ],
           "surface": "docs/operations/"
         },
@@ -6904,7 +6904,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un paquete o Compose correcto no acredita SaaS productivo, soporte24x7 o licencia comercial revisada.",
           "evidence_refs": [
-            "docs/evidence/c41/t06.json"
+            "docs/evidence/c041/t06.json"
           ],
           "surface": "docs/release/artifacts.md"
         },
@@ -6917,7 +6917,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un paquete o Compose correcto no acredita SaaS productivo, soporte24x7 o licencia comercial revisada.",
           "evidence_refs": [
-            "docs/evidence/c41/t07.json"
+            "docs/evidence/c041/t07.json"
           ],
           "surface": "infra/"
         }
@@ -6928,12 +6928,12 @@
           "scenario": "Instalación limpia ejecuta el alcance del smoke y no importa accidentalmente código del checkout.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c41/g01.json"
+            "docs/evidence/c041/g01.json"
           ],
           "verification": {
             "suite": "infra-smoke:c41",
             "case": "RDS-C41-G01",
-            "artifact": "docs/evidence/c41/g01.json",
+            "artifact": "docs/evidence/c041/g01.json",
             "assertion": "Instalación limpia ejecuta el alcance del smoke y no importa accidentalmente código del checkout."
           }
         },
@@ -6942,12 +6942,12 @@
           "scenario": "Rollback conserva DB/audit/keys/receipts y no resucita approvals antiguos o borra volúmenes del usuario.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c41/g02.json"
+            "docs/evidence/c041/g02.json"
           ],
           "verification": {
             "suite": "infra-smoke:c41",
             "case": "RDS-C41-G02",
-            "artifact": "docs/evidence/c41/g02.json",
+            "artifact": "docs/evidence/c041/g02.json",
             "assertion": "Rollback conserva DB/audit/keys/receipts y no resucita approvals antiguos o borra volúmenes del usuario."
           }
         }
@@ -7009,7 +7009,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La profesionalidad del servicio se acredita con entregables y operación; el avatar no firma ni certifica.",
           "evidence_refs": [
-            "docs/evidence/c42/t01.json"
+            "docs/evidence/c042/t01.json"
           ],
           "surface": "docs/release/FOUNDER-REPORT.md"
         },
@@ -7022,7 +7022,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La profesionalidad del servicio se acredita con entregables y operación; el avatar no firma ni certifica.",
           "evidence_refs": [
-            "docs/evidence/c42/t02.json"
+            "docs/evidence/c042/t02.json"
           ],
           "surface": "docs/release/ACCEPTANCE.md"
         },
@@ -7035,7 +7035,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La profesionalidad del servicio se acredita con entregables y operación; el avatar no firma ni certifica.",
           "evidence_refs": [
-            "docs/evidence/c42/t03.json"
+            "docs/evidence/c042/t03.json"
           ],
           "surface": "docs/release/NEXT-90-DAYS.md"
         },
@@ -7048,7 +7048,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La profesionalidad del servicio se acredita con entregables y operación; el avatar no firma ni certifica.",
           "evidence_refs": [
-            "docs/evidence/c42/t04.json"
+            "docs/evidence/c042/t04.json"
           ],
           "surface": "docs/release/FOUNDER-REPORT.md"
         },
@@ -7061,7 +7061,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La profesionalidad del servicio se acredita con entregables y operación; el avatar no firma ni certifica.",
           "evidence_refs": [
-            "docs/evidence/c42/t05.json"
+            "docs/evidence/c042/t05.json"
           ],
           "surface": "docs/release/ACCEPTANCE.md"
         },
@@ -7074,7 +7074,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La profesionalidad del servicio se acredita con entregables y operación; el avatar no firma ni certifica.",
           "evidence_refs": [
-            "docs/evidence/c42/t06.json"
+            "docs/evidence/c042/t06.json"
           ],
           "surface": "docs/release/NEXT-90-DAYS.md"
         },
@@ -7087,7 +7087,7 @@
           ],
           "acceptance": "Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La profesionalidad del servicio se acredita con entregables y operación; el avatar no firma ni certifica.",
           "evidence_refs": [
-            "docs/evidence/c42/t07.json"
+            "docs/evidence/c042/t07.json"
           ],
           "surface": "docs/release/FOUNDER-REPORT.md"
         }
@@ -7098,12 +7098,12 @@
           "scenario": "Cada claim comercial tiene evidencia o una etiqueta de alcance pendiente/no verificado.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c42/g01.json"
+            "docs/evidence/c042/g01.json"
           ],
           "verification": {
             "suite": "docs-check:c42",
             "case": "RDS-C42-G01",
-            "artifact": "docs/evidence/c42/g01.json",
+            "artifact": "docs/evidence/c042/g01.json",
             "assertion": "Cada claim comercial tiene evidencia o una etiqueta de alcance pendiente/no verificado."
           }
         },
@@ -7112,12 +7112,12 @@
           "scenario": "Un cliente externo y el owner comprenden qué está entregado y qué falta sin leer todo el código.",
           "status": "NOT_EXECUTED",
           "evidence_refs": [
-            "docs/evidence/c42/g02.json"
+            "docs/evidence/c042/g02.json"
           ],
           "verification": {
             "suite": "docs-check:c42",
             "case": "RDS-C42-G02",
-            "artifact": "docs/evidence/c42/g02.json",
+            "artifact": "docs/evidence/c042/g02.json",
             "assertion": "Un cliente externo y el owner comprenden qué está entregado y qué falta sin leer todo el código."
           }
         }
@@ -7167,12 +7167,46 @@
       "BLOCKED",
       "NOT_VERIFIED"
     ],
-    "state": "Las 84 vinculaciones existen como diseno; ninguna se ha ejecutado (NOT_EXECUTED)."
+    "state": "Las 84 vinculaciones existen como diseno; ninguna se ha ejecutado (NOT_EXECUTED).",
+    "runner": "vitest via `npm test`; un caso por gate: `npx vitest run <suite> -t \"RDS-CNN-G0k\"`.",
+    "gap_observed": "A 2026-11-15 ningun test usa el identificador de gate como nombre de caso (0 de 84): los PASS de los reportes son de suite, no de gate nombrado."
   },
   "surface_policy": {
     "canonical": "docs/campaigns/campaign.json",
     "primary_surfaces": "Cada campana declara las superficies reales de su alcance en planned_artifacts; los patchsets de docs/execution-program/campaigns/NNN/CAMPAIGN.md se generan desde aqui y no inventan rutas.",
     "task_surface": "Cada tarea recibe una superficie de su campana por rotacion; el implementador puede reasignarla con justificacion en el reporte, no crear rutas nuevas.",
     "contract_home": "packages/contracts/src/ (compartido; no se crea un archivo de contrato por numero de campana)."
+  },
+  "execution_state_observed": {
+    "verified_at_sha": "bc293688d95b0ef99bf5b4e91c686d3d1d259b7d",
+    "as_of": "2026-11-15",
+    "runtime_present": true,
+    "suite": {
+      "runner": "vitest (npm test)",
+      "test_files": 17,
+      "tests": 87,
+      "typecheck": "PASS",
+      "verified_by": "auditoria 2026-11-15 en este workspace (npm ci + npm run typecheck + npm test)"
+    },
+    "campaigns_with_execution_report": [
+      "RDS-C01",
+      "RDS-C02",
+      "RDS-C03",
+      "RDS-C04",
+      "RDS-C05",
+      "RDS-C06",
+      "RDS-C07",
+      "RDS-C08",
+      "RDS-C17",
+      "RDS-C19",
+      "RDS-C21",
+      "RDS-C22",
+      "RDS-C23",
+      "RDS-C24"
+    ],
+    "gates_with_named_case_in_tests": 0,
+    "real_provider_adapters": 0,
+    "father_crosscheck": "NOT_VERIFIED (sin checkout de agente en el workspace)",
+    "discrepancy": "Los 14 reportes declaran gates PASS con comandos; el manifiesto mantiene las 84 en NOT_EXECUTED porque ningun caso de test esta nombrado por identificador de gate. Resoluble nombrando los casos, no editando estados."
   }
 }

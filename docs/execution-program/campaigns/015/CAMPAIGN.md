@@ -9,10 +9,11 @@ Respetar creator settings, audit del cliente y elección real del usuario.
 
 ## Archivos y ownership (rutas propuestas; verificar antes de crear)
 - Superficies de la campaña: `src/adapters/tiktok/`, `docs/providers/tiktok.md`, `tests/contracts/tiktok/`.
+- Presente en el repositorio hoy: ninguna; la campaña no está implementada.
 - Contrato y esquema: `packages/contracts/src/` (compartido; no hay archivo de contrato por campaña).
 - API nominada: ninguna; esta campaña no añade ruta HTTP propia y no se crean endpoints ficticios para tareas de investigación o documentales.
 - Tests: `tests/contracts/tiktok/` y `tests/fixtures/c15/`.
-- Evidencia: `docs/evidence/c15/` y **reporte dentro de este mismo documento**.
+- Evidencia: `docs/evidence/c015/` y **reporte dentro de este mismo documento**.
 - Artefactos originales: `src/adapters/tiktok/`, `docs/providers/tiktok.md`, `tests/contracts/tiktok/`. No confundir artefactos documentales con código.
 
 ## Patchsets secuenciales
@@ -24,7 +25,7 @@ Respetar creator settings, audit del cliente y elección real del usuario.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un checkbox comercial del SaaS no sustituye la elección/consentimiento exigidos por TikTok.
 
-**Verificación:** caso `RDS-C15-T01` sobre `tests/contracts/tiktok/`; evidencia `docs/evidence/c15/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C14-T07.
+**Verificación:** caso `RDS-C15-T01` sobre `tests/contracts/tiktok/`; evidencia `docs/evidence/c015/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C14-T07.
 
 ### 015.02 — RDS-C15-T02
 
@@ -34,7 +35,7 @@ Respetar creator settings, audit del cliente y elección real del usuario.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un checkbox comercial del SaaS no sustituye la elección/consentimiento exigidos por TikTok.
 
-**Verificación:** caso `RDS-C15-T02` sobre `tests/contracts/tiktok/`; evidencia `docs/evidence/c15/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C15-T01.
+**Verificación:** caso `RDS-C15-T02` sobre `tests/contracts/tiktok/`; evidencia `docs/evidence/c015/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C15-T01.
 
 ### 015.03 — RDS-C15-T03
 
@@ -44,7 +45,7 @@ Respetar creator settings, audit del cliente y elección real del usuario.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un checkbox comercial del SaaS no sustituye la elección/consentimiento exigidos por TikTok.
 
-**Verificación:** caso `RDS-C15-T03` sobre `tests/contracts/tiktok/`; evidencia `docs/evidence/c15/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C15-T02.
+**Verificación:** caso `RDS-C15-T03` sobre `tests/contracts/tiktok/`; evidencia `docs/evidence/c015/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C15-T02.
 
 ### 015.04 — RDS-C15-T04
 
@@ -54,7 +55,7 @@ Respetar creator settings, audit del cliente y elección real del usuario.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un checkbox comercial del SaaS no sustituye la elección/consentimiento exigidos por TikTok.
 
-**Verificación:** caso `RDS-C15-T04` sobre `tests/contracts/tiktok/`; evidencia `docs/evidence/c15/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C15-T03.
+**Verificación:** caso `RDS-C15-T04` sobre `tests/contracts/tiktok/`; evidencia `docs/evidence/c015/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C15-T03.
 
 ### 015.05 — RDS-C15-T05
 
@@ -64,7 +65,7 @@ Respetar creator settings, audit del cliente y elección real del usuario.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un checkbox comercial del SaaS no sustituye la elección/consentimiento exigidos por TikTok.
 
-**Verificación:** caso `RDS-C15-T05` sobre `tests/contracts/tiktok/`; evidencia `docs/evidence/c15/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C15-T04.
+**Verificación:** caso `RDS-C15-T05` sobre `tests/contracts/tiktok/`; evidencia `docs/evidence/c015/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C15-T04.
 
 ### 015.06 — RDS-C15-T06
 
@@ -74,7 +75,7 @@ Respetar creator settings, audit del cliente y elección real del usuario.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un checkbox comercial del SaaS no sustituye la elección/consentimiento exigidos por TikTok.
 
-**Verificación:** caso `RDS-C15-T06` sobre `tests/contracts/tiktok/`; evidencia `docs/evidence/c15/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C15-T05.
+**Verificación:** caso `RDS-C15-T06` sobre `tests/contracts/tiktok/`; evidencia `docs/evidence/c015/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C15-T05.
 
 ### 015.07 — RDS-C15-T07
 
@@ -84,15 +85,15 @@ Respetar creator settings, audit del cliente y elección real del usuario.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un checkbox comercial del SaaS no sustituye la elección/consentimiento exigidos por TikTok.
 
-**Verificación:** caso `RDS-C15-T07` sobre `tests/contracts/tiktok/`; evidencia `docs/evidence/c15/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C15-T06.
+**Verificación:** caso `RDS-C15-T07` sobre `tests/contracts/tiktok/`; evidencia `docs/evidence/c015/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C15-T06.
 
 
 ## Wiring y fronteras
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C15-G01 / NOT_EXECUTED:** App sin audit no publica público ni evade la restricción mediante browser. **Caso:** `RDS-C15-G01` en `tests/contracts/tiktok/`. **Evidencia:** `docs/evidence/c15/g01.json`.
-- **RDS-C15-G02 / NOT_EXECUTED:** Creator cambia opciones tras preview: aprobación/payload se invalida antes de upload. **Caso:** `RDS-C15-G02` en `tests/contracts/tiktok/`. **Evidencia:** `docs/evidence/c15/g02.json`.
+- **RDS-C15-G01 / NOT_EXECUTED:** App sin audit no publica público ni evade la restricción mediante browser. **Caso:** `RDS-C15-G01` en `tests/contracts/tiktok/`. **Evidencia:** `docs/evidence/c015/g01.json`.
+- **RDS-C15-G02 / NOT_EXECUTED:** Creator cambia opciones tras preview: aprobación/payload se invalida antes de upload. **Caso:** `RDS-C15-G02` en `tests/contracts/tiktok/`. **Evidencia:** `docs/evidence/c015/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

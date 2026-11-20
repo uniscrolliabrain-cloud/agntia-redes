@@ -9,10 +9,11 @@ Hacer que el servicio funcione como especialista independiente, además de integ
 
 ## Archivos y ownership (rutas propuestas; verificar antes de crear)
 - Superficies de la campaña: `src/domain/service-agreement.ts`, `src/domain/work-order.ts`, `docs/adr/0001-saas.md`.
+- Presente en el repositorio hoy: `src/domain/service-agreement.ts`, `src/domain/work-order.ts`, `docs/adr/0001-saas.md` (3/3 superficies).
 - Contrato y esquema: `packages/contracts/src/` (compartido; no hay archivo de contrato por campaña).
 - API nominada: ninguna; esta campaña no añade ruta HTTP propia y no se crean endpoints ficticios para tareas de investigación o documentales.
 - Tests: `tests/domain/service-agreement.test.ts` y `tests/fixtures/c02/`.
-- Evidencia: `docs/evidence/c02/` y **reporte dentro de este mismo documento**.
+- Evidencia: `docs/evidence/c002/` y **reporte dentro de este mismo documento**.
 - Artefactos originales: `src/domain/service-agreement.ts`, `src/domain/work-order.ts`, `docs/adr/0001-saas.md`. No confundir artefactos documentales con código.
 
 ## Patchsets secuenciales
@@ -24,7 +25,7 @@ Hacer que el servicio funcione como especialista independiente, además de integ
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El aislamiento y los controles mínimos son iguales para clientes del padre y clientes externos.
 
-**Verificación:** caso `RDS-C02-T01` sobre `tests/domain/service-agreement.test.ts`; evidencia `docs/evidence/c02/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C01-T07.
+**Verificación:** caso `RDS-C02-T01` sobre `tests/domain/service-agreement.test.ts`; evidencia `docs/evidence/c002/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C01-T07.
 
 ### 002.02 — RDS-C02-T02
 
@@ -34,7 +35,7 @@ Hacer que el servicio funcione como especialista independiente, además de integ
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El aislamiento y los controles mínimos son iguales para clientes del padre y clientes externos.
 
-**Verificación:** caso `RDS-C02-T02` sobre `tests/domain/service-agreement.test.ts`; evidencia `docs/evidence/c02/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C02-T01.
+**Verificación:** caso `RDS-C02-T02` sobre `tests/domain/service-agreement.test.ts`; evidencia `docs/evidence/c002/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C02-T01.
 
 ### 002.03 — RDS-C02-T03
 
@@ -44,7 +45,7 @@ Hacer que el servicio funcione como especialista independiente, además de integ
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El aislamiento y los controles mínimos son iguales para clientes del padre y clientes externos.
 
-**Verificación:** caso `RDS-C02-T03` sobre `tests/domain/service-agreement.test.ts`; evidencia `docs/evidence/c02/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C02-T02.
+**Verificación:** caso `RDS-C02-T03` sobre `tests/domain/service-agreement.test.ts`; evidencia `docs/evidence/c002/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C02-T02.
 
 ### 002.04 — RDS-C02-T04
 
@@ -54,7 +55,7 @@ Hacer que el servicio funcione como especialista independiente, además de integ
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El aislamiento y los controles mínimos son iguales para clientes del padre y clientes externos.
 
-**Verificación:** caso `RDS-C02-T04` sobre `tests/domain/service-agreement.test.ts`; evidencia `docs/evidence/c02/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C02-T03.
+**Verificación:** caso `RDS-C02-T04` sobre `tests/domain/service-agreement.test.ts`; evidencia `docs/evidence/c002/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C02-T03.
 
 ### 002.05 — RDS-C02-T05
 
@@ -64,7 +65,7 @@ Hacer que el servicio funcione como especialista independiente, además de integ
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El aislamiento y los controles mínimos son iguales para clientes del padre y clientes externos.
 
-**Verificación:** caso `RDS-C02-T05` sobre `tests/domain/service-agreement.test.ts`; evidencia `docs/evidence/c02/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C02-T04.
+**Verificación:** caso `RDS-C02-T05` sobre `tests/domain/service-agreement.test.ts`; evidencia `docs/evidence/c002/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C02-T04.
 
 ### 002.06 — RDS-C02-T06
 
@@ -74,7 +75,7 @@ Hacer que el servicio funcione como especialista independiente, además de integ
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El aislamiento y los controles mínimos son iguales para clientes del padre y clientes externos.
 
-**Verificación:** caso `RDS-C02-T06` sobre `tests/domain/service-agreement.test.ts`; evidencia `docs/evidence/c02/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C02-T05.
+**Verificación:** caso `RDS-C02-T06` sobre `tests/domain/service-agreement.test.ts`; evidencia `docs/evidence/c002/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C02-T05.
 
 ### 002.07 — RDS-C02-T07
 
@@ -84,15 +85,15 @@ Hacer que el servicio funcione como especialista independiente, además de integ
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El aislamiento y los controles mínimos son iguales para clientes del padre y clientes externos.
 
-**Verificación:** caso `RDS-C02-T07` sobre `tests/domain/service-agreement.test.ts`; evidencia `docs/evidence/c02/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C02-T06.
+**Verificación:** caso `RDS-C02-T07` sobre `tests/domain/service-agreement.test.ts`; evidencia `docs/evidence/c002/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C02-T06.
 
 
 ## Wiring y fronteras
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C02-G01 / NOT_EXECUTED:** Cliente externo completo prepara un encargo sin llamadas obligatorias al padre. **Caso:** `RDS-C02-G01` en `tests/domain/service-agreement.test.ts`. **Evidencia:** `docs/evidence/c02/g01.json`.
-- **RDS-C02-G02 / NOT_EXECUTED:** Dos servicios proponen la misma pieza: solo la autoridad acordada de entrega puede ejecutarla. **Caso:** `RDS-C02-G02` en `tests/domain/service-agreement.test.ts`. **Evidencia:** `docs/evidence/c02/g02.json`.
+- **RDS-C02-G01 / NOT_EXECUTED:** Cliente externo completo prepara un encargo sin llamadas obligatorias al padre. **Caso:** `RDS-C02-G01` en `tests/domain/service-agreement.test.ts`. **Evidencia:** `docs/evidence/c002/g01.json`.
+- **RDS-C02-G02 / NOT_EXECUTED:** Dos servicios proponen la misma pieza: solo la autoridad acordada de entrega puede ejecutarla. **Caso:** `RDS-C02-G02` en `tests/domain/service-agreement.test.ts`. **Evidencia:** `docs/evidence/c002/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

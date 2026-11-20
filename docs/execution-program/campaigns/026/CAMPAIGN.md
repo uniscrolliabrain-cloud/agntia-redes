@@ -9,10 +9,11 @@ Gestionar casos propios o derivados con aceptación y contexto apropiados.
 
 ## Archivos y ownership (rutas propuestas; verificar antes de crear)
 - Superficies de la campaña: `src/community/cases.ts`, `src/community/handoffs.ts`, `tests/integration/community.test.ts`.
+- Presente en el repositorio hoy: ninguna; la campaña no está implementada.
 - Contrato y esquema: `packages/contracts/src/` (compartido; no hay archivo de contrato por campaña).
 - API nominada: ninguna; esta campaña no añade ruta HTTP propia y no se crean endpoints ficticios para tareas de investigación o documentales.
 - Tests: `tests/integration/community.test.ts` y `tests/fixtures/c26/`.
-- Evidencia: `docs/evidence/c26/` y **reporte dentro de este mismo documento**.
+- Evidencia: `docs/evidence/c026/` y **reporte dentro de este mismo documento**.
 - Artefactos originales: `src/community/cases.ts`, `src/community/handoffs.ts`, `tests/integration/community.test.ts`. No confundir artefactos documentales con código.
 
 ## Patchsets secuenciales
@@ -24,7 +25,7 @@ Gestionar casos propios o derivados con aceptación y contexto apropiados.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Solaparse con clientes es válido; una derivación o merge requiere autoridad explícita y datos mínimos.
 
-**Verificación:** caso `RDS-C26-T01` sobre `tests/integration/community.test.ts`; evidencia `docs/evidence/c26/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C25-T07.
+**Verificación:** caso `RDS-C26-T01` sobre `tests/integration/community.test.ts`; evidencia `docs/evidence/c026/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C25-T07.
 
 ### 026.02 — RDS-C26-T02
 
@@ -34,7 +35,7 @@ Gestionar casos propios o derivados con aceptación y contexto apropiados.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Solaparse con clientes es válido; una derivación o merge requiere autoridad explícita y datos mínimos.
 
-**Verificación:** caso `RDS-C26-T02` sobre `tests/integration/community.test.ts`; evidencia `docs/evidence/c26/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C26-T01.
+**Verificación:** caso `RDS-C26-T02` sobre `tests/integration/community.test.ts`; evidencia `docs/evidence/c026/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C26-T01.
 
 ### 026.03 — RDS-C26-T03
 
@@ -44,7 +45,7 @@ Gestionar casos propios o derivados con aceptación y contexto apropiados.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Solaparse con clientes es válido; una derivación o merge requiere autoridad explícita y datos mínimos.
 
-**Verificación:** caso `RDS-C26-T03` sobre `tests/integration/community.test.ts`; evidencia `docs/evidence/c26/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C26-T02.
+**Verificación:** caso `RDS-C26-T03` sobre `tests/integration/community.test.ts`; evidencia `docs/evidence/c026/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C26-T02.
 
 ### 026.04 — RDS-C26-T04
 
@@ -54,7 +55,7 @@ Gestionar casos propios o derivados con aceptación y contexto apropiados.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Solaparse con clientes es válido; una derivación o merge requiere autoridad explícita y datos mínimos.
 
-**Verificación:** caso `RDS-C26-T04` sobre `tests/integration/community.test.ts`; evidencia `docs/evidence/c26/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C26-T03.
+**Verificación:** caso `RDS-C26-T04` sobre `tests/integration/community.test.ts`; evidencia `docs/evidence/c026/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C26-T03.
 
 ### 026.05 — RDS-C26-T05
 
@@ -64,7 +65,7 @@ Gestionar casos propios o derivados con aceptación y contexto apropiados.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Solaparse con clientes es válido; una derivación o merge requiere autoridad explícita y datos mínimos.
 
-**Verificación:** caso `RDS-C26-T05` sobre `tests/integration/community.test.ts`; evidencia `docs/evidence/c26/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C26-T04.
+**Verificación:** caso `RDS-C26-T05` sobre `tests/integration/community.test.ts`; evidencia `docs/evidence/c026/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C26-T04.
 
 ### 026.06 — RDS-C26-T06
 
@@ -74,7 +75,7 @@ Gestionar casos propios o derivados con aceptación y contexto apropiados.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Solaparse con clientes es válido; una derivación o merge requiere autoridad explícita y datos mínimos.
 
-**Verificación:** caso `RDS-C26-T06` sobre `tests/integration/community.test.ts`; evidencia `docs/evidence/c26/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C26-T05.
+**Verificación:** caso `RDS-C26-T06` sobre `tests/integration/community.test.ts`; evidencia `docs/evidence/c026/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C26-T05.
 
 ### 026.07 — RDS-C26-T07
 
@@ -84,15 +85,15 @@ Gestionar casos propios o derivados con aceptación y contexto apropiados.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Solaparse con clientes es válido; una derivación o merge requiere autoridad explícita y datos mínimos.
 
-**Verificación:** caso `RDS-C26-T07` sobre `tests/integration/community.test.ts`; evidencia `docs/evidence/c26/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C26-T06.
+**Verificación:** caso `RDS-C26-T07` sobre `tests/integration/community.test.ts`; evidencia `docs/evidence/c026/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C26-T06.
 
 
 ## Wiring y fronteras
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C26-G01 / NOT_EXECUTED:** Comentario público no se convierte en contacto de ventas ni consentimiento de marketing. **Caso:** `RDS-C26-G01` en `tests/integration/community.test.ts`. **Evidencia:** `docs/evidence/c26/g01.json`.
-- **RDS-C26-G02 / NOT_EXECUTED:** Nuevo mensaje cambia el contexto y una respuesta sensible aprobada queda pendiente de revisión. **Caso:** `RDS-C26-G02` en `tests/integration/community.test.ts`. **Evidencia:** `docs/evidence/c26/g02.json`.
+- **RDS-C26-G01 / NOT_EXECUTED:** Comentario público no se convierte en contacto de ventas ni consentimiento de marketing. **Caso:** `RDS-C26-G01` en `tests/integration/community.test.ts`. **Evidencia:** `docs/evidence/c026/g01.json`.
+- **RDS-C26-G02 / NOT_EXECUTED:** Nuevo mensaje cambia el contexto y una respuesta sensible aprobada queda pendiente de revisión. **Caso:** `RDS-C26-G02` en `tests/integration/community.test.ts`. **Evidencia:** `docs/evidence/c026/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

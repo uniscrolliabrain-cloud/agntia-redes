@@ -9,10 +9,11 @@ No habilitar una integración por existir README, SDK o un plan comercial atract
 
 ## Archivos y ownership (rutas propuestas; verificar antes de crear)
 - Superficies de la campaña: `docs/upstreams/`, `src/providers/catalog.ts`, `src/domain/entitlements.ts`.
+- Presente en el repositorio hoy: `src/providers/catalog.ts` (1/3 superficies).
 - Contrato y esquema: `packages/contracts/src/` (compartido; no hay archivo de contrato por campaña).
 - API nominada: ninguna; esta campaña no añade ruta HTTP propia y no se crean endpoints ficticios para tareas de investigación o documentales.
 - Tests: `tests/contracts/catalog.test.ts` y `tests/fixtures/c06/`.
-- Evidencia: `docs/evidence/c06/` y **reporte dentro de este mismo documento**.
+- Evidencia: `docs/evidence/c006/` y **reporte dentro de este mismo documento**.
 - Artefactos originales: `docs/upstreams/`, `src/providers/catalog.ts`, `src/domain/entitlements.ts`. No confundir artefactos documentales con código.
 
 ## Patchsets secuenciales
@@ -24,7 +25,7 @@ No habilitar una integración por existir README, SDK o un plan comercial atract
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un plan o licencia de código no otorga permisos de plataforma, uso de datos o minutos ilimitados.
 
-**Verificación:** caso `RDS-C06-T01` sobre `tests/contracts/catalog.test.ts`; evidencia `docs/evidence/c06/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C05-T07.
+**Verificación:** caso `RDS-C06-T01` sobre `tests/contracts/catalog.test.ts`; evidencia `docs/evidence/c006/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C05-T07.
 
 ### 006.02 — RDS-C06-T02
 
@@ -34,7 +35,7 @@ No habilitar una integración por existir README, SDK o un plan comercial atract
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un plan o licencia de código no otorga permisos de plataforma, uso de datos o minutos ilimitados.
 
-**Verificación:** caso `RDS-C06-T02` sobre `tests/contracts/catalog.test.ts`; evidencia `docs/evidence/c06/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C06-T01.
+**Verificación:** caso `RDS-C06-T02` sobre `tests/contracts/catalog.test.ts`; evidencia `docs/evidence/c006/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C06-T01.
 
 ### 006.03 — RDS-C06-T03
 
@@ -44,7 +45,7 @@ No habilitar una integración por existir README, SDK o un plan comercial atract
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un plan o licencia de código no otorga permisos de plataforma, uso de datos o minutos ilimitados.
 
-**Verificación:** caso `RDS-C06-T03` sobre `tests/contracts/catalog.test.ts`; evidencia `docs/evidence/c06/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C06-T02.
+**Verificación:** caso `RDS-C06-T03` sobre `tests/contracts/catalog.test.ts`; evidencia `docs/evidence/c006/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C06-T02.
 
 ### 006.04 — RDS-C06-T04
 
@@ -54,7 +55,7 @@ No habilitar una integración por existir README, SDK o un plan comercial atract
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un plan o licencia de código no otorga permisos de plataforma, uso de datos o minutos ilimitados.
 
-**Verificación:** caso `RDS-C06-T04` sobre `tests/contracts/catalog.test.ts`; evidencia `docs/evidence/c06/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C06-T03.
+**Verificación:** caso `RDS-C06-T04` sobre `tests/contracts/catalog.test.ts`; evidencia `docs/evidence/c006/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C06-T03.
 
 ### 006.05 — RDS-C06-T05
 
@@ -64,7 +65,7 @@ No habilitar una integración por existir README, SDK o un plan comercial atract
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un plan o licencia de código no otorga permisos de plataforma, uso de datos o minutos ilimitados.
 
-**Verificación:** caso `RDS-C06-T05` sobre `tests/contracts/catalog.test.ts`; evidencia `docs/evidence/c06/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C06-T04.
+**Verificación:** caso `RDS-C06-T05` sobre `tests/contracts/catalog.test.ts`; evidencia `docs/evidence/c006/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C06-T04.
 
 ### 006.06 — RDS-C06-T06
 
@@ -74,7 +75,7 @@ No habilitar una integración por existir README, SDK o un plan comercial atract
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un plan o licencia de código no otorga permisos de plataforma, uso de datos o minutos ilimitados.
 
-**Verificación:** caso `RDS-C06-T06` sobre `tests/contracts/catalog.test.ts`; evidencia `docs/evidence/c06/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C06-T05.
+**Verificación:** caso `RDS-C06-T06` sobre `tests/contracts/catalog.test.ts`; evidencia `docs/evidence/c006/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C06-T05.
 
 ### 006.07 — RDS-C06-T07
 
@@ -84,15 +85,15 @@ No habilitar una integración por existir README, SDK o un plan comercial atract
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un plan o licencia de código no otorga permisos de plataforma, uso de datos o minutos ilimitados.
 
-**Verificación:** caso `RDS-C06-T07` sobre `tests/contracts/catalog.test.ts`; evidencia `docs/evidence/c06/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C06-T06.
+**Verificación:** caso `RDS-C06-T07` sobre `tests/contracts/catalog.test.ts`; evidencia `docs/evidence/c006/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C06-T06.
 
 
 ## Wiring y fronteras
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C06-G01 / NOT_EXECUTED:** La edición instalada carece del endpoint documentado en Cloud: capability queda unsupported. **Caso:** `RDS-C06-G01` en `tests/contracts/catalog.test.ts`. **Evidencia:** `docs/evidence/c06/g01.json`.
-- **RDS-C06-G02 / NOT_EXECUTED:** Un scope revocado o report caducado bloquea escritura aunque el último probe tuviera200. **Caso:** `RDS-C06-G02` en `tests/contracts/catalog.test.ts`. **Evidencia:** `docs/evidence/c06/g02.json`.
+- **RDS-C06-G01 / NOT_EXECUTED:** La edición instalada carece del endpoint documentado en Cloud: capability queda unsupported. **Caso:** `RDS-C06-G01` en `tests/contracts/catalog.test.ts`. **Evidencia:** `docs/evidence/c006/g01.json`.
+- **RDS-C06-G02 / NOT_EXECUTED:** Un scope revocado o report caducado bloquea escritura aunque el último probe tuviera200. **Caso:** `RDS-C06-G02` en `tests/contracts/catalog.test.ts`. **Evidencia:** `docs/evidence/c006/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

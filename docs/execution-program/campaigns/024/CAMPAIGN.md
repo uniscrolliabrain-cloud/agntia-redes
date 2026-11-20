@@ -9,10 +9,11 @@ Resolver incertidumbre sin borrar historia ni inventar rollback remoto.
 
 ## Archivos y ownership (rutas propuestas; verificar antes de crear)
 - Superficies de la campaña: `src/publication/reconcile.ts`, `src/publication/changes.ts`, `tests/integration/reconcile.test.ts`.
+- Presente en el repositorio hoy: `src/publication/reconcile.ts`, `tests/integration/reconcile.test.ts` (2/3 superficies).
 - Contrato y esquema: `packages/contracts/src/` (compartido; no hay archivo de contrato por campaña).
 - API nominada: `apps/api/src/routes/publication-reconcile.ts` (solo con operación externa autorizada).
 - Tests: `tests/integration/reconcile.test.ts` y `tests/fixtures/c24/`.
-- Evidencia: `docs/evidence/c24/` y **reporte dentro de este mismo documento**.
+- Evidencia: `docs/evidence/c024/` y **reporte dentro de este mismo documento**.
 - Artefactos originales: `src/publication/reconcile.ts`, `src/publication/changes.ts`, `tests/integration/reconcile.test.ts`. No confundir artefactos documentales con código.
 
 ## Patchsets secuenciales
@@ -24,7 +25,7 @@ Resolver incertidumbre sin borrar historia ni inventar rollback remoto.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Retirar un post no significa que nadie lo vio ni que copias/backups desaparecieron.
 
-**Verificación:** caso `RDS-C24-T01` sobre `tests/integration/reconcile.test.ts`; evidencia `docs/evidence/c24/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C23-T07.
+**Verificación:** caso `RDS-C24-T01` sobre `tests/integration/reconcile.test.ts`; evidencia `docs/evidence/c024/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C23-T07.
 
 ### 024.02 — RDS-C24-T02
 
@@ -34,7 +35,7 @@ Resolver incertidumbre sin borrar historia ni inventar rollback remoto.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Retirar un post no significa que nadie lo vio ni que copias/backups desaparecieron.
 
-**Verificación:** caso `RDS-C24-T02` sobre `tests/integration/reconcile.test.ts`; evidencia `docs/evidence/c24/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C24-T01.
+**Verificación:** caso `RDS-C24-T02` sobre `tests/integration/reconcile.test.ts`; evidencia `docs/evidence/c024/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C24-T01.
 
 ### 024.03 — RDS-C24-T03
 
@@ -44,7 +45,7 @@ Resolver incertidumbre sin borrar historia ni inventar rollback remoto.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Retirar un post no significa que nadie lo vio ni que copias/backups desaparecieron.
 
-**Verificación:** caso `RDS-C24-T03` sobre `tests/integration/reconcile.test.ts`; evidencia `docs/evidence/c24/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C24-T02.
+**Verificación:** caso `RDS-C24-T03` sobre `tests/integration/reconcile.test.ts`; evidencia `docs/evidence/c024/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C24-T02.
 
 ### 024.04 — RDS-C24-T04
 
@@ -54,7 +55,7 @@ Resolver incertidumbre sin borrar historia ni inventar rollback remoto.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Retirar un post no significa que nadie lo vio ni que copias/backups desaparecieron.
 
-**Verificación:** caso `RDS-C24-T04` sobre `tests/integration/reconcile.test.ts`; evidencia `docs/evidence/c24/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C24-T03.
+**Verificación:** caso `RDS-C24-T04` sobre `tests/integration/reconcile.test.ts`; evidencia `docs/evidence/c024/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C24-T03.
 
 ### 024.05 — RDS-C24-T05
 
@@ -64,7 +65,7 @@ Resolver incertidumbre sin borrar historia ni inventar rollback remoto.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Retirar un post no significa que nadie lo vio ni que copias/backups desaparecieron.
 
-**Verificación:** caso `RDS-C24-T05` sobre `tests/integration/reconcile.test.ts`; evidencia `docs/evidence/c24/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C24-T04.
+**Verificación:** caso `RDS-C24-T05` sobre `tests/integration/reconcile.test.ts`; evidencia `docs/evidence/c024/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C24-T04.
 
 ### 024.06 — RDS-C24-T06
 
@@ -74,7 +75,7 @@ Resolver incertidumbre sin borrar historia ni inventar rollback remoto.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Retirar un post no significa que nadie lo vio ni que copias/backups desaparecieron.
 
-**Verificación:** caso `RDS-C24-T06` sobre `tests/integration/reconcile.test.ts`; evidencia `docs/evidence/c24/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C24-T05.
+**Verificación:** caso `RDS-C24-T06` sobre `tests/integration/reconcile.test.ts`; evidencia `docs/evidence/c024/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C24-T05.
 
 ### 024.07 — RDS-C24-T07
 
@@ -84,15 +85,15 @@ Resolver incertidumbre sin borrar historia ni inventar rollback remoto.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Retirar un post no significa que nadie lo vio ni que copias/backups desaparecieron.
 
-**Verificación:** caso `RDS-C24-T07` sobre `tests/integration/reconcile.test.ts`; evidencia `docs/evidence/c24/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C24-T06.
+**Verificación:** caso `RDS-C24-T07` sobre `tests/integration/reconcile.test.ts`; evidencia `docs/evidence/c024/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C24-T06.
 
 
 ## Wiring y fronteras
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C24-G01 / NOT_EXECUTED:** Sin lookup fiable el intent permanece unknown y no se reenvía para cerrar un dashboard. **Caso:** `RDS-C24-G01` en `tests/integration/reconcile.test.ts`. **Evidencia:** `docs/evidence/c24/g01.json`.
-- **RDS-C24-G02 / NOT_EXECUTED:** Otro usuario modifica el post remoto y una actualización local se bloquea en conflicto. **Caso:** `RDS-C24-G02` en `tests/integration/reconcile.test.ts`. **Evidencia:** `docs/evidence/c24/g02.json`.
+- **RDS-C24-G01 / NOT_EXECUTED:** Sin lookup fiable el intent permanece unknown y no se reenvía para cerrar un dashboard. **Caso:** `RDS-C24-G01` en `tests/integration/reconcile.test.ts`. **Evidencia:** `docs/evidence/c024/g01.json`.
+- **RDS-C24-G02 / NOT_EXECUTED:** Otro usuario modifica el post remoto y una actualización local se bloquea en conflicto. **Caso:** `RDS-C24-G02` en `tests/integration/reconcile.test.ts`. **Evidencia:** `docs/evidence/c024/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

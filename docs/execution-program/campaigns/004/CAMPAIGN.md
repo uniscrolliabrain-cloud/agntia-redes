@@ -9,10 +9,11 @@ Fijar fronteras tipadas antes de escribir adaptadores o UI.
 
 ## Archivos y ownership (rutas propuestas; verificar antes de crear)
 - Superficies de la campaña: `src/contracts/index.ts`, `docs/contracts/schemas/`, `tests/contracts/wire.test.ts`.
+- Presente en el repositorio hoy: `src/contracts/index.ts`, `tests/contracts/wire.test.ts` (2/3 superficies).
 - Contrato y esquema: `packages/contracts/src/` (compartido; no hay archivo de contrato por campaña).
 - API nominada: `apps/api/src/routes/contracts.ts` (solo con operación externa autorizada).
 - Tests: `tests/contracts/wire.test.ts` y `tests/fixtures/c04/`.
-- Evidencia: `docs/evidence/c04/` y **reporte dentro de este mismo documento**.
+- Evidencia: `docs/evidence/c004/` y **reporte dentro de este mismo documento**.
 - Artefactos originales: `src/contracts/index.ts`, `docs/contracts/schemas/`, `tests/contracts/wire.test.ts`. No confundir artefactos documentales con código.
 
 ## Patchsets secuenciales
@@ -24,7 +25,7 @@ Fijar fronteras tipadas antes de escribir adaptadores o UI.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Validar un schema no constituye autorización ni verifica que un proveedor tenga esa capacidad.
 
-**Verificación:** caso `RDS-C04-T01` sobre `tests/contracts/wire.test.ts`; evidencia `docs/evidence/c04/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C03-T07.
+**Verificación:** caso `RDS-C04-T01` sobre `tests/contracts/wire.test.ts`; evidencia `docs/evidence/c004/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C03-T07.
 
 ### 004.02 — RDS-C04-T02
 
@@ -34,7 +35,7 @@ Fijar fronteras tipadas antes de escribir adaptadores o UI.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Validar un schema no constituye autorización ni verifica que un proveedor tenga esa capacidad.
 
-**Verificación:** caso `RDS-C04-T02` sobre `tests/contracts/wire.test.ts`; evidencia `docs/evidence/c04/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C04-T01.
+**Verificación:** caso `RDS-C04-T02` sobre `tests/contracts/wire.test.ts`; evidencia `docs/evidence/c004/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C04-T01.
 
 ### 004.03 — RDS-C04-T03
 
@@ -44,7 +45,7 @@ Fijar fronteras tipadas antes de escribir adaptadores o UI.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Validar un schema no constituye autorización ni verifica que un proveedor tenga esa capacidad.
 
-**Verificación:** caso `RDS-C04-T03` sobre `tests/contracts/wire.test.ts`; evidencia `docs/evidence/c04/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C04-T02.
+**Verificación:** caso `RDS-C04-T03` sobre `tests/contracts/wire.test.ts`; evidencia `docs/evidence/c004/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C04-T02.
 
 ### 004.04 — RDS-C04-T04
 
@@ -54,7 +55,7 @@ Fijar fronteras tipadas antes de escribir adaptadores o UI.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Validar un schema no constituye autorización ni verifica que un proveedor tenga esa capacidad.
 
-**Verificación:** caso `RDS-C04-T04` sobre `tests/contracts/wire.test.ts`; evidencia `docs/evidence/c04/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C04-T03.
+**Verificación:** caso `RDS-C04-T04` sobre `tests/contracts/wire.test.ts`; evidencia `docs/evidence/c004/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C04-T03.
 
 ### 004.05 — RDS-C04-T05
 
@@ -64,7 +65,7 @@ Fijar fronteras tipadas antes de escribir adaptadores o UI.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Validar un schema no constituye autorización ni verifica que un proveedor tenga esa capacidad.
 
-**Verificación:** caso `RDS-C04-T05` sobre `tests/contracts/wire.test.ts`; evidencia `docs/evidence/c04/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C04-T04.
+**Verificación:** caso `RDS-C04-T05` sobre `tests/contracts/wire.test.ts`; evidencia `docs/evidence/c004/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C04-T04.
 
 ### 004.06 — RDS-C04-T06
 
@@ -74,7 +75,7 @@ Fijar fronteras tipadas antes de escribir adaptadores o UI.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Validar un schema no constituye autorización ni verifica que un proveedor tenga esa capacidad.
 
-**Verificación:** caso `RDS-C04-T06` sobre `tests/contracts/wire.test.ts`; evidencia `docs/evidence/c04/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C04-T05.
+**Verificación:** caso `RDS-C04-T06` sobre `tests/contracts/wire.test.ts`; evidencia `docs/evidence/c004/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C04-T05.
 
 ### 004.07 — RDS-C04-T07
 
@@ -84,15 +85,15 @@ Fijar fronteras tipadas antes de escribir adaptadores o UI.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Validar un schema no constituye autorización ni verifica que un proveedor tenga esa capacidad.
 
-**Verificación:** caso `RDS-C04-T07` sobre `tests/contracts/wire.test.ts`; evidencia `docs/evidence/c04/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C04-T06.
+**Verificación:** caso `RDS-C04-T07` sobre `tests/contracts/wire.test.ts`; evidencia `docs/evidence/c004/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C04-T06.
 
 
 ## Wiring y fronteras
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C04-G01 / NOT_EXECUTED:** Payload con tenant/role/URL arbitrarios fuera del DTO es rechazado antes de IO. **Caso:** `RDS-C04-G01` en `tests/contracts/wire.test.ts`. **Evidencia:** `docs/evidence/c04/g01.json`.
-- **RDS-C04-G02 / NOT_EXECUTED:** Contrato viejo no compatible devuelve error explícito; no elimina campos silenciosamente. **Caso:** `RDS-C04-G02` en `tests/contracts/wire.test.ts`. **Evidencia:** `docs/evidence/c04/g02.json`.
+- **RDS-C04-G01 / NOT_EXECUTED:** Payload con tenant/role/URL arbitrarios fuera del DTO es rechazado antes de IO. **Caso:** `RDS-C04-G01` en `tests/contracts/wire.test.ts`. **Evidencia:** `docs/evidence/c004/g01.json`.
+- **RDS-C04-G02 / NOT_EXECUTED:** Contrato viejo no compatible devuelve error explícito; no elimina campos silenciosamente. **Caso:** `RDS-C04-G02` en `tests/contracts/wire.test.ts`. **Evidencia:** `docs/evidence/c004/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

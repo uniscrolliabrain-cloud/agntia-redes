@@ -9,10 +9,11 @@ Denegar permisos por defecto para humanos, especialistas IA, clientes y partners
 
 ## Archivos y ownership (rutas propuestas; verificar antes de crear)
 - Superficies de la campaña: `src/auth/principal.ts`, `src/auth/policy.ts`, `tests/security/tenancy.test.ts`.
+- Presente en el repositorio hoy: `src/auth/principal.ts`, `src/auth/policy.ts`, `tests/security/tenancy.test.ts` (3/3 superficies).
 - Contrato y esquema: `packages/contracts/src/` (compartido; no hay archivo de contrato por campaña).
-- API nominada: `apps/api/src/routes/capabilities.ts` (solo con operación externa autorizada).
+- API nominada: `apps/api/src/routes/03.ts` está implementada en main@bc29368; nombre objetivo `capabilities.ts` (renombrar sin cambiar contrato).
 - Tests: `tests/security/tenancy.test.ts` y `tests/fixtures/c03/`.
-- Evidencia: `docs/evidence/c03/` y **reporte dentro de este mismo documento**.
+- Evidencia: `docs/evidence/c003/` y **reporte dentro de este mismo documento**.
 - Artefactos originales: `src/auth/principal.ts`, `src/auth/policy.ts`, `tests/security/tenancy.test.ts`. No confundir artefactos documentales con código.
 
 ## Patchsets secuenciales
@@ -24,7 +25,7 @@ Denegar permisos por defecto para humanos, especialistas IA, clientes y partners
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Ninguna personalidad o credencial de admin prestada convierte un agente en humano autorizado.
 
-**Verificación:** caso `RDS-C03-T01` sobre `tests/security/tenancy.test.ts`; evidencia `docs/evidence/c03/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C02-T07.
+**Verificación:** caso `RDS-C03-T01` sobre `tests/security/tenancy.test.ts`; evidencia `docs/evidence/c003/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C02-T07.
 
 ### 003.02 — RDS-C03-T02
 
@@ -34,7 +35,7 @@ Denegar permisos por defecto para humanos, especialistas IA, clientes y partners
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Ninguna personalidad o credencial de admin prestada convierte un agente en humano autorizado.
 
-**Verificación:** caso `RDS-C03-T02` sobre `tests/security/tenancy.test.ts`; evidencia `docs/evidence/c03/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C03-T01.
+**Verificación:** caso `RDS-C03-T02` sobre `tests/security/tenancy.test.ts`; evidencia `docs/evidence/c003/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C03-T01.
 
 ### 003.03 — RDS-C03-T03
 
@@ -44,7 +45,7 @@ Denegar permisos por defecto para humanos, especialistas IA, clientes y partners
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Ninguna personalidad o credencial de admin prestada convierte un agente en humano autorizado.
 
-**Verificación:** caso `RDS-C03-T03` sobre `tests/security/tenancy.test.ts`; evidencia `docs/evidence/c03/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C03-T02.
+**Verificación:** caso `RDS-C03-T03` sobre `tests/security/tenancy.test.ts`; evidencia `docs/evidence/c003/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C03-T02.
 
 ### 003.04 — RDS-C03-T04
 
@@ -54,7 +55,7 @@ Denegar permisos por defecto para humanos, especialistas IA, clientes y partners
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Ninguna personalidad o credencial de admin prestada convierte un agente en humano autorizado.
 
-**Verificación:** caso `RDS-C03-T04` sobre `tests/security/tenancy.test.ts`; evidencia `docs/evidence/c03/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C03-T03.
+**Verificación:** caso `RDS-C03-T04` sobre `tests/security/tenancy.test.ts`; evidencia `docs/evidence/c003/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C03-T03.
 
 ### 003.05 — RDS-C03-T05
 
@@ -64,7 +65,7 @@ Denegar permisos por defecto para humanos, especialistas IA, clientes y partners
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Ninguna personalidad o credencial de admin prestada convierte un agente en humano autorizado.
 
-**Verificación:** caso `RDS-C03-T05` sobre `tests/security/tenancy.test.ts`; evidencia `docs/evidence/c03/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C03-T04.
+**Verificación:** caso `RDS-C03-T05` sobre `tests/security/tenancy.test.ts`; evidencia `docs/evidence/c003/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C03-T04.
 
 ### 003.06 — RDS-C03-T06
 
@@ -74,7 +75,7 @@ Denegar permisos por defecto para humanos, especialistas IA, clientes y partners
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Ninguna personalidad o credencial de admin prestada convierte un agente en humano autorizado.
 
-**Verificación:** caso `RDS-C03-T06` sobre `tests/security/tenancy.test.ts`; evidencia `docs/evidence/c03/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C03-T05.
+**Verificación:** caso `RDS-C03-T06` sobre `tests/security/tenancy.test.ts`; evidencia `docs/evidence/c003/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C03-T05.
 
 ### 003.07 — RDS-C03-T07
 
@@ -84,15 +85,15 @@ Denegar permisos por defecto para humanos, especialistas IA, clientes y partners
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Ninguna personalidad o credencial de admin prestada convierte un agente en humano autorizado.
 
-**Verificación:** caso `RDS-C03-T07` sobre `tests/security/tenancy.test.ts`; evidencia `docs/evidence/c03/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C03-T06.
+**Verificación:** caso `RDS-C03-T07` sobre `tests/security/tenancy.test.ts`; evidencia `docs/evidence/c003/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C03-T06.
 
 
 ## Wiring y fronteras
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C03-G01 / NOT_EXECUTED:** ClienteA intenta accountBinding deB y recibe404 sin metadatos del otro cliente. **Caso:** `RDS-C03-G01` en `tests/security/tenancy.test.ts`. **Evidencia:** `docs/evidence/c03/g01.json`.
-- **RDS-C03-G02 / NOT_EXECUTED:** Fallo al resolver membresía devuelve indisponible/denegado, nunca owner/default. **Caso:** `RDS-C03-G02` en `tests/security/tenancy.test.ts`. **Evidencia:** `docs/evidence/c03/g02.json`.
+- **RDS-C03-G01 / NOT_EXECUTED:** ClienteA intenta accountBinding deB y recibe404 sin metadatos del otro cliente. **Caso:** `RDS-C03-G01` en `tests/security/tenancy.test.ts`. **Evidencia:** `docs/evidence/c003/g01.json`.
+- **RDS-C03-G02 / NOT_EXECUTED:** Fallo al resolver membresía devuelve indisponible/denegado, nunca owner/default. **Caso:** `RDS-C03-G02` en `tests/security/tenancy.test.ts`. **Evidencia:** `docs/evidence/c003/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

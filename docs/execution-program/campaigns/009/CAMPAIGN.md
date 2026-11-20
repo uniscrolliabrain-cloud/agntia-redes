@@ -9,10 +9,11 @@ Integrar un backend autohospedado como proveedor invisible y acotado.
 
 ## Archivos y ownership (rutas propuestas; verificar antes de crear)
 - Superficies de la campaña: `src/adapters/postiz/`, `tests/contracts/postiz/`, `docs/adr/backend-social.md`.
+- Presente en el repositorio hoy: ninguna; la campaña no está implementada.
 - Contrato y esquema: `packages/contracts/src/` (compartido; no hay archivo de contrato por campaña).
 - API nominada: ninguna; esta campaña no añade ruta HTTP propia y no se crean endpoints ficticios para tareas de investigación o documentales.
 - Tests: `tests/contracts/postiz/` y `tests/fixtures/c09/`.
-- Evidencia: `docs/evidence/c09/` y **reporte dentro de este mismo documento**.
+- Evidencia: `docs/evidence/c009/` y **reporte dentro de este mismo documento**.
 - Artefactos originales: `src/adapters/postiz/`, `tests/contracts/postiz/`, `docs/adr/backend-social.md`. No confundir artefactos documentales con código.
 
 ## Patchsets secuenciales
@@ -24,7 +25,7 @@ Integrar un backend autohospedado como proveedor invisible y acotado.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El backend no custodia ni inventa la aprobación empresarial y un jobID no es postID.
 
-**Verificación:** caso `RDS-C09-T01` sobre `tests/contracts/postiz/`; evidencia `docs/evidence/c09/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C08-T07.
+**Verificación:** caso `RDS-C09-T01` sobre `tests/contracts/postiz/`; evidencia `docs/evidence/c009/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C08-T07.
 
 ### 009.02 — RDS-C09-T02
 
@@ -34,7 +35,7 @@ Integrar un backend autohospedado como proveedor invisible y acotado.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El backend no custodia ni inventa la aprobación empresarial y un jobID no es postID.
 
-**Verificación:** caso `RDS-C09-T02` sobre `tests/contracts/postiz/`; evidencia `docs/evidence/c09/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C09-T01.
+**Verificación:** caso `RDS-C09-T02` sobre `tests/contracts/postiz/`; evidencia `docs/evidence/c009/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C09-T01.
 
 ### 009.03 — RDS-C09-T03
 
@@ -44,7 +45,7 @@ Integrar un backend autohospedado como proveedor invisible y acotado.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El backend no custodia ni inventa la aprobación empresarial y un jobID no es postID.
 
-**Verificación:** caso `RDS-C09-T03` sobre `tests/contracts/postiz/`; evidencia `docs/evidence/c09/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C09-T02.
+**Verificación:** caso `RDS-C09-T03` sobre `tests/contracts/postiz/`; evidencia `docs/evidence/c009/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C09-T02.
 
 ### 009.04 — RDS-C09-T04
 
@@ -54,7 +55,7 @@ Integrar un backend autohospedado como proveedor invisible y acotado.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El backend no custodia ni inventa la aprobación empresarial y un jobID no es postID.
 
-**Verificación:** caso `RDS-C09-T04` sobre `tests/contracts/postiz/`; evidencia `docs/evidence/c09/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C09-T03.
+**Verificación:** caso `RDS-C09-T04` sobre `tests/contracts/postiz/`; evidencia `docs/evidence/c009/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C09-T03.
 
 ### 009.05 — RDS-C09-T05
 
@@ -64,7 +65,7 @@ Integrar un backend autohospedado como proveedor invisible y acotado.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El backend no custodia ni inventa la aprobación empresarial y un jobID no es postID.
 
-**Verificación:** caso `RDS-C09-T05` sobre `tests/contracts/postiz/`; evidencia `docs/evidence/c09/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C09-T04.
+**Verificación:** caso `RDS-C09-T05` sobre `tests/contracts/postiz/`; evidencia `docs/evidence/c009/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C09-T04.
 
 ### 009.06 — RDS-C09-T06
 
@@ -74,7 +75,7 @@ Integrar un backend autohospedado como proveedor invisible y acotado.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El backend no custodia ni inventa la aprobación empresarial y un jobID no es postID.
 
-**Verificación:** caso `RDS-C09-T06` sobre `tests/contracts/postiz/`; evidencia `docs/evidence/c09/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C09-T05.
+**Verificación:** caso `RDS-C09-T06` sobre `tests/contracts/postiz/`; evidencia `docs/evidence/c009/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C09-T05.
 
 ### 009.07 — RDS-C09-T07
 
@@ -84,15 +85,15 @@ Integrar un backend autohospedado como proveedor invisible y acotado.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El backend no custodia ni inventa la aprobación empresarial y un jobID no es postID.
 
-**Verificación:** caso `RDS-C09-T07` sobre `tests/contracts/postiz/`; evidencia `docs/evidence/c09/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C09-T06.
+**Verificación:** caso `RDS-C09-T07` sobre `tests/contracts/postiz/`; evidencia `docs/evidence/c009/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C09-T06.
 
 
 ## Wiring y fronteras
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C09-G01 / NOT_EXECUTED:** Postiz devuelve job aceptado; UI permanece pendiente de confirmación remota, sin post fake. **Caso:** `RDS-C09-G01` en `tests/contracts/postiz/`. **Evidencia:** `docs/evidence/c09/g01.json`.
-- **RDS-C09-G02 / NOT_EXECUTED:** Worker reinicia y reconoce schedule remoto existente sin programar una segunda copia. **Caso:** `RDS-C09-G02` en `tests/contracts/postiz/`. **Evidencia:** `docs/evidence/c09/g02.json`.
+- **RDS-C09-G01 / NOT_EXECUTED:** Postiz devuelve job aceptado; UI permanece pendiente de confirmación remota, sin post fake. **Caso:** `RDS-C09-G01` en `tests/contracts/postiz/`. **Evidencia:** `docs/evidence/c009/g01.json`.
+- **RDS-C09-G02 / NOT_EXECUTED:** Worker reinicia y reconoce schedule remoto existente sin programar una segunda copia. **Caso:** `RDS-C09-G02` en `tests/contracts/postiz/`. **Evidencia:** `docs/evidence/c009/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

@@ -9,10 +9,11 @@ Recibir hechos sociales con firma, minimización y protección contra replay.
 
 ## Archivos y ownership (rutas propuestas; verificar antes de crear)
 - Superficies de la campaña: `src/inbox/ingest.ts`, `src/inbox/sources.ts`, `tests/security/webhooks.test.ts`.
+- Presente en el repositorio hoy: ninguna; la campaña no está implementada.
 - Contrato y esquema: `packages/contracts/src/` (compartido; no hay archivo de contrato por campaña).
 - API nominada: `apps/api/src/routes/webhooks.ts` (solo con operación externa autorizada).
 - Tests: `tests/security/webhooks.test.ts` y `tests/fixtures/c25/`.
-- Evidencia: `docs/evidence/c25/` y **reporte dentro de este mismo documento**.
+- Evidencia: `docs/evidence/c025/` y **reporte dentro de este mismo documento**.
 - Artefactos originales: `src/inbox/ingest.ts`, `src/inbox/sources.ts`, `tests/security/webhooks.test.ts`. No confundir artefactos documentales con código.
 
 ## Patchsets secuenciales
@@ -24,7 +25,7 @@ Recibir hechos sociales con firma, minimización y protección contra replay.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un webhook con eventId conocido y contenido distinto es conflicto, no duplicado inocuo.
 
-**Verificación:** caso `RDS-C25-T01` sobre `tests/security/webhooks.test.ts`; evidencia `docs/evidence/c25/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C24-T07.
+**Verificación:** caso `RDS-C25-T01` sobre `tests/security/webhooks.test.ts`; evidencia `docs/evidence/c025/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C24-T07.
 
 ### 025.02 — RDS-C25-T02
 
@@ -34,7 +35,7 @@ Recibir hechos sociales con firma, minimización y protección contra replay.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un webhook con eventId conocido y contenido distinto es conflicto, no duplicado inocuo.
 
-**Verificación:** caso `RDS-C25-T02` sobre `tests/security/webhooks.test.ts`; evidencia `docs/evidence/c25/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C25-T01.
+**Verificación:** caso `RDS-C25-T02` sobre `tests/security/webhooks.test.ts`; evidencia `docs/evidence/c025/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C25-T01.
 
 ### 025.03 — RDS-C25-T03
 
@@ -44,7 +45,7 @@ Recibir hechos sociales con firma, minimización y protección contra replay.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un webhook con eventId conocido y contenido distinto es conflicto, no duplicado inocuo.
 
-**Verificación:** caso `RDS-C25-T03` sobre `tests/security/webhooks.test.ts`; evidencia `docs/evidence/c25/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C25-T02.
+**Verificación:** caso `RDS-C25-T03` sobre `tests/security/webhooks.test.ts`; evidencia `docs/evidence/c025/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C25-T02.
 
 ### 025.04 — RDS-C25-T04
 
@@ -54,7 +55,7 @@ Recibir hechos sociales con firma, minimización y protección contra replay.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un webhook con eventId conocido y contenido distinto es conflicto, no duplicado inocuo.
 
-**Verificación:** caso `RDS-C25-T04` sobre `tests/security/webhooks.test.ts`; evidencia `docs/evidence/c25/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C25-T03.
+**Verificación:** caso `RDS-C25-T04` sobre `tests/security/webhooks.test.ts`; evidencia `docs/evidence/c025/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C25-T03.
 
 ### 025.05 — RDS-C25-T05
 
@@ -64,7 +65,7 @@ Recibir hechos sociales con firma, minimización y protección contra replay.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un webhook con eventId conocido y contenido distinto es conflicto, no duplicado inocuo.
 
-**Verificación:** caso `RDS-C25-T05` sobre `tests/security/webhooks.test.ts`; evidencia `docs/evidence/c25/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C25-T04.
+**Verificación:** caso `RDS-C25-T05` sobre `tests/security/webhooks.test.ts`; evidencia `docs/evidence/c025/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C25-T04.
 
 ### 025.06 — RDS-C25-T06
 
@@ -74,7 +75,7 @@ Recibir hechos sociales con firma, minimización y protección contra replay.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un webhook con eventId conocido y contenido distinto es conflicto, no duplicado inocuo.
 
-**Verificación:** caso `RDS-C25-T06` sobre `tests/security/webhooks.test.ts`; evidencia `docs/evidence/c25/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C25-T05.
+**Verificación:** caso `RDS-C25-T06` sobre `tests/security/webhooks.test.ts`; evidencia `docs/evidence/c025/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C25-T05.
 
 ### 025.07 — RDS-C25-T07
 
@@ -84,15 +85,15 @@ Recibir hechos sociales con firma, minimización y protección contra replay.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Un webhook con eventId conocido y contenido distinto es conflicto, no duplicado inocuo.
 
-**Verificación:** caso `RDS-C25-T07` sobre `tests/security/webhooks.test.ts`; evidencia `docs/evidence/c25/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C25-T06.
+**Verificación:** caso `RDS-C25-T07` sobre `tests/security/webhooks.test.ts`; evidencia `docs/evidence/c025/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C25-T06.
 
 
 ## Wiring y fronteras
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C25-G01 / NOT_EXECUTED:** Payload firmado de cuentaB no puede entrar al inbox del clienteA. **Caso:** `RDS-C25-G01` en `tests/security/webhooks.test.ts`. **Evidencia:** `docs/evidence/c25/g01.json`.
-- **RDS-C25-G02 / NOT_EXECUTED:** Caída de store no ACKea un evento no persistido y el replay no duplica el efecto. **Caso:** `RDS-C25-G02` en `tests/security/webhooks.test.ts`. **Evidencia:** `docs/evidence/c25/g02.json`.
+- **RDS-C25-G01 / NOT_EXECUTED:** Payload firmado de cuentaB no puede entrar al inbox del clienteA. **Caso:** `RDS-C25-G01` en `tests/security/webhooks.test.ts`. **Evidencia:** `docs/evidence/c025/g01.json`.
+- **RDS-C25-G02 / NOT_EXECUTED:** Caída de store no ACKea un evento no persistido y el replay no duplica el efecto. **Caso:** `RDS-C25-G02` en `tests/security/webhooks.test.ts`. **Evidencia:** `docs/evidence/c025/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

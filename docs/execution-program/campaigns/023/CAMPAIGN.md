@@ -9,10 +9,11 @@ Tramitar solo el payload aprobado y registrar el alcance real de cada resultado.
 
 ## Archivos y ownership (rutas propuestas; verificar antes de crear)
 - Superficies de la campaña: `src/publication/commands.ts`, `tests/integration/publish.test.ts`, `docs/receipt-map.md`.
+- Presente en el repositorio hoy: `src/publication/commands.ts`, `tests/integration/publish.test.ts` (2/3 superficies).
 - Contrato y esquema: `packages/contracts/src/` (compartido; no hay archivo de contrato por campaña).
 - API nominada: `apps/api/src/routes/publication-commands.ts` (solo con operación externa autorizada).
 - Tests: `tests/integration/publish.test.ts` y `tests/fixtures/c23/`.
-- Evidencia: `docs/evidence/c23/` y **reporte dentro de este mismo documento**.
+- Evidencia: `docs/evidence/c023/` y **reporte dentro de este mismo documento**.
 - Artefactos originales: `src/publication/commands.ts`, `tests/integration/publish.test.ts`, `docs/receipt-map.md`. No confundir artefactos documentales con código.
 
 ## Patchsets secuenciales
@@ -24,7 +25,7 @@ Tramitar solo el payload aprobado y registrar el alcance real de cada resultado.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Aprobar una variante no autoriza las demás cuentas, fechas o contenidos de una campaña.
 
-**Verificación:** caso `RDS-C23-T01` sobre `tests/integration/publish.test.ts`; evidencia `docs/evidence/c23/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C22-T07.
+**Verificación:** caso `RDS-C23-T01` sobre `tests/integration/publish.test.ts`; evidencia `docs/evidence/c023/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C22-T07.
 
 ### 023.02 — RDS-C23-T02
 
@@ -34,7 +35,7 @@ Tramitar solo el payload aprobado y registrar el alcance real de cada resultado.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Aprobar una variante no autoriza las demás cuentas, fechas o contenidos de una campaña.
 
-**Verificación:** caso `RDS-C23-T02` sobre `tests/integration/publish.test.ts`; evidencia `docs/evidence/c23/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C23-T01.
+**Verificación:** caso `RDS-C23-T02` sobre `tests/integration/publish.test.ts`; evidencia `docs/evidence/c023/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C23-T01.
 
 ### 023.03 — RDS-C23-T03
 
@@ -44,7 +45,7 @@ Tramitar solo el payload aprobado y registrar el alcance real de cada resultado.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Aprobar una variante no autoriza las demás cuentas, fechas o contenidos de una campaña.
 
-**Verificación:** caso `RDS-C23-T03` sobre `tests/integration/publish.test.ts`; evidencia `docs/evidence/c23/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C23-T02.
+**Verificación:** caso `RDS-C23-T03` sobre `tests/integration/publish.test.ts`; evidencia `docs/evidence/c023/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C23-T02.
 
 ### 023.04 — RDS-C23-T04
 
@@ -54,7 +55,7 @@ Tramitar solo el payload aprobado y registrar el alcance real de cada resultado.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Aprobar una variante no autoriza las demás cuentas, fechas o contenidos de una campaña.
 
-**Verificación:** caso `RDS-C23-T04` sobre `tests/integration/publish.test.ts`; evidencia `docs/evidence/c23/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C23-T03.
+**Verificación:** caso `RDS-C23-T04` sobre `tests/integration/publish.test.ts`; evidencia `docs/evidence/c023/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C23-T03.
 
 ### 023.05 — RDS-C23-T05
 
@@ -64,7 +65,7 @@ Tramitar solo el payload aprobado y registrar el alcance real de cada resultado.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Aprobar una variante no autoriza las demás cuentas, fechas o contenidos de una campaña.
 
-**Verificación:** caso `RDS-C23-T05` sobre `tests/integration/publish.test.ts`; evidencia `docs/evidence/c23/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C23-T04.
+**Verificación:** caso `RDS-C23-T05` sobre `tests/integration/publish.test.ts`; evidencia `docs/evidence/c023/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C23-T04.
 
 ### 023.06 — RDS-C23-T06
 
@@ -74,7 +75,7 @@ Tramitar solo el payload aprobado y registrar el alcance real de cada resultado.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Aprobar una variante no autoriza las demás cuentas, fechas o contenidos de una campaña.
 
-**Verificación:** caso `RDS-C23-T06` sobre `tests/integration/publish.test.ts`; evidencia `docs/evidence/c23/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C23-T05.
+**Verificación:** caso `RDS-C23-T06` sobre `tests/integration/publish.test.ts`; evidencia `docs/evidence/c023/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C23-T05.
 
 ### 023.07 — RDS-C23-T07
 
@@ -84,15 +85,15 @@ Tramitar solo el payload aprobado y registrar el alcance real de cada resultado.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Aprobar una variante no autoriza las demás cuentas, fechas o contenidos de una campaña.
 
-**Verificación:** caso `RDS-C23-T07` sobre `tests/integration/publish.test.ts`; evidencia `docs/evidence/c23/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C23-T06.
+**Verificación:** caso `RDS-C23-T07` sobre `tests/integration/publish.test.ts`; evidencia `docs/evidence/c023/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C23-T06.
 
 
 ## Wiring y fronteras
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C23-G01 / NOT_EXECUTED:** Tres canales: dos confirmados y uno unknown; no se repiten los confirmados. **Caso:** `RDS-C23-G01` en `tests/integration/publish.test.ts`. **Evidencia:** `docs/evidence/c23/g01.json`.
-- **RDS-C23-G02 / NOT_EXECUTED:** El avatar consulta estado y solo dice publicado para receipts confirmed. **Caso:** `RDS-C23-G02` en `tests/integration/publish.test.ts`. **Evidencia:** `docs/evidence/c23/g02.json`.
+- **RDS-C23-G01 / NOT_EXECUTED:** Tres canales: dos confirmados y uno unknown; no se repiten los confirmados. **Caso:** `RDS-C23-G01` en `tests/integration/publish.test.ts`. **Evidencia:** `docs/evidence/c023/g01.json`.
+- **RDS-C23-G02 / NOT_EXECUTED:** El avatar consulta estado y solo dice publicado para receipts confirmed. **Caso:** `RDS-C23-G02` en `tests/integration/publish.test.ts`. **Evidencia:** `docs/evidence/c023/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

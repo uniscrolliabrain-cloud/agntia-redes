@@ -9,10 +9,11 @@ Demostrar publicación controlada en instancia de laboratorio con semántica rea
 
 ## Archivos y ownership (rutas propuestas; verificar antes de crear)
 - Superficies de la campaña: `src/adapters/mastodon/`, `tests/integration/mastodon/`, `docs/providers/mastodon.md`.
+- Presente en el repositorio hoy: ninguna; la campaña no está implementada.
 - Contrato y esquema: `packages/contracts/src/` (compartido; no hay archivo de contrato por campaña).
 - API nominada: ninguna; esta campaña no añade ruta HTTP propia y no se crean endpoints ficticios para tareas de investigación o documentales.
 - Tests: `tests/integration/mastodon/` y `tests/fixtures/c10/`.
-- Evidencia: `docs/evidence/c10/` y **reporte dentro de este mismo documento**.
+- Evidencia: `docs/evidence/c010/` y **reporte dentro de este mismo documento**.
 - Artefactos originales: `src/adapters/mastodon/`, `tests/integration/mastodon/`, `docs/providers/mastodon.md`. No confundir artefactos documentales con código.
 
 ## Patchsets secuenciales
@@ -24,7 +25,7 @@ Demostrar publicación controlada en instancia de laboratorio con semántica rea
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La idempotency temporal de una API no equivale a exactly-once indefinido del negocio.
 
-**Verificación:** caso `RDS-C10-T01` sobre `tests/integration/mastodon/`; evidencia `docs/evidence/c10/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C09-T07.
+**Verificación:** caso `RDS-C10-T01` sobre `tests/integration/mastodon/`; evidencia `docs/evidence/c010/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C09-T07.
 
 ### 010.02 — RDS-C10-T02
 
@@ -34,7 +35,7 @@ Demostrar publicación controlada en instancia de laboratorio con semántica rea
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La idempotency temporal de una API no equivale a exactly-once indefinido del negocio.
 
-**Verificación:** caso `RDS-C10-T02` sobre `tests/integration/mastodon/`; evidencia `docs/evidence/c10/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C10-T01.
+**Verificación:** caso `RDS-C10-T02` sobre `tests/integration/mastodon/`; evidencia `docs/evidence/c010/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C10-T01.
 
 ### 010.03 — RDS-C10-T03
 
@@ -44,7 +45,7 @@ Demostrar publicación controlada en instancia de laboratorio con semántica rea
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La idempotency temporal de una API no equivale a exactly-once indefinido del negocio.
 
-**Verificación:** caso `RDS-C10-T03` sobre `tests/integration/mastodon/`; evidencia `docs/evidence/c10/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C10-T02.
+**Verificación:** caso `RDS-C10-T03` sobre `tests/integration/mastodon/`; evidencia `docs/evidence/c010/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C10-T02.
 
 ### 010.04 — RDS-C10-T04
 
@@ -54,7 +55,7 @@ Demostrar publicación controlada en instancia de laboratorio con semántica rea
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La idempotency temporal de una API no equivale a exactly-once indefinido del negocio.
 
-**Verificación:** caso `RDS-C10-T04` sobre `tests/integration/mastodon/`; evidencia `docs/evidence/c10/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C10-T03.
+**Verificación:** caso `RDS-C10-T04` sobre `tests/integration/mastodon/`; evidencia `docs/evidence/c010/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C10-T03.
 
 ### 010.05 — RDS-C10-T05
 
@@ -64,7 +65,7 @@ Demostrar publicación controlada en instancia de laboratorio con semántica rea
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La idempotency temporal de una API no equivale a exactly-once indefinido del negocio.
 
-**Verificación:** caso `RDS-C10-T05` sobre `tests/integration/mastodon/`; evidencia `docs/evidence/c10/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C10-T04.
+**Verificación:** caso `RDS-C10-T05` sobre `tests/integration/mastodon/`; evidencia `docs/evidence/c010/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C10-T04.
 
 ### 010.06 — RDS-C10-T06
 
@@ -74,7 +75,7 @@ Demostrar publicación controlada en instancia de laboratorio con semántica rea
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La idempotency temporal de una API no equivale a exactly-once indefinido del negocio.
 
-**Verificación:** caso `RDS-C10-T06` sobre `tests/integration/mastodon/`; evidencia `docs/evidence/c10/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C10-T05.
+**Verificación:** caso `RDS-C10-T06` sobre `tests/integration/mastodon/`; evidencia `docs/evidence/c010/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C10-T05.
 
 ### 010.07 — RDS-C10-T07
 
@@ -84,15 +85,15 @@ Demostrar publicación controlada en instancia de laboratorio con semántica rea
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: La idempotency temporal de una API no equivale a exactly-once indefinido del negocio.
 
-**Verificación:** caso `RDS-C10-T07` sobre `tests/integration/mastodon/`; evidencia `docs/evidence/c10/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C10-T06.
+**Verificación:** caso `RDS-C10-T07` sobre `tests/integration/mastodon/`; evidencia `docs/evidence/c010/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C10-T06.
 
 
 ## Wiring y fronteras
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C10-G01 / NOT_EXECUTED:** Replay días después devuelve el intent previo y no crea otro post porque expiró key remota. **Caso:** `RDS-C10-G01` en `tests/integration/mastodon/`. **Evidencia:** `docs/evidence/c10/g01.json`.
-- **RDS-C10-G02 / NOT_EXECUTED:** Respuesta de scheduled status no se interpreta como publicación pública ya confirmada. **Caso:** `RDS-C10-G02` en `tests/integration/mastodon/`. **Evidencia:** `docs/evidence/c10/g02.json`.
+- **RDS-C10-G01 / NOT_EXECUTED:** Replay días después devuelve el intent previo y no crea otro post porque expiró key remota. **Caso:** `RDS-C10-G01` en `tests/integration/mastodon/`. **Evidencia:** `docs/evidence/c010/g01.json`.
+- **RDS-C10-G02 / NOT_EXECUTED:** Respuesta de scheduled status no se interpreta como publicación pública ya confirmada. **Caso:** `RDS-C10-G02` en `tests/integration/mastodon/`. **Evidencia:** `docs/evidence/c010/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

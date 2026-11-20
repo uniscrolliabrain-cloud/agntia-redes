@@ -6,15 +6,16 @@
   "campaigns": 42,
   "tasks": 294,
   "planned_gate_scenarios": 84,
-  "implementation_tests_executed": 0,
-  "runtime_implemented": false,
+  "implementation_tests_executed": 87,
+  "runtime_implemented": true,
   "provider_api_tests_executed": 0,
-  "campaign_manifest_sha256": "d75418c0e3eb0dda6c00c5760437e54b7cd88b64b77801ad482cdd28601c196d",
+  "campaign_manifest_sha256": "49f322d3b23dda988972ebd16c34952ba0a44f1e4d674dc7dd26bed4bd4b0336",
   "bindings": {
     "gates_with_named_case": 84,
     "gates_with_own_evidence_artifact": 84,
     "tasks_with_own_evidence_path": 294,
-    "campaigns_with_declared_surfaces": 42
+    "campaigns_with_declared_surfaces": 42,
+    "gates_named_in_tests": 0
   },
   "distinct_evidence_tuples": {
     "tasks_2": 294,
@@ -29,8 +30,18 @@
   ],
   "known_open": [
     "A6 grafo lineal vs tracks del README (decision founder)",
-    "A8 579 uniones palabra-digito sin corregir",
-    "A9 sin CI que revalide estos invariantes",
-    "A10 padre /agente no cotejado en este workspace"
-  ]
+    "A8 uniones palabra-digito sin corregir",
+    "A9 CI existe ya (.github/workflows/ci.yml): revalida typecheck+tests, no los invariantes documentales",
+    "A10 padre /agente no cotejado en este workspace",
+    "A11 14 campanas declaran gates PASS sin caso nombrado por ID; manifiesto sigue NOT_EXECUTED",
+    "A12 nombres de evidencia inconsistentes c01 vs c001 en documentos previos"
+  ],
+  "runtime_verified": {
+    "command": "npm ci && npm run typecheck && npm test",
+    "result": "PASS",
+    "test_files": 17,
+    "tests": 87,
+    "at_sha": "bc293688d95b0ef99bf5b4e91c686d3d1d259b7d",
+    "executed_by": "esta sesión de auditoría, 2026-11-15"
+  }
 }

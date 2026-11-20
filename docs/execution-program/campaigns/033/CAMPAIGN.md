@@ -9,10 +9,11 @@ Dar presencia profesional al SaaS sin exponer secretos ni autoridad de aprobaci�
 
 ## Archivos y ownership (rutas propuestas; verificar antes de crear)
 - Superficies de la campaña: `src/presence/anam.ts`, `src/sessions/`, `tests/contracts/anam/`.
+- Presente en el repositorio hoy: ninguna; la campaña no está implementada.
 - Contrato y esquema: `packages/contracts/src/` (compartido; no hay archivo de contrato por campaña).
 - API nominada: ninguna; esta campaña no añade ruta HTTP propia y no se crean endpoints ficticios para tareas de investigación o documentales.
 - Tests: `tests/contracts/anam/` y `tests/fixtures/c33/`.
-- Evidencia: `docs/evidence/c33/` y **reporte dentro de este mismo documento**.
+- Evidencia: `docs/evidence/c033/` y **reporte dentro de este mismo documento**.
 - Artefactos originales: `src/presence/anam.ts`, `src/sessions/`, `tests/contracts/anam/`. No confundir artefactos documentales con código.
 
 ## Patchsets secuenciales
@@ -24,7 +25,7 @@ Dar presencia profesional al SaaS sin exponer secretos ni autoridad de aprobaci�
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Anam es presencia de un agente IA identificado; ni voz realista ni tool call sustituyen identidad humana o permiso.
 
-**Verificación:** caso `RDS-C33-T01` sobre `tests/contracts/anam/`; evidencia `docs/evidence/c33/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C32-T07.
+**Verificación:** caso `RDS-C33-T01` sobre `tests/contracts/anam/`; evidencia `docs/evidence/c033/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C32-T07.
 
 ### 033.02 — RDS-C33-T02
 
@@ -34,7 +35,7 @@ Dar presencia profesional al SaaS sin exponer secretos ni autoridad de aprobaci�
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Anam es presencia de un agente IA identificado; ni voz realista ni tool call sustituyen identidad humana o permiso.
 
-**Verificación:** caso `RDS-C33-T02` sobre `tests/contracts/anam/`; evidencia `docs/evidence/c33/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C33-T01.
+**Verificación:** caso `RDS-C33-T02` sobre `tests/contracts/anam/`; evidencia `docs/evidence/c033/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C33-T01.
 
 ### 033.03 — RDS-C33-T03
 
@@ -44,7 +45,7 @@ Dar presencia profesional al SaaS sin exponer secretos ni autoridad de aprobaci�
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Anam es presencia de un agente IA identificado; ni voz realista ni tool call sustituyen identidad humana o permiso.
 
-**Verificación:** caso `RDS-C33-T03` sobre `tests/contracts/anam/`; evidencia `docs/evidence/c33/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C33-T02.
+**Verificación:** caso `RDS-C33-T03` sobre `tests/contracts/anam/`; evidencia `docs/evidence/c033/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C33-T02.
 
 ### 033.04 — RDS-C33-T04
 
@@ -54,7 +55,7 @@ Dar presencia profesional al SaaS sin exponer secretos ni autoridad de aprobaci�
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Anam es presencia de un agente IA identificado; ni voz realista ni tool call sustituyen identidad humana o permiso.
 
-**Verificación:** caso `RDS-C33-T04` sobre `tests/contracts/anam/`; evidencia `docs/evidence/c33/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C33-T03.
+**Verificación:** caso `RDS-C33-T04` sobre `tests/contracts/anam/`; evidencia `docs/evidence/c033/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C33-T03.
 
 ### 033.05 — RDS-C33-T05
 
@@ -64,7 +65,7 @@ Dar presencia profesional al SaaS sin exponer secretos ni autoridad de aprobaci�
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Anam es presencia de un agente IA identificado; ni voz realista ni tool call sustituyen identidad humana o permiso.
 
-**Verificación:** caso `RDS-C33-T05` sobre `tests/contracts/anam/`; evidencia `docs/evidence/c33/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C33-T04.
+**Verificación:** caso `RDS-C33-T05` sobre `tests/contracts/anam/`; evidencia `docs/evidence/c033/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C33-T04.
 
 ### 033.06 — RDS-C33-T06
 
@@ -74,7 +75,7 @@ Dar presencia profesional al SaaS sin exponer secretos ni autoridad de aprobaci�
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Anam es presencia de un agente IA identificado; ni voz realista ni tool call sustituyen identidad humana o permiso.
 
-**Verificación:** caso `RDS-C33-T06` sobre `tests/contracts/anam/`; evidencia `docs/evidence/c33/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C33-T05.
+**Verificación:** caso `RDS-C33-T06` sobre `tests/contracts/anam/`; evidencia `docs/evidence/c033/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C33-T05.
 
 ### 033.07 — RDS-C33-T07
 
@@ -84,15 +85,15 @@ Dar presencia profesional al SaaS sin exponer secretos ni autoridad de aprobaci�
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: Anam es presencia de un agente IA identificado; ni voz realista ni tool call sustituyen identidad humana o permiso.
 
-**Verificación:** caso `RDS-C33-T07` sobre `tests/contracts/anam/`; evidencia `docs/evidence/c33/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C33-T06.
+**Verificación:** caso `RDS-C33-T07` sobre `tests/contracts/anam/`; evidencia `docs/evidence/c033/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C33-T06.
 
 
 ## Wiring y fronteras
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C33-G01 / NOT_EXECUTED:** SesiónA pide contexto del clienteB y ningún frame/transcript/tool recibe esos datos. **Caso:** `RDS-C33-G01` en `tests/contracts/anam/`. **Evidencia:** `docs/evidence/c33/g01.json`.
-- **RDS-C33-G02 / NOT_EXECUTED:** La llamada se corta tras crear propuesta: no se publica/repite efecto al reconectar y minutos se concilian. **Caso:** `RDS-C33-G02` en `tests/contracts/anam/`. **Evidencia:** `docs/evidence/c33/g02.json`.
+- **RDS-C33-G01 / NOT_EXECUTED:** SesiónA pide contexto del clienteB y ningún frame/transcript/tool recibe esos datos. **Caso:** `RDS-C33-G01` en `tests/contracts/anam/`. **Evidencia:** `docs/evidence/c033/g01.json`.
+- **RDS-C33-G02 / NOT_EXECUTED:** La llamada se corta tras crear propuesta: no se publica/repite efecto al reconectar y minutos se concilian. **Caso:** `RDS-C33-G02` en `tests/contracts/anam/`. **Evidencia:** `docs/evidence/c033/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

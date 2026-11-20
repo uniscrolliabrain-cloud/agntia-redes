@@ -9,10 +9,11 @@ Entregar un servicio profesional de análisis sin causalidad o ingresos ficticio
 
 ## Archivos y ownership (rutas propuestas; verificar antes de crear)
 - Superficies de la campaña: `src/reports/`, `src/analytics/attribution.ts`, `tests/integration/reports.test.ts`.
+- Presente en el repositorio hoy: ninguna; la campaña no está implementada.
 - Contrato y esquema: `packages/contracts/src/` (compartido; no hay archivo de contrato por campaña).
 - API nominada: ninguna; esta campaña no añade ruta HTTP propia y no se crean endpoints ficticios para tareas de investigación o documentales.
 - Tests: `tests/integration/reports.test.ts` y `tests/fixtures/c30/`.
-- Evidencia: `docs/evidence/c30/` y **reporte dentro de este mismo documento**.
+- Evidencia: `docs/evidence/c030/` y **reporte dentro de este mismo documento**.
 - Artefactos originales: `src/reports/`, `src/analytics/attribution.ts`, `tests/integration/reports.test.ts`. No confundir artefactos documentales con código.
 
 ## Patchsets secuenciales
@@ -24,7 +25,7 @@ Entregar un servicio profesional de análisis sin causalidad o ingresos ficticio
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El informe bonito no convierte una correlación de clicks en retorno financiero demostrado.
 
-**Verificación:** caso `RDS-C30-T01` sobre `tests/integration/reports.test.ts`; evidencia `docs/evidence/c30/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C29-T07.
+**Verificación:** caso `RDS-C30-T01` sobre `tests/integration/reports.test.ts`; evidencia `docs/evidence/c030/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C29-T07.
 
 ### 030.02 — RDS-C30-T02
 
@@ -34,7 +35,7 @@ Entregar un servicio profesional de análisis sin causalidad o ingresos ficticio
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El informe bonito no convierte una correlación de clicks en retorno financiero demostrado.
 
-**Verificación:** caso `RDS-C30-T02` sobre `tests/integration/reports.test.ts`; evidencia `docs/evidence/c30/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C30-T01.
+**Verificación:** caso `RDS-C30-T02` sobre `tests/integration/reports.test.ts`; evidencia `docs/evidence/c030/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C30-T01.
 
 ### 030.03 — RDS-C30-T03
 
@@ -44,7 +45,7 @@ Entregar un servicio profesional de análisis sin causalidad o ingresos ficticio
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El informe bonito no convierte una correlación de clicks en retorno financiero demostrado.
 
-**Verificación:** caso `RDS-C30-T03` sobre `tests/integration/reports.test.ts`; evidencia `docs/evidence/c30/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C30-T02.
+**Verificación:** caso `RDS-C30-T03` sobre `tests/integration/reports.test.ts`; evidencia `docs/evidence/c030/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C30-T02.
 
 ### 030.04 — RDS-C30-T04
 
@@ -54,7 +55,7 @@ Entregar un servicio profesional de análisis sin causalidad o ingresos ficticio
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El informe bonito no convierte una correlación de clicks en retorno financiero demostrado.
 
-**Verificación:** caso `RDS-C30-T04` sobre `tests/integration/reports.test.ts`; evidencia `docs/evidence/c30/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C30-T03.
+**Verificación:** caso `RDS-C30-T04` sobre `tests/integration/reports.test.ts`; evidencia `docs/evidence/c030/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C30-T03.
 
 ### 030.05 — RDS-C30-T05
 
@@ -64,7 +65,7 @@ Entregar un servicio profesional de análisis sin causalidad o ingresos ficticio
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El informe bonito no convierte una correlación de clicks en retorno financiero demostrado.
 
-**Verificación:** caso `RDS-C30-T05` sobre `tests/integration/reports.test.ts`; evidencia `docs/evidence/c30/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C30-T04.
+**Verificación:** caso `RDS-C30-T05` sobre `tests/integration/reports.test.ts`; evidencia `docs/evidence/c030/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C30-T04.
 
 ### 030.06 — RDS-C30-T06
 
@@ -74,7 +75,7 @@ Entregar un servicio profesional de análisis sin causalidad o ingresos ficticio
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El informe bonito no convierte una correlación de clicks en retorno financiero demostrado.
 
-**Verificación:** caso `RDS-C30-T06` sobre `tests/integration/reports.test.ts`; evidencia `docs/evidence/c30/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C30-T05.
+**Verificación:** caso `RDS-C30-T06` sobre `tests/integration/reports.test.ts`; evidencia `docs/evidence/c030/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C30-T05.
 
 ### 030.07 — RDS-C30-T07
 
@@ -84,15 +85,15 @@ Entregar un servicio profesional de análisis sin causalidad o ingresos ficticio
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El informe bonito no convierte una correlación de clicks en retorno financiero demostrado.
 
-**Verificación:** caso `RDS-C30-T07` sobre `tests/integration/reports.test.ts`; evidencia `docs/evidence/c30/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C30-T06.
+**Verificación:** caso `RDS-C30-T07` sobre `tests/integration/reports.test.ts`; evidencia `docs/evidence/c030/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C30-T06.
 
 
 ## Wiring y fronteras
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C30-G01 / NOT_EXECUTED:** No hay datos suficientes: infografía muestra límites y no inventa mejor horario/forecast. **Caso:** `RDS-C30-G01` en `tests/integration/reports.test.ts`. **Evidencia:** `docs/evidence/c30/g01.json`.
-- **RDS-C30-G02 / NOT_EXECUTED:** Cambian derechos/retención de una fuente y su export derivado queda restringido. **Caso:** `RDS-C30-G02` en `tests/integration/reports.test.ts`. **Evidencia:** `docs/evidence/c30/g02.json`.
+- **RDS-C30-G01 / NOT_EXECUTED:** No hay datos suficientes: infografía muestra límites y no inventa mejor horario/forecast. **Caso:** `RDS-C30-G01` en `tests/integration/reports.test.ts`. **Evidencia:** `docs/evidence/c030/g01.json`.
+- **RDS-C30-G02 / NOT_EXECUTED:** Cambian derechos/retención de una fuente y su export derivado queda restringido. **Caso:** `RDS-C30-G02` en `tests/integration/reports.test.ts`. **Evidencia:** `docs/evidence/c030/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

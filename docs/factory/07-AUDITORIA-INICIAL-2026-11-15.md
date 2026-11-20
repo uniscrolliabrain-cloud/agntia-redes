@@ -2,6 +2,38 @@
 
 **2026-11-15 · AUDITORÍA DOCUMENTAL · NO IMPLEMENTACIÓN.** Este documento es el resultado de la auditoría inicial exigida antes de tocar código. Sustituye como evidencia *actual* a `docs/release/document-validation.json` (2026-11-11), que quedó obsoleta (hallazgo A2).
 
+## ACTUALIZACIÓN 2026-11-15 — el repositorio dejó de ser documental
+
+Al terminar la auditoría, `main` avanzó de `23b3edf` a `980b786` e incorporó un runtime real:
+
+- `bc29368 feat(redes): bootstrap typed social runtime with tenancy and effect gates`: 83 archivos y 7 475 líneas — Hono + Zod + jose, RLS sobre PGlite, outbox/leases, FSM, approvals, budget, publicación/reconciliación, adaptador falso determinista, `vitest.config.ts` y `.github/workflows/ci.yml`.
+- Evidencia por campaña en `docs/evidence/c001…c024/README.md` más `docs/evidence/CHECKPOINT-C05.md`, con 14 campañas reportadas (C01–C08, C17, C19, C21–C24).
+- Autorización: `CHECKPOINT-C05.md` registra la instrucción expresa del fundador del 2026-11-15 que autoriza implementar de forma autónoma; la validación del arquitecto sigue pendiente y así queda anotada.
+
+**Verificación propia de esta sesión** (ejecutada aquí, no reportada por terceros):
+
+```
+npm ci            -> OK
+npm run typecheck -> PASS (tsc --noEmit, strict)
+npm test          -> PASS (17 archivos, 87 tests, 7,85 s)
+```
+
+### Qué cambia en este informe
+
+- §1, §2 y §5 describen el estado **al congelar** (`09d6b88`); se conservan como histórico y quedan anotados.
+- **A5 se refina**: las superficies propuestas se cotejaron contra el árbol real. 15 campañas declaran ya algún artefacto presente; en C03 el archivo implementado es `apps/api/src/routes/03.ts` (nombre numérico) y el objetivo documentado pasa a `capabilities.ts`, con el renombrado anotado como deuda menor en el propio documento.
+- **A3 se mantiene cerrado como diseño**: 294 rutas de evidencia de tarea y 84 artefactos de gate propios, ahora sobre los directorios reales `docs/evidence/c001…c042`.
+
+### Hallazgos nuevos de la integración
+
+**A11 · Gates PASS sin caso nombrado — ABIERTO.** Los 14 reportes declaran gates PASS con comandos de suite. Ningún test usa el identificador de gate como nombre de caso: `git grep 'RDS-C..-G..' tests/ src/` devuelve 0 coincidencias para 84 gates. Los PASS son de suite completa, no de gate individual, así que no se puede reprobar un gate aislado ni saber cuál falló. El manifiesto mantiene las 84 en `NOT_EXECUTED` a propósito: cambiar el estado sin nombrar los casos convertiría la discrepancia en una mentira. Fix: nombrar los casos (`RDS-C003-G01`) en las suites existentes y poder ejecutar `npx vitest run <suite> -t "RDS-C003-G01"`.
+
+**A12 · Nomenclatura de evidencia inconsistente — ABIERTO.** Los directorios reales son `docs/evidence/c001…` (tres dígitos), mientras varios documentos citan `docs/evidence/c01/`. Esta sesión normalizó sus propias referencias a tres dígitos; los textos previos no se reescribieron.
+
+**A9 cambia de forma.** Ya existe CI (`.github/workflows/ci.yml` con `npm ci`, `typecheck` y `test`), pero sigue sin validar los invariantes documentales ni la vinculación gate↔caso, que es justo lo que se degradó dos veces en un día.
+
+**A6 y A10 siguen abiertos y sin cambios:** grafo lineal (decisión del fundador) y padre sin cotejar (`NOT_VERIFIED`).
+
 ## 1. Baseline congelado
 
 | Elemento | Valor |
@@ -11,16 +43,16 @@
 | SHA HEAD auditado | `09d6b8887d80d3b93c03ac9cea4cf7fdce7f6266` |
 | Base de la rama | `freebuff-base` @ `6e7729741da4903d40e195a56e2ffd5158728945` |
 | `git status --porcelain` inicial | vacío (árbol limpio) |
-| Archivos versionados | 176 (171 `.md`, 5 `.json`; ninguna otra extensión) |
+| Archivos versionados | 176 al congelar (171 `.md`, 5 `.json`); 262 tras integrar `main@980b786`, con TS, SQL, YAML y lockfile |
 | Documentación total | ≈986 KB de Markdown, ≈311 KB de manifiestos |
 | PR fusionadas | #1 `a9cbd4a` (factory prep) y #2 `8136b14` (programa 42 campañas) |
 | CI | inexistente: no hay `.github/workflows` (hallazgo A9) |
 
 **Nota de integración:** durante la sesión `main` recibió `23b3edf` (Concept Master V2). El commit de esta auditoría se rebasa sobre él y las comprobaciones V1–V13 se re-ejecutaron sobre el árbol integrado —179 archivos, 173 `.md`— sin cambios de resultado: el archivo nuevo no introduce enlaces rotos ni toca el manifiesto.
 
-### Instalación, typecheck, lint, tests, build — NOT_APPLICABLE
+### Instalación, typecheck, lint, tests, build — *al congelar: NOT_APPLICABLE; hoy: PASS verificado*
 
-No existe `package.json`, lockfile, código fuente, contenedor ni script ejecutable. El baseline ejecutable es **vacío por construcción**, no "aprobado". Cualquier afirmación de suite verde en este repositorio sería falsa.
+Al congelar el SHA auditado no existía `package.json`, lockfile ni código fuente: el baseline ejecutable era vacío por construcción, no "aprobado", y cualquier suite verde habría sido falsa. Con `main@980b786` sí hay runtime y esta auditoría lo ejecutó (ver ACTUALIZACIÓN): 17 archivos, 87 tests PASS.
 
 ### Alcance autorizado de esta sesión
 
@@ -28,7 +60,7 @@ No existe `package.json`, lockfile, código fuente, contenedor ni script ejecuta
 
 ## 2. Estado real por campaña
 
-**42/42 campañas: `DOCUMENTATION_ONLY` / `NOT_STARTED`.** No hay campaña parcialmente implementada que rescatar, ni código previo que conservar. Los estados del manifiesto son coherentes con el árbol: no existe ninguno de los 127 artefactos planificados (el único "existente", `docs/operations/`, es un directorio, no el artefacto).
+**Al congelar: 42/42 campañas `DOCUMENTATION_ONLY` / `NOT_STARTED`.** No había campaña parcialmente implementada que rescatar ni código previo que conservar. *(Post-integración: 14 campañas tienen reporte de ejecución con código y tests; ver ACTUALIZACIÓN.)* Los estados del manifiesto son coherentes con el árbol: no existe ninguno de los 127 artefactos planificados (el único "existente", `docs/operations/`, es un directorio, no el artefacto).
 
 Evidencia de ausencia de runtime: `git ls-files` solo devuelve `.md` y `.json`; no hay `src/`, `apps/`, `packages/`, `tests/`, `terraform/`, `Dockerfile` ni workflows.
 
@@ -112,7 +144,9 @@ No hay workflows. Los invariantes que esta auditoría comprueba (hash del manifi
 
 ## 5. Puerta de alcance (decisión del fundador)
 
-Dos condiciones documentales impiden iniciar código, con independencia de la autorización de sesión:
+*(Post-integración: la segunda condición quedó cubierta por la instrucción expresa del fundador del 2026-11-15 registrada en `docs/evidence/CHECKPOINT-C05.md`; la validación del arquitecto sigue pendiente.)*
+
+Dos condiciones documentales impedían iniciar código:
 
 1. `AGENTS.md` restringe el encargo a documentación y reserva la implementación a una sesión expresamente autorizada.
 2. `FreeBuff/HANDOFF-RECONCILIADO-REDES-42.md` ("Reconciliación de gate conceptual") y `docs/factory/06-READINESS-AUDIT.md` registran que **la aprobación del gate conceptual de Astra no está documentada**. El propio handoff ordena: si el fundador no lo ha validado, detener el inicio de ejecución y solicitar aprobación, sin improvisar.
