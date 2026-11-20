@@ -8,10 +8,10 @@ Congelar lo observado antes de introducir implementación y diferencias de contr
 **Invariante:** El padre no cambia durante el baseline; cualquier diferencia altera el mapa, no la evidencia anterior.. **Dependencias:** ninguna.
 
 ## Archivos y ownership (rutas propuestas; verificar antes de crear)
-- Dominio/adapter principal: `docs/baseline.md`.
-- DTO y esquema: `packages/contracts/src/01.ts` cuando se necesite.
-- API nominada: `apps/api/src/routes/01.ts` solo cuando haya operación externa autorizada.
-- Tests: `tests/campaigns/001.test.ts` y `tests/fixtures/001/`.
+- Superficies de la campaña: `docs/baseline.md`, `docs/parent-diff.md`, `docs/versions.json`.
+- Contrato y esquema: `packages/contracts/src/` (compartido; no hay archivo de contrato por campaña).
+- API nominada: ninguna; esta campaña no añade ruta HTTP propia y no se crean endpoints ficticios para tareas de investigación o documentales.
+- Tests: `docs-check:c01` y `tests/fixtures/c01/`.
 - Evidencia: `docs/evidence/c01/` y **reporte dentro de este mismo documento**.
 - Artefactos originales: `docs/baseline.md`, `docs/parent-diff.md`, `docs/versions.json`. No confundir artefactos documentales con código.
 
@@ -20,79 +20,79 @@ Congelar lo observado antes de introducir implementación y diferencias de contr
 
 **Acción:** Anotar SHA, fecha, estado del checkout e instrucciones propias y de cada dependencia que se vaya a leer.
 
-**Superficie primaria:** `docs/baseline.md`; verificar paquetes, imports y exports existentes; DTO `packages/contracts/src/01.ts` y test `tests/campaigns/001.test.ts` cuando correspondan. No crear endpoints ficticios para tareas de investigación.
+**Superficie:** `docs/baseline.md`; contrato Zod compartido en `packages/contracts/src/`; caso nombrado en `docs-check:c01`.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El padre no cambia durante el baseline; cualquier diferencia altera el mapa, no la evidencia anterior.
 
-**Verificación:** fixture positivo, rechazo cross-tenant y sin capability, caso de replay/timeout cuando haya efecto, evidencia SHA/comando/resultado. **Depende de:** inicio.
+**Verificación:** caso `RDS-C01-T01` sobre `docs-check:c01`; evidencia `docs/evidence/c01/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** inicio.
 
 ### 001.02 — RDS-C01-T02
 
 **Acción:** Cotejar el padre vigente con54b8d5407a8576459448c4d059a877297d18ca7a, registrar cambios y no modificarlo.
 
-**Superficie primaria:** `docs/baseline.md`; verificar paquetes, imports y exports existentes; DTO `packages/contracts/src/01.ts` y test `tests/campaigns/001.test.ts` cuando correspondan. No crear endpoints ficticios para tareas de investigación.
+**Superficie:** `docs/parent-diff.md`; contrato Zod compartido en `packages/contracts/src/`; caso nombrado en `docs-check:c01`.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El padre no cambia durante el baseline; cualquier diferencia altera el mapa, no la evidencia anterior.
 
-**Verificación:** fixture positivo, rechazo cross-tenant y sin capability, caso de replay/timeout cuando haya efecto, evidencia SHA/comando/resultado. **Depende de:** RDS-C01-T01.
+**Verificación:** caso `RDS-C01-T02` sobre `docs-check:c01`; evidencia `docs/evidence/c01/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C01-T01.
 
 ### 001.03 — RDS-C01-T03
 
 **Acción:** Inventariar TenantPrincipal, ambos PolicyContext, aprobación nativa, eventos sociales y SocialClient stub.
 
-**Superficie primaria:** `docs/baseline.md`; verificar paquetes, imports y exports existentes; DTO `packages/contracts/src/01.ts` y test `tests/campaigns/001.test.ts` cuando correspondan. No crear endpoints ficticios para tareas de investigación.
+**Superficie:** `docs/versions.json`; contrato Zod compartido en `packages/contracts/src/`; caso nombrado en `docs-check:c01`.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El padre no cambia durante el baseline; cualquier diferencia altera el mapa, no la evidencia anterior.
 
-**Verificación:** fixture positivo, rechazo cross-tenant y sin capability, caso de replay/timeout cuando haya efecto, evidencia SHA/comando/resultado. **Depende de:** RDS-C01-T02.
+**Verificación:** caso `RDS-C01-T03` sobre `docs-check:c01`; evidencia `docs/evidence/c01/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C01-T02.
 
 ### 001.04 — RDS-C01-T04
 
 **Acción:** Definir alcance integrado y standalone, cliente objetivo y la aclaración de empresa SaaS con Anam.
 
-**Superficie primaria:** `docs/baseline.md`; verificar paquetes, imports y exports existentes; DTO `packages/contracts/src/01.ts` y test `tests/campaigns/001.test.ts` cuando correspondan. No crear endpoints ficticios para tareas de investigación.
+**Superficie:** `docs/baseline.md`; contrato Zod compartido en `packages/contracts/src/`; caso nombrado en `docs-check:c01`.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El padre no cambia durante el baseline; cualquier diferencia altera el mapa, no la evidencia anterior.
 
-**Verificación:** fixture positivo, rechazo cross-tenant y sin capability, caso de replay/timeout cuando haya efecto, evidencia SHA/comando/resultado. **Depende de:** RDS-C01-T03.
+**Verificación:** caso `RDS-C01-T04` sobre `docs-check:c01`; evidencia `docs/evidence/c01/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C01-T03.
 
 ### 001.05 — RDS-C01-T05
 
 **Acción:** Capturar SO, arquitectura, Node/pnpm/DB y licencias sin imprimir variables secretas del entorno.
 
-**Superficie primaria:** `docs/baseline.md`; verificar paquetes, imports y exports existentes; DTO `packages/contracts/src/01.ts` y test `tests/campaigns/001.test.ts` cuando correspondan. No crear endpoints ficticios para tareas de investigación.
+**Superficie:** `docs/parent-diff.md`; contrato Zod compartido en `packages/contracts/src/`; caso nombrado en `docs-check:c01`.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El padre no cambia durante el baseline; cualquier diferencia altera el mapa, no la evidencia anterior.
 
-**Verificación:** fixture positivo, rechazo cross-tenant y sin capability, caso de replay/timeout cuando haya efecto, evidencia SHA/comando/resultado. **Depende de:** RDS-C01-T04.
+**Verificación:** caso `RDS-C01-T05` sobre `docs-check:c01`; evidencia `docs/evidence/c01/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C01-T04.
 
 ### 001.06 — RDS-C01-T06
 
 **Acción:** Distinguir checks de documentación, tests existentes y pruebas nuevas no ejecutadas; conservar fallos de baseline.
 
-**Superficie primaria:** `docs/baseline.md`; verificar paquetes, imports y exports existentes; DTO `packages/contracts/src/01.ts` y test `tests/campaigns/001.test.ts` cuando correspondan. No crear endpoints ficticios para tareas de investigación.
+**Superficie:** `docs/versions.json`; contrato Zod compartido en `packages/contracts/src/`; caso nombrado en `docs-check:c01`.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El padre no cambia durante el baseline; cualquier diferencia altera el mapa, no la evidencia anterior.
 
-**Verificación:** fixture positivo, rechazo cross-tenant y sin capability, caso de replay/timeout cuando haya efecto, evidencia SHA/comando/resultado. **Depende de:** RDS-C01-T05.
+**Verificación:** caso `RDS-C01-T06` sobre `docs-check:c01`; evidencia `docs/evidence/c01/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C01-T05.
 
 ### 001.07 — RDS-C01-T07
 
 **Acción:** Entregar mapa de discrepancias y gates del laboratorio antes de afirmar compatibilidad o escoger runtime.
 
-**Superficie primaria:** `docs/baseline.md`; verificar paquetes, imports y exports existentes; DTO `packages/contracts/src/01.ts` y test `tests/campaigns/001.test.ts` cuando correspondan. No crear endpoints ficticios para tareas de investigación.
+**Superficie:** `docs/baseline.md`; contrato Zod compartido en `packages/contracts/src/`; caso nombrado en `docs-check:c01`.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El padre no cambia durante el baseline; cualquier diferencia altera el mapa, no la evidencia anterior.
 
-**Verificación:** fixture positivo, rechazo cross-tenant y sin capability, caso de replay/timeout cuando haya efecto, evidencia SHA/comando/resultado. **Depende de:** RDS-C01-T06.
+**Verificación:** caso `RDS-C01-T07` sobre `docs-check:c01`; evidencia `docs/evidence/c01/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C01-T06.
 
 
 ## Wiring y fronteras
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C01-G01 / NOT_EXECUTED:** El SHA padre ha cambiado: el informe identifica interfaces afectadas y no hereda compatibilidad.
-- **RDS-C01-G02 / NOT_EXECUTED:** Checkout con cambios ajenos: se conservan y el baseline los separa sin reset.
+- **RDS-C01-G01 / NOT_EXECUTED:** El SHA padre ha cambiado: el informe identifica interfaces afectadas y no hereda compatibilidad. **Caso:** `RDS-C01-G01` en `docs-check:c01`. **Evidencia:** `docs/evidence/c01/g01.json`.
+- **RDS-C01-G02 / NOT_EXECUTED:** Checkout con cambios ajenos: se conservan y el baseline los separa sin reset. **Caso:** `RDS-C01-G02` en `docs-check:c01`. **Evidencia:** `docs/evidence/c01/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

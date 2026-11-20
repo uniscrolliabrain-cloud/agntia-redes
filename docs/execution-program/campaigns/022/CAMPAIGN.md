@@ -8,10 +8,10 @@ Separar coste upstream, límites contratados y precio del SaaS.
 **Invariante:** El presupuesto técnico no es precio retail; permisos y aislamiento no se venden por un tier superior.. **Dependencias:** RDS-C21.
 
 ## Archivos y ownership (rutas propuestas; verificar antes de crear)
-- Dominio/adapter principal: `packages/billing/src/entitlements.ts`.
-- DTO y esquema: `packages/contracts/src/22.ts` cuando se necesite.
-- API nominada: `apps/api/src/routes/22.ts` solo cuando haya operación externa autorizada.
-- Tests: `tests/campaigns/022.test.ts` y `tests/fixtures/022/`.
+- Superficies de la campaña: `src/billing/`, `src/budget/`, `tests/integration/cost-concurrency.test.ts`.
+- Contrato y esquema: `packages/contracts/src/` (compartido; no hay archivo de contrato por campaña).
+- API nominada: ninguna; esta campaña no añade ruta HTTP propia y no se crean endpoints ficticios para tareas de investigación o documentales.
+- Tests: `tests/integration/cost-concurrency.test.ts` y `tests/fixtures/c22/`.
 - Evidencia: `docs/evidence/c22/` y **reporte dentro de este mismo documento**.
 - Artefactos originales: `src/billing/`, `src/budget/`, `tests/integration/cost-concurrency.test.ts`. No confundir artefactos documentales con código.
 
@@ -20,79 +20,79 @@ Separar coste upstream, límites contratados y precio del SaaS.
 
 **Acción:** Modelar payer del servicio o cliente y reservas globales/integradas o standalone con ledger revisado.
 
-**Superficie primaria:** `packages/billing/src/entitlements.ts`; verificar paquetes, imports y exports existentes; DTO `packages/contracts/src/22.ts` y test `tests/campaigns/022.test.ts` cuando correspondan. No crear endpoints ficticios para tareas de investigación.
+**Superficie:** `src/billing/`; contrato Zod compartido en `packages/contracts/src/`; caso nombrado en `tests/integration/cost-concurrency.test.ts`.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El presupuesto técnico no es precio retail; permisos y aislamiento no se venden por un tier superior.
 
-**Verificación:** fixture positivo, rechazo cross-tenant y sin capability, caso de replay/timeout cuando haya efecto, evidencia SHA/comando/resultado. **Depende de:** RDS-C21-T07.
+**Verificación:** caso `RDS-C22-T01` sobre `tests/integration/cost-concurrency.test.ts`; evidencia `docs/evidence/c22/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C21-T07.
 
 ### 022.02 — RDS-C22-T02
 
 **Acción:** Definir tarifas versionadas, impuestos/FX/mínimos y capacidad/canales/sesiones contratadas sin auto-upgrade.
 
-**Superficie primaria:** `packages/billing/src/entitlements.ts`; verificar paquetes, imports y exports existentes; DTO `packages/contracts/src/22.ts` y test `tests/campaigns/022.test.ts` cuando correspondan. No crear endpoints ficticios para tareas de investigación.
+**Superficie:** `src/budget/`; contrato Zod compartido en `packages/contracts/src/`; caso nombrado en `tests/integration/cost-concurrency.test.ts`.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El presupuesto técnico no es precio retail; permisos y aislamiento no se venden por un tier superior.
 
-**Verificación:** fixture positivo, rechazo cross-tenant y sin capability, caso de replay/timeout cuando haya efecto, evidencia SHA/comando/resultado. **Depende de:** RDS-C22-T01.
+**Verificación:** caso `RDS-C22-T02` sobre `tests/integration/cost-concurrency.test.ts`; evidencia `docs/evidence/c22/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C22-T01.
 
 ### 022.03 — RDS-C22-T03
 
 **Acción:** Reservar peor caso antes de texto/visión/listening/Anam o proveedor pagado y limitar concurrencia.
 
-**Superficie primaria:** `packages/billing/src/entitlements.ts`; verificar paquetes, imports y exports existentes; DTO `packages/contracts/src/22.ts` y test `tests/campaigns/022.test.ts` cuando correspondan. No crear endpoints ficticios para tareas de investigación.
+**Superficie:** `tests/integration/cost-concurrency.test.ts`; contrato Zod compartido en `packages/contracts/src/`; caso nombrado en `tests/integration/cost-concurrency.test.ts`.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El presupuesto técnico no es precio retail; permisos y aislamiento no se venden por un tier superior.
 
-**Verificación:** fixture positivo, rechazo cross-tenant y sin capability, caso de replay/timeout cuando haya efecto, evidencia SHA/comando/resultado. **Depende de:** RDS-C22-T02.
+**Verificación:** caso `RDS-C22-T03` sobre `tests/integration/cost-concurrency.test.ts`; evidencia `docs/evidence/c22/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C22-T02.
 
 ### 022.04 — RDS-C22-T04
 
 **Acción:** Persistir consumo incierto, cancelación pre-send, factura tardía y sobrecoste real sin ocultar pasivos.
 
-**Superficie primaria:** `packages/billing/src/entitlements.ts`; verificar paquetes, imports y exports existentes; DTO `packages/contracts/src/22.ts` y test `tests/campaigns/022.test.ts` cuando correspondan. No crear endpoints ficticios para tareas de investigación.
+**Superficie:** `src/billing/`; contrato Zod compartido en `packages/contracts/src/`; caso nombrado en `tests/integration/cost-concurrency.test.ts`.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El presupuesto técnico no es precio retail; permisos y aislamiento no se venden por un tier superior.
 
-**Verificación:** fixture positivo, rechazo cross-tenant y sin capability, caso de replay/timeout cuando haya efecto, evidencia SHA/comando/resultado. **Depende de:** RDS-C22-T03.
+**Verificación:** caso `RDS-C22-T04` sobre `tests/integration/cost-concurrency.test.ts`; evidencia `docs/evidence/c22/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C22-T03.
 
 ### 022.05 — RDS-C22-T05
 
 **Acción:** Separar aceptación de presupuesto/contrato, autorización editorial y aceptación de entregable.
 
-**Superficie primaria:** `packages/billing/src/entitlements.ts`; verificar paquetes, imports y exports existentes; DTO `packages/contracts/src/22.ts` y test `tests/campaigns/022.test.ts` cuando correspondan. No crear endpoints ficticios para tareas de investigación.
+**Superficie:** `src/budget/`; contrato Zod compartido en `packages/contracts/src/`; caso nombrado en `tests/integration/cost-concurrency.test.ts`.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El presupuesto técnico no es precio retail; permisos y aislamiento no se venden por un tier superior.
 
-**Verificación:** fixture positivo, rechazo cross-tenant y sin capability, caso de replay/timeout cuando haya efecto, evidencia SHA/comando/resultado. **Depende de:** RDS-C22-T04.
+**Verificación:** caso `RDS-C22-T05` sobre `tests/integration/cost-concurrency.test.ts`; evidencia `docs/evidence/c22/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C22-T04.
 
 ### 022.06 — RDS-C22-T06
 
 **Acción:** Añadir puertos de factura/cobro solo por mandato explícito y no declarar cobrado sin receipt competente.
 
-**Superficie primaria:** `packages/billing/src/entitlements.ts`; verificar paquetes, imports y exports existentes; DTO `packages/contracts/src/22.ts` y test `tests/campaigns/022.test.ts` cuando correspondan. No crear endpoints ficticios para tareas de investigación.
+**Superficie:** `tests/integration/cost-concurrency.test.ts`; contrato Zod compartido en `packages/contracts/src/`; caso nombrado en `tests/integration/cost-concurrency.test.ts`.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El presupuesto técnico no es precio retail; permisos y aislamiento no se venden por un tier superior.
 
-**Verificación:** fixture positivo, rechazo cross-tenant y sin capability, caso de replay/timeout cuando haya efecto, evidencia SHA/comando/resultado. **Depende de:** RDS-C22-T05.
+**Verificación:** caso `RDS-C22-T06` sobre `tests/integration/cost-concurrency.test.ts`; evidencia `docs/evidence/c22/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C22-T05.
 
 ### 022.07 — RDS-C22-T07
 
 **Acción:** Probar dos reservas concurrentes, reintento con misma key, corte de sesión Anam y plan agotado sin rebajar seguridad.
 
-**Superficie primaria:** `packages/billing/src/entitlements.ts`; verificar paquetes, imports y exports existentes; DTO `packages/contracts/src/22.ts` y test `tests/campaigns/022.test.ts` cuando correspondan. No crear endpoints ficticios para tareas de investigación.
+**Superficie:** `src/billing/`; contrato Zod compartido en `packages/contracts/src/`; caso nombrado en `tests/integration/cost-concurrency.test.ts`.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El presupuesto técnico no es precio retail; permisos y aislamiento no se venden por un tier superior.
 
-**Verificación:** fixture positivo, rechazo cross-tenant y sin capability, caso de replay/timeout cuando haya efecto, evidencia SHA/comando/resultado. **Depende de:** RDS-C22-T06.
+**Verificación:** caso `RDS-C22-T07` sobre `tests/integration/cost-concurrency.test.ts`; evidencia `docs/evidence/c22/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C22-T06.
 
 
 ## Wiring y fronteras
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C22-G01 / NOT_EXECUTED:** Dos agentes no reservan el mismo saldo, ni se cargan proveedor y cliente por duplicado.
-- **RDS-C22-G02 / NOT_EXECUTED:** Timeout de sesión conserva coste incierto hasta reconciliación, sin minutos ilimitados ficticios.
+- **RDS-C22-G01 / NOT_EXECUTED:** Dos agentes no reservan el mismo saldo, ni se cargan proveedor y cliente por duplicado. **Caso:** `RDS-C22-G01` en `tests/integration/cost-concurrency.test.ts`. **Evidencia:** `docs/evidence/c22/g01.json`.
+- **RDS-C22-G02 / NOT_EXECUTED:** Timeout de sesión conserva coste incierto hasta reconciliación, sin minutos ilimitados ficticios. **Caso:** `RDS-C22-G02` en `tests/integration/cost-concurrency.test.ts`. **Evidencia:** `docs/evidence/c22/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

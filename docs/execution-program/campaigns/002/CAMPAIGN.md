@@ -8,10 +8,10 @@ Hacer que el servicio funcione como especialista independiente, además de integ
 **Invariante:** El aislamiento y los controles mínimos son iguales para clientes del padre y clientes externos.. **Dependencias:** RDS-C01.
 
 ## Archivos y ownership (rutas propuestas; verificar antes de crear)
-- Dominio/adapter principal: `packages/domain/src/service-agreements.ts`.
-- DTO y esquema: `packages/contracts/src/02.ts` cuando se necesite.
-- API nominada: `apps/api/src/routes/02.ts` solo cuando haya operación externa autorizada.
-- Tests: `tests/campaigns/002.test.ts` y `tests/fixtures/002/`.
+- Superficies de la campaña: `src/domain/service-agreement.ts`, `src/domain/work-order.ts`, `docs/adr/0001-saas.md`.
+- Contrato y esquema: `packages/contracts/src/` (compartido; no hay archivo de contrato por campaña).
+- API nominada: ninguna; esta campaña no añade ruta HTTP propia y no se crean endpoints ficticios para tareas de investigación o documentales.
+- Tests: `tests/domain/service-agreement.test.ts` y `tests/fixtures/c02/`.
 - Evidencia: `docs/evidence/c02/` y **reporte dentro de este mismo documento**.
 - Artefactos originales: `src/domain/service-agreement.ts`, `src/domain/work-order.ts`, `docs/adr/0001-saas.md`. No confundir artefactos documentales con código.
 
@@ -20,79 +20,79 @@ Hacer que el servicio funcione como especialista independiente, además de integ
 
 **Acción:** Modelar providerOrganization, customerOrganization, workspace, proyecto y external binding sin igualarlos por nombre.
 
-**Superficie primaria:** `packages/domain/src/service-agreements.ts`; verificar paquetes, imports y exports existentes; DTO `packages/contracts/src/02.ts` y test `tests/campaigns/002.test.ts` cuando correspondan. No crear endpoints ficticios para tareas de investigación.
+**Superficie:** `src/domain/service-agreement.ts`; contrato Zod compartido en `packages/contracts/src/`; caso nombrado en `tests/domain/service-agreement.test.ts`.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El aislamiento y los controles mínimos son iguales para clientes del padre y clientes externos.
 
-**Verificación:** fixture positivo, rechazo cross-tenant y sin capability, caso de replay/timeout cuando haya efecto, evidencia SHA/comando/resultado. **Depende de:** RDS-C01-T07.
+**Verificación:** caso `RDS-C02-T01` sobre `tests/domain/service-agreement.test.ts`; evidencia `docs/evidence/c02/t01.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C01-T07.
 
 ### 002.02 — RDS-C02-T02
 
 **Acción:** Definir ServiceAgreement con alcance, entitlements, responsables, datos, horario y aceptación comercial/editorial separadas.
 
-**Superficie primaria:** `packages/domain/src/service-agreements.ts`; verificar paquetes, imports y exports existentes; DTO `packages/contracts/src/02.ts` y test `tests/campaigns/002.test.ts` cuando correspondan. No crear endpoints ficticios para tareas de investigación.
+**Superficie:** `src/domain/work-order.ts`; contrato Zod compartido en `packages/contracts/src/`; caso nombrado en `tests/domain/service-agreement.test.ts`.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El aislamiento y los controles mínimos son iguales para clientes del padre y clientes externos.
 
-**Verificación:** fixture positivo, rechazo cross-tenant y sin capability, caso de replay/timeout cuando haya efecto, evidencia SHA/comando/resultado. **Depende de:** RDS-C02-T01.
+**Verificación:** caso `RDS-C02-T02` sobre `tests/domain/service-agreement.test.ts`; evidencia `docs/evidence/c02/t02.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C02-T01.
 
 ### 002.03 — RDS-C02-T03
 
 **Acción:** Diseñar onboarding de pyme/autónomo externo sin instalar agente ni los demás repos hermanos.
 
-**Superficie primaria:** `packages/domain/src/service-agreements.ts`; verificar paquetes, imports y exports existentes; DTO `packages/contracts/src/02.ts` y test `tests/campaigns/002.test.ts` cuando correspondan. No crear endpoints ficticios para tareas de investigación.
+**Superficie:** `docs/adr/0001-saas.md`; contrato Zod compartido en `packages/contracts/src/`; caso nombrado en `tests/domain/service-agreement.test.ts`.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El aislamiento y los controles mínimos son iguales para clientes del padre y clientes externos.
 
-**Verificación:** fixture positivo, rechazo cross-tenant y sin capability, caso de replay/timeout cuando haya efecto, evidencia SHA/comando/resultado. **Depende de:** RDS-C02-T02.
+**Verificación:** caso `RDS-C02-T03` sobre `tests/domain/service-agreement.test.ts`; evidencia `docs/evidence/c02/t03.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C02-T02.
 
 ### 002.04 — RDS-C02-T04
 
 **Acción:** Permitir capacidades solapadas con otros servicios y fijar autoridad por encargo/recurso, no exclusividad por nombre.
 
-**Superficie primaria:** `packages/domain/src/service-agreements.ts`; verificar paquetes, imports y exports existentes; DTO `packages/contracts/src/02.ts` y test `tests/campaigns/002.test.ts` cuando correspondan. No crear endpoints ficticios para tareas de investigación.
+**Superficie:** `src/domain/service-agreement.ts`; contrato Zod compartido en `packages/contracts/src/`; caso nombrado en `tests/domain/service-agreement.test.ts`.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El aislamiento y los controles mínimos son iguales para clientes del padre y clientes externos.
 
-**Verificación:** fixture positivo, rechazo cross-tenant y sin capability, caso de replay/timeout cuando haya efecto, evidencia SHA/comando/resultado. **Depende de:** RDS-C02-T03.
+**Verificación:** caso `RDS-C02-T04` sobre `tests/domain/service-agreement.test.ts`; evidencia `docs/evidence/c02/t04.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C02-T03.
 
 ### 002.05 — RDS-C02-T05
 
 **Acción:** Definir puertos locales e integrados de aprobación, identidad, presupuesto y entrega de hechos.
 
-**Superficie primaria:** `packages/domain/src/service-agreements.ts`; verificar paquetes, imports y exports existentes; DTO `packages/contracts/src/02.ts` y test `tests/campaigns/002.test.ts` cuando correspondan. No crear endpoints ficticios para tareas de investigación.
+**Superficie:** `src/domain/work-order.ts`; contrato Zod compartido en `packages/contracts/src/`; caso nombrado en `tests/domain/service-agreement.test.ts`.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El aislamiento y los controles mínimos son iguales para clientes del padre y clientes externos.
 
-**Verificación:** fixture positivo, rechazo cross-tenant y sin capability, caso de replay/timeout cuando haya efecto, evidencia SHA/comando/resultado. **Depende de:** RDS-C02-T04.
+**Verificación:** caso `RDS-C02-T05` sobre `tests/domain/service-agreement.test.ts`; evidencia `docs/evidence/c02/t05.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C02-T04.
 
 ### 002.06 — RDS-C02-T06
 
 **Acción:** Documentar separación de especialistas del SaaS y empleados generalistas del cliente y sus delegaciones.
 
-**Superficie primaria:** `packages/domain/src/service-agreements.ts`; verificar paquetes, imports y exports existentes; DTO `packages/contracts/src/02.ts` y test `tests/campaigns/002.test.ts` cuando correspondan. No crear endpoints ficticios para tareas de investigación.
+**Superficie:** `docs/adr/0001-saas.md`; contrato Zod compartido en `packages/contracts/src/`; caso nombrado en `tests/domain/service-agreement.test.ts`.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El aislamiento y los controles mínimos son iguales para clientes del padre y clientes externos.
 
-**Verificación:** fixture positivo, rechazo cross-tenant y sin capability, caso de replay/timeout cuando haya efecto, evidencia SHA/comando/resultado. **Depende de:** RDS-C02-T05.
+**Verificación:** caso `RDS-C02-T06` sobre `tests/domain/service-agreement.test.ts`; evidencia `docs/evidence/c02/t06.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C02-T05.
 
 ### 002.07 — RDS-C02-T07
 
 **Acción:** Validar una orden integrada y una externa con criterio de aceptación, cambios de alcance y salida contractual.
 
-**Superficie primaria:** `packages/domain/src/service-agreements.ts`; verificar paquetes, imports y exports existentes; DTO `packages/contracts/src/02.ts` y test `tests/campaigns/002.test.ts` cuando correspondan. No crear endpoints ficticios para tareas de investigación.
+**Superficie:** `src/domain/service-agreement.ts`; contrato Zod compartido en `packages/contracts/src/`; caso nombrado en `tests/domain/service-agreement.test.ts`.
 
 **Aceptación:** Entregar artefacto verificable para esta acción y evidencia de su resultado; conservar la invariante: El aislamiento y los controles mínimos son iguales para clientes del padre y clientes externos.
 
-**Verificación:** fixture positivo, rechazo cross-tenant y sin capability, caso de replay/timeout cuando haya efecto, evidencia SHA/comando/resultado. **Depende de:** RDS-C02-T06.
+**Verificación:** caso `RDS-C02-T07` sobre `tests/domain/service-agreement.test.ts`; evidencia `docs/evidence/c02/t07.json` con SHA, entorno, comando y resultado, más el gate negativo de su campaña. **Depende de:** RDS-C02-T06.
 
 
 ## Wiring y fronteras
 Supabase JWT+membership verificada → tenant/recurso/mandato del twin → Zod DTO → policy/AuthorityMap → preview/hash/revisión/aprobación → RLS+audit+outbox → worker scoped → adapter tipado/capability discovery → receipt y reconciliación → bridge padre. Nunca publicar, borrar, editar o gastar con credenciales reales sin autorización; no reintentar publicaciones de resultado incierto a ciegas. Datos sociales, webhooks y medios son no confiables. Para fase documental marcar NO_APLICA.
 
 ## Gates de fallo y aceptación
-- **RDS-C02-G01 / NOT_EXECUTED:** Cliente externo completo prepara un encargo sin llamadas obligatorias al padre.
-- **RDS-C02-G02 / NOT_EXECUTED:** Dos servicios proponen la misma pieza: solo la autoridad acordada de entrega puede ejecutarla.
+- **RDS-C02-G01 / NOT_EXECUTED:** Cliente externo completo prepara un encargo sin llamadas obligatorias al padre. **Caso:** `RDS-C02-G01` en `tests/domain/service-agreement.test.ts`. **Evidencia:** `docs/evidence/c02/g01.json`.
+- **RDS-C02-G02 / NOT_EXECUTED:** Dos servicios proponen la misma pieza: solo la autoridad acordada de entrega puede ejecutarla. **Caso:** `RDS-C02-G02` en `tests/domain/service-agreement.test.ts`. **Evidencia:** `docs/evidence/c02/g02.json`.
 
 **Bloqueos:** cross_tenant_or_secret; approval_bypass; uncertain_duplicate_external_effect; unbounded_spend; audit_loss.
 

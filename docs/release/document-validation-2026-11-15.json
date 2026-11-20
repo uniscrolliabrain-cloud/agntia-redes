@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-11-15",
+  "scope": "Documentation structure, JSON syntax, local links, manifest counts/IDs/DAG, source IDs, docs-only extensions, gate-to-case binding, secret scan",
+  "status": "PASS",
+  "supersedes": "docs/release/document-validation.json (2026-11-11, files_verified=70, anterior al programa granular)",
+  "campaigns": 42,
+  "tasks": 294,
+  "planned_gate_scenarios": 84,
+  "implementation_tests_executed": 0,
+  "runtime_implemented": false,
+  "provider_api_tests_executed": 0,
+  "campaign_manifest_sha256": "d75418c0e3eb0dda6c00c5760437e54b7cd88b64b77801ad482cdd28601c196d",
+  "bindings": {
+    "gates_with_named_case": 84,
+    "gates_with_own_evidence_artifact": 84,
+    "tasks_with_own_evidence_path": 294,
+    "campaigns_with_declared_surfaces": 42
+  },
+  "distinct_evidence_tuples": {
+    "tasks_2": 294,
+    "gates_2": 84
+  },
+  "local_links_checked": 563,
+  "local_links_broken": 0,
+  "secret_scan_hits": 0,
+  "documents_only": [
+    ".md",
+    ".json"
+  ],
+  "known_open": [
+    "A6 grafo lineal vs tracks del README (decision founder)",
+    "A8 579 uniones palabra-digito sin corregir",
+    "A9 sin CI que revalide estos invariantes",
+    "A10 padre /agente no cotejado en este workspace"
+  ]
+}

@@ -16,7 +16,7 @@
 | PR fusionadas | #1 `a9cbd4a` (factory prep) y #2 `8136b14` (programa 42 campañas) |
 | CI | inexistente: no hay `.github/workflows` (hallazgo A9) |
 
-**Nota de integración:** durante la sesión `main` recibió `23b3edf` (Concept Master V2). El commit de esta auditoría se rebasa sobre él y las comprobaciones V1–V11 se re-ejecutaron sobre el árbol integrado —178 archivos, 173 `.md`— sin cambios de resultado: el archivo nuevo no introduce enlaces rotos ni toca el manifiesto.
+**Nota de integración:** durante la sesión `main` recibió `23b3edf` (Concept Master V2). El commit de esta auditoría se rebasa sobre él y las comprobaciones V1–V13 se re-ejecutaron sobre el árbol integrado —179 archivos, 173 `.md`— sin cambios de resultado: el archivo nuevo no introduce enlaces rotos ni toca el manifiesto.
 
 ### Instalación, typecheck, lint, tests, build — NOT_APPLICABLE
 
@@ -49,8 +49,8 @@ Todas se ejecutaron sobre el SHA auditado con Python 3 leyendo el árbol y `git 
 | V9 | Solo extensiones documentales | **PASS** — `.md` y `.json` |
 | V10 | Barrido de secretos (prefijos de clave de OpenAI/Anthropic/GitHub, credenciales AWS y tokens de Slack; encabezado JWT comprobado por separado) | **PASS** — 0 coincidencias |
 | V11 | Validez sintáctica de los 5 manifiestos JSON | **PASS** |
-| V12 | Tareas con criterio propio y verificable | **FAIL** — ver A3 |
-| V13 | Rutas de archivo propuestas plausibles para la arquitectura objetivo | **FAIL** — ver A5 |
+| V12 | Tareas y gates con evidencia propia y verificable | **PASS tras corrección** — 294/294 tuplas de evidencia distintas, 84/84 gates con caso y artefacto propios (A3) |
+| V13 | Rutas de archivo propuestas plausibles para la arquitectura objetivo | **PASS tras corrección** — 0 marcadores numéricos; superficies desde el manifiesto (A5) |
 | V14 | Comprobación del padre `/agente` a SHA `54b8d540…` | **NOT_VERIFIED** — repo hermano fuera de este workspace |
 | V15 | Tests de proveedor / OAuth / publicación | **NOT_EXECUTED** — no hay runtime, ni cuentas, ni credenciales |
 
@@ -66,21 +66,29 @@ Corrección aplicada: profundidad de la ruta a `../../../campaigns/…` en los 4
 
 `docs/release/document-validation.json` declara `status: PASS`, `checked_at: 2026-11-11`, `files_verified: 70`. El árbol auditado tiene 176 archivos y el programa granular llegó después. Un PASS de hace cuatro días sobre la mitad del árbol no acredita el estado actual; de hecho A1 sobrevivió a ese PASS. Recomendación: no reescribir el recibo histórico (falsearía evidencia) sino exigir un recibo nuevo por commit que toque documentación, y automatizarlo (A9).
 
-### A3 · 294 tareas, pero un solo criterio de evidencia — ABIERTO, BLOQUEA GATES
+### A3 · 294 tareas, pero un solo criterio de evidencia — CORREGIDO EN EL MANIFIESTO (ejecución pendiente)
 
 - Acciones de tarea distintas: 294/294.
 - Criterios de aceptación distintos: **42** (uno por campaña, replicado en sus 7 tareas).
 - Conjuntos de `evidence_refs` distintos entre las 294 tareas y los 84 gates: **1**.
 
-Las 84 *situaciones* de gate sí son distintas (84/84), pero todas apuntan al mismo conjunto de evidencia. Consecuencia: un gate no puede fallar por ausencia de un artefacto concreto, porque ningún gate nombra un artefacto propio. Los "84 gates" son, hoy, 84 escenarios sin prueba discriminante. Antes de implementar hay que dar a cada gate su artefacto y su comando esperado; de lo contrario la fábrica producirá PASS retórico.
+Las 84 *situaciones* de gate sí son distintas (84/84), pero todas apuntaban al mismo conjunto de evidencia. Consecuencia: un gate no podía fallar por ausencia de un artefacto concreto, porque ningún gate nombraba un artefacto propio. Eran 84 escenarios sin prueba discriminante y la fábrica habría producido PASS retórico.
+
+**Corrección aplicada (2026-11-15).** Se añadió al manifiesto el contrato `gate_evidence_contract` y se vinculó cada gate a: (a) su identificador usado literalmente como nombre de caso (`RDS-CNN-G0k`) dentro de la suite de su campaña, (b) su propio artefacto `docs/evidence/cNN/g0k.json` con `{gate_id, sha, command, environment, result, artifacts[]}`, (c) su escenario como aserción. Cada tarea tiene ahora superficie asignada y su propia ruta de evidencia `docs/evidence/cNN/tNN.json`.
+
+Medición posterior: tuplas de evidencia distintas **294/294** en tareas y **84/84** en gates (antes 1). No se inventó ningún runner: `gate_evidence_contract` exige fijarlo en RDS-C01, porque ningún documento del repo lo declara. Los 84 gates siguen en `NOT_EXECUTED`: la vinculación es diseño, no evidencia de ejecución.
 
 ### A4 · La granularidad por patchset es sustitución de plantilla — ABIERTO
 
 En los 294 bloques de patchset: "Superficie primaria" tiene **42 valores distintos** (uno por campaña, repetido ×7), y "Verificación" se normaliza a **2 variantes** (293 idénticas + 1). Es decir, las 7 tareas de una campaña declaran el mismo archivo primario y el mismo procedimiento de verificación. El programa granular da la apariencia de 294 tareas accionables, pero solo contiene 42 superficies reales. Aceptable como índice de trabajo; insuficiente como plan de ejecución sin elaboración por tarea.
 
-### A5 · Las rutas propuestas son marcadores derivados del número de campaña — ABIERTO
+### A5 · Las rutas propuestas son marcadores derivados del número de campaña — CORREGIDO EN EL MANIFIESTO
 
-`packages/contracts/src/01.ts`, `apps/api/src/routes/01.ts`, `tests/campaigns/001.test.ts` aparecen generados por número de campaña, incluso en campañas de investigación documental donde el propio texto dice "no crear endpoints ficticios". Ninguna ruta propuesta se corresponde con la arquitectura objetivo descrita en `docs/architecture/` ni con el scaffolding TypeScript/pnpm/Hono del handoff. Un implementador que obedezca estas rutas crearía una estructura arbitraria. Deben recalcularse desde `docs/architecture/01-arquitectura-y-dominios.md` y `docs/execution-program/01-ARQUITECTURA-OBJETIVO.md` antes de RDS-C01.
+Los patchsets de `CAMPAIGN.md` usaban `packages/contracts/src/01.ts`, `apps/api/src/routes/01.ts` y `tests/campaigns/001.test.ts`, generados por número de campaña, incluso en campañas de investigación documental cuyo propio texto dice "no crear endpoints ficticios". Un implementador que obedeciera esas rutas habría creado una estructura arbitraria.
+
+**Precisión sobre el manifiesto:** los `planned_artifacts` de `campaign.json` sí eran plausibles (`src/auth/principal.ts`, `tests/security/tenancy.test.ts`); el defecto estaba en el generador de patchsets, que los ignoraba. La afirmación anterior de esta auditoría, que daba por arbitrarias todas las rutas, era imprecisa.
+
+**Corrección aplicada (2026-11-15).** El manifiesto declara ahora `primary_surfaces` y `verification_suite` por campaña y una superficie por tarea; los 42 `CAMPAIGN.md` se regeneraron desde ahí: superficies reales, `packages/contracts/src/` como hogar único del contrato y `apps/api/src/routes/<slug>.ts` solo en las 8 campañas con ruta HTTP (C03, C04, C07, C19, C23, C24, C25, C34). Las 34 restantes declaran expresamente que no añaden endpoint. Verificado: 0 marcadores numéricos en los 42 documentos.
 
 ### A6 · El grafo es lineal; no hay tracks paralelos — ABIERTO (contradicción documental)
 
@@ -123,6 +131,9 @@ Con A3 y A5 abiertos, implementar ahora produciría código sobre rutas arbitrar
 | Archivo | Cambio |
 | --- | --- |
 | `docs/execution-program/campaigns/001…042/CAMPAIGN.md` | Corrección de la ruta del enlace a la campaña fuente (`../../campaigns/` → `../../../campaigns/`). 42 archivos, sin otro cambio. |
+| `docs/campaigns/campaign.json` | `gate_evidence_contract`, `surface_policy`, `primary_surfaces`, `verification_suite` por campaña; superficie y `evidence_refs` por tarea; `verification` y `evidence_refs` por gate. Estados sin cambio (`NOT_STARTED` / `NOT_EXECUTED`). |
+| `docs/execution-program/campaigns/001…042/CAMPAIGN.md` | Superficies, tests, contrato, rutas y evidencia regenerados desde el manifiesto (294 patchsets, 84 gates). Sin cambios de estado ni de alcance. |
+| `docs/release/document-validation-2026-11-15.json` | Recibo nuevo (el de 2026-11-11 se conserva sin reescribir). |
 | `docs/factory/07-AUDITORIA-INICIAL-2026-11-15.md` | Este informe. |
 
 Nada más. Sin código, sin tests, sin cambios en `campaign.json`, sin tocar el padre ni repos hermanos, sin secretos, sin efectos externos.
@@ -134,8 +145,8 @@ No procede todavía: no existe runtime que consuma variables. `docs/architecture
 ## 8. Recomendación de siguiente paso
 
 1. Founder: aprobar o rechazar explícitamente el gate conceptual (A5 del handoff) y autorizar la sesión de implementación.
-2. Sesión documental corta: corregir A3 (evidencia por gate), A5 (rutas desde la arquitectura), A6 (README o grafo) y A8 (tipografía con lista blanca).
-3. Añadir CI documental (A9) para que A1/A2 no se repitan.
+2. ~~A3 y A5~~ — hechos: gates vinculados a caso y artefacto propios, superficies desde la arquitectura. Quedan A6 (README o grafo, requiere decisión), A8 (tipografía con lista blanca) y la revisión humana de que las superficies propuestas son las correctas para cada campaña.
+3. Añadir CI documental (A9) para que A1/A2 no se repitan y para que la vinculación gate↔caso no se degrade.
 4. Solo entonces: RDS-C01 con checkout del padre, SHA congelado y baseline real.
 
 ## Anexo · Reproducción
