@@ -8,7 +8,7 @@
   "planned_gate_scenarios": 84,
   "gates_with_named_case_executed": 14,
   "gates_not_executed": 70,
-  "implementation_tests_executed": 94,
+  "implementation_tests_executed": 96,
   "runtime_implemented": true,
   "provider_api_tests_executed": 0,
   "campaign_manifest_sha256": "67e518be05eff283d41125d08c32591d511f103615ee2b02b75746653fff2369",
@@ -40,7 +40,7 @@
   "known_open": [
     "A6 grafo lineal vs tracks del README (decision founder)",
     "A8 uniones palabra-digito sin corregir",
-    "A9 CI ejecuta typecheck y tests, incluido el contrato gate-caso; la revision de enlaces sigue siendo manual",
+    "A9 reducido: CI ejecuta typecheck y tests, incluidos contrato gate-caso, enlaces locales, JSON y sello del manifiesto; la tipografia (A8) sigue sin cubrir",
     "A10 padre /agente no cotejado en este workspace",
     "A11 parcialmente cerrado: 14 de 84 gates ejecutados con caso nombrado y evidencia; 70 siguen NOT_EXECUTED, 52 de ellos porque la suite de la campana no existe",
     "A12 cerrado: las referencias a docs/evidence/c01/ apuntan al directorio real c001"
@@ -48,9 +48,9 @@
   "runtime_verified": {
     "command": "npm run typecheck && npm test",
     "result": "PASS",
-    "test_files": 18,
-    "tests": 94,
-    "at_sha": "5eaf96967d507b43582b2ebf443d033519e998e4",
+    "test_files": 19,
+    "tests": 96,
+    "at_sha": "a507e74edb7522616394527347f07e96ccdd72b7",
     "executed_by": "esta sesion de auditoria, 2026-11-20"
   }
 }

@@ -41,7 +41,7 @@ Esta sesión vuelve sobre A11 y A12 con el runtime ya integrado. Nada de lo escr
 ```
 npx vitest run <suite> -t "RDS-CNN-G0k"   -> 14 de 84 gates, PASS uno a uno
 npm run typecheck                          -> PASS
-npm test                                   -> PASS (18 archivos, 94 tests, 8,3 s)
+npm test                                   -> PASS (19 archivos, 96 tests, 8,4 s)
 enlaces locales                             -> 570 comprobados, 0 rotos
 ```
 
@@ -57,7 +57,7 @@ Los 14 PASS se concentran en C02, C03, C04, C06, C08, C19, C21, C22 y C24. Cada 
 
 **A13 · caso de gate dependiente del orden — ENCONTRADO Y CORREGIDO.** Al ejecutar `-t "RDS-C21-G02"` aislado, el caso fallaba: dependía del evento y del lease que creaban los dos tests anteriores del archivo. La evidencia de un gate tiene que poder reproducirse sola, así que el caso pasó a preparar su propio evento en un tenant propio. Con la suite completa y con el filtro, pasa. Este defecto solo aparece cuando se exige el contrato, no mirando la suite en verde.
 
-**A9 · reducido.** `tests/campaigns/gates.test.ts` corre en el `npm test` del CI y verifica: recuentos 42/294/84, que cada gate nombre su propio caso y artefacto, que todo PASS tenga evidencia con `result: PASS`, hash del test vigente y el identificador presente en el título, que ningún gate sin suite existente declare PASS, que `gate_case_coverage` cuadre y que cada `CAMPAIGN.md` declare el mismo estado que el manifiesto. Sigue sin comprobar enlaces ni tipografía; eso queda manual.
+**A9 · reducido.** `tests/campaigns/gates.test.ts` corre en el `npm test` del CI y verifica: recuentos 42/294/84, que cada gate nombre su propio caso y artefacto, que todo PASS tenga evidencia con `result: PASS`, hash del test vigente y el identificador presente en el título, que ningún gate sin suite existente declare PASS, que `gate_case_coverage` cuadre y que cada `CAMPAIGN.md` declare el mismo estado que el manifiesto. El mismo CI comprueba además enlaces locales (570, 0 rotos) y que todo JSON parsea, con `tests/campaigns/docs.test.ts`. La tipografía (A8) sigue sin cubrir.
 
 **A12 · cerrado.** Las dos referencias restantes a `docs/evidence/c01/` (`docs/baseline.md` y `docs/evidence/CHECKPOINT-C05.md`) apuntan al directorio real `c001`. Es una corrección de ruta: no cambia ninguna afirmación del recibo.
 
