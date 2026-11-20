@@ -20,7 +20,8 @@ describe("presupuesto", () => {
     expect(ledger.committedCents("tenant-a")).toBe(60);
   });
 
-  it("un resultado incierto conserva el pasivo", () => {
+  // Caso nombrado del gate RDS-C22-G02: el coste incierto permanece reservado hasta reconciliar.
+  it("RDS-C22-G02 · un resultado incierto conserva el pasivo", () => {
     const ledger = new BudgetLedger(100);
     ledger.reserve({ tenantId: "tenant-a", idempotencyKey: "op-1", amountCents: 100 });
     ledger.markUncertain("tenant-a", "op-1");
@@ -42,7 +43,8 @@ describe("presupuesto", () => {
     ).not.toThrow();
   });
 
-  it("reservas concurrentes no duplican gasto", async () => {
+  // Caso nombrado del gate RDS-C22-G01: dos reservas concurrentes no consumen el mismo saldo.
+  it("RDS-C22-G01 · reservas concurrentes no duplican gasto", async () => {
     const ledger = new BudgetLedger(100);
     const results = await Promise.allSettled([
       Promise.resolve().then(() =>

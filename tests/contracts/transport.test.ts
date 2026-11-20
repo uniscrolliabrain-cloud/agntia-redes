@@ -28,7 +28,8 @@ describe("transporte de proveedor", () => {
     expect(sleeps).toHaveLength(1);
   });
 
-  it("no reintenta escrituras ambiguas", async () => {
+  // Caso nombrado del gate RDS-C08-G02: timeout de escritura queda incierto sin reintento automático.
+  it("RDS-C08-G02 · no reintenta escrituras ambiguas", async () => {
     let calls = 0;
     const fetchImpl: FetchLike = async () => {
       calls += 1;
@@ -44,7 +45,8 @@ describe("transporte de proveedor", () => {
     expect(calls).toBe(1);
   });
 
-  it("bloquea hosts privados y metadata", async () => {
+  // Caso nombrado del gate RDS-C08-G01: destino no permitido se bloquea antes de transferir.
+  it("RDS-C08-G01 · bloquea hosts privados y metadata", async () => {
     for (const url of [
       "https://169.254.169.254/latest/meta-data",
       "https://127.0.0.1/token",

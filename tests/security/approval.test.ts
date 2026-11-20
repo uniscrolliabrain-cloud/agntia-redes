@@ -65,7 +65,8 @@ describe("aprobación vinculada", () => {
     expect(verifyApproval(binding(), context())).toEqual({ ok: true });
   });
 
-  it("rechaza payload cambiado tras aprobar", () => {
+  // Caso nombrado del gate RDS-C19-G02: cambiar el payload tras aprobar invalida la aprobación.
+  it("RDS-C19-G02 · rechaza payload cambiado tras aprobar", () => {
     const changed = canonicalPayloadHash({ ...payload, cta: "https://example.test/otro" });
     expect(verifyApproval(binding(), context({ payloadHash: changed }))).toEqual({
       ok: false,
@@ -84,7 +85,8 @@ describe("aprobación vinculada", () => {
     });
   });
 
-  it("exige firma humana real", () => {
+  // Caso nombrado del gate RDS-C19-G01: una aprobación de agente no habilita el efecto.
+  it("RDS-C19-G01 · exige firma humana real", () => {
     expect(
       verifyApproval(
         binding({ signerRefs: [{ actorId: "agent-9", kind: "agent", signedAt: "2026-11-15T09:59:00Z" }] }),

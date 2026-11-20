@@ -86,7 +86,8 @@ describe("outbox durable", () => {
     expect(secondClaim).toHaveLength(0);
   });
 
-  it("solo el fence vigente puede confirmar; el ACK viejo no cierra el trabajo", async () => {
+  // Caso nombrado del gate RDS-C21-G02: el ACK con fence antiguo no confirma un intent reclamado por otro.
+  it("RDS-C21-G02 · solo el fence vigente puede confirmar; el ACK viejo no cierra el trabajo", async () => {
     const expired = new Date(occurredAt.getTime() + 60_000);
     const reclaim = await inTenant((tx) =>
       claimBatch(tx, {

@@ -114,7 +114,8 @@ describe("identidad y tenancy", () => {
     );
   });
 
-  it("falla cerrado sin membresía o con membresía suspendida", async () => {
+  // Caso nombrado del gate RDS-C03-G02: la membresía ausente/inactiva falla cerrado, nunca a owner/default.
+  it("RDS-C03-G02 · falla cerrado sin membresía o con membresía suspendida", async () => {
     const token = await sign({ tenant_id: "tenant-a" });
     await expectAuthError(
       resolvePrincipal({ token, jwt: jwtOptions, memberships: membershipStore(null), requestId: "r" }),
@@ -154,7 +155,8 @@ describe("policy enforcement point", () => {
     });
   });
 
-  it("deniega recursos de otro tenant", () => {
+  // Caso nombrado del gate RDS-C03-G01: no se accede a un recurso de otro tenant.
+  it("RDS-C03-G01 · deniega recursos de otro tenant", () => {
     expect(
       authorize({
         principal: agent,

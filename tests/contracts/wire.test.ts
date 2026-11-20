@@ -39,7 +39,8 @@ describe("contratos de frontera", () => {
     expect(parsed.capability).toBe("social.draft.propose");
   });
 
-  it("rechaza campos desconocidos y capabilities inventadas", () => {
+  // Caso nombrado del gate RDS-C04-G01: el DTO estricto rechaza campos y capabilities fuera de contrato.
+  it("RDS-C04-G01 · rechaza campos desconocidos y capabilities inventadas", () => {
     expect(() =>
       parseStrict(OperationEnvelopeSchema, { ...envelope, extra: true }, "envelope"),
     ).toThrow(ContractError);

@@ -58,7 +58,8 @@ describe("reconciliación", () => {
     expect(intent.providerPostId).toBe("fake_post_1");
   });
 
-  it("no declara 'no enviado' si la búsqueda no es autoritativa", async () => {
+  // Caso nombrado del gate RDS-C24-G01: sin lookup autoritativo el intent sigue unknown.
+  it("RDS-C24-G01 · no declara 'no enviado' si la búsqueda no es autoritativa", async () => {
     const provider = new FakeProvider({ lookupMode: "eventual" });
     const intent = unknownIntent();
     const outcome = await reconcileIntent(intent, { provider });

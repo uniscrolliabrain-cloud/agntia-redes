@@ -86,7 +86,8 @@ describe("acuerdos de servicio", () => {
     ).toThrow(DomainError);
   });
 
-  it("una orden de trabajo no se ejecuta fuera de su acuerdo o mandato", () => {
+  // Caso nombrado del gate RDS-C02-G01: el encargo standalone se ejecuta con el acuerdo propio.
+  it("RDS-C02-G01 · una orden de trabajo no se ejecuta fuera de su acuerdo o mandato", () => {
     expect(() => assertWorkOrderExecutable(workOrder, agreement(), 5_000)).not.toThrow();
 
     expect(() => assertWorkOrderExecutable(workOrder, agreement(), 20_000)).toThrow(DomainError);

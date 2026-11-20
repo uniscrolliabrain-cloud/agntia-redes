@@ -11,7 +11,8 @@ import {
 const now = new Date("2026-11-15T10:00:00Z");
 
 describe("catálogo de proveedores", () => {
-  it("lo documentado no habilita runtime", () => {
+  // Caso nombrado del gate RDS-C06-G01: documentado no equivale a endpoint disponible.
+  it("RDS-C06-G01 · lo documentado no habilita runtime", () => {
     const mastodon = findProviderRecord("mastodon");
     expect(mastodon).toBeDefined();
     const resolution = resolveCapability(mastodon as ProviderRecord, "createDelivery", now);
@@ -27,7 +28,8 @@ describe("catálogo de proveedores", () => {
     }
   });
 
-  it("una verificación caducada vuelve a UNKNOWN", () => {
+  // Caso nombrado del gate RDS-C06-G02: una verificación caducada bloquea aunque el último probe fuera 200.
+  it("RDS-C06-G02 · una verificación caducada vuelve a UNKNOWN", () => {
     const record: ProviderRecord = {
       provider: "mastodon",
       apiVersion: "test",
