@@ -34,6 +34,37 @@ npm test          -> PASS (17 archivos, 87 tests, 7,85 s)
 
 **A6 y A10 siguen abiertos y sin cambios:** grafo lineal (decisión del fundador) y padre sin cotejar (`NOT_VERIFIED`).
 
+## ACTUALIZACIÓN 2026-11-20 — gates ejecutados uno a uno
+
+Esta sesión vuelve sobre A11 y A12 con el runtime ya integrado. Nada de lo escrito aquí se apoya en los reportes de terceros: cada caso se ejecutó aquí.
+
+```
+npx vitest run <suite> -t "RDS-CNN-G0k"   -> 14 de 84 gates, PASS uno a uno
+npm run typecheck                          -> PASS
+npm test                                   -> PASS (18 archivos, 94 tests, 8,3 s)
+enlaces locales                             -> 570 comprobados, 0 rotos
+```
+
+**A11 · parcialmente cerrado.** 14 gates usan ya su identificador como nombre de caso y su artefacto propio en `docs/evidence/cNNN/g0k.json`, con comando, SHA de ejecución, hash del archivo de test y nota de alcance. No se inventó ningún test: se etiquetaron aserciones que ya existían y que afirman el escenario del gate. Los otros 70 siguen `NOT_EXECUTED` con el motivo contado en `gate_case_coverage`:
+
+| Motivo | Gates |
+| --- | --- |
+| La ruta de suite de la campaña no existe (C09–C16, C18, C20, C25–C40) | 52 |
+| La suite existe pero no hay caso escrito para el escenario (C02-G02, C04-G02, C05, C07, C17, C21-G01, C23, C24-G02) | 12 |
+| Comprobación documental o de infraestructura no escrita (C01, C41, C42) | 6 |
+
+Los 14 PASS se concentran en C02, C03, C04, C06, C08, C19, C21, C22 y C24. Cada artefacto lleva un `scope_note` que dice qué parte del escenario **no** afirma el test (por ejemplo, C03-G01 afirma la denegación de policy, no el mapeo HTTP a 404), para que nadie lea más de lo ejecutado. Los reportes de campaña siguen siendo de suite completa: el manifiesto no los ha ascendido a gate PASS sin caso.
+
+**A13 · caso de gate dependiente del orden — ENCONTRADO Y CORREGIDO.** Al ejecutar `-t "RDS-C21-G02"` aislado, el caso fallaba: dependía del evento y del lease que creaban los dos tests anteriores del archivo. La evidencia de un gate tiene que poder reproducirse sola, así que el caso pasó a preparar su propio evento en un tenant propio. Con la suite completa y con el filtro, pasa. Este defecto solo aparece cuando se exige el contrato, no mirando la suite en verde.
+
+**A9 · reducido.** `tests/campaigns/gates.test.ts` corre en el `npm test` del CI y verifica: recuentos 42/294/84, que cada gate nombre su propio caso y artefacto, que todo PASS tenga evidencia con `result: PASS`, hash del test vigente y el identificador presente en el título, que ningún gate sin suite existente declare PASS, que `gate_case_coverage` cuadre y que cada `CAMPAIGN.md` declare el mismo estado que el manifiesto. Sigue sin comprobar enlaces ni tipografía; eso queda manual.
+
+**A12 · cerrado.** Las dos referencias restantes a `docs/evidence/c01/` (`docs/baseline.md` y `docs/evidence/CHECKPOINT-C05.md`) apuntan al directorio real `c001`. Es una corrección de ruta: no cambia ninguna afirmación del recibo.
+
+**Lo que esta sesión no hizo, y por qué.** No escribió aplicación, endpoints ni adaptadores; no ejecutó proveedores reales (siguen `BLOCKED`); no cotejó el padre (A10 sigue `NOT_VERIFIED`); no ascendió a PASS ningún gate sin caso ejecutado, ni siquiera los 14 que los reportes declaran verdes con suite completa; no tocó `/agente` ni repos hermanos, ni desplegó nada. Sí modificó tests bajo la autorización del fundador registrada en `docs/evidence/CHECKPOINT-C05.md`: etiquetó casos existentes, hizo autocontenido uno y añadió la comprobación de invariantes documentales. Escribir la aplicación completa sigue requiriendo autorización expresa según `AGENTS.md`.
+
+**Sello.** `docs/release/document-validation-2026-11-20.json` fija el SHA del manifiesto (`67e518be…`) y lo verifica un test; el recibo de 2026-11-15 y el de 2026-11-11 quedan intactos como histórico.
+
 ## 1. Baseline congelado
 
 | Elemento | Valor |

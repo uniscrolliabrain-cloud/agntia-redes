@@ -50,4 +50,4 @@ El informe original habla de «14 repos» y `docs/release/document-validation.js
 
 ## Evidencia
 
-`docs/editor` no aplica: la evidencia de esta fase está en `docs/versions.json`, `docs/parent-diff.md` y `docs/evidence/c01/README.md`.
+`docs/editor` no aplica: la evidencia de esta fase está en `docs/versions.json`, `docs/parent-diff.md` y `docs/evidence/c001/README.md`.
