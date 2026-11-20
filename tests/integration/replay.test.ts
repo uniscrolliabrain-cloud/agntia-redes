@@ -26,8 +26,8 @@ afterAll(async () => {
   await db.close();
 });
 
-async function inTenant<T>(fn: (tx: SqlClient) => Promise<T>): Promise<T> {
-  return withTenantScope(client, tenantId, fn);
+async function inTenant<T>(fn: (tx: SqlClient) => Promise<T>, tenant: string = tenantId): Promise<T> {
+  return withTenantScope(client, tenant, fn);
 }
 
 describe("outbox durable", () => {
@@ -87,50 +87,86 @@ describe("outbox durable", () => {
   });
 
   // Caso nombrado del gate RDS-C21-G02: el ACK con fence antiguo no confirma un intent reclamado por otro.
+  // Es autocontenido y usa un tenant propio para poder seleccionarse aislado con
+  // `npx vitest run tests/integration/replay.test.ts -t "RDS-C21-G02"`.
   it("RDS-C21-G02 · solo el fence vigente puede confirmar; el ACK viejo no cierra el trabajo", async () => {
+    const gateTenant = "tenant-c21";
+    await inTenant(
+      (tx) =>
+        enqueueEvent(tx, {
+          tenantId: gateTenant,
+          eventType: "publication.scheduled",
+          payload: { intentId: "intent-c21" },
+          idempotencyKey: "op-c21",
+          occurredAt,
+        }),
+      gateTenant,
+    );
+
+    const firstLease = await inTenant(
+      (tx) =>
+        claimBatch(tx, {
+          tenantId: gateTenant,
+          workerId: "worker-1",
+          limit: 10,
+          leaseMs: 30_000,
+          now: occurredAt,
+        }),
+      gateTenant,
+    );
+    expect(firstLease[0]?.lease_fence).toBe(1);
+
     const expired = new Date(occurredAt.getTime() + 60_000);
-    const reclaim = await inTenant((tx) =>
-      claimBatch(tx, {
-        tenantId,
-        workerId: "worker-2",
-        limit: 10,
-        leaseMs: 30_000,
-        now: expired,
-      }),
+    const reclaim = await inTenant(
+      (tx) =>
+        claimBatch(tx, {
+          tenantId: gateTenant,
+          workerId: "worker-2",
+          limit: 10,
+          leaseMs: 30_000,
+          now: expired,
+        }),
+      gateTenant,
     );
     const event = reclaim[0];
     expect(event?.lease_fence).toBe(2);
 
-    const staleAck = await inTenant((tx) =>
-      ackEvent(tx, {
-        tenantId,
-        eventId: event?.event_id ?? "",
-        workerId: "worker-2",
-        fence: 1,
-        now: expired,
-      }),
+    const staleAck = await inTenant(
+      (tx) =>
+        ackEvent(tx, {
+          tenantId: gateTenant,
+          eventId: event?.event_id ?? "",
+          workerId: "worker-2",
+          fence: 1,
+          now: expired,
+        }),
+      gateTenant,
     );
     expect(staleAck).toEqual({ acked: false, reason: "stale_fence" });
 
-    const validAck = await inTenant((tx) =>
-      ackEvent(tx, {
-        tenantId,
-        eventId: event?.event_id ?? "",
-        workerId: "worker-2",
-        fence: 2,
-        now: expired,
-      }),
+    const validAck = await inTenant(
+      (tx) =>
+        ackEvent(tx, {
+          tenantId: gateTenant,
+          eventId: event?.event_id ?? "",
+          workerId: "worker-2",
+          fence: 2,
+          now: expired,
+        }),
+      gateTenant,
     );
     expect(validAck).toEqual({ acked: true });
 
-    const afterAck = await inTenant((tx) =>
-      claimBatch(tx, {
-        tenantId,
-        workerId: "worker-3",
-        limit: 10,
-        leaseMs: 30_000,
-        now: new Date(expired.getTime() + 120_000),
-      }),
+    const afterAck = await inTenant(
+      (tx) =>
+        claimBatch(tx, {
+          tenantId: gateTenant,
+          workerId: "worker-3",
+          limit: 10,
+          leaseMs: 30_000,
+          now: new Date(expired.getTime() + 120_000),
+        }),
+      gateTenant,
     );
     expect(afterAck).toHaveLength(0);
   });
