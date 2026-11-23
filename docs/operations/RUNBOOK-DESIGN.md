@@ -2,6 +2,8 @@
 
 Este runbook es una especificación de lo que la IA implementadora deberá entregar. No existen comandos de instalación ejecutables de este middleware, imágenes publicadas, paquetes npm/pip o despliegues. No ejecutar los paths de campaña como si ya estuvieran implementados.
 
+Guía ejecutable actual del paquete, el bridge y las verticales: [INSTALACION.md](INSTALACION.md).
+
 ## Topologías a demostrar
 
 Local: runtime/SDK TS, Postgres y fake provider; opcional Mastodon/Postiz aislado con datos sintéticos, sin puertos de administración públicos. Servidor: API privada, worker no root separado, TLS, secrets externos y objeto storage cifrado; sin token en frontend, sin socket Docker montado en API, sin browser que evada revisión de app. Elegir componentes mínimos y fijar SHAs/digests/build metadata/SBOM. Windows/Linux se prueban por separado, así como Docker Desktop, ARM y APIs reales.

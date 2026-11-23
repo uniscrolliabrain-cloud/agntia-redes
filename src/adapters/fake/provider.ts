@@ -18,6 +18,8 @@ export interface FakeProviderOptions {
   readonly script?: FakeScript;
   readonly lookupMode?: LookupMode;
   readonly now?: () => Date;
+  /** Métricas sintéticas con su ventana y cobertura declaradas. */
+  readonly metrics?: readonly MetricReading[];
 }
 
 export class FakeProvider implements SocialPublisherPort {
@@ -27,12 +29,14 @@ export class FakeProvider implements SocialPublisherPort {
   private readonly published = new Map<string, { providerPostId: string; publishedAt: string }>();
   private readonly script: FakeScript;
   private readonly now: () => Date;
+  private readonly metrics: readonly MetricReading[];
   private counter = 0;
 
   constructor(options: FakeProviderOptions = {}) {
     this.script = options.script ?? "accept";
     this.lookupMode = options.lookupMode ?? "authoritative";
     this.now = options.now ?? (() => new Date());
+    this.metrics = options.metrics ?? [];
   }
 
   async createDelivery(input: CreateDeliveryInput): Promise<CreateDeliveryResult> {
@@ -69,7 +73,10 @@ export class FakeProvider implements SocialPublisherPort {
     return { kind: "found", providerPostId: hit.providerPostId, publishedAt: hit.publishedAt };
   }
 
-  async readMetrics(): Promise<readonly MetricReading[]> {
-    return [];
+  async readMetrics(_input: {
+    accountBindingId: string;
+    providerPostId: string;
+  }): Promise<readonly MetricReading[]> {
+    return this.metrics;
   }
 }

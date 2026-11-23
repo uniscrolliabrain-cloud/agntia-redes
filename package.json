@@ -4,14 +4,30 @@
   "private": true,
   "type": "module",
   "description": "Agntia Redes: servicio social SaaS (documentación + runtime en construcción)",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "docs/operations/INSTALACION.md"
+  ],
   "engines": {
     "node": ">=22.6.0"
   },
   "scripts": {
     "typecheck": "tsc -p tsconfig.json --noEmit",
+    "build": "node --input-type=module -e \"import { rmSync } from 'node:fs'; rmSync('dist', { recursive: true, force: true })\" && tsc -p tsconfig.build.json",
     "test": "vitest run",
     "test:watch": "vitest",
-    "check": "npm run typecheck && npm run test"
+    "check": "npm run typecheck && npm run test",
+    "slice:publish": "npm run build && node scripts/run-slice.mjs publication",
+    "slice:reconcile": "npm run build && node scripts/run-slice.mjs reconciliation",
+    "verify:install": "node scripts/verify-install.mjs"
   },
   "dependencies": {
     "hono": "^4.6.0",
