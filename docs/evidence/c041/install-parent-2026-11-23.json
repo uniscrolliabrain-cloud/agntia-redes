@@ -1,0 +1,72 @@
+{
+  "gate_id": "RDS-C41-G01",
+  "supplementary": true,
+  "gate_status": "NOT_EXECUTED",
+  "gate_status_reason": "Instalación limpia en Windows, firma/provenance/SBOM e imagen o Compose siguen sin ejecutarse; este artefacto solo acredita Linux x64 sobre un clon.",
+  "source_commit": null,
+  "source_commit_note": "El commit que añade este archivo; se fija en el commit siguiente.",
+  "parent_repository": "uniscrolliabrain-cloud/agente",
+  "parent_sha": "9c4c309c9c05d26527563dd7ef094eebb7fbe276",
+  "parent_sha_previous_cotejo": "54b8d5407a8576459448c4d059a877297d18ca7a",
+  "parent_files_cotejados": 24,
+  "parent_files_identical": 20,
+  "parent_files_changed": [
+    "package.json",
+    "apps/server/src/engine/events/types.ts",
+    "apps/server/src/engine/events/bus.ts",
+    "apps/server/src/db-tenant.ts"
+  ],
+  "command": "node scripts/install-into-parent.mjs --parent /tmp/agente-work --report /tmp/redes-install-receipt.json",
+  "commands": [
+    "pnpm install --frozen-lockfile --ignore-scripts (en el clon del padre)",
+    "node scripts/install-into-parent.mjs --parent /tmp/agente-work",
+    "pnpm exec tsx scripts/verify-redes-install.ts",
+    "pnpm exec tsc --noEmit",
+    "pnpm exec biome check apps/server/src/redes-host.ts scripts/verify-redes-install.ts",
+    "node scripts/install-into-parent.mjs --parent /tmp/agente-work --revert",
+    "npm run verify:install (en agntia-redes)"
+  ],
+  "environment": {
+    "os": "linux",
+    "arch": "x64",
+    "node": "v26.13.1",
+    "package_manager": "pnpm@11.19.0",
+    "parent_hono": "4.13.18",
+    "parent_zod": "4.6.5",
+    "network": "sin red durante el arranque y la verificación del slice"
+  },
+  "result": "PASS",
+  "scope": "Instalación del paquete en un clon del padre y ejecución del slice; no es aplicación al checkout del fundador ni despliegue.",
+  "checks": [
+    { "name": "preflight SHA y blobs", "result": "PASS", "detail": "HEAD 9c4c309…; tenant-principal, pdp, tenant-scope y actor con blob esperado" },
+    { "name": "instalación vendorizada", "result": "PASS", "detail": "vendor/agntia-redes-0.1.0.tgz y dependencia file:" },
+    { "name": "typecheck del padre", "result": "PASS", "detail": "pnpm exec tsc --noEmit exit 0" },
+    { "name": "lint de archivos añadidos", "result": "PASS", "detail": "biome check sin errores" },
+    { "name": "sin sesión responde 401", "result": "PASS", "detail": "status=401" },
+    { "name": "montaje responde healthz", "result": "PASS", "detail": "status=200" },
+    { "name": "tenant aislado por principal", "result": "PASS", "detail": "cada usuario ve solo su cuenta; sin credentialRef" },
+    { "name": "deny-by-default", "result": "PASS", "detail": "usuario admin sin capacidad recibe 403" },
+    { "name": "vertical publicación", "result": "PASS", "detail": "outcome=ACCEPTED state=PROVIDER_ACCEPTED; aprobación de otro tenant bloqueada" },
+    { "name": "vertical resultado incierto", "result": "PASS", "detail": "state=PUBLISHED_CONFIRMED, providerCalls=1" },
+    { "name": "idempotencia", "result": "PASS", "detail": "segunda ejecución: mount already-mounted, verificación PASS" },
+    { "name": "reversión", "result": "PASS", "detail": "REVERTED: sin bloque, sin archivos, sin dependencia, sin tarball; pnpm-lock.yaml queda modificado y se revisa aparte" },
+    { "name": "reinstalación", "result": "PASS", "detail": "10/10 comprobaciones tras revertir" },
+    { "name": "instalación limpia del paquete", "result": "PASS", "detail": "npm run verify:install: tarball 45456 bytes, consumidor aislado, ambas verticales" },
+    { "name": "suite del paquete", "result": "PASS", "detail": "21 archivos, 103 tests" }
+  ],
+  "not_verified": [
+    "Aplicación sobre el checkout /agente del fundador",
+    "Windows y otras arquitecturas",
+    "Proveedores sociales reales y OAuth",
+    "Firma, provenance, SBOM, imagen de contenedor y Compose",
+    "Rollback conservando DB/auditoría/keys/receipts de producción",
+    "Despliegue productivo"
+  ],
+  "artifacts": [
+    "scripts/install-into-parent.mjs",
+    "install/parent/redes-host.ts",
+    "install/parent/verify-redes-install.ts",
+    "docs/operations/INSTALACION.md",
+    "docs/parent-diff.md"
+  ]
+}

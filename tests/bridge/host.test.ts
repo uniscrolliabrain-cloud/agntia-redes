@@ -128,8 +128,8 @@ describe("bridge host → servicio", () => {
     parent.route(
       "/redes",
       createApp({
-        authenticate: async (header) => {
-          if (header !== "Bearer host-session") throw new Error("no autenticado");
+        authenticate: async ({ authorization }) => {
+          if (authorization !== "Bearer host-session") throw new Error("no autenticado");
           return deriveHostPrincipal(context, policy);
         },
         accounts: registry(),

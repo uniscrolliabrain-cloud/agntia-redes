@@ -1,30 +1,51 @@
-# Cotejo con el repositorio padre — RDS-C01
+# Cotejo con el repositorio padre — RDS-C01 / RDS-C41
 
-**Resultado: NOT_VERIFIED (bloqueado por alcance, no por fallo).**
+**Estado 23-11-2026: cotejado y ensayado, no aplicado al checkout del fundador.**
 
-El padre `uniscrolliabrain-cloud/agente` **no está presente** en este workspace y el encargo prohíbe clonarlo o modificarlo sin aprobación específica. Por tanto no se repite la lectura selectiva que la entrega documental hizo en el SHA `54b8d5407a8576459448c4d059a877297d18ca7a` (12 archivos, según `docs/architecture/03-compatibilidad-agente.md` y `docs/research/parent-source-map.json`).
+El cotejo anterior se hizo contra `54b8d5407a8576459448c4d059a877297d18ca7a`. El `main` del padre ya está en `9c4c309c9c05d26527563dd7ef094eebb7fbe276`, así que se repitió la lectura de los 24 archivos de `docs/research/parent-source-map.json` sobre el SHA nuevo, mediante un clon de solo lectura en este workspace (`/tmp`). No se modificó el repositorio del fundador ni `/agente`.
+
+## Resultado del re-cotejo
+
+| Archivos del mapa | Resultado |
+|---|---|
+| 20 de 24 | blob idéntico al cotejo anterior |
+| 4 de 24 | cambiados |
+
+Cambios observados, por archivo:
+
+- `package.json` — nuevas dependencias de modelos (`@ai-sdk/*`), el tarball vendorizado `@agntia/ciberseguridad` y scripts de `cognition-v2`. Se mantiene `pnpm@11.19.0`, Hono `^4.11` y Zod `^4.1`.
+- `apps/server/src/engine/events/types.ts` — tres ids nuevos `cognition.v2.*` en el catálogo de eventos.
+- `apps/server/src/engine/events/bus.ts` — emisión transaccional con `afterCommit` y estados `pendingCommit` / `commitOutcome: "unknown"`.
+- `apps/server/src/db-tenant.ts` — pasarela de transacción (`usesTransactionStore`, `afterCommit`, `inTransaction`) sobre el store raíz.
+
+Los blobs que sostienen el adaptador no cambiaron: `tenant-principal.ts`, `engine/authz/pdp.ts`, `tenant-scope.ts` y `packages/domain/src/actor.ts`. El middleware de `apps/server/src/app.ts` sigue dejando `ctx` (`tenantId`, `actor`, `requestId`) y `owner` en el contexto de Hono bajo `/api/*`, que es lo que consume el adaptador.
+
+## Qué se ejecutó
+
+En el clon del SHA `9c4c309…`, con dependencias instaladas desde `pnpm-lock.yaml`:
+
+1. Instalación del paquete con `scripts/install-into-parent.mjs` (tarball vendorizado, adaptador, verificador, bloque de montaje).
+2. Arranque real del servidor del padre en modo `sample` y peticiones HTTP autenticadas a `/api/redes/*`.
+3. `tsc --noEmit` del padre y `biome check` de los archivos añadidos.
+4. Reversión completa y reinstalación.
+
+Resultado: 10/10 comprobaciones, typecheck exit 0, lint sin errores. Detalle en [install-parent-2026-11-23.json](evidence/c041/install-parent-2026-11-23.json) y guía en [INSTALACION.md](operations/INSTALACION.md).
+
+## Lectura de compatibilidad
+
+- La emisión transaccional nueva del bus del padre es coherente con la semántica de resultado incierto del servicio: un commit cuyo desenlace no se conoce no se reintenta a ciegas. El servicio mantiene su propio outbox y su propia reconciliación; no hereda el bus del padre como contrato.
+- El padre usa Zod 4 y Hono 4.13. El paquete los declara como peer dependencies y la verificación corrió con esas versiones, no con las de desarrollo.
+- Los cambios en `db-tenant.ts` no afectan al puerto del servicio: el adaptador no usa el store del padre.
 
 ## Qué no se afirma
 
-- No se declara compatibilidad con el HEAD actual del padre.
+- No se aplicó nada al `/agente` del fundador: el ensayo fue sobre un clon.
+- No se ejecutaron tests, seeders ni migraciones del padre; solo typecheck, lint de dos archivos y el arranque del slice.
+- No se declara compatibilidad con un HEAD futuro: si el padre se mueve, el instalador aborta hasta repetir este cotejo.
 - No se heredan permisos, tipos ni eventos del padre como contrato vigente.
-- No se ejecutan sus tests, seeders ni migraciones.
 
-## Interfaces que un cambio del padre afectaría
+## Cómo se cierra del todo
 
-| Superficie del padre | Impacto en redes | Mitigación ya presente |
-|---|---|---|
-| `TenantPrincipal` / `tenant-principal.ts` | resolución de tenant/actor/owner | el servicio verifica JWT Supabase + membresía propia y no acepta `legacy-default` |
-| `engine/authz/pdp.ts` y `with-write.ts` | capabilities y CAS | PEP local (`src/auth/policy.ts`) con deny-by-default |
-| `packages/domain/src/policy-context.ts` | homónimo con campos distintos | DTO explícito y validado; no se reutiliza el tipo |
-| `events/types.ts` / `bus.ts` | envelope `schemaVersion` y dedupe | outbox propia con dedupe durable y `domainEventId` |
-| `integrations/src/stubs/social.ts` | `SocialClient` es stub 503 | adaptador de negocio nuevo sobre intents aprobados; no se usa el stub |
-| `sop-triggers.ts` | cron UTC 1–28 | no se crea un segundo scheduler; calendario propio con zona IANA |
-
-## Cómo se desbloquea
-
-1. El fundador autoriza el checkout del padre y fija el SHA a cotejar.
-2. Se ejecuta la lectura selectiva de los 12 archivos del mapa y se diffea contra `54b8d54…`.
-3. Se actualiza este documento con SHA, fecha y diferencias; solo entonces puede afirmarse compatibilidad.
-
-Hasta entonces, la integración con el padre queda en `BLOCKED` y el bridge se escribe contra el contrato documentado, no contra el runtime del host.
+1. El fundador ejecuta el instalador sobre su checkout real y anota el SHA.
+2. Se revisa `pnpm-lock.yaml` y el diff de los cinco puntos de escritura.
+3. Se repite la verificación en ese checkout y en Windows antes de afirmar instalación multiplataforma.

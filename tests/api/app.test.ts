@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { createApp } from "../../apps/api/src/app.js";
+import { HostBridgeError } from "../../src/bridge/host.js";
 import { AccountRegistry } from "../../src/connections/registry.js";
 import type { Capability, Principal } from "../../src/contracts/index.js";
 
@@ -44,8 +45,8 @@ function principalWith(capabilities: Capability[]): Principal {
 
 function appWith(principal: Principal | null) {
   return createApp({
-    authenticate: async (header) => {
-      if (header !== "Bearer good" || principal === null) {
+    authenticate: async ({ authorization }) => {
+      if (authorization !== "Bearer good" || principal === null) {
         throw new Error("no autenticado");
       }
       return principal;
@@ -75,6 +76,27 @@ describe("API Hono", () => {
       headers: { authorization: "Bearer good" },
     });
     expect(response.status).toBe(403);
+  });
+
+  it("recibe el contexto del host y distingue escalada (403) de sesión ausente (401)", async () => {
+    const seen: unknown[] = [];
+    const app = createApp({
+      authenticate: async ({ host, request }) => {
+        seen.push(host, request);
+        throw new HostBridgeError("HOST_CAPABILITY_ESCALATION", "capacidad fuera de la membresía");
+      },
+      accounts: registry(),
+    });
+
+    const response = await app.request("/v1/social/accounts", {
+      headers: { authorization: "Bearer good" },
+    });
+    expect(response.status).toBe(403);
+    const body = (await response.json()) as { code: string };
+    expect(body.code).toBe("FORBIDDEN");
+    // El host recibe su propio contexto de petición, no solo la cabecera.
+    expect(seen).toHaveLength(2);
+    expect(seen.every((value) => value !== undefined && value !== null)).toBe(true);
   });
 
   it("devuelve solo las cuentas del tenant verificado y sin credenciales", async () => {
