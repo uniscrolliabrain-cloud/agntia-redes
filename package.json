@@ -28,7 +28,8 @@
     "check": "npm run typecheck && npm run test",
     "slice:publish": "npm run build && node scripts/run-slice.mjs publication",
     "slice:reconcile": "npm run build && node scripts/run-slice.mjs reconciliation",
-    "verify:install": "node scripts/verify-install.mjs"
+    "verify:install": "node scripts/verify-install.mjs",
+    "install:parent": "node scripts/install-into-parent.mjs"
   },
   "dependencies": {
     "jose": "^5.9.0"

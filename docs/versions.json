@@ -6,7 +6,7 @@
   "main_sha_at_fetch": "09d6b8887d80d3b93c03ac9cea4cf7fdce7f6266",
   "parent_reference_sha": "54b8d5407a8576459448c4d059a877297d18ca7a",
   "parent_comparison": "NOT_VERIFIED",
-  "parent_comparison_reason": "El checkout del padre no está disponible en este workspace y no se autoriza modificarlo.",
+  "parent_comparison_reason": "El checkout del padre no estaba disponible en el workspace del baseline.",
   "manifest": {
     "path": "docs/campaigns/campaign.json",
     "campaigns": 42,
@@ -22,13 +22,31 @@
     "local_postgres": "PGlite (WASM, PG16) — laboratorio local, no producción"
   },
   "runtime_dependencies": {
-    "zod": "^3.23.8",
-    "hono": "^4.6.0",
+    "zod": "peer ^3.23.8 || ^4.0.0",
+    "hono": "peer ^4.6.0",
     "jose": "^5.9.0"
   },
   "verification_notes": [
     "No existe suite de producto previa: esta fase crea la primera.",
     "PGlite valida RLS y migraciones en un Postgres real pero embebido; no acredita un Postgres gestionado.",
     "Ninguna capability de proveedor está VERIFIED_RUNTIME."
-  ]
+  ],
+  "parent_previous_reference_sha": "54b8d5407a8576459448c4d059a877297d18ca7a",
+  "parent_comparison_evidence": "docs/evidence/c041/install-parent-2026-11-23.json",
+  "parent_recent_cotejo": {
+    "ref": "9c4c309c9c05d26527563dd7ef094eebb7fbe276",
+    "date": "2026-11-23",
+    "status": "PARTIAL",
+    "files": 24,
+    "identical": 20,
+    "changed": [
+      "package.json",
+      "apps/server/src/engine/events/types.ts",
+      "apps/server/src/engine/events/bus.ts",
+      "apps/server/src/db-tenant.ts"
+    ],
+    "install_tested": "clon de solo lectura en Linux x64; no el checkout /agente del fundador",
+    "evidence": "docs/evidence/c041/install-parent-2026-11-23.json",
+    "reason": "Cotejo de los 24 archivos del mapa e instalación verificada sobre un clon. No cubre Windows, proveedores reales, firma/SBOM ni el checkout real."
+  }
 }

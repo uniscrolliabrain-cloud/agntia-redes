@@ -4,6 +4,8 @@
 
 Snapshot padre: uniscrolliabrain-cloud/agente main **54b8d5407a8576459448c4d059a877297d18ca7a**. Lectura selectiva de12 archivos, no auditoría completa de sus3125 entradas ni ejecución de tests. El árbol consultado no se truncó. AGENTS.md raíz devolvió404: no se inventan sus instrucciones ni se extrapola ausencia a subdirectorios. Antes de implementar hay que repetir el cotejo y leer instrucciones aplicables del checkout real.
 
+**Re-cotejo 23-11-2026:** el `main` del padre ya está en `9c4c309c9c05d26527563dd7ef094eebb7fbe276`. Se repitió la lectura de los 24 archivos del mapa: 20 idénticos y 4 cambiados (`package.json`, `events/types.ts`, `events/bus.ts`, `db-tenant.ts`). Los blobs que sostienen el puente (`tenant-principal.ts`, `pdp.ts`, `tenant-scope.ts`, `actor.ts`) no cambiaron. El adaptador de instalación se ensayó sobre un clon, no sobre el `/agente` del fundador. Detalle en [parent-diff.md](../parent-diff.md).
+
 | Archivo observado en ese SHA | Hecho acotado | Consecuencia de diseño |
 |---|---|---|
 | package.json | Monorepo TS, Hono, Zod, pnpm11.19.0; Node>=22.6.0 declarado | Proponer SDK TS servidor, Hono y compatibilidad Node22/24 a probar, no copiar scripts por fe |
